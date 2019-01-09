@@ -1,0 +1,155 @@
+.list{
+    width: 780px;
+    height: 432px;
+    position: absolute;
+    top: 7px;
+    left: 9px;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+.list li{
+    width: 245px;
+    height: 136px;
+    display: inline-block;
+}
+.list .item2{
+    margin-left: 16px;
+}
+.list .item3{
+    margin-left: 17px;
+}
+.list .item4{
+    margin-top: 8px;
+}
+.list .item5{
+    margin-left: 282px;
+}
+.list .item6{
+    margin-top: 8px;
+}
+.list .item7{
+    margin-top: 8px;
+    margin-left: 17px;
+}
+.list .item8{
+    margin-top: 8px;
+    margin-left: 17px;
+}
+.list .mask{
+    width: 132px;
+    height: 95px;   
+    background: url(selected2.png) no-repeat;
+    position: relative;
+    left: 53px;
+    top: 26px;
+    display: none;
+}
+.list img{
+    width: 249px;
+    height: 137px;
+    /* margin-left: -17px; */
+}
+/* cj */
+.cj{
+    width: 780px;
+    height: 432px;
+    position: relative;
+}
+#lotterycontent_start{
+    z-index: 8;
+}
+/* list2 */
+.dia-con{
+    width: 1002px;
+    height: 853px;
+    background: url(bg2.png) no-repeat;
+}
+.list2{
+    list-style: none;
+    width: 782px;
+    height: 1024px;
+    margin-left: 69px;
+    position: relative;
+}
+.list2 img{
+    width: 249px;
+    height: 137px;
+}
+.list2 li{
+    float: left;
+    margin-left: 17px;
+}
+.list2 .left{
+    margin-left: 0;
+}
+.list2 .mask{
+    position: absolute;
+    width: 249px;
+    height: 141px;
+}
+.list2 .item1 .mask,.list2 .item2 .mask,.list2 .item3 .mask{
+    top: 0
+}
+.list2 .item4 .mask,.list2 .item5 .mask,.list2 .item6 .mask{
+    top: 140px
+}
+.list2 .item7 .mask,.list2 .item8 .mask,.list2 .item9 .mask{
+    top: 280px
+}
+.list2 .item10 .mask,.list2 .item11 .mask,.list2 .item12 .mask{
+    top: 420px
+}
+.list2 .item13 .mask,.list2 .item14 .mask,.list2 .item15 .mask{
+    top: 560px
+}
+.list2 .item16 .mask,.list2 .item17 .mask,.list2 .item18 .mask{
+    top: 700px
+}
+.list2 .item19 .mask,.list2 .item20 .mask,.list2 .item21 .mask{
+    top: 840px
+}
+.list2 .active{
+    width: 132px;
+    height: 95px;
+    background: url(selected.png) no-repeat;
+    margin-left: 56px;
+    margin-top: 20px;
+}
+#dia .title1{
+    width: 325px;
+    height: 52px;
+    background: url(title1.png) no-repeat;
+}
+#dia p{
+    text-align: center;
+    font-size: 14px;
+    color: #61473c;
+}
+#dia span{
+    color: #fd5a02
+}
+#dia .dia-close{
+    display: block;
+    width: 58px;
+    height: 57px;
+    background: url(close.png) no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.right{
+    width: 20px;
+    height: 148px;
+    position: absolute;
+    top: 326px;
+    right: 3px;
+}
+.confirm{
+    display: block;
+    width: 243px;
+    height: 77px;
+    background: url(btn.png) no-repeat;
+    margin: 0 auto;
+}
+

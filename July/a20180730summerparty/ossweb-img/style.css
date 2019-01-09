@@ -1,0 +1,678 @@
+* {margin:0; padding:0; list-style:none;font-family:'Microsoft Yahei'}
+body,html,.ost_box,#actTitleWrap,.container,#footer_ied,.white-footer,.warp{min-width:1200px!important;width:100%!important;}
+.wrap{
+    width: 100%;
+    position: relative;
+}
+.wrap .bg{
+    min-width: 1000px;
+}
+.wrap .content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrap .content .main{
+    width: 1000px;
+    margin: 0 auto;
+}
+/* set bg */
+.bg .bg1{
+    width: 100%;
+    height: 374px;
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/bg1.jpg) no-repeat top center;
+}
+.bg .bg2{
+    width: 100%;
+    height: 260px;
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/bg2.jpg) no-repeat top center;
+}
+.bg .bg3{
+    width: 100%;
+    height: 365px;
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/bg3.jpg) no-repeat top center;
+}
+.bg .bg4{
+    width: 100%;
+    height: 1433px;
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/bg4.jpg) no-repeat top center;
+}
+.bg .bg5{
+    width: 100%;
+    height: 1528px;
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/bg5.jpg) no-repeat top center;
+}
+.bg .bg6{
+    width: 100%;
+    height: 1432px;
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/bg6.jpg) no-repeat top center;
+}
+/* content begin */
+.content .main .logo1{
+    width: 113px;
+    height: 71px;
+    position: absolute;
+    top: 25px;
+    left: 133px;
+}
+.main .logo1 a{
+    display: block;
+    width: 113px;
+    height: 71px;
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/logo1.png) no-repeat;
+}
+.main .logo2{
+    width: 658px;
+    height: 112px;
+    margin: 0 auto;
+    margin-top: 787px;
+}
+.main .logo2 a{
+    display: inline-block;
+    width: 280px;
+    height: 72px;
+    margin-left: 27px;
+    margin-top: 25px;
+}
+.logo2 .logo2-a2{
+    margin-left: 55px !important;
+}
+
+/* selected1 */
+.selected{
+    width: 100%;
+}
+.selected .top{
+    width: 818px;
+    height: 126px;
+    margin: 0 auto;
+    margin-top: 57px;
+}
+.top li{
+    display: none;
+    display: inline-block;
+    width: 374px;
+    height: 102px;
+}
+.top .li1{
+ background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/btn1.png) no-repeat center;
+}
+.top .li1.active{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/b1.png) no-repeat center;
+}
+.top .li2{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/btn2.png) no-repeat center;
+}
+.top .li2.active{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/b2.png) no-repeat center;
+}
+.top.active{
+    display: block;
+}
+.top li img{
+    width: 374px;
+    height: 102px;
+}
+.top .item2{
+    margin-left: 65px;
+}
+/* bottom */
+.another .bottom1{
+    display: none;
+}
+.bottom1.active{
+    display: block;
+}
+/* usually */
+.title{
+    width: 998px;
+    height: 186px;
+    margin: 0 auto
+}
+
+.selected .bottom{
+    height: 4342px;
+}
+.bottom .part1{
+    height: 582px;
+    width: 1008px;
+}
+.part1 .box1{
+    height: 377px;
+    margin-top: 18px;
+}
+.part1 .title1{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/title1.png) no-repeat;  
+}
+.part1 .left{
+    width: 399px;
+    height: 377px;
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/box3.png) no-repeat;
+    float: left;
+}
+.part1 .left .p1{
+    font-size: 22px;
+    line-height: 43px;
+    font-weight: bold;
+    color: #154960;
+    text-align: center
+}
+.part1 .left .p2,.part1 .left .p3{
+    font-size: 14px;
+    line-height: 22px;
+    color: #154960;
+    margin-left: 32px;
+}
+.part1 .left .p3{
+    text-indent: 2em;   
+}
+.part1 .lunbo{
+    width: 603px;
+    height: 388px;
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/box4.png) no-repeat;
+    margin-left: 6px;
+    float: left;
+}
+.lunbo img{
+    width: 575px;
+    height: 370px;
+    margin-top: 9px;
+    margin-left: 3px;
+}
+/* part2 */
+.bottom .part2{
+    width: 100%;
+    height: 619px;
+    margin-top: 29px;
+}
+.part2 .title2{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/title2.png) no-repeat;
+}
+.part2 .box2{
+    height: 400px;
+    position: relative;
+    margin-top: 8px;
+}
+.part2 .left{
+    width: 301px;
+    height: 357px;
+    position: absolute;
+    top: 47px;
+    left: 45px;
+}
+.part2 .left span{
+    font-size: 26px;
+    font-weight: bold;
+    color: #154960;
+    position: absolute;
+    top: -40px;
+    left: 102px;
+}
+.part2 .right{
+    width: 733px;
+    height: 400px;
+    margin-left: 267px;
+}
+.part2 .right span{
+    font-size: 26px;
+    font-weight: bold;
+    color: #154960;
+    position: absolute;
+    top: 8px;
+    right: 237px;
+}
+.part2 .right p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #ebfbff;
+    position: absolute;
+}
+.part2 .right .p1{
+    top: 168px;
+    right: 412px;
+}
+.part2 .right .p2{
+    top: 168px;
+    right: 93px;
+}
+.part2 .right .p3{
+    top: 345px;
+    right: 404px;
+}
+.part2 .right .p4{
+    top: 345px;
+    right: 98px;
+}
+/* part3 */
+.bottom .part3{
+    height: 759px;
+}
+.part3 .title3{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/title3.png) no-repeat;
+}
+.lunbo2{
+    height: 538px;
+    margin-top: 55px;
+    position: relative;
+}
+
+.swiper1{
+    width: 930px;
+    height: 570px;
+    margin: 10px auto 0;
+    position: relative;
+}
+.swiper-container{
+    width: 800px;
+    height: 465px;
+    margin: 0 auto;
+}
+.swiper-pagination1{
+    bottom: 523px!important;
+}
+.swiper-button-prev,.swiper-button-next{
+    width: 40px!important;
+    height: 83px!important;
+    position: absolute!important;
+    margin-top: -80px!important;
+    outline: none!important;
+}
+.swiper-button-prev{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/left.png)no-repeat center!important;
+    left: -20px!important;
+}
+.swiper-button-next{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/right.png)no-repeat center!important;
+    right: 0;
+}
+.swiper-pagination1,.swiper-pagination2{
+    width: 840px;
+    height: 71px;
+    left: 50%!important;
+    margin-left: -420px;
+    bottom: -20px;
+}
+.swiper-pagination2 .swiper1_btn_0{
+    margin-right: 20px!important;
+}
+.swiper-pagination1 .swiper-pagination-bullet{
+    margin-right: 20px!important;
+}
+.swiper-pagination-bullet{
+    width: 245px!important;
+    height: 71px!important;
+    outline: none!important;
+    border-radius: 0!important;
+    opacity: 1!important;
+    color: #ffffff!important;
+    font-size: 22px!important;
+    font-weight: bold!important;
+    text-align: center!important;
+    line-height: 71px!important;
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/swiper_btn1.png) no-repeat center!important;
+}
+.swiper1_btn_0{
+    border-radius: 0;
+    background-position: -109px 0;
+}
+.swiper1_btn_1{
+    border-radius: 0;
+    background-position: -209px 0;
+}
+.swiper1_btn_2{
+    border-radius: 0;
+    background-position: -309px 0;
+}
+.swiper1_btn_3{
+    border-radius: 0;
+    background-position: -409px 0;
+}
+.swiper-pagination-bullet-active{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/swiper_btn2.png) no-repeat center!important;
+}
+/* lunbo dian */
+.swiper-pagination3{
+    width: 575px !important;
+    height: 16px;
+    margin-left: 15px;
+    bottom: 30px !important;
+}
+.swiper-pagination3 .swiper-pagination-bullet{
+    width: 8px !important;
+    height: 8px !important;
+    display: inline-block !important;
+    border-radius: 100% !important;
+    background: #0a424e !important;
+    /* opacity: .2 !important; */
+}
+.swiper-pagination3 .swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer !important;
+}
+.swiper-pagination3 .swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    background: #a3f5ff !important;
+}
+
+.lunbo2 .word{
+    width: 699px;
+    height: 35px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #154960;
+    font-weight: bold;
+    position: absolute;
+    position: absolute;
+    top: 43px;
+    left: 156px;
+}
+.lunbo2 .word span{
+    padding-right: 165px;
+}
+.lunbo2 .word2 p{
+    display: inline-block;
+    margin-right: 82px;
+}
+.lunbo2 .word2 .last{
+    margin-right: 0
+}
+.lunbo2 .word2{
+    width: 822px;
+    height: 63px;
+    font-size: 16px;
+    color: #cef5ff;
+    margin-left: 102px
+}
+.lunbo2 .car1 img{
+    width: 847px;
+    height: 466px;
+    margin: 0 auto;
+}
+.lunbo2 .swiper-pagination a{
+    display: inline-block;
+    width: 245px;
+    height: 72px;
+}
+.lunbo2 .swiper-pagination .a1{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/btn3.png) no-repeat;
+}
+.lunbo2 .swiper-pagination .a2{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/btn4.png) no-repeat;
+}
+.lunbo2 .swiper-pagination .a3{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/btn5.png) no-repeat;
+}
+/* car2 */
+.lunbo2 .car2{
+    height: 503px;
+}
+.lunbo2 .car2 span{
+    display: block;
+    font-size: 26px;
+    color: #154960;
+    font-weight: bold;
+    position: relative;
+}
+.lunbo2 .car2  .s1{
+    position: relative;
+    top: 26px;
+}
+.lunbo2 .car2  .s2{
+    position: relative;
+    top: 240px;
+}
+.lunbo2 .car2 .word3{
+    position: relative;
+    top: 164px
+}
+.lunbo2 .car3{
+    height: 492px;
+    margin-top: 62px;
+}
+/* lunbo3 */
+.lunbo3{
+    height: 220px;
+    position: relative;
+    margin-top: 80px;
+}
+.lunbo3 .swiper-pagination{
+    bottom: 232px!important;
+}
+.lunbo3 .word4{
+    font-size: 16px;
+    font-weight: bold;
+    color:#cef5ff
+}
+.lunbo3 .car5 img{
+    position: absolute;
+    top: 33px;
+    left: 50%;
+    margin-left: -155px;
+}
+
+/* part4 */
+.bottom .part4{
+    height: 475px;
+}
+.part4 .title4{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/title4.png) no-repeat;
+}
+/* part5 */
+.bottom .part5{
+    height: 1871px;
+    margin: 0 auto;
+    text-align: center;
+}
+.part5 .title5{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/title5.png) no-repeat;
+    margin-bottom: 17px;
+}
+.part5 .one{
+    width: 790px;
+    height: 337px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 38px;
+}
+.part5 .list1{
+    width: 106px;
+    height: 288px;
+    float: left;
+}
+.part5 .list2{
+    width: 588px;
+    height: 317px;
+    float: left;
+    margin-left: 96px;
+}
+.part5 p{
+    font-size: 14px;
+    color: #c2edf8;
+    line-height: 20px;
+    margin: 10px 0;
+
+}
+.part5 .list3{
+    height: 250px;
+    margin-top: 36px;
+}
+.part5 .list3 li{
+    float: left;
+}
+.part5 .list3 .item1{
+    margin-top: 20px;
+    margin-left: 115px;
+}
+/* part5 list4 */
+.part5 .list4{
+    height: 283px;
+    margin-top: 38px;
+    position: relative;
+}
+.part5 .list4 li{
+    float: left;
+    margin-right: 27px;
+}
+.part5 .list4 .item2{
+    margin-right: 0
+}
+.part5 .list4 .p2{
+    position: absolute;
+    top: -104px;
+    left: 60px;
+    position: relative;
+    text-align: left
+}
+/* part5 list5 */
+.part5 .list5{
+    height: 330px;
+    position: relative;
+    top: -65px;
+}
+.list5 .i1{
+    position: absolute;
+    top: 259px;
+    left: 64px;
+}
+.list5 .i2{
+    position: absolute;
+    top: 367px;
+    left: 70px;
+}
+/* part5 list6 */
+.part5 .list6{
+    height: 264px;
+    position: relative;
+    top: 34px;
+}
+.list6 .i3{
+    margin-top: 25px;
+}
+/* carousel */
+html, body {
+    position: relative;
+    height: 100%;
+  }
+  body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+}
+
+/* bottom2 */
+.bottom2{
+    height: 2206px;
+}
+.bottom2 .part1{
+    height: 687px;
+}
+.bottom2 .part1 .title1{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/title6.png) no-repeat
+}
+.bottom2 .part1 img{
+    width: 847px;
+    display: block;
+    margin: 0 auto;
+    height: 427px;
+}
+.bottom2 .part1 span{
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 33px;
+}
+.bottom2 .part2{
+    height: 1536px;
+}
+.bottom2 .part2 .title2{
+    background: url(//game.gtimg.cn/images/rf/cp/a20180730summerparty/title7.png) no-repeat
+}
+.bottom2 .part2 .ss{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 9px;
+    margin-bottom: 26px;
+}
+.bottom2 .part2 img{
+    display: block;
+    margin: 0 auto;
+}
+.bottom2 .part2 .s1{
+    font-size: 18px;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 33px;
+}
+.bottom2 .part2 p{
+    font-size: 14px;
+    color: #fff;
+    line-height: 21px;
+}
+.bottom2 .part2 .back{
+    text-indent: 13.8em;
+}
+.bottom2 .part2 .back2{
+    text-indent: 9.4em;
+}
+.bottom2 .a,.bottom2 .b,.bottom2 .c,.bottom2 .d{
+    margin-bottom: 25px;
+}
+.bottom2 .part2 .p1 span,.bottom2 .part2 .p2 span{
+    font-size: 14px;
+    color: #fffbb9;
+    font-weight: bold;
+}
+.bottom2 .part2 .p1{
+    text-align: center;
+}
+.bottom2 .part2 .pa{
+    text-indent: 7.1em;
+}
+.bottom2 .part2 .pb{
+    text-indent: 8.9em;
+}
+.bottom2 .part2 .pc{
+    text-indent: 5em;
+}
+.bottom2 .part2 .pd{
+    text-indent: 4.48em;
+}
+  /*footer*/
+#footer_ieg{
+    width: 100%;
+    height: 178px;
+    background: #072a3a
+}
+.wrap_ieg{
+    padding-top: 50px;
+    padding-bottom: 22px;
+    text-align: center;
+    line-height: 27px;
+    background: #072a3a;
+}
+.wrap_ieg p a{
+    text-decoration: none;
+    color: #c6deea;
+    font-size: 12px;
+}
+.wrap_ieg p{
+    color: #c6deea;
+    font-size: 12px;
+}
+body{
+    background: paleturquoise
+}

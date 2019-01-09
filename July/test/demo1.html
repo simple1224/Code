@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>hghgh</title>
+<link href="css/bootstrap.min.css" rel="stylesheet"/> 
+<link href="css/font-awesome.css" rel="stylesheet"/>
+<style>
+
+#wizard {overflow:hidden;height:450px;margin:20px auto;width:570px;position:relative;-moz-border-radius:5px;-webkit-border-radius:5px;}
+#wizard .items{width:20000px; clear:both; position:absolute;}
+#wizard .right{float:right;}
+.lists{text-align: center;background:#EB6100;}
+#status{height:35px;padding-left:25px !important;display:inline-block;}
+#status li{float:left;color:#fff;padding:18px 30px;list-style:none;margin-right:30px;}
+#status li.active{background-color:#D25802;font-weight:normal;}
+.active{background-color:#D25802;}
+.page{padding:20px 30px;width:570px;float:left;position:absolute;}
+.page h3{height:42px; font-size:16px; border-bottom:1px dotted #ccc; margin-bottom:20px; padding-bottom:5px}
+.page h3 em{font-size:12px; font-weight:500; font-style:normal}
+.page p{line-height:24px;}
+.page p label{font-size:14px; display:block;}
+.page p #pass{padding:0px;}
+.btn_nav{height:36px; line-height:36px; margin:20px auto;}
+.prev,.next{width:100px; height:45px; line-height:45px; border:1px solid #d3d3d3; cursor:pointer}
+
+                </style>
+</head>
+<body>
+<!--这是注册的页面-->
+<div id="main">
+            <div class="logo"><img src="img/slogo.png"/>会员注册</div>
+   
+   
+   <form action="#" method="post">
+    <div class="lists">
+     <ul id="status">
+  <li class="active"><strong>1.</strong>设置用户名</li>
+  <li><strong>2.</strong>填写账号信息</li>
+  <li><strong>3.</strong>完成</li>
+ </ul>
+    </div>
+    
+ <div id="wizard">
+
+
+  <div class="items">
+   <div class="page">
+               <p><label>手机号：</label><input type="text" class="form-control" id="user" name="username" /></p>
+               <p><label>验证码：</label><input type="password" class="form-control" id="pass" name="password" /></p>
+                <p><label>邀请码：</label><input type="text" class="form-control" id="pass" name="invite-num" /></p>
+               <div class="btn_nav">
+                  <input type="button" class="next right" value="下一步&raquo;" />
+               </div>
+            </div>
+   <div class="page">
+               <h3>填写联系信息<br/><em>请告诉我们您的联系方式。</em></h3>
+               <p><label>E-mail：</label><input type="text" class="form-control" name="email" /></p>
+               <p><label>QQ：</label><input type="text" class="form-control" name="qq" /></p>
+               <div class="btn_nav">
+                  <input type="button" class="prev" style="float:left" value="&laquo;上一步" />
+                  <input type="button" class="next right" value="下一步&raquo;" />
+               </div>
+            </div>
+   <div class="page">
+               <h3>完成注册<br/><em>点击确定完成注册。</em></h3>
+               <h4>马卡龙欢迎您！</h4>
+               <p>请点击“确定”按钮完成注册。</p>
+               <br/>
+               <br/>
+               <br/>
+               <div class="btn_nav">
+                  <input type="button" class="prev" style="float:left" value="&laquo;上一步" />
+                  <input type="button" class="next right" id="sub" value="确定" />
+               </div>
+            </div>
+  </div>
+ </div>
+</form>
+</div>
+
+
+<script src="js/jquery-1.9.1.min.js"></script>
+
+<script>
+
+$(function(){ 
+$(".page").hide();          //所有页面都隐藏
+$("#status li").removeClass("active");      //让导航条都不添加样式
+$(".items .page").eq(0).show();                 //默认第一个页面显示
+$("#status li").eq(0).addClass("active");    //第一个导航加样式
+//下一步
+     $(".next.right").click(function(){
+    var num=$(this).parent().parent().index()+1;   //当前这个page的索引加1，指的是下一页
+    $(".page").hide();                                 //所有页面都隐藏
+    $(".items .page").eq(num).show();       //下一个页面显示
+    $("#status li").removeClass("active");     //所有导航条都清除样式
+    $("#status li").eq(num).addClass("active");   //当前页面的那个导航添加样式
+    
+     });
+     
+     //上一步
+     $(".prev").click(function(){
+        var num=$(this).parent().parent().index()-1;
+        $(".page").hide();
+    $(".items .page").eq(num).show();
+    $("#status li").removeClass("active");
+    $("#status li").eq(num).addClass("active");
+     });
+     
+     });
+</script>
+</body>
+</html>
+

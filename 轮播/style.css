@@ -1,0 +1,148 @@
+/* 轮播 */
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+.text {
+    font-size: 62px;
+    margin-top: 20px;
+}
+body {
+    background: #2d2d2d;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.spr {
+    width: 60px;
+    height: 130px;
+    background: url(img/nav.png) no-repeat !important;
+    background-size: 60px 120px !important;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    color: #e4cba8;
+}
+/* change Subscript */
+.swiper-button-next {
+    background-position: -36px -64px !important;
+}
+.swiper-button-prev {
+    background-position: -6px -63px !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    width: 18px !important;
+    height: 53px !important;
+}
+.carousel1 .swiper-button-prev {
+    left: 17.5%;
+    top: 86.5%;
+}
+.carousel1 .swiper-button-next {
+    left: 81.3%;
+    top: 86.5%;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-position-y: -5px !important;
+}
+.swiper-pagination1 {
+    width: 1098px;
+    height: 163px;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -549px;
+}
+.swiper-pagination1 .swiper-pagination-bullet {
+    width: 170px !important;
+    height: 160px !important;
+    outline: none !important;
+    border-radius: 0 !important;
+    opacity: 1 !important;
+    color: #ffffff !important;
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    line-height: 71px !important;
+    /* background: url(swiper_btn1.png) no-repeat center!important; */
+    background: url(img/flynav.png) no-repeat;
+}
+.swiper-pagination1 .swiper-pagination-bullet-active {
+    background: url(img/flynav.png) no-repeat;
+}
+/* personal setting */
+/* carousel1 */
+.carousel1 {
+    width: 1920px;
+    height: 900px;
+    margin: 0 auto;
+    background: url(img/flybg.png) no-repeat;
+}
+.swiper-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 56px;
+}
+.img1 {
+    width: 1188px !important;
+    height: 664px !important;
+    margin-top: 0 !important;
+}
+.img2 {
+    width: 1592px !important;
+    height: 445px !important;
+}
+.img3 {
+    width: 1395px !important;
+    height: 402px !important;
+}
+.img4 {
+    width: 1646px !important;
+    height: 425px !important;
+}
+.img5 {
+    width: 1879px !important;
+    height: 529px !important;
+}
+.img6 {
+    width: 1123px !important;
+    height: 494px !important;
+}
+/* 下面的按钮 */
+.swiper1_btn_0 {
+    background-position: 0px 0px !important;
+}
+.swiper1_btn_1 {
+    background-position: -170px 0px !important;
+}
+.swiper1_btn_2 {
+    background-position: -359px 0px !important;
+}
+.swiper1_btn_3 {
+    background-position: -543px 0px !important;
+}
+.swiper1_btn_4 {
+    background-position: -729px 0px !important;
+}
+.swiper1_btn_5 {
+    background-position: -918px 0px !important;
+}
+/* 按钮选中状态 */
+.swiper-pagination1 .swiper1_btn_0.swiper-pagination-bullet-active,
+.swiper1_btn_1.swiper-pagination-bullet-active,
+.swiper1_btn_2.swiper-pagination-bullet-active,
+.swiper1_btn_3.swiper-pagination-bullet-active,
+.swiper1_btn_4.swiper-pagination-bullet-active,
+.swiper1_btn_5.swiper-pagination-bullet-active {
+    background-position-y: -185px !important;
+}

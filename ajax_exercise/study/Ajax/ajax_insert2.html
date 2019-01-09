@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>利用jquery对ajax进行增删改</title>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+</head>
+
+<body>
+    <h2>jQuery实例--Ajax信息的增删改查等操作</h2>
+    <h3>学生信息</h3><button id="aid">添加</button>
+    <table id="stuid" width="500" border="1">
+        <thead>
+            <tr>
+                <th>学号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>电话</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <div id="fill" style="width:100%;height:100%;background-color:#000;position:absolute;top:0px;left:0px;opacity:0.3;display:none;z-index:100">
+    </div>
+
+    <div id="myform" style="width:100%;height:100%;position:absolute;top:0px;left:0px;z-index:101;display:none">
+        <form action="" method="post" onsubmit="return doAdd(this)">
+            <table width="340" border="0" style="margin:20% auto;background-color:#fff">
+                <tr>
+                    <td>学号：</td>
+                    <td><input type="text" name="id"></td>
+                </tr>
+                <tr>
+                    <td>姓名：</td>
+                    <td><input type='text' name="name" /></td>
+                </tr>
+                <tr>
+                    <td>年龄：</td>
+                    <td><input type='text' name="age" /></td>
+                </tr>
+                <!-- <tr>
+                    <td>性别：</td>
+                    <td>
+                        <input type='radio' name="sex" value="m" />男
+                        <input type='radio' name="sex" value="w" />女
+                    </td>
+                </tr> -->
+                <tr>
+                    <td>电话：</td>
+                    <td><input type='text' name="phoneNum" /></td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td>
+                        <input type='submit' value="添加" />
+                        <input type='reset' value="重置" />
+                        <input type="button" onclick="$('#fill').hide();$('#myform').hide();" value="关闭" />
+                        <input type="button" onclick="return doMol()" value="修改" />
+                    </td>
+
+                </tr>
+            </table>
+        </form>
+
+        <script>
+               
+            function put(){
+                $('#fill').show();
+                $('#myform').show();
+            }               
+
+            $(function () {
+                //调用加载数据的函数
+                loadstu();
+                //为添加按钮绑定一个添加动作
+                $('#aid').click(function () {
+                    $('#fill').show();
+                    $('#myform').show();
+                })
+            })
+
+            //加载学生信息
+            function loadstu() {
+                $.ajax({
+                    url: "http://132.232.2.53:9000/api/persons",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (backdata) {
+                        //backdata是返回的一个json对象 即后台的数据集合
+                        // alert(backdata[0])
+                        // console.log(backdata[0])
+                        // var json = JSON.parse(data);
+                        // console.log(json)
+                        var str = null;
+                        // console.log("str"+str)
+                        for (var i = 0; i < backdata.length; i++) {
+                            str += "<tr>";
+                            str += "<td>" + backdata[i].id + "</td>";
+                            str += "<td>" + backdata[i].name + "</td>";
+                            str += "<td>" + backdata[i].age + "</td>";
+                            str += "<td>" + backdata[i].phoneNum + "</td>";
+                            //javascript:void(0)表示不返回任何值
+                            str += "<td><a href=\"javascript:void(0);\" onclick='doDel(" + backdata[i].id +
+                                ",this)'>删除</a></td>";
+                            str += "<td><a id='put' href=\"javascript:void(0);\" onclick='doMol(" +
+                                backdata[i].id + ",this),put()'>更改</a></td>";
+                            str += "</tr>";
+                        }
+                        //empty() 方法从被选元素移除所有内容，包括所有文本和子节点。
+                        //append() 方法在被选元素的结尾（仍然在内部）插入指定内容。
+                        $("#stuid tbody").empty();
+                        $("#stuid tbody").append(str)
+                    }
+                })
+            }
+
+            // 删除信息
+            function doDel(sid, ob) {
+                if (confirm("确定要删除吗？"))
+                    $.ajax({
+                        url: "http://132.232.2.53:9000/api/"+sid,
+                        type: "DELETE",
+                        success: function (res) {
+                                loadstu();//重新加载
+                        },
+                        error: function () {
+                            alert('error1111111111111');
+                        }
+                    });
+            }
+            // function doDel(sid, ob) {
+            //     //执行ajax删除
+            //     alert("ob is this:" + ob)
+            //     //sid是后台数据的主键id
+            //     console.log("ob" + ob)
+            //     console.log("sid" + sid)
+            //     if (confirm("确定要删除吗？"))
+            //         $.ajax({
+            //             url: "http://132.232.2.53:9000/api/" + sid,
+            //             type: "DELETE",
+            //             data: {
+            //                 id: sid
+            //             },
+            //             // dataType: "json",
+            //             statusCode: {
+            //                 200: function () {
+            //                     alert('page is found')
+            //                 }
+            //             },
+            //             // console.log(responseText);
+            //             success: function (res) {
+            //                 //判断是否删除成功
+            //                 // textStatus:200,
+            //                 // console.log(xhr.status)
+            //                 // console.log(responseText);
+            //                 alert("res is this" + res)
+            //                 if (res.num > 0) {
+            //                     alert(res.num);
+            //                     $(ob).parents("tr").remove();
+            //                 }
+            //                 alert(res.num)
+            //                 loadstu(); //重新加载
+            //             },
+            //             error: function () {
+            //                 alert('error');
+            //             }
+            //         });
+            // }
+
+            //添加数据
+            function doAdd(form) {
+                alert(form)
+                var arry = $("form").serializeArray(); //序列化表单
+                console.log(arry)
+                var data = {
+                    "name": arry[1].value,
+                    "age": arry[2].value,
+                    "phoneNum": arry[3].value
+                }
+                console.log(data)
+                $.ajax({
+                    url: "http://132.232.2.53:9000/api/",
+                    type: "POST",
+                    contentType: 'application/json',
+                    data: JSON.stringify(data),
+                    dataType: "json",
+                    success: function (res) {
+                        alert("res是什么" + res);
+                        if (res.id > 0) {
+                            $('#fill').hide();
+                            $('#myform').hide();
+                            //trigger() 方法触发被选元素的指定事件类型。
+                            //find() 方法获得当前元素集合中每个元素的后代，通过选择器、jQuery 对象或元素来筛选  
+                            //:reset 匹配所有的重置按钮
+                            $(form).find(":reset").trigger("click");
+                            loadstu(); //重新加载
+                        } else {
+                            console.log(status)
+                            alert('添加失败！');
+                        }
+                    }
+                });
+                return false;
+            }
+            //修改数据
+            function doMol(sid,form) {
+                
+                $.ajax({
+                    url: "http://132.232.2.53:9000/api/" + sid,
+                    type: "PUT",
+                    contentType: 'application/json',
+                    data: JSON.stringify(data),
+                    dataType: "json",
+                    success: function (res) {
+                        loadstu()
+                    }
+                });
+                return false;
+            }
+            // alert(form)
+            var arry = $("form").serializeArray(); //序列化表单
+                console.log(arry)
+                var data = {
+                    "name": arry[1].value,
+                    "age": arry[2].value,
+                    "phoneNum": arry[3].value
+                }
+                console.log(data)
+        </script>
+</body>
+
+</html>

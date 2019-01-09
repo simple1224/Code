@@ -1,0 +1,211 @@
+* {margin:0; padding:0; list-style:none;font-family:'Microsoft Yahei'}
+.wrap{
+    width: 7.5rem;
+    position: relative;
+}
+/* set bg */
+.wrap .bg{
+    width: 100%;
+}
+.bg .bg1{
+    width: 100%;
+    height: 25.36rem;
+    background: url(//game.gtimg.cn/images/tgclub/act/a20181015xjqx/bg2.jpg) no-repeat top center/100%;
+}
+/* set content */
+.wrap .content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* logo */
+.logo{
+    width: 100%;
+    height: .5rem;
+    margin-top: 0.3rem;
+}
+.logo .logo1{
+    display: inline-block;
+    width: 2rem;
+    height: .62rem;
+    margin-left: .2rem;
+}
+.logo .logo2{
+    display: inline-block;
+    width: 1.6rem;
+    height: .54rem;
+    margin-left: .1rem;
+}
+.login{
+    width: 100%;
+    height: .32rem;
+    margin-top: 8.9rem;
+    text-align: center;
+    font-size: .22rem;
+    color: #c2883c;
+}
+#btn_qqlogin{
+    color: #e73632;
+}
+
+/* usual */
+.spr{
+    background: url(//game.gtimg.cn/images/tgclub/act/a20181015xjqx/spr.png) no-repeat;
+    background-size: 7.16rem 7.78rem;
+}
+/* part1 */
+.part1{
+    width: 100%;
+    height: 4rem;
+    margin-top: 1.82rem;
+}
+.part1 .left{
+    width: 2.36rem;
+    height: 2.42rem;
+    float: left;
+    margin-left: 1.2rem;
+}
+.part1 .left img{
+    width: 1.77rem;
+    height: 1.57rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: .37rem;
+}
+.part1 .right{
+    width: 2.33rem;
+    height: 2.4rem;
+    float: left;
+    margin-left: 0.38rem;
+    position: relative;
+}
+.part1 .right img{
+    width: 2.33rem;
+    height: 2.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.part1 .right .show{
+    display: block;
+}
+.part1 .a1{
+    display: block;
+    width: 3rem;
+    height: 0.7rem;
+    margin: 0 auto;
+    background-position: -1.8rem -5.25rem;
+    position: relative;
+    top: 2.8rem;
+}
+/* part2 */
+.part2{
+    width: 100%;
+    height: 4rem;
+}
+.part2 .null{
+    width: 7rem;
+    height: 3.68rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+/* part3 */
+.rule{
+    width: 7.5rem;
+    height: 2rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.rule li{
+    width: 6.6rem;
+    display: inline-block;
+    font-size: .24rem;
+    color: #4c4e72;
+    margin-left: .47rem;
+}
+.rule span{
+    font-size: .24rem;
+    color: #4c4e72;
+    color: #ff2865;
+}
+.rule i{
+    font-style: normal;
+    display: inline-block;
+    text-align: center;
+    width: 0.35rem;
+    height: 0.35rem;
+    background-position: -.13rem -5.14rem;
+    line-height: .28rem;
+    margin-top: .05rem;
+}
+/* tab */
+#test1 .dia-con{
+    width: 6.65rem;
+    height: 4.8rem;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/tgclub/act/a20181015xjqx/tab_spr.png) no-repeat center/100%;
+    background-position: 0 .05rem;
+}
+#test2 .dia-con,#test3 .dia-con{
+    width: 6.65rem;
+    height: 4.8rem;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/tgclub/act/a20181015xjqx/tab_spr.png) no-repeat center/100%;
+    background-position: 0 .05rem;
+}
+#test1 .dia-con p{
+    padding-top: 2.13rem;
+    margin-left: 1.16rem;
+}
+#test2 .dia-con p{
+    padding-top: 2.37rem;
+    margin-left: 1.07rem;
+}
+#test3 .dia-con p{
+    padding-top: 2.19rem;
+    margin-left: 1.11rem;
+}
+#test1 .dia-con .a1{
+    display: block;
+    width: 2.9rem;
+    height: 0.7rem;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/tgclub/act/a20181015xjqx/spr.png) no-repeat;
+    background-position: -1.9rem -7rem;
+    margin-top: 0.5rem;
+}
+#test3 .dia-con .a1{
+    display: block;
+    width: 3.38rem;
+    height: 0.69rem;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/tgclub/act/a20181015xjqx/spr.png) no-repeat;
+    background-position: -3.80rem 0;
+    margin-top: 0.7rem;
+}
+#test2 .dia-con .a1{
+    display: block;
+    width: 2.9rem;
+    height: 0.7rem;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/tgclub/act/a20181015xjqx/spr.png) no-repeat;
+    background-position: -3.4rem -1.68rem;
+    margin-top: 0.7rem;
+}
+.dia-con p{
+    width: 4.5rem;
+    font-size: .24rem;
+    color: #c2883c;
+    text-align: center;
+}
+.dia-close{
+    display: block;
+    width: .39rem;
+    height: 0.39rem;
+    position: absolute;
+    top: .55rem;
+    right: 0.56rem;
+}

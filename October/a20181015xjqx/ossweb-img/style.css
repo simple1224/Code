@@ -1,0 +1,338 @@
+* {margin:0; padding:0; list-style:none;font-family:'Microsoft Yahei'}
+.wrap{
+    width: 7.5rem;
+    position: relative;
+}
+/* set bg */
+.wrap .bg{
+    width: 100%;
+}
+.bg .bg1{
+    width: 100%;
+    height: 32.12rem;
+    background: url(./bg.jpg) no-repeat top center/100%;
+}
+/* set content */
+.wrap .content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* logo */
+.logo{
+    width: 100%;
+    height: .7rem;
+    margin-top: 0.38rem;
+    display: flex;
+    /* 排列方式 */
+    /* justify-content: space-between; */
+    /* 居中方式 */
+    align-items:center;
+    flex-direction: row;
+}
+.logo .logo1{
+    display: block;
+    width: 2.22rem;
+    height: .62rem;
+    margin-left: .35rem;
+    z-index: 99;
+}
+.logo .logo2{
+    display: block;
+    width: 1.6rem;
+    height: .54rem;
+    margin-left: .2rem;
+    z-index: 99;
+}
+/* page */
+.page{
+    width: 100%;
+    height: 13.05rem;
+    margin: 0 auto;
+    margin-top: -.2rem;
+    z-index: 5;
+}
+.page .page1{
+    width: 7.5rem;
+    height: 13.05rem;
+    background: url(./page1.png) no-repeat center/100%;
+}
+.page .page2{
+    width: 7.5rem;
+    height: 11.85rem;
+    background: url(./page2.png) no-repeat center/100%;
+}
+.page .page3{
+    width: 7.5rem;
+    height: 12.09rem;
+    background: url(./page3.png) no-repeat center/100%;
+}
+.page .page4{
+    width: 7.5rem;
+    height: 11.84rem;
+    background: url(./page4.png) no-repeat center/100%;
+}
+.page .page5{
+    height: 11.69rem;
+    width: 7.5rem;
+    background: url(./page5.png) no-repeat center/100%;
+}
+.page div{
+    display: none;
+}
+.page .active{
+    display: block;
+}
+/* 签到 */
+.check{
+    width: 3.8rem;
+    height: 1.3rem;
+    margin: 0 auto;
+    margin-top: -3.2rem;
+}
+.check .a1{
+    display: block;
+    width: 3.8rem;
+    height: 0.67rem;
+    background-position: 0 0;
+}
+.check p{
+    font-size: .19rem;
+    color: #c2883c;
+    text-align: center;
+    line-height: .1rem;
+    margin-top: .19rem;
+}
+.check span{
+    color: #e73632;
+}
+.spr{
+    background: url(./spr.png) no-repeat;
+    background-size: 7.16rem 7.78rem;
+}
+/* part1 */
+.part1{
+    width: 100%;
+    height: 9.9rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.part1 .title{
+    width: 7.3rem;
+    height: 0.7rem;
+    margin: 0 auto;
+    background-position: 0 -2.6rem;
+}
+.lottery{
+    width: 7.5rem;
+    height: 9.08rem;
+    margin: 0 auto;
+    background: url(./cj_bg.png) no-repeat center/100%;
+    position: relative;
+    margin-top: .15rem;
+    margin-bottom: .25rem;
+}
+.panel{height:8.12rem;margin:0 auto;position:relative;overflow:hidden;}
+.panel .panel-face{background-image:url(./cj.png);background-size:cover;width:6.32rem;height:6.76rem;position:absolute;top: 1.33rem;left: .41rem;}
+.panel .panel-btn{position:absolute;top:3.36rem;left:2.77rem;background: url(./spr.png) no-repeat;   background-size: 7.16rem 7.78rem; width:1.59rem;height:2.19rem;background-position: -.07rem -5.62rem;}
+.panel.playing .panel-btn{-webkit-transform:scale(0.9);transform:scale(0.9);}
+.part1 .a1{
+    display: inline-block;
+    width: 2.93rem;
+    height: 0.69rem;
+    background-position: 0 -.8rem;
+    position: relative;
+    top: -.96rem;
+    left: .61rem;
+}
+.part1 .a2{
+    display: inline-block;
+    width: 2.93rem;
+    height: 0.69rem;
+    background-position: -3.45rem -.8rem;
+    position: relative;
+    top: -.96rem;
+    left: .85rem;
+}
+/* part2 */
+.part2{
+    width: 100%;
+    height: 5.7rem;
+    margin: 0 auto;
+}
+.part2 .title{
+    width: 6rem;
+    height: 0.7rem;
+    margin: 0 auto;
+    background-position: 0 -3.5rem;
+    margin-top: .621rem;
+}
+.part2 .null{
+    width: 7rem;
+    height: 3.7rem;
+    margin: 0 auto;
+    margin-top: .22rem;
+}
+.part2 .a1{
+    display: block;
+    width: 3rem;
+    height: 0.7rem;
+    background-position: 0 -1.62rem;
+    margin: 0 auto;
+    margin-top: .2rem;
+}
+/* part3 */
+.part3{
+    width: 100%;
+    height: 2.73rem;
+    margin: 0 auto;
+}
+.part3 .title{
+    width: 6rem;
+    height: 0.65rem;
+    margin: 0 auto;
+    background-position: 0 -4.4rem;
+    margin-top: 0.4rem;
+}
+.rule{
+    margin-top: .3rem;
+}
+.rule li{
+    width: 6.6rem;
+    display: inline-block;
+    font-size: .24rem;
+    color: #4c4e72;
+    margin-left: .47rem;
+}
+.rule span{
+    font-size: .24rem;
+    color: #4c4e72;
+    color: #ff2865;
+}
+.rule i{
+    font-style: normal;
+    display: inline-block;
+    text-align: center;
+    width: 0.35rem;
+    height: 0.35rem;
+    background-position: -.13rem -5.14rem;
+    line-height: .28rem;
+    margin-top: .05rem;
+}
+/* tab */
+
+#test1 .dia-con{
+    width: 6.65rem;
+    height: 4.8rem;
+    margin: 0 auto;
+    background: url(./tab_spr.png) no-repeat center/100%;
+    background-position: 0 -10rem;
+}
+#test2 .dia-con{
+    width: 6.65rem;
+    height: 4.8rem;
+    margin: 0 auto;
+    background: url(./tab_spr.png) no-repeat center/100%;
+    background-position: 0 -10rem;
+}
+#test3 .dia-con{
+    width: 6.65rem;
+    height: 4.8rem;
+    margin: 0 auto;
+    background: url(./tab_spr.png) no-repeat center/100%;
+    background-position: 0 -15.3rem;
+}
+#test1 .dia-con p{
+    padding-top: 1.76rem;
+    margin-left: 1.09rem;
+}
+#test2 .dia-con p{
+    padding-top: 1.90rem;
+    margin-left: 1.28rem;
+}
+#test3 .dia-con p{
+    padding-top: 2.07rem;
+    margin-left: 1.39rem;
+}
+#test1 .dia-con .a1{
+    display: block;
+    width: 2.9rem;
+    height: 0.7rem;
+    margin: 0 auto;
+    background: url(./tab_spr.png) no-repeat;
+    background-position: -.37rem -21.52rem;
+    margin-top: 0.8rem;
+}
+#test2 .dia-con .a1{
+    display: block;
+    width: 3.5rem;
+    height: 0.7rem;
+    margin: 0 auto;
+    background: url(./tab_spr.png) no-repeat;
+    background-position: -3.4rem -21.52rem;
+    margin-top: 0.5rem;
+}
+#test3 .dia-con .a1{
+    display: block;
+    width: 3.3rem;
+    height: 0.7rem;
+    margin: 0 auto;
+    background: url(./tab_spr.png) no-repeat;
+    background-position: 0rem -22.42rem;
+    margin-top: 0.5rem;
+    margin-left: 1.60rem;
+}
+
+#test3 select{
+    width: 3.65rem;
+    height: .53rem;
+    display: inline-block;
+    margin: 0 auto;
+    color: #dab789;
+    border: solid .01rem #ddd;
+    /*将默认的select选择框样式清除*/
+    appearance:none;
+    background: #fff;
+    font-size: .24rem;
+    margin-top: .24rem;
+}
+#test3 .con{
+    margin-left: .96rem;
+    padding-top: 1.51rem;
+}
+.dia-con p{
+    width: 4.5rem;
+    font-size: .24rem;
+    color: #c2883c;
+    text-align: center;
+}
+#test3 .con span{
+    width: .94rem;
+    display: inline-block;
+    color: #c2883c;
+    font-size: .24rem;
+    text-align: center;
+}
+.dia-close{
+    display: block;
+    width: .39rem;
+    height: 0.39rem;
+    position: absolute;
+    top: .58rem;
+    right: 0.54rem;
+}
+#test3 .dia-close {
+    top: .3rem !important;
+}
+/* tab2 */
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    color: #fff;
+    font-size: .24rem;
+    text-align: center;
+}

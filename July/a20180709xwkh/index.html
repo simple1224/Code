@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">    
+	<meta name="Description" content="腾讯游戏是腾讯四大网络平台之一，是全球领先的游戏开发和运营机构，也是国内最大的网络游戏社区。无论是腾讯公司整体的在线生活模式布局，还是腾讯游戏的产品布局，都是从用户的最基本需求、最简单应用入手，注重产品的可持续发展和长久生命力，打造绿色健康的精品游戏。在开放性的发展模式下，腾讯游戏采取内部自主研发和多元化的外部合作两者结合的方式，已经在网络游戏的多个细分市场领域形成专业化布局并取得良好的市场业绩。" />
+    <meta name="Keywords" content="腾讯游戏,Tencent Games,腾讯游戏嘉年华,Tencent Games Carnival,腾讯游戏竞技平台,Tencent Games Arena,腾讯游戏公会,Tencent Games Guild,腾讯游戏爱心联盟,Tencent Games Social Responsibility,腾讯游戏公益,Tencent Games Social Responsibility,腾讯小游戏,腾讯网页游戏,腾讯QQ游戏,QQ小游戏,QQ网页游戏,QQ腾讯游戏,腾讯网游,腾讯网络游戏,腾讯大型网游,腾讯大型网络游戏,腾讯游戏平台,QQ游戏平台" />
+    <title>炫舞十周年大狂欢- QQ炫舞 - 腾讯游戏</title>
+    <link rel="stylesheet" href="ossweb-img/style.css">
+    <link rel="stylesheet" href="ossweb-img/reset.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="bg">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+        </div>
+        <div class="content">
+            <div class="top">
+            <!-- logo设置 -->
+            <div class="logo">
+                <a class="logo1" href="http://x5.qq.com/main.shtml" target="_blank" onclick="PTTSendClick('btn','click_btn','QQ炫舞');"></a>
+                <a class="logo2" href="http://xinyue.qq.com" target="_blank" onclick="PTTSendClick('btn','click_btn','获奖记录');"></a>
+            </div>
+            <!-- 登录 -->
+            <div class="login">
+                <div id="unlogin">亲爱的舞者，<a href="javascript:login();">请登录</a></div>
+                <div id="logined" style="display:none;">hi，<span id='login_nickname_span'></span><span id='login_qq_span'></span><a href="javascript:logout();">注销</a></div>
+            </div>
+            <!-- 立即游戏 -->
+            <div class="btn1">
+                <a href="javascript:;" onclick="PTTSendClick('btn','click_btn','立即游戏');"></a>
+            </div>
+            </div>
+            <div class="box1">
+                <div class="title1">送十周年心悦限定手持</div>
+                <div class="list">
+                    <ul class="list1">
+                        <li class="item1">
+                            <img src="ossweb-img/pic1.png" alt="心悦所属十周年手持">
+                            <p>心悦所属 <br> 十周年手持</p>
+                        </li>
+                        <li class="item2">
+                            <img src="ossweb-img/pic2.png" alt=">手游金布衣碎片×5">
+                            <p>手游金布衣 <br> 碎片×5</p>
+                        </li>
+                    </ul>
+                    <ul class="list2">
+                        <li class="item3">
+                            <img class="pic1" src="ossweb-img/pic3.png" alt="心悦会员专享">
+                            <p>心悦会员专享</p>
+                        </li>
+                        <li class="item4">
+                            <img class="pic2" src="ossweb-img/pic4.png" alt="心悦舞者">
+                            <p>心悦专属称号 <br> （永久）</p>
+                        </li>
+                    </ul>
+                </div>    
+                <div class="btn2">
+                    <a class="change" href="javascript:;" onclick="PTTSendClick('btn','click_btn','领取');"></a>
+                    <a class="change" href="javascript:;" onclick="PTTSendClick('btn','click_btn','领取');"></a>
+                </div>
+            </div>
+            <!-- box2 -->
+            <div class="box2">
+                <div class="title2">每日抢手机公仔</div>
+                <p class="word">活动期间每日登录游戏即可获得1次抽奖机会 <br> 每日可抽奖1次</p>
+                <div class="cj" style="position: relative">
+                    <div id="ltpanel" class="panel"></div>
+                </div>
+                <a href="javascript:;" onclick="PTTSendClick('btn','click_btn','获奖记录');">我的获奖记录GO→</a>
+
+                <!-- 弹窗 -->
+                <a class="dia-btn" href="javascript:showDia();"></a>
+	             <div class="dia" id="dia" style="display:none">
+		            <div class="dia-con">
+                        <div class="title6">获奖记录</div>
+                        <div class="list6">
+                            <div class="span"><span> 时间 </span>    <span class="s3" > 获得的奖励</span></div>
+                            <ul><li class="time">2018年7月10日</li>  <li class="name">名字名字名字名字名字</li></ul>
+                            <ul><li class="time">2018年7月10日</li>  <li class="name">名字名字名字名字名字</li></ul>
+                            <ul><li class="time">2018年7月10日</li>  <li class="name">名字名字名字名字名字</li></ul>
+                            <ul><li class="time">2018年7月10日</li>  <li class="name">名字名字名字名字名字</li></ul>
+                            <ul><li class="time">2018年7月10日</li>  <li class="name">名字名字名字名字名字</li></ul>
+                            <ul><li class="time">2018年7月10日</li>  <li class="name">名字名字名字名字名字</li></ul>
+                            <ul><li class="time">2018年7月10日</li>  <li class="name">名字名字名字名字名字</li></ul>
+                            <ul><li class="time">2018年7月10日</li>  <li class="name">名字名字名字名字名字</li></ul>
+                            <ul><li class="time">2018年7月10日</li>  <li class="name">名字名字名字名字名字</li></ul>
+                            <ul><li class="time">2018年7月10日</li>  <li class="name">名字名字名字名字名字</li></ul>
+                        </div>
+                        <div class="bottom">
+                            <span class="count">共3页</span> 
+                            <span class="page up">上一页</span>
+                            <span class="num color">1</span>
+                            <span class="num">2</span>
+                            <span class="num">3</span>
+                            <span class="num">4</span>
+                            <span class="page down">下一页</span><span class="count">1/3</span>
+                        </div>
+                    </div>
+                    <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+                    <a class="confirm" href="javascript:;" onclick="PTTSendClick('btn','click_btn','确定');"></a>
+	            </div> 
+            </div>    
+            <!-- box3  -->
+            <div class="box3">
+                <div class="title3">邀请好友领壕礼</div>
+                <p class="word">活动期间，分享本页面给好友并让好友领取礼包即算 <br> 邀请成功，邀请一定人数可以获得对应奖励</p>
+                <div class="btn3">
+                        <a href="javascript:;" onclick="PTTSendClick('btn','click_btn','邀请好友领好礼');"></a>
+                </div>
+                <ul class="list3">
+                    <li class="item5">
+                        <p class="word2" >邀请1名好友</p>
+                        <img class="pic3" src="ossweb-img/price6.png" alt="">
+                        <p class="word3">点券×388</p>
+                        <a class="change" href="javascript:;" onclick="PTTSendClick('btn','click_btn','领取');"></a>
+                    </li>
+                    <li class="item6">
+                        <p class="word2">邀请3名好友</p>
+                        <img class="pic3" src="ossweb-img/price6.png" alt="">
+                        <p class="word3">点券×388</p>
+                        <a class="change" href="javascript:;" onclick="PTTSendClick('btn','click_btn','领取');"></a>
+                    </li>
+                </ul>
+                <ul class="list4">
+                    <li>
+                        <p class="word2">邀请5名好友</p>
+                        <img src="ossweb-img/price7.png" alt="">
+                        <p class="word3">心悦专属大翅膀</p>
+                        <a class="change" href="javascript:;" onclick="PTTSendClick('btn','click_btn','领取');"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- box4  -->
+            <div class="box4">
+                <div class="title4">十周年“游览”攻略</div>
+                <ul class="list5">
+                    <li>
+                        <img class="t t1" src="ossweb-img/title1.png" alt="">
+                        <img class="pic4" src="ossweb-img/pic5.png" alt="">
+                    </li>
+                    <li>
+                        <img class="t t2"  src="ossweb-img/title2.png" alt="">
+                        <img class="pic4"  src="ossweb-img/pic6.png" alt="">
+                    </li>
+                    <li>
+                        <img class="t t3"  src="ossweb-img/title3.png" alt="">
+                        <img class="pic5"  src="ossweb-img/pic7.png" alt="">
+                    </li>    
+                    <li>
+                        <img  class="t t4" src="ossweb-img/title4.png" alt="">
+                        <img  class="pic4" src="ossweb-img/pic8.png" alt="">
+                    </li>
+                </ul>
+                <a href="javascript:;" onclick="PTTSendClick('btn','click_btn','一键领取');"></a>
+            </div>
+            <!-- box5 -->
+            <div class="box5">
+                <div class="title5">活动规则</div>
+                <div class="word4">
+                    <p><span>1 活动时间：</span>2018年5月20日到2018年5月30日</p>
+                    <p><span>2 活动期间登陆的用户可</span>领取十周年的限定礼包<span>心悦会员可领取</span>心悦专属称呼（永久）</p>
+                    <p><span>3 活动期间</span>每日登陆游戏<span>可以获得一次抽奖机会，每日可抽奖1次</span></p>
+                    <p><span>4 活动期间邀请好友注册游戏</span>达到一定人数，<span>可获得不同奖励</span></p>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="footer">腾讯公司保留在法律规定的范围内对上述进行解释的权利</div>
+
+             
+        </div> 
+    </div>  
+</body>
+<script> 
+    //屏幕适应 
+    (function (win, doc) {
+        if (!win.addEventListener) return;
+        var html = document.documentElement;
+        function setFont() {
+            var html = document.documentElement;
+            var k = 640;
+            html.style.fontSize = html.clientWidth / k * 100 + "px";
+        }
+        setFont();
+        setTimeout(function () {
+            setFont();
+        }, 300);
+        doc.addEventListener('DOMContentLoaded', setFont, false);
+        win.addEventListener('resize', setFont, false);
+        win.addEventListener('load', setFont, false);
+    })(window, document);
+</script>
+
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/login/loginmanagerv3.js" charset="gb2312"></script>
+<script src="//ossweb-img.qq.com/images/js/mobile_build/milo.js"></script>
+<script>
+	//登陆
+	function login() {
+		parent.need("biz.login", function (LoginManager) {
+			LoginManager.login();
+		});
+	}
+	function logout() {
+		parent.need("biz.login", function (LoginManager) {
+			LoginManager.logout();
+		});
+	}
+	LoginManager.checkLogin(function () {
+		if ($E("#login_nickname_span")) {
+			LoginManager.getNickName(function (loginInfo) {
+				if (loginInfo.isLogin) {
+					$E("#login_nickname_span").innerText= loginInfo.nickName;
+				}
+		});
+	}})
+</script>
+
+<!-- 抽奖 -->
+<script src="//game.gtimg.cn/images/js/loteryround/ossweb-img/loteryround.min.js"></script>
+<script>
+// 转盘初始化
+// 第一个参数是奖品的个数
+// 第二个是用来旋转的圆盘（指针不动）
+var panel=new PanelLotery({
+    length:6,
+    el:'#ltpanel'
+});
+
+$('.panel-btn').on('click', function(event) {
+    event.preventDefault();
+    if(panel.playing) return;
+    // 演示用，随机转到奖品n
+    // 初始的指针右侧开始
+    // 顺时针方向开始算
+    // 第一个奖品是n=0
+    var n=Math.floor(Math.random()*6);
+    var arr=['1','2','3','4','5','6'];
+    // console.log(n);
+    panel.playto(n,function(){
+        alert(arr[n]);
+    });
+});
+
+</script>
+
+<!-- 点击领取 -->
+<script>
+    // $('.change1').click(function(){
+    //     $('.change1').css("background","url(ossweb-img/button3.png) no-repeat center/100%");
+    // })
+
+   
+    // $('.btn2 a').click(function(){
+    //     $(this).addClass('active')
+    // })
+
+     $( function (){
+            $( "a[class^='change']" ).each( function(){//获取所有的id为tochannel_开头的Button
+                $( this ).bind("click" , function(){//绑定当前点击的按钮
+                    $(this).css("background","url(ossweb-img/button3.png) no-repeat center/100%");
+                });
+            });
+     });
+
+</script>
+
+<!-- 弹窗里的内容  点击展示下一页 -->
+<script>
+    var index=0;
+    $('.bottom .down').click(function(){
+        console.log($(this).parent().find('.num'));
+        index+=1;
+        $(this).parent().find('.num').eq(index).addClass('color').siblings().removeClass('color');
+        // $(this).parent().find('.num').addClass('color').siblings().removeClass('color');
+        // console.log("$(this).parent",$(this).parent)
+    })
+    $('.bottom .up').click(function(){
+        $(this).next().next().addClass('color').siblings().removeClass('color')
+    })
+</script>
+
+<!-- 弹窗 -->
+<script src="http://ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+	<script>
+		function showDia(){
+			showDialog.show({
+				id:"dia", //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+				bgcolor:"#e3e3e3",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+				opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+			});
+		}
+	</script>
+
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性 
+    siteType:"a20180709cxwkh", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx 
+    pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN 
+    pageName:"首页", //必填项:页面中文名 
+    project:"", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;
+    osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+    stayTime:0, //选填项:是否需要统计停留时长boolean；默认是0
+};
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</html>

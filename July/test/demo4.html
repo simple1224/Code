@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        <ul class="text_list c" id="carouselContent" style="height: 120px; overflow: hidden;">
+                <ul id="broadcastContent_431406" style="list-style:none; margin:0px; height: 120px; overflow: hidden;"></ul>
+               <!--<li>
+                   恭喜
+                   <span>82736*****</span>
+                   <em>获得了贺岁大礼</em>
+                   <span>XXXXXXXX</span>
+               </li>-->
+           </ul>
+        <script type="text/html" id="broadcastTemplate_431406">
+            {for oneBroadcast in BroadcastList}
+        
+            <li>
+                <!--<span>${oneBroadcast.getTime}</span>-->
+                恭喜
+                <span>${oneBroadcast.uin}</span>
+                <em>获得贺岁大礼</em>
+                <span>${oneBroadcast.packageName}</span>
+            </li>
+            {/for}
+        </script>
+        <script type="text/html" id="getGiftTemplate_431405">
+            {if MyGiftListObject.iRet!='0'}
+            <tr>
+                <td colspan="3" align="center">${MyGiftListObject.sMsg}</td>
+            </tr>
+            {else}
+            {for giftInfo in MyGiftListObject.myGiftList}
+            <tr>
+                <td>${giftInfo.areaName}</td>
+                <td>${giftInfo.packageName}</td>
+                <td>${giftInfo.getTime}</td>
+            </tr>
+            {forelse}
+            <tr>
+                <td colspan="3" align="center">您尚未获得任何礼包</td>
+            </tr>
+            {/for}
+            {/if}
+        </script>
+        <script src="http://ossweb-img.qq.com/images/script/bootmanager.js"></script>
+<script>
+		//		获奖名单
+		$import('com.qq.basic.*');
+		ScrollMarqueeUP.init({
+			'contentId' : 'carouselContent', //容器ID
+			'scrollstep' : 1, //每次移动的像素
+			'scrollstoptime' : 30 //间断时间(毫秒)
+		});
+        
+	</script>
+</body>
+</html>

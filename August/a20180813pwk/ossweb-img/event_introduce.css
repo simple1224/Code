@@ -1,0 +1,406 @@
+* {margin:0; padding:0;list-style:none;font-family:'Microsoft Yahei';}
+body,html,.ost_box,#actTitleWrap,.container,#footer_ied,.white-footer,.warp{
+    min-width:1204px!important;width:100%!important;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1208?'1204px':'')!important;
+}
+@font-face{
+    font-family: AGENCYFB;
+    src: url(./AGENCYFB.TTF);
+}
+@font-face{
+    font-family: TEKO-REGULAR;
+    src: url(./TEKO-REGULAR.TTF);
+}
+/* set layout */
+body{
+    background: #1d1d1d;
+}
+.wrap{
+    width: 100%;
+    position: relative;
+}
+.wrap .content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrap .content .main{
+    width: 1204px;
+    margin: 0 auto;
+    margin-top: -72px;
+}
+/* usual */
+.title{
+    width: 100%;
+    height: 148px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    color: #f2a900;
+    line-height: 146px;
+    font-family: TEKO-REGULAR;
+    position: relative;
+}
+.white{
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: url(./hr2.png) no-repeat;
+    position: absolute;
+    top: 101px;
+    left: 568px;
+
+}
+/* content begin */
+.main .information{
+    width: 100%;
+    height: 568px;
+    margin: 0 auto;
+}
+ .top{
+    width: 100%;
+    height: 72px;
+    background: #272727;
+}
+.information .tab{
+    width: 100%;
+    height: 72px;
+}
+.information .tab li{
+    float: left;
+    width: 301px;
+    height: 72px;
+    font-family: TEKO-REGULAR;
+    color: #9f9f9f;
+    font-size: 36px;
+    line-height: 72px;
+    text-align: center;
+}
+.information .tab a{
+    display: inline-block;
+    font-family: TEKO-REGULAR;
+    color: #9f9f9f;
+    text-decoration: none;
+    width: 301px;
+    height: 72px;
+}
+.information .tab .active a{
+    color: #1b1b1b;
+    background: #f2a900;
+}
+
+/* information_detail */
+.information .information_detail{
+    height: 300px;
+}
+.information .information_detail .select{
+    width: 150px;
+    height: 33px;
+    background: url(./select.png) no-repeat;
+    float: right;
+    margin-right: 68px;
+    margin-bottom: 15px;
+}
+.information_detail .hr{
+    width: 1px;
+    height: 198px;
+    background: url(./hr.png) no-repeat;
+    position: absolute;
+    top: 63px;
+    left: 227px;
+}
+.information .information_detail select{
+    width: 150px;   
+    height: 33px;
+    text-align: center;
+    background: none;
+    color: #d98501;
+    font-size: 17.84px;
+    padding-left: 15px;
+    background-color:none;
+    border: none;
+    /* margin-right: 68px;
+    margin-bottom: 15px; */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-tap-highlight-color: #fff;
+    outline: none;
+}
+.information .information_detail option{
+    color: red !important;
+}
+.information .information_detail li{
+    height: 300px;
+    width: 100%;
+    background: #202020;
+   position: relative;
+}
+.information .information_detail img{
+    display: block;
+    float: left;
+    width: 190px;
+    height: 188px;
+    margin: 56px auto;
+}
+.information .information_detail .introduce{
+    width: 936px;
+    height: 219px;
+    font-size: 20px;
+    text-align: left;
+    color: #fff;
+    margin-left: 46px;
+    float: left;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    line-height: 28px;
+    overflow: auto;
+    -webkit-border-radius:3px; 
+    -moz-border-radius:3px;
+     border-radius:3px;
+     padding-right: 10px;
+}
+.information ,.information_detail span{
+    color: #f2a900;
+}
+.information .information_detail .word1,.information .information_detail .word2{
+  width: 908px;
+}
+.information .information_detail .word2{
+  margin-top: 51px;
+}
+
+/* part2 */
+.main .regions{
+    width: 100%;
+    height: 365px;
+}
+.regions .title2{
+    height: 84px;
+    line-height: 41px;
+}
+.regions .title2 .white{
+    top: 51px;
+}
+/* regions_name */
+.regions .regions_name{
+    height: 225px;
+    width: 100%;
+}
+.regions .regions_name li{
+    width: 356px;
+    height: 89px;
+    float: left;
+    margin-bottom: 49px;
+    margin-right: 64px;
+    background: url(./box1.png) no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.regions .regions_name li div{
+    display: inline-block;
+    margin: 17.5px auto;
+}
+.regions .regions_name li:nth-child(3n){
+    margin-right: 0;
+}
+.regions .regions_name img{
+    width: 51px;
+    height: 49px;
+    background: url(./icon.png) no-repeat;
+    margin: 0 auto;
+    display: inline-block;
+    float: left;
+}
+.regions p{
+    font-family: TEKO-REGULAR;
+    display: inline-block;
+    float: left;
+    font-size: 41.08px;
+    text-align: center;
+    color: #ededed;
+    margin: 9px 0px 4px 15px;
+}
+
+/* process */
+.main .process{
+    width: 100%;
+    height: 588px;
+}
+.main .process .title3{
+    height: 92px;
+    line-height: 72px;
+}
+.main .process .title3 .white{
+    top: 55px;
+}
+.process .process_step{
+    height: 368px;
+    width: 100%;
+}
+.process .process_step li{
+    width: 50%;
+    height: 152px;
+    float: left;
+    margin-bottom: 58px;
+}
+.process .process_step i{
+    display:block;
+    float:left;
+    width: 131px;
+    height:152px;
+    background: url(./pic2.png) no-repeat;
+    color: #f2a900;
+    font-family: TEKO-REGULAR;
+    font-size: 48px;
+    text-align: center;
+    line-height: 152px;
+    font-style: normal;
+}
+.process .process_step .process_content{
+    position: relative;
+    float: left;
+    margin: 46px 0 46px 27px;
+}
+.process .process_step .process_content>p:nth-child(1){
+    color: #f2a900;
+}
+.process .process_step .process_content p {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 30px;
+    word-break: break-all;
+    max-width: 422px;
+}
+.process .process_step .process_content div{
+    width: 108px;
+    height: 42px;
+    position: absolute;
+}
+.process .process_step .process_content .content_left{
+    background: url(./border_left.png) no-repeat;
+    top: -20px;
+    left: -17px;
+}
+.process .process_step .process_content .content_right{
+    background: url(./border_right.png) no-repeat;
+    right: -20px;
+    bottom: -20px;
+}
+/* prize_pool */
+.main .prize_pool{
+    width: 100%;
+    height: 2044px;
+    position: relative;
+}
+.main .prize_pool .title4{
+    height: 108px;
+    line-height: 67px;
+}
+.main .prize_pool .title4 .white{
+    top: 57px;
+}
+.prize_pool .prize_money{
+    height: 173px;
+    position: relative;
+}
+.prize_pool .prize_money p{
+    font-size: 150px;
+    font-family: AGENCYFB;
+    color: #f2a900;
+    text-align: center;
+}
+.prize_pool .prize_money div{
+    width: 108px;
+    height: 42px;
+    position: absolute;
+}
+.prize_pool .prize_money .content_left{
+    background: url(./border_left.png) no-repeat;
+    top: -13px;
+    left: 326px;
+}
+.prize_pool .prize_money .content_right{
+    background: url(./border_right.png) no-repeat;
+    right: 321px;
+    bottom: -9px;
+}
+.prize_pool .prize_money span{
+    display: block;
+    font-size: 30px;
+    height: 24px;
+    line-height: 20px;
+    color: #fff;
+    font-family: TEKO-REGULAR;
+    text-align: center;
+}
+
+/* global_final */
+.global_final{
+    height: 570px;
+    margin-top:61px;
+}
+.global_final img{
+    display: block;
+    margin: 0 auto;
+    width: 1002px;
+    height: 333px;
+    margin-top: 53px;
+}
+.global_final p,.regional_final p{
+    font-size: 40px;
+    color: #fff;
+    font-family: TEKO-REGULAR;
+    text-align: center;
+}
+.global_final span,.regional_final span{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #f2a900;
+    font-size: 20px;
+}
+/* regional_final */
+.regional_final{
+    height: 423px;
+}
+.regional_final img{
+    display: block;
+    margin: 0 auto;
+    width: 1002px;
+    height: 333px;
+    margin-top: 35px;
+}
+/* personal */
+.personal{
+    height: 597px;
+    margin-top: -14px;
+}
+.personal img{
+    display: block;
+    margin: 0 auto;
+    width: 739px;
+    height: 738px;
+}
+.personal p{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: -229px;
+    line-height: 30px;
+}
+.personal span{
+    color: #f2a900;
+}
+
+.prize_pool .hr3{
+    width: 1196px;
+    height: 1px;
+    position: absolute;
+    background: url(./hr3.png) no-repeat;
+    top: 857px;
+}
+/* content end */
+

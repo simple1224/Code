@@ -1,0 +1,455 @@
+* {margin:0; padding:0; list-style:none;font-family:'Microsoft Yahei'}
+.wrap{
+    width: 6.4rem;
+    height: 54.58rem;
+    position: relative;
+    /* display: flex; */
+}
+/* 设置背景 */
+.wrap .bg{
+    width: 100%;
+}
+.bg .bg1{
+    width: 100%;
+    height: 6.417rem;
+    background: url(bg1.jpg) no-repeat top center/100%;
+}
+.bg .bg2 {
+    width: 100%;
+    height: 48.16rem;
+    background: url(bg2.jpg) no-repeat top center/100%;
+}
+
+/* 设置内容 */
+.wrap .content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content .top{
+    width: 100%;
+    height: 9.93rem;
+}
+/* logo */
+.top .logo{
+    width: 100%;
+    height: 1rem;
+    /* margin-top: 0.1rem; */
+    display: flex;
+    /* 排列方式 */
+    justify-content: space-between;
+    /* 居中方式 */
+    align-items:center;
+}
+.logo .logo1{
+    display: block;
+    width: 1.61rem;
+    height: 1rem;
+    background: url(logo1.png) no-repeat center/100%;
+}
+.logo .logo2{
+    display: block;
+    width: 1.82rem;
+    height: .52rem;
+    /* background: url(logo2.png) no-repeat center/100%; */
+    margin-right: .2rem;
+}
+
+/* 登录 */
+.top .login{
+    height: .3rem;
+    font-size: .24rem;
+    /* margin: 0 auto; */
+    text-align: center;
+    margin-top: 7.6rem;
+}
+#unlogin{
+    color: #9c98ab;
+}
+/* button立即登录 */
+.top .btn1 a{
+    display: block;
+    width: 3.47rem;
+    height: 0.87rem;
+    background: url(button1.png) no-repeat center/100%;
+    margin: 0 auto;
+    margin-top: .15rem;
+}
+
+/* 所有title设置 */
+.title1,.title2,.title3,.title4,.title5,.title6{
+    font-size: .3467rem;
+    color: #004c6c;
+    text-align: center;
+}
+
+/* box1 */
+.content .box1{
+    width: 100%;
+    height: 4.47rem;
+    margin-top: .6rem;
+}
+.box1 .title1{
+   
+    margin-left: .3rem;
+}
+.box1 .list{
+    width: 6rem;
+    height: 2.26rem;
+    display: flex;
+    margin-top: .2rem;
+    font-size: .24rem;
+    text-align: center;
+    color: #004c6c;
+}
+.list .list1{
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    margin-left: .4rem;
+}
+.list1 .item2{
+    margin-left: .3rem;
+    margin-right: .6rem;
+}
+.list2 .item3{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .2rem;
+    margin-top: .1rem;
+    color: #169bd4;
+}
+.list .list2{
+    flex-direction: column;
+}
+.box1 .list1 .item1 img{
+    width: 0.99rem;
+    height: 1.19rem;
+}
+.box1 .list1 .item2 img{
+    width: 1.39rem;
+    height: 1.39rem;
+}
+.box1 .list2 .item3 img{
+    width: 0.45rem;
+    height: .44rem;
+}
+.box1 .list2 .item4 img{
+    width: 1.61rem;
+    height: .64rem;
+}
+/* btn2 */
+.box1 .btn2{
+    display: flex;
+    flex-direction: row;
+    width: 5.47rem;
+    height: 1rem;
+    margin-left: .4rem;
+    margin-top: .2rem;
+}
+.box1 .btn2 a{
+    margin: 0 auto;
+    width: 2.23rem;
+    height: 0.87rem;
+    background: url(button2.png) no-repeat center/100%;
+}
+
+/* box2 */
+.box2{
+    width: 100%;
+    height: 9.21rem;
+    margin-top: .1rem
+}
+.box2 .title2{
+    margin-left: .4rem
+}
+
+/* 弹窗 */
+.box2 .dia{
+    top: 29% !important ;
+}
+.box2 .dia-btn{
+    position: relative;
+    top: -.59rem;
+}
+.box2 .dia-con{
+    width: 5.16rem;
+    height: 6.57rem;
+    background: url(bg3.png) no-repeat center/100%
+}
+.dia-con .title6{
+    padding-top: .15rem;
+    padding-left: .2rem;
+}
+.dia-con .list6{
+    margin-top: .2rem;
+    width: 5.15rem;
+    height: 4.46rem;
+}
+.list6 .span{
+    width: 4.2rem;
+    height: 0.35rem;
+    border-bottom: dashed .006rem;
+    text-align: center;
+    margin-left: .48rem;
+}
+.list6 span{
+   font-size: .24rem;
+   color: #766bd2;
+  
+}
+.list6 ul{
+    display: flex;
+    width: 4.2rem;
+    justify-content: space-between;
+    border-bottom: dashed .006rem;
+    margin: 0 auto;
+}
+.list6 ul li {
+    line-height: .4rem;
+    font-size: .2133rem;
+    color: #423892;
+}
+.list6 .time{
+    padding-right: .3rem;
+}
+.list6 .s3{
+    margin-left: 1.62rem !important;
+}
+.dia-con .bottom{
+    width: 100%;
+    height: 0.34rem;
+    font-size: .2rem;
+    color: #ebe9ff;
+    display: flex;
+    justify-content: space-around;
+    margin-top: .3rem;
+}
+.bottom .page{
+    background: #423892;
+    width: .7rem;
+    text-align: center;
+}
+.color{
+    color: #423892;
+}
+.box2 .dia-close{
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(close.png) no-repeat center/100%;
+    position: absolute;
+    top: 0.02rem;
+    left: 3.15rem;
+}
+.box2 .confirm{
+    display: block;
+    width: 2.23rem;
+    height: 0.87rem;
+    background: url(button9.png) no-repeat center/100%;
+    margin: 0 auto;
+}
+.word{
+    font-size: .24rem;
+    color: #169bd4;
+    text-align: center;
+    margin-top: .2rem;
+}
+/* 抽奖 */
+.box2 .cj{
+    width: 5.97rem;
+    height: 5.97rem;
+    margin: 0 auto;
+    margin-bottom:.2rem;
+}
+#swfcontent{
+    width: 100%;
+    height: 100%;
+}
+.cj .swfcontent_hover {
+    margin-left: 1rem
+}
+#swfcontent_start{
+    margin-left: .39rem !important;
+    margin-top: -0.5rem !important;
+
+}
+.box2 a{
+    font-size: .24rem;
+    color: #4777e6;
+    text-decoration: none;
+    margin-left: 2rem;
+    display: block;
+    height: 0.5rem;
+    width: 2.53rem;
+}
+
+/* box3 */
+.box3{
+    width: 100%;
+    height: 8.9rem;
+    margin-top: .1rem;
+}
+.box3 .title3{
+    margin-left: .4rem;
+}
+.box3 .btn3{
+    width: 3.48rem;
+    height: 0.88rem;
+}
+.btn3 a{
+    display: block;
+    width: 3.47rem;
+    height: 0.87rem;
+    background: url(button7.png) no-repeat center/100%;    
+    margin-left: 1.45rem;
+}
+.box3 .list3{
+    display: flex;
+    flex-direction: row;
+    margin-top: .4rem;
+}
+.list3 .item5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5.24rem;
+    height: 2.76rem;
+}
+.list3 .item6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5.24rem;
+    height: 2.76rem;
+}
+.list3 .pic3{
+    width: 1.19rem;
+    height: 1.07rem;
+}
+ .word2{
+    color: #169bd4;
+    font-size: .24rem;
+    text-align: center;
+}
+.word3{
+    font-size: .2133rem;
+    color: #004c6c;
+    text-align: center;
+    margin-bottom: .1rem;
+}
+.list3 a,.list4 a{
+    display: block;
+    width: 2.17rem;
+    height: 0.78rem;
+    background: url(button2.png) no-repeat center/100%;
+    margin: 0 auto;
+}
+
+/* list4 */
+.box3 .list4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list4 img{
+    width: 3.8rem;
+    height: 1.17rem;
+}
+/* box4 */
+.box4{
+    width: 100%;
+    height: 15.7rem;
+    margin-top: .2rem;
+    
+}
+.box4 .title4{
+    margin-left: .4rem;
+}
+.box4 .list5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .2rem;
+}
+.list5 li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list5 .pic4{
+    width: 5.26rem;
+    height: 2.96rem;
+}
+.list5 .pic5{
+    width: 5.38rem;
+    height: 3rem;
+}
+.list5 .t{
+    margin: .15rem;
+}
+.list5 .t1{
+    width: 2.95rem;
+    height: 0.25rem;
+}
+.list5 .t2{
+    width: 2.60rem;
+    height: 0.25rem;
+}
+.list5 .t3{
+    width: 3.04rem;
+    height: 0.25rem;
+}
+.list5 .t4{
+    width: 3rem;
+    height: 0.24rem;
+}
+.box4 a{
+    display: block;
+    width: 3.47rem;
+    height: 0.87rem;
+    background: url(button8.png) no-repeat center/100%;
+    margin: .1rem auto;
+}
+
+/* box5 */
+.box5{
+    width: 100%;
+    height: 4.56rem;
+    margin-top: .1rem;
+}
+.box5 .title5{
+    /* margin-left: -.35rem; */
+    margin-bottom: .3rem
+}
+.box5 span{
+    color: #169bd4;
+    font-size: .24rem;
+}
+.box5 p{
+    color: #004c6c;
+    font-size: .24rem;
+    line-height: .3rem;
+    padding-bottom: .25rem;
+}
+.box5 .word4{
+    margin: 0 auto;
+    width: 5.61rem;
+    height: 2.72rem;
+}
+/* footer */
+.footer{
+    width: 100%;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    color: #fff;
+    font-size: .24rem;
+    text-align: center;
+}
+
+/* 抽奖 */
+.panel{height:6rem;margin:0 auto;position:relative;overflow:hidden;}
+.panel .panel-face{background-image:url(cj.png);background-size:cover;width:5.79rem;height:5.79rem;position:absolute;left:.1rem;top:.1rem}
+.panel .panel-btn{width:1.82rem;height:1.82rem;position:absolute;top:2.1rem;left:2.1rem;background-image:url(button4.png);background-size:cover;}
+.panel.playing .panel-btn{-webkit-transform:scale(0.9);transform:scale(0.9);}

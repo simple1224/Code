@@ -1,0 +1,239 @@
+.wrapper{
+    width: 100%;
+    position: relative;
+}
+body{
+    overflow-x: hidden;
+}
+/* set backgound img */
+.bg .bg1{
+    width: 100%;
+    height: 425px;
+    background: url( ./bg1.jpg) no-repeat center bottom
+}
+.bg .bg2{
+    width: 100%;
+    height: 514px;
+    background: url( ./bg2.jpg) no-repeat center center
+}
+.bg .bg3{
+    width: 100%;
+    height: 416px;
+    background: url( ./bg3.jpg) no-repeat center center
+}
+.bg .bg4{
+    width: 100%;
+    height: 490px;
+    background: url(  ./bg4.jpg) no-repeat center center
+}
+/* set content */
+.content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content .main{
+    width: 1000px;
+    margin: 78px auto;
+}
+
+/* logo */
+.main .logo{
+    width: 432px;
+    height: 94px;
+    margin-left: 20px;
+}
+.logo .logo1{
+    display: block;
+    float: left;
+    width: 197px;
+    height: 59px;
+    background: url(  ./logo1.png) no-repeat;
+    margin-right: 22px;
+}
+.logo .logo2{
+    display: block;
+    float: left;
+    width: 153px;
+    height: 47px;
+    background: url(  ./logo2.png) no-repeat;
+    margin-top: 7px;
+}
+
+/* banner */
+.main .banner{
+    width: 1000px;
+    height: 263px;
+    margin-top: 40%;
+    /* position: absolute; */
+}
+.banner .left{
+    width: 539px;
+    height: 263px;
+    float: left;
+    background: url(  ./bg5.png) no-repeat;
+}
+.left a{
+    display: block;
+    width: 539px;
+    height: 263px;
+    background: url(  ./button1.png) no-repeat center;
+    /* z-index: 5; */
+}
+.banner .right{
+    width: 411px;
+    height: 263px;
+    float: left;
+    background: url(  ./bg6.png) no-repeat;
+}
+.right a{
+    display: block;
+    width: 209px;
+    height: 44px;
+    background: url(  ./button2.png) no-repeat;
+    margin-left: 40px;
+}
+.right .word{
+    width: 350px;
+    height: 104px;
+    margin: 35px auto;
+    font-size: 24px;
+}
+.word p{
+    color: aliceblue;
+}
+.word .p1{
+    float: left;
+    padding-bottom: 10px;
+}
+.word .p1 .s1{
+    font-size: 31px;
+    font-family:"Microsoft YaHei"!important;
+    text-decoration: line-through;
+}
+.word .p2{
+    float: left;
+    position: relative;
+    top: -7px;
+    left: 8px;
+}
+.word .p2 .s2{
+    color: red;
+    font-size: 38px;
+}
+.word .p3{
+    clear: both;
+    font-size: 16px
+}
+/* title */
+.main .title{
+    width: 545px;
+    height: 62px;
+    margin-top: 47px;
+    margin-left: 234px;
+}
+.title p{
+    color: aliceblue;
+    font-size: 36px;
+    font-weight: bold;
+    width: 542px;
+}
+
+/* box */
+.main .box{
+    width: 1000px;
+    height: 673px;
+    background: url(  ./person.png) no-repeat 435px 32px;;
+}
+.box .word2{
+    color: #ffffffa3;
+    width: 655px;
+    height: 345px;  
+    margin-left: 62px;
+    padding-top: 32px;
+}
+.word2 p{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+
+/* list */
+.list {
+    width: 600px;
+    height: 275px;
+}
+.list a{
+    display: block;
+    width: 233px;
+    height: 54px;
+    background: url(  ./button3.png) no-repeat;
+    margin-left: 198px;
+    clear: both;
+}
+.list li{
+    width: 175px;
+    height: 200px;
+    float: left;
+    background: url(  ./bg7.png) no-repeat;
+    /* margin-top: -28px;
+    margin-bottom: 20px; */
+}
+
+
+/* body,html,.ost_box,#afooter,.wrapper{min-width:1200px!important;width:100%!important;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1202?'1200px':'')!important;} */
+
+.list span{
+    color: white;
+    font-size: 11px;
+    position: relative;
+    top: 66px;
+    left: -27px;
+}
+.item1 span{
+    position: relative;
+    top: 43px;
+    left: -60px;
+}
+.list .item1{
+    margin-left: 56px;
+}
+.item1 img{
+    width: 106px;
+    height: 102px;
+    position: relative;
+    top: 20px;
+    left: 27px;
+}
+.item2 img{
+    width: 84px;
+    height: 79px;
+    position: relative;
+    top: 32px;
+    left: 36px;
+}
+.item3 img{
+    width: 77px;
+    height: 80px;
+    position: relative;
+    top: 32px;
+    left: 47px;
+ 
+}
+/*footer*/
+.wrap_ieg{
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-align: center;
+    background: #0d0d0e;
+}
+.wrap_ieg p a{
+    text-decoration: none;
+    color: #727272;
+    font-size: 12px;
+}
+.wrap_ieg p{
+    color: #727272;
+    font-size: 12px;
+}

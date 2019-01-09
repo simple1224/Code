@@ -1,0 +1,837 @@
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form,header,section,article,footer{margin:0;}
+body,button,input,select,textarea{font:12px/1.5 tahoma,'\5FAE\8F6F\96C5\9ED1',sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em,b{font-style:normal}
+a{text-decoration:none;outline: none}
+a:hover{text-decoration:none;outline: none}
+img{border:0}
+*{
+  outline: none;
+}
+table{border-collapse:collapse;border-spacing:0}
+td,th,ul,ol{padding:0;list-style:none;}
+body{padding-top:42px}
+button,input,select,textarea{font-size:100%;outline:none}
+table{border-collapse:collapse;border-spacing:0}
+td,th,ul,ol{padding:0}
+body{font-family:'\5FAE\8F6F\96C5\9ED1',sans-serif!important;}
+
+$img:"./";
+//$img:"//game.gtimg.cn/images/mgc/cp/a20181011castle/";
+
+body,html,.ost_box,#actTitleWrap,.container,#footer_ied,.white-footer,.warp{min-width:1200px!important;width:100%!important;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1202?'1200px':'')!important;}
+
+@keyframes cloud1 {
+  0%{
+    right: -300px;
+    opacity: 0;
+  }
+  100%{
+    right: 10px;
+    opacity: 1;
+  }
+}
+@keyframes cloud2 {
+  0%{
+    left: -300px;
+    opacity: 0;
+  }
+  100%{
+    left: 101px;
+    opacity: 1;
+  }
+}
+@keyframes cloud3 {
+  0%{
+    left: -300px;
+    opacity: 0;
+  }
+  100%{
+    left: 256px;
+    opacity: 1;
+  }
+}
+@keyframes cloud4 {
+  0%{
+    left: -300px;
+    opacity: 0;
+  }
+  100%{
+    left: 400px;
+    opacity: 1;
+  }
+}
+@keyframes cloud5 {
+  0%{
+    right: -300px;
+    opacity: 0;
+  }
+  100%{
+    right: 205px;
+    opacity: 1;
+  }
+}
+@keyframes play {
+  0%{
+    background-position: 0 -800px;
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    background-position: 0 0;
+    opacity: 0;
+  }
+}
+@keyframes opac {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes scale {
+  0%{
+    transform: scale(1,1);
+  }
+  50%{
+    transform: scale(0.8,0.8);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+
+.warp{
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+
+  .bg{
+    width: 100%;
+    .bg1{
+      width: 100%;
+      height: 386px;
+      background: url($img +"bg1.jpg")no-repeat center;
+    }
+    .bg2{
+      width: 100%;
+      height: 489px;
+      background: url($img +"bg2.jpg")no-repeat center;
+    }
+    .bg3{
+      width: 100%;
+      height: 700px;
+      background: url($img +"bg3.jpg")no-repeat center;
+    }
+    .bg4{
+      width: 100%;
+      height: 1185px;
+      background: url($img +"bg4.jpg")no-repeat center;
+    }
+  }
+  .video{
+    width: 100%;
+    height: 914px;
+    min-width: 1200px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    .bgVideo{
+      width: 1920px;
+      height: 914px;
+      position: absolute;
+      left: 50%;
+      margin-left: -960px;
+      z-index: 10;
+    }
+  }
+  .container{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .main{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 220px;
+    .x5_logo{
+      width: 104px;
+      height: 61px;
+      display: block;
+      background: url($img +"x5.png")no-repeat center;
+      position: absolute;
+      top: 19px;
+      left: 110px;
+    }
+    .mgc_logo{
+      display: block;
+      width: 154px;
+      height: 45px;
+      background: url($img +"mgc.png")no-repeat center;
+      position: absolute;
+      top: 25px;
+      left: 225px;
+    }
+    .time{
+      width: 349px;
+      height: 20px;
+      background: url("time.png")no-repeat center;
+      margin: 0 auto;
+    }
+    .people{
+      width: 510px;
+      height: 662px;
+      margin: -35px 0 0 388px;
+      img{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .cloud{
+      width: 100%;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      .cloud1{
+        width: 862px;
+        height: 119px;
+        background: url($img +"cloud1.png")no-repeat center;
+        position: absolute;
+        animation: cloud1 1s linear 1;
+        animation-fill-mode: forwards;
+        top: 740px;
+        //right: 10px;
+      }
+      .cloud2{
+        width: 119px;
+        height: 51px;
+        background: url($img +"cloud2.png")no-repeat center;
+        position: absolute;
+        top: 518px;
+        animation: cloud2 1s linear 1;
+        animation-fill-mode: forwards;
+        //left: 101px;
+      }
+      .cloud3{
+        width: 278px;
+        height: 115px;
+        background: url($img +"cloud3.png")no-repeat center;
+        position: absolute;
+        animation: cloud3 1s linear 1;
+        animation-fill-mode: forwards;
+        top: 550px;
+        //left: 256px;
+      }
+      .cloud4{
+        width: 174px;
+        height: 46px;
+        background: url($img +"cloud4.png")no-repeat center;
+        position: absolute;
+        animation: cloud4 1s linear 1;
+        animation-fill-mode: forwards;
+        top: 692px;
+        //left: 400px;
+      }
+      .cloud5{
+        width: 315px;
+        height: 169px;
+        animation: cloud5 1s linear 1;
+        animation-fill-mode: forwards;
+        background: url($img +"cloud5.png")no-repeat center;
+        position: absolute;
+        top: 580px;
+        //right: 205px;
+      }
+    }
+    .circle1,.circle5{
+      width: 171px;
+      height: 186px;
+      display: block;
+      position: absolute;
+      top: 245px;
+      //animation: scale 2s linear infinite;
+    }
+    .circle1{
+      left: 177px;
+      background: url($img +"circle1.png")no-repeat center;
+    }
+    .circle5{
+      right: 175px;
+      background: url($img +"circle5.png")no-repeat center;
+    }
+    .peeping{
+      display: block;
+      width: 146px;
+      height: 159px;
+      background: url($img +"peeping.png")no-repeat center;
+      position: absolute;
+      top: 545px;
+      left: 535px;
+    }
+    .stars{
+      width: 467px;
+      height: 650px;
+      position: absolute;
+      top: 150px;
+      left: 388px;
+      .center{
+        background: url($img +"stars.png")repeat-y top center;
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+      .center.active{
+        animation: play 2s linear infinite;
+      }
+    }
+    .stars_five{
+      width: 467px;
+      height: 650px;
+      position: absolute;
+      top: 150px;
+      left: 388px;
+      .center{
+        background: url($img +"stars_five.png")repeat-y top center;
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+      .center.active{
+        animation: play 2s linear infinite;
+      }
+    }
+    .title{
+      width: 689px;
+      height: 270px;
+      background: url($img +"title.png")no-repeat center;
+      position: absolute;
+      top: 4px;
+      left: 239px;
+      opacity: 0;
+    }
+    .title.active{
+      animation: opac 2s linear infinite;
+    }
+    .login{
+      width: 100%;
+      height: 15px;
+      text-align: center;
+      line-height: 15px;
+      color: #c6e5fc;
+      font-size: 14px;
+      position: relative;
+      z-index: 9999;
+      margin-top: 10px;
+      a{
+        color: #c6e5fc;
+      }
+    }
+    .text{
+      width: 100%;
+      height: 16px;
+      text-align: center;
+      line-height: 16px;
+      color: #765ba2;
+      position: absolute;
+      font-size: 16px;
+      top: 846px;
+      left: 0;
+    }
+    .content1{
+      width: 1200px;
+      height: 509px;
+      margin: 67px 0 0 0;
+      position: relative;
+      .c_con1{
+        width: 541px;
+        height: 388px;
+        background: url($img +"content1_1.png")no-repeat center;
+        position: absolute;
+        top: 0;
+        left: -12px;
+        padding-top: 121px;
+      }
+      .list1{
+        width: 393px;
+        height: 250px;
+        margin: 0 auto;
+        .li1{
+          width: 187px;
+          height: 237px;
+          float: left;
+          padding-top: 13px;
+          img{
+            display: block;
+            width: 100%;
+            height: 187px;
+          }
+          p{
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            line-height: 20px;
+            color: #ebbdf3;
+            font-size: 14px;
+            margin-top: 20px;
+          }
+        }
+        .li2{
+          width: 187px;
+          height: 237px;
+          float: right;
+          padding-top: 13px;
+          img{
+            display: block;
+            width: 100%;
+            height: 187px;
+          }
+          p{
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            line-height: 20px;
+            color: #ebbdf3;
+            font-size: 14px;
+            margin-top: 20px;
+          }
+        }
+      }
+      .receive1{
+        display: block;
+        width: 270px;
+        height: 73px;
+        background: url($img +"receive.png")no-repeat center;
+        color: #fdf1d3;
+        font-size: 24px;
+        text-align: center;
+        line-height: 73px;
+        margin: 25px auto 0;
+        letter-spacing: 1px;
+      }
+      .c_con2{
+        width: 691px;
+        height: 354px;
+        background: url($img +"content1_2.png")no-repeat center;
+        position: absolute;
+        top: 0;
+        right: -12px;
+        padding-top: 155px;
+      }
+      .list2{
+        width: 619px;
+        height: 188px;
+        margin: 0 auto;
+        li{
+          width: 148px;
+          height: 188px;
+          float: left;
+          margin-right: 9px;
+          img{
+            display: block;
+            width: 148px;
+            height: 148px;
+          }
+          p{
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            line-height: 20px;
+            color: #ebbdf3;
+            font-size: 14px;
+            margin-top: 5px;
+          }
+        }
+        .li4{
+          margin-right: 0;
+        }
+      }
+      .receive2{
+        display: block;
+        width: 270px;
+        height: 73px;
+        background: url($img +"receive.png")no-repeat center;
+        color: #fdf1d3;
+        font-size: 24px;
+        text-align: center;
+        line-height: 73px;
+        margin: 53px auto 0;
+        letter-spacing: 1px;
+      }
+    }
+    .content2{
+      width: 1230px;
+      height: 347px;
+      background: url($img +"content2.png")no-repeat center;
+      margin: 40px 0 0 -15px;
+      position: relative;
+      padding-top: 126px;
+      .list3{
+        width: 841px;
+        height: 271px;
+        margin-left: 80px;
+        li{
+          width: 148px;
+          height: 271px;
+          float: left;
+          margin-right: 22px;
+          img{
+            display: block;
+            width: 148px;
+            height: 148px;
+            margin: 0 auto;
+          }
+          .gift_name{
+            width: 100%;
+            height: 14px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 14px;
+            color: #f7ccff;
+            font-size: 14px;
+          }
+          .buy_btn{
+            display: block;
+            width: 148px;
+            height: 34px;
+            background: url($img +"buy_btn.png")no-repeat center;
+            margin: 26px auto 0;
+          }
+          .buy_btn.exchange{
+            background: url($img +"exchange.png")no-repeat center;
+          }
+          .frequency{
+            width: 100%;
+            height: 12px;
+            text-align: center;
+            line-height: 12px;
+            color: #f7ccff;
+            font-size: 13px;
+            margin-top: 28px;
+          }
+        }
+        .li5{
+          margin-right: 0;
+        }
+      }
+      .right{
+        width: 254px;
+        height: 341px;
+        position: absolute;
+        top: 45px;
+        right: 60px;
+        img{
+          display: block;
+          width: 254px;
+          height: 258px;
+          margin: 0 auto;
+        }
+        .gift_name{
+          width: 100%;
+          height: 14px;
+          margin-top: 10px;
+          text-align: center;
+          line-height: 14px;
+          color: #f7ccff;
+          font-size: 14px;
+        }
+        .buy_btn{
+          display: block;
+          width: 221px;
+          height: 61px;
+          background: url($img +"buy_btn2.png")no-repeat center;
+          margin: 0 auto 0;
+        }
+        .frequency{
+          width: 100%;
+          height: 12px;
+          text-align: center;
+          line-height: 12px;
+          color: #f7ccff;
+          font-size: 13px;
+          margin-top: 14px;
+        }
+
+      }
+    }
+    .content3{
+      width: 1200px;
+      height: 406px;
+      margin-top: 75px;
+      .rule{
+        width: 627px;
+        height: 321px;
+        background: url($img +"rule.png")no-repeat center;
+        float: left;
+        padding-top: 85px;
+        p{
+          width: 558px;
+          height: 30px;
+          text-align: left;
+          line-height: 30px;
+          color: #fbe3ff;
+          font-size: 16px;
+          padding-left: 69px;
+          position: relative;
+          span{
+            color: #f7ccff;
+            margin-right: 10px;
+          }
+          i{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url($img +"rule_i.png")no-repeat center;
+            position: absolute;
+            left: 44px;
+            top: 7px;
+          }
+        }
+      }
+      .award_winning{
+        width: 547px;
+        height: 331px;
+        background: url($img +"award_winning.png")no-repeat center;
+        float: right;
+        padding-top: 75px;
+        ul{
+          width: 424px;
+          margin: 0 auto;
+          height: 310px;
+          overflow: hidden;
+          li{
+            width: 100%;
+            height: 28px;
+            text-align: left;
+            line-height: 28px;
+            color: #fbe4ff;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.fixed{
+  width: 229px;
+  height: 300px;
+  background: url($img +"fixed.png")no-repeat center;
+  position: fixed;
+  top: 50%;
+  margin-top: -187px;
+  right: 34px;
+  z-index: 9999;
+  padding-top: 74px;
+  .close{
+    position: absolute;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    background: url($img +"close.png")no-repeat center;
+    top: 15px;
+    right: -33px;
+  }
+  img{
+    display: block;
+    width: 136px;
+    height: 136px;
+    margin: 0 auto;
+  }
+  .down_btn{
+    display: block;
+    width: 200px;
+    height: 58px;
+    background: url($img +"down.png")no-repeat center;
+    margin: 64px auto 0;
+  }
+}
+
+
+#test1{
+  width: 837px;
+  height: 687px;
+  background: url($img +"test1.png")no-repeat center;
+  padding-top: 122px;
+  padding-left: 54px;
+  .dia-close{
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: url($img +"test_close.png")no-repeat center;
+    position: absolute;
+    top: 19px;
+    right: -54px;
+  }
+  .dia-con{
+    width: 800px;
+    height: 631px;
+  }
+  ul{
+    width: 100%;
+    height: 100%;
+    li{
+      width: 148px;
+      height: 188px;
+      float: left;
+      margin-right: 9px;
+      margin-bottom: 15px;
+      img{
+        display: block;
+        width: 148px;
+        height: 148px;
+      }
+      p{
+        width: 100%;
+        height: 34px;
+        margin-top: 5px;
+        text-align: center;
+        line-height: 17px;
+        color: #ebbdf3;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+#test2{
+  width: 891px;
+  height: 338px;
+  background: url($img +"test2.png")no-repeat center;
+  padding-top: 122px;
+  .dia-close{
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: url($img +"test_close.png")no-repeat center;
+    position: absolute;
+    top: 19px;
+    right: -54px;
+  }
+  .dia-con{
+    width: 315px;
+    height: 285px;
+    margin: 0 auto;
+  }
+  .center{
+    width: 148px;
+    height: 188px;
+    margin: 0 auto;
+    img{
+      display: block;
+      width: 148px;
+      height: 148px;
+    }
+    p{
+      width: 100%;
+      height: 32px;
+      text-align: center;
+      margin-top: 5px;
+      line-height: 16px;
+      color: #ebbdf3;
+      font-size: 14px;
+    }
+  }
+  .btn{
+    display: block;
+    width: 270px;
+    height: 73px;
+    background: url($img +"test_receive.png")no-repeat center;
+    margin: 25px auto 0;
+  }
+}
+
+
+#test3{
+  width: 891px;
+  height: 338px;
+  background: url($img +"test2.png")no-repeat center;
+  padding-top: 122px;
+  .dia-close{
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: url($img +"test_close.png")no-repeat center;
+    position: absolute;
+    top: 19px;
+    right: -54px;
+  }
+  .dia-con{
+    width: 775px;
+    height: 285px;
+    margin: 0 auto;
+  }
+  .center{
+    width: 775px;
+    height: 188px;
+    margin: 0 auto;
+    li{
+      width: 148px;
+      height: 188px;
+      float: left;
+      margin-right: 8px;
+      img{
+        display: block;
+        width: 148px;
+        height: 148px;
+      }
+      p{
+        width: 100%;
+        height: 32px;
+        text-align: center;
+        margin-top: 5px;
+        line-height: 16px;
+        color: #ebbdf3;
+        font-size: 14px;
+      }
+    }
+    .last{
+      margin-right: 0;
+    }
+  }
+  .btn{
+    display: block;
+    width: 270px;
+    height: 73px;
+    background: url($img +"test_receive.png")no-repeat center;
+    margin: 25px auto 0;
+  }
+}
+
+#afooter{
+  width: 100%;
+  height: 70px;
+  min-width: 1200px;
+  position: relative;
+  margin-top: -202px;
+  z-index: 999;
+  .wrap_ieg{
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 20px;
+    height: 53px;
+    text-align: center;
+    color: #98679b;
+    font-size: 12px;
+  }
+  a{
+    color: #98679b;
+  }
+}

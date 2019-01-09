@@ -1,0 +1,369 @@
+	/*footer S*/
+    #footer_ieg{position: relative;width: 100%;height: 200px;background: #000;}
+    .wrap_ieg{font:12px verdana;text-align:center;padding:73px 0;background: #000;}
+    .wrap_ieg,.wrap_ieg a{color:#fff;}
+    .wrap_ieg .e{font-size:10px;padding:3px 0;-webkit-text-size-adjust:none;}
+    /*footer E*/
+    /*top-nav S*/
+    .top-nav{width:100%;height: 49px;background: #000;position: absolute; top:74px;font-size: 12px;min-width: 1200px;z-index: 999;}
+    .top-logo{float: left;width: 128px;height: 45px;margin:4px 0 0 40px;background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/tlogo-bg.png) 0 0 no-repeat;text-indent: -9999px;}
+    .t-nav-left{float: left;padding: 10px 0 0 10px;}
+    .t-nav-left li { float: left;height: 25px;line-height: 25px;margin-right: 15px;color: #fff; position: relative;}
+    .t-nav-left li a{display: block;width: 73px;height: 25px;line-height: 25px;color: #fff;text-align: center;transition: all 0.3s linear;}
+    .t-nav-left li.t-nav-w a{width: 113px;color: #0da7c9;}
+    .t-nav-left li a:hover{color: #0da7c9;background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/item-bg.png) 0 0 no-repeat;text-decoration: none;}
+    .t-nav-left li.t-nav-w a:hover{color: #fff;background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/item-bg2.png) 0 0 no-repeat;text-decoration: none;}
+    .t-nav-left li.li-wxh span{color: #0da7c9;}
+    .t-nav-right{float: right;padding-right: 72px;}
+    .top-login-box{float: right;padding-right: 16px;height: 45px;line-height: 45px;color: #fff;}
+    .top-login-box a {color: #fff;}
+    .t-nav-login,.t-nav-login a{color: #fff !important;}
+    .t-nav-login span{color: #0da7c9;}
+    .t-nav-right ul{float: right;padding-top: 10px;}
+    .t-nav-right ul li{float: left;margin-left: 15px;}
+    .t-nav-fhgw,.t-nav-hdzx{display: block;color: #fff;width: 106px;height: 25px;transition: color 0.3s;text-indent: 40px; line-height: 25px;}
+    .t-nav-fhgw:hover,.t-nav-hdzx:hover{ color: #0da7c9;text-decoration: none; }
+    .t-nav-fhgw{background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/hdzx-bg.png) 0 0 no-repeat;}
+    .t-nav-hdzx{background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/fhgw-bg.png) 0 0 no-repeat;}
+    .fl{float: left;}
+    .fr{float: right;}
+    .box-ewm{width: 196px;left: 50%;margin-left: -98px;top: 57px;z-index: 999 !important;display: none;}
+    .box-ewm div{width: 90px;height: 108px;background: #0099bb;padding-top: 1px;}
+    .box-ewm div img{display: block;margin: 0 auto;}
+    .box-ewm div p{font-size: 12px;color: #fff;text-align: center;line-height: 18px;}
+    /*top-nav E*/
+* {margin:0; padding:0; list-style:none;font-family:'Microsoft Yahei'}
+body,html,.ost_box,#actTitleWrap,.container,#footer_ied,.white-footer,.warp{min-width:1200px!important;width:100%!important;}
+/*layout */
+.wrap{
+    width: 100%;
+    position: relative;
+    margin-top: -74px;
+}
+.wrap .bg{
+    min-width: 1000px;
+}
+.wrap .content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrap .content .main{
+    width: 1000px;
+    margin: 0 auto;
+}
+/* set bg */
+.bg .bg1{
+    width: 100%;
+    height: 421px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/bg1.jpg) no-repeat top center;
+}
+.bg .bg2{
+    width: 100%;
+    height: 351px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/bg2.jpg) no-repeat top center;
+}
+.bg .bg3{
+    width: 100%;
+    height: 744px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/bg3.jpg) no-repeat top center;
+}
+.bg .bg4{
+    width: 100%;
+    height: 557px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/bg4.jpg) no-repeat top center;
+}
+.bg .bg5{
+    width: 100%;
+    height: 543px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/bg5.jpg) no-repeat top center;
+}
+.bg .bg6{
+    width: 100%;
+    height: 760px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/bg6.jpg) no-repeat top center;
+}
+/* content begin */
+.main .time{
+    width: 267px;
+    height: 41px;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    top: 608px;
+    left: 563px;
+}
+.main .logo{
+    width: 132px;
+    height: 49px;
+    margin-top: 136px;
+}
+.main .logo a{
+    display: block;
+    width: 132px;
+    height: 49px;
+}
+.main .button{
+    width: 624px;
+    height: 63px;
+    margin-top: 524px;
+    margin-left: 186px;
+}
+.main .button a{
+    display: inline-block;
+    width: 276px;
+    height: 60px;
+    margin-right: 67px;
+}
+.main .button .a2{
+    margin-right: 0;
+}
+/* usual */
+.title{
+    height: 82px;
+    margin: 0 auto;
+}
+/* part1 */
+.part1{
+    width: 100%;
+    height: 1682px;
+    margin-top: 35px;
+    text-align: center
+}
+.part1 .title1{
+    width: 322px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/title1.png) no-repeat;
+}
+.part1 .p1{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.part1 .p1 span{
+    color: #ff951c;
+}
+/* list1 */
+.part1 .list1{
+    width: 980px;
+    height: 340px;
+    margin: 0 auto;
+    margin-top: 36px;
+    position: relative;
+}
+.part1 .list1 .date{
+    width: 980px;
+    height: 43px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/hr.png) no-repeat;
+    margin: 0 auto;
+}
+.part1 .list1 li{
+    float: left;
+    width: 25%;
+    height: 342px;
+    /* margin-right: 21px; */
+    position: relative;
+    /* background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/box2.png) no-repeat; */
+    margin-bottom: 29px;
+}
+.part1 .list1 .item4,.part1 .list1 .item8,.part1 .list1 .item12,.part1 .list1 .item16{
+    margin-right: 0;
+}
+.part1 .list1 .p2{
+    font-size: 18px;
+    font-weight: bold;
+    color: #9298e4;
+    position: relative;
+    top: -70px;
+}
+.part1 .list1 .p3{
+    font-size: 14px;
+    color: #cbe7ff;
+    margin-bottom: 8px;
+    line-height: 20px;
+}
+.part1 .list1 img{
+    width: 199px;
+    height: 199px;
+    margin-top: -36px;
+}
+.part1 .list1 .a1{
+    display: block;
+    width: 185px;
+    height: 40px;
+   background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/btn2.png) no-repeat;
+    margin: 0 auto;
+}
+.part1 .list1 .a2{
+    display: block;
+    width: 185px;
+    height: 40px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/btn1.png) no-repeat;
+    position: absolute;
+    top: 237px;
+    left: 46px;
+}
+.part1 .list1 .item2 .p3,.part1 .list1 .item4 .p3{
+    letter-spacing: -1px;
+}
+.part1 .list li .active{
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/btn1.png) no-repeat;
+}
+/* except */
+.part1 .except{
+    width: 949px;
+    height: 365px;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/except.png) no-repeat;
+    margin-bottom: 20px;
+}
+
+/* part2 */
+.part2{
+    width: 100%;
+    height: 491px;
+}
+.main .part2 .title2{
+    width: 402px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/title2.png) no-repeat;
+}
+
+.part2 .list2{
+    width: 972px;
+    height: 290px;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/box.png) no-repeat;
+    margin-top: 43px;
+}
+.part2 .list2 li{
+    width: 100%;
+    height: 58px;
+    line-height: 58px;
+    font-size: 18px;
+    color: #cc7e25;
+    text-align: center;
+}
+.part2 .list2 .item1{
+    font-size: 26px;
+    color: #000;
+    font-weight: bold;
+}
+.part2 .list2 span{
+    display: inline-block
+}
+
+.part2 .list2 .s1{
+    width: 325px;
+    height: 58px;
+}
+.part2 .list2 .s2{
+    width: 647px;
+    height: 58px;
+}
+
+/* part3 */
+.main .part3{
+    width: 100%;
+    height: 330px;
+}
+.main .part3 .title3{
+    width: 402px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/title3.png) no-repeat;
+}
+.part3 .p1{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.part3 .p1 span{
+    color: #ff951c;
+}
+.part3 .bottom{
+    width: 858px;
+    height: 183px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.part3 .bottom img{
+    display: inline-block;
+    width: 456px;
+    height: 168px;
+    margin-right: 20px;
+}
+
+/* list3 */
+.part3 .list3{
+    display: inline-block;
+    width: 377px;
+    height: 160px;
+}
+.part3 .list3 .item1{
+    width: 377px;
+    height: 77px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/img2.png) no-repeat;
+    margin-bottom: 6px;
+}
+.part3 .list3 .item2{
+    width: 377px;
+    height: 77px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/img3.png) no-repeat;
+}
+
+.part3 .list3 .p2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 13px;
+    text-align: left;
+    padding-left: 11px;
+    padding-top: 8px;
+}
+.part3 .list3 .p3{
+    font-size: 14px;
+    padding-left: 11px;
+}
+.part3 .list3 .item1 .p2{
+    color: #000;
+}
+.part3 .list3 .item1 .p3{
+    color: #000;
+}
+.part3 .list3 .item2 .p2{
+    color: #ff941c;
+}
+.part3 .list3 .item2 .p3{
+    color: #ff941c;
+}
+/* tab */
+.dia-con{
+    width: 428px;
+    height: 196px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180823car/tab.png) no-repeat;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+.dia-con .word{
+    width: 207px;
+    height: 54px;
+    margin: 0 auto;
+    padding-top: 26px;
+    line-height: 54px;
+}
+.dia-close .text{
+    height: 117px;
+}
+.dia-close{
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 30px
+}
+#_overlay_{
+    background: rgba(0,0,0, .5) !important
+}

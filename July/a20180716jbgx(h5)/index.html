@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-Tgideas">
+    <meta name="Copyright" content="Tencent">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="Keywords" content="QQ炫舞手游,炫舞,QQ炫舞手游官网,QQ炫舞手游官方下载,QQ炫舞手游下载,QQ炫舞手游官方网站,qq,音乐,舞蹈,跳舞,荣誉点,G币,浪漫,装扮,R点,荣誉,模式,4键,点亮,图标,节奏,腾讯,8键,网游,网络游戏,ACG,休闲,炫舞,徽章,高分,P点,连P,combo,vip 房间,任务,娱乐,个性,斗舞,竞技,紫钻," />
+    <meta name="Description" content="QQ炫舞十周年大狂欢，手游全新版本上线！拿心悦永久称号，送心悦手持与心悦大翅膀，每天还能抢手机和公仔！" />
+    <title>邀请好友拿绝版光效 - QQ炫舞游戏官方网站 - 腾讯游戏</title>
+    <link rel="stylesheet" href="ossweb-img/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <link rel="stylesheet" href="ossweb-img/style.css">
+<!-- 设计：cp | 重构：cp | 创建：2018/7/16  -->
+</head>
+<body>
+    <div class="wrap">
+        <div class="bg">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+        </div>
+        <div class="content">
+            <div class="logo">
+                <a class="logo1" href="http://x5.qq.com/main.shtml" target="_blank" onclick="PTTSendClick('btn','click_btn','QQ炫舞');"></a>
+                <a class="logo2" href="http://xinyue.qq.com" target="_blank" onclick="PTTSendClick('btn','wechat_btn','微信专享');"></a>
+            </div>
+            <!-- 登录 -->
+            <div class="login">
+                <div id="unlogin">欢迎你，xxx,<a href="javascript:login();">注销</a></div>
+                <div id="logined" style="display:none;">hi，<span id='login_nickname_span'></span><span id='login_qq_span'></span><a href="javascript:logout();">注销</a></div>
+            </div>
+            <!-- box1 -->
+            <div class="box1">
+                <div class="title title1">邀请好友送绝版</div>
+                <p class="p1">
+                    好友助力拿绝版，惊喜好礼享不停！邀请满10人助力，绝版免费拿！每邀请一位可 <br> 领取对应礼包！
+                    <span class="s1">邀请流失好友帮忙，可以获得额外的进度，一个顶两个!</span>
+                </p>
+                <ul class="list1">
+                    <li class="item1">
+                        <img src="ossweb-img/img1.png" alt="静花怡月">
+                        <p class="p2">静花怡月</p>
+                    </li>
+                    <li class="item2">
+                        <img src="ossweb-img/img2.png" alt="白衣贵族">
+                        <p class="p2">白衣贵族</p>
+                    </li>
+                </ul>
+                <a class="a1" href="javascript:;" onclick="PTTSendClick('btn','invite_btn','邀请好友打call');" ></a>
+            </div>
+            <div class="box2">
+                <div class="title title2">筹集进度</div>
+                <div class="word">
+                    <p>已邀请人数:<span>x</span></p>
+                    <p>还需邀请人数： <span>x</span></p>
+                </div>
+                <div class="scroll">
+                    <div class="blue show1"></div>
+                    <ul class="list2">
+                        <li class="item1"><img src="ossweb-img/0.png" alt="0"></li>
+                        <li class="item2"><img src="ossweb-img/1.png" alt="1"></li>
+                        <li class="item3"><img src="ossweb-img/3.png" alt="3"></li>
+                        <li class="item4"><img src="ossweb-img/5.png" alt="5"></li>
+                        <li class="item5"><img src="ossweb-img/10.png" alt="10"></li>
+                    </ul>
+                </div>
+                <ul class="list3">
+                    <li class="item1 active">
+                        <p class="p3">初级礼包（邀请1人可得）</p>
+                        <img src="ossweb-img/grade.png">
+                        <a class="a1" href="javascript:;" onclick="PTTSendClick('btn','bt1','初级礼包');"></a>
+                    </li>
+                    <li class="item2">
+                        <p class="p3">中级礼包（邀请3人可得）</p>
+                        <img src="ossweb-img/grade2.png">
+                        <a class="a1" href="javascript:;" onclick="PTTSendClick('btn','bt2','中级礼包');"></a>
+                    </li>
+                    <li class="item3">
+                        <p class="p3">高级礼包（邀请5人可得）</p>
+                        <img src="ossweb-img/grade3.png" alt="高级礼包（邀请5人可得）">
+                        <a class="a1" href="javascript:;" onclick="PTTSendClick('btn','bt3','高级礼包');"></a>
+                    </li>
+                    <li class="item4">
+                         <p class="p3">终级礼包（邀请10人可得）</p>
+                         <img src="ossweb-img/grade4.png" alt="终级礼包（邀请10人可得）">
+                         <a class="a1" href="javascript:;" onclick="PTTSendClick('btn','bt4','终级礼包');"></a>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="box3">
+                <div class="title title3">分享有礼</div>
+                <p class="p4">每天分享页面都能领取一个礼包</p>
+                <img src="ossweb-img/img3.png" alt="开启">
+            </div>
+            <div class="box4">
+                <div class="title title4">新版本抢先看</div>
+                <div class="carousel">
+                    <div class="swiper-container" id="content">
+                        <div class="swiper-wrapper"  >
+                            <div class="swiper-slide"> <img src="ossweb-img/img4.png" alt="轮播"></div>
+                            <div class="swiper-slide"> <img src="ossweb-img/img4.png" alt="轮播"></div>
+                        </div>
+                    <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box5">
+                <div class="title title5">活动规则</div>
+                <div class="word2">
+                    <p>1 活动时间： <span>2018年7月21日 - 8月15日</span></p>
+                    <p>2 在邀请好友拿绝版界面，点击邀请好友后，根据提示从右 <br> 
+                        &nbsp;&nbsp; 上角分享页面给好友，让他们帮你打CALL吧！</p>   
+                    <p>3 收到好友的分享链接，进入页面，点击“帮他打CALL”即 <br>
+                       &nbsp;&nbsp; 可帮助到好友，成功帮助好友打CALL即可获得一次抽奖机 <br>
+                       &nbsp;&nbsp; 会，每个账号活动期间只能为同一好友打CALL一次，最多 <br>
+                       &nbsp;&nbsp; 只能为3位不同好友打CALL,回归玩家可以为最多5位好友打 <br>
+                       &nbsp;&nbsp; CALL。</p>
+                    <p>4 在好友的分享链接中，点击“我要拿绝版”即可参与活动，<br>
+                        &nbsp;&nbsp; 邀请其他好友为自己打CALL拿绝版。</p>
+                    <p>5 回归老友是2018年7月1日之前未登录过游戏用户。</p>   
+                </div>
+            </div>
+            <div class="footer">
+                腾讯公司保留在法律允许的范围内对上述规则进行解释的权利
+            </div>
+        </div>
+    </div>
+
+    <!-- tab1 -->
+	<div class="dia" id="dia" style="display:none">
+		<div class="dia-con">
+            <p>恭喜获得分享奖励</p>
+            <img src="ossweb-img/img6.png" alt="点券x20">
+            <a class="a1" href="javascript:;" onclick="PTTSendClick('btn','bt5','中级礼包');"></a>
+        </div>
+		<a class="dia-close" href="javascript:showDialog.hide()" title="关闭">×</a>
+    </div>
+    <!-- tab2 -->
+    <a class="dia-btn" href="javascript:showDia(dia2);">点击显示弹层</a>
+	<div class="dia" id="dia2" style="display:none">
+		<div class="dia-con">
+            <p>您今日已经领取了奖励，明天再来吧~</p>
+            <a class="a1" href="javascript:;" onclick="PTTSendClick('btn','bt5','中级礼包');"></a>
+        </div>
+		<a class="dia-close" href="javascript:showDialog.hide()" title="关闭">×</a>
+	</div>
+	<div class="window">
+        <img src="ossweb-img/window.png">
+        <!-- <a href="javascript:;" onclick="jQuery('.window').hide()" class="close">关闭</a> -->
+    </div>
+</body>
+<!-- 屏幕自适应 -->
+<script> 
+    //屏幕适应 
+    (function (win, doc) {
+        if (!win.addEventListener) return;
+        var html = document.documentElement;
+        function setFont() {
+            var html = document.documentElement;
+            var k = 640;
+            html.style.fontSize = html.clientWidth / k * 100 + "px";
+        }
+        setFont();
+        setTimeout(function () {
+            setFont();
+        }, 300);
+        doc.addEventListener('DOMContentLoaded', setFont, false);
+        win.addEventListener('resize', setFont, false);
+        win.addEventListener('load', setFont, false);
+    })(window, document);
+</script>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/login/loginmanagerv3.js" charset="gb2312"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+
+<script>    
+    // $("body").click(function(){
+    //     $(".window").hide();
+    // })
+//     $('body').bind('click', function(event) {
+//     // IE支持 event.srcElement ， FF支持 event.target    
+//     var evt = event.srcElement ? event.srcElement : event.target;    
+//     if(evt.class == 'window' ) return; // 如果是元素本身，则返回
+//     else {
+//         $('.window').hide(); // 如不是则隐藏元素
+//     }   
+// });
+//点击页面其地方实现隐藏
+// stopPropagation 阻止冒泡 （穿透） 一般来说  写一个事件，事件会穿透到下面的层级  比如本例中 最先捕获到事件的是div  调用此方法  不会被下面的层级捕获到
+    function stopPropagation(e) { 
+        if (e.stopPropagation) 
+        e.stopPropagation(); 
+        else 
+        e.cancelBubble = true; 
+    } 
+    $(document).bind('click',function(){ 
+        $('.window').hide()
+    }); 
+    $('.window').bind('click',function(e){ 
+        stopPropagation(e); 
+    }); 
+</script>
+
+<script src="//ossweb-img.qq.com/images/js/mobile_build/milo.js"></script>
+<script>
+	//登陆
+	function login() {
+		parent.need("biz.login", function (LoginManager) {
+			LoginManager.login();
+		});
+	}
+	function logout() {
+		parent.need("biz.login", function (LoginManager) {
+			LoginManager.logout();
+		});
+	}
+	LoginManager.checkLogin(function () {
+		if ($E("#login_nickname_span")) {
+			LoginManager.getNickName(function (loginInfo) {
+				if (loginInfo.isLogin) {
+					$E("#login_nickname_span").innerText= loginInfo.nickName;
+				}
+		});
+	}})
+</script>
+<!-- tab -->
+<script src="http://ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+	<script>
+		function showDia(e){
+			showDialog.show({
+				id:e, //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+				bgcolor:"#e3e3e3",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+				opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+			});
+		}
+	</script>
+
+<script>
+    //轮播
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+});
+</script>
+
+<script>
+    //滚动条
+     $('.list2 li').click(function(){
+        $('.list3 li').eq($(this).index()-1).addClass('active').siblings().removeClass('active');
+    })
+</script>
+
+<!-- <script>
+   $('.box1 a').click(function(){
+       document.write("shdjshdjshdjh")
+   })
+</script> -->
+
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性 
+    siteType:"a20180709cxwkh", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx 
+    pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN 
+    pageName:"首页", //必填项:页面中文名 
+    project:"", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;
+    osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+    stayTime:0, //选填项:是否需要统计停留时长boolean；默认是0
+};
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</html>

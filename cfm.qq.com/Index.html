@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="gbk">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-TGideas">
+	<meta name="Copyright" content="Tencent">
+	<meta name="Description" content="《穿越火线手游》为CF原班团队历时3年精心打造，将三亿鼠标的枪战梦想延续到手机上。CF正版FPS手游，原汁原味，传承经典，火爆开战，纯正的枪战血统！" />
+	<meta name="Keywords" content="荒岛特训,CF手游,穿越火线手游,穿越火线手游官网,CF正版官方手游,穿越火线手游下载,腾讯穿越火线手游" />
+	<title>穿越火线枪战王者-CF正版官方手游-官方网站-腾讯游戏</title>
+	<!-- 前端： nic | 创建： 2017-12-15 |   团队博客：http://tgideas.qq.com/ -->
+
+	<link href="ossweb-img/main.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+<div class="top-nav">
+	<div class="topbox">
+		<div class="logobox">
+			<em class="logo"><a href="//cfm.qq.com/main.shtml"><img src="ossweb-img/logo.png" width="74" height="74" /></a></em>
+			<div class="txt">
+				<strong>穿越火线-枪战王者</strong>
+				<em>CF正版FPS手游</em>
+			</div>
+			
+		</div>
+		<div id="menuBox">
+			<ul class="navlist clearfix" id="navList">
+				<li class="item"><a class="lnk" href="//cfm.qq.com/">首页</a></li>
+				<li class="item"><a class="lnk" href="http://cfm.qq.com/webplat/info/news_version3/17544/21851/21852/m19872/list_1.shtml" target="_blank">新闻资讯</a></li>
+				<li class="item">
+					<a class="lnk" href="http://cfm.qq.com/cp/a20151015guide/">游戏资料</a>
+					<!-- <ul class="sub-menu">
+						<li class="nbor"><a href="###">综合新闻</a></li>
+						<li><a href="###">游戏公告</a></li>
+						<li><a href="###">活动新闻</a></li>
+					</ul> -->
+				</li>
+				<li class="item"><a class="lnk" href="http://cfm.qq.com/cfml/s5/index.htm" target="_blank">赛事专区</a></li>
+				<li class="item"><a class="lnk" href="http://cfm.qq.com/webplat/info/news_version3/17544/17545/17597/17601/m12810/list_1.shtml">活动专区</a></li>
+				<li class="item"><a class="lnk" href="http://bbs.g.qq.com/forum-56951-1-1-1.html?ADTAG=cf.gw.rk" target="_blank">玩家互动</a></li>
+				<li class="item"><a class="lnk" href="javascript:showQRcode(2)">客服中心</a></li>
+			</ul>
+			<div id="subNavList" class="sub-nav-list clearfix">
+				<ul> 
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+
+					<ul>
+					<li><a target="_blank" href="http://cfm.qq.com/web201801/v/video.shtml">视频中心</a></li>
+					<li><a target="_blank" href="http://cfm.qq.com/webplat/info/news_version3/17544/21851/21859/m19882/list_1.shtml">攻略中心</a></li>
+					<li><a target="_blank" href="https://weibo.com/u/6257633707">赛事微博</a></li>
+				</ul>
+
+				
+				
+				<ul>
+					<li><a target="_blank" href="http://cfm.qq.com/cp/a20180427c4break/index.htm">最新版本</a></li>
+					<li><a target="_blank" href="http://cfm.qq.com/cp/a20151125cdk/">CDK兑换</a></li>
+				</ul>
+			
+				<ul>
+				
+					<li><a target="_blank" href="http://cfm.qq.com/tga/s7/index.htm">公开赛</a></li>
+					<li><a target="_blank" href="http://cfm.qq.com/cfml/s5/index.htm">职业联赛</a></li>
+				</ul>
+
+				<ul>
+					<li><a target="_blank" href="http://cfm.qq.com/cp/a20151015guide/">新手引导</a></li>
+					<!--<li><a href="###">枪械库</a></li>-->
+					<li><a target="_blank" href="http://cfm.qq.com/act/a20160720spokesmanpc/">代言人主题站</a></li>
+				</ul>
+				
+				<ul>
+					<li><a target="_blank" href="http://bbs.g.qq.com/forum-56951-1-1-1.html?ADTAG=cf.gw.rk">官方论坛</a></li>
+					<li><a href='javascript:showQRcode(1);'>手Q群部落</a></li>
+					<li><a href='javascript:showQRcode(0);'>微信圈子</a></li>
+					<li><a target="_blank" href="http://weibo.com/cf2015">官方微博</a></li>
+				</ul>
+				<ul>
+					<li><a href='javascript:showQRcode(2);'>客服中心</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="wx_platform m-pop" id="wxPlatform">
+	<div id="wxQqImg">
+	</div>
+	<a href="javascript:showDialog.hide();" class="sp close" title="关闭"></a>
+</div>
+
+
+<script>
+
+var menu=function(){
+	var t=15,s=8,a;
+	function dd(n,o){		
+		this.n=n; 
+		this.f = document.getElementById(n)
+		this.o=  document.getElementById(o);
+	}
+
+	dd.prototype.init=function(p,c){
+		a=c; //定义的class名
+		var w=document.getElementById(p), s=w.getElementsByTagName('a'), //s为一级菜单
+		h=this.o.getElementsByTagName('ul');//子菜单ul
+		this.f.onmouseover= new Function(this.n+'.st('+'true)');
+		this.f.onmouseout= new Function(this.n+'.st('+')');
+				
+		for (var i=0;i<s.length;i++) {
+			s[i].onmouseover = h[i].onmouseover = function(){ 'sc('+i+',true,'+ w +')'; } //一级菜单中的a
+			//function (){ sc(i,true,w)}
+			//s[i].onmouseout = h[i].onmouseout = function (){sc(i,false,w)}
+		}
+	}
+
+	dd.prototype.st=function(f){
+		var  c=this.o;
+		clearInterval(c.t); c.style.overflow='hidden';
+		//console.log(a);
+		if(f){
+			
+			if(!c.mh){c.style.display='block'; c.style.height=''; c.mh=c.offsetHeight; c.style.height=0}
+			if(c.mh==c.offsetHeight){c.style.overflow='visible'}
+			else{  c.t=setInterval(function(){sl(c,1)},t)}
+		}
+		else{
+		c.t=setInterval(function(){sl(c,-1)},t)}
+	}
+
+	function sc(x,f,w){//一级菜单中的a onmouseover
+
+		var p =document.getElementById('nav').getElementsByTagName('a')[x];
+		//console.log('msg:'+p);
+		if (f){
+			p.className+=' '+a;
+			//console.log(p);
+		}
+		else p.className=p.className.replace(a,''); 
+	}
+
+
+	function sl(c,f){//一级菜单中的a  onmouseout
+		var h=c.offsetHeight;
+		if((h<=0&&f!=1)||(h>=c.mh&&f==1)){
+			if(f==1){c.style.filter=''; c.style.opacity=1; c.style.overflow='visible'}
+			clearInterval(c.t); return
+		}
+		var d=(f==1)?Math.ceil((c.mh-h)/s):Math.ceil(h/s), o=h/c.mh;
+		c.style.opacity=o; c.style.filter='alpha(opacity='+(o*100)+')';
+		c.style.height=h+(d*f)+'px'
+	}
+	return{dd:dd}
+}();
+
+
+var menuBox=new menu.dd("menuBox","subNavList");//（最外层DIV的ID, 需要展开的DIVD的ID）
+
+menuBox.init("navList","menuhover");//（锚点层的DIV的ID,当前菜单的a的class）
+
+
+function loadScript(a,b,z){var c=document.createElement("script");if (z){c.charset="utf-8"};c.type="text/javascript",c.readyState?c.onreadystatechange=function(){("loaded"==c.readyState||"complete"==c.readyState)&&(c.onreadystatechange=null,b&&b())}:c.onload=function(){b&&b()},c.src=a,document.body.appendChild(c)};
+
+
+
+function showQRcode(index){
+	var img = ['wx_platform_img.jpg','qq_qrcode_img.jpg','kf_wx.png','match_qrcode.png','qcg_qrcode.png','wcg_qrcode.png','zhanghuo.jpg'];
+	var txt = ['请用微信扫描','请用手机QQ扫描','请用微信扫描','请扫描下方二维码','请扫描下方二维码','请扫描下方二维码','请扫描下方二维码'];
+	document.getElementById('wxQqImg').innerHTML = '<span class="txt">' + txt[index] + '</span><img src="ossweb-img/' + img[index] + '" width="202" height="202" border="0" />';
+	
+    loadScript('//ossweb-img.qq.com/images/js/comm/showDialog.min.js',function (){
+        showDialog.show({id:'wxPlatform',bgcolor:'#2e2e2e'})
+    });
+
+	
+};
+
+
+</script>
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/title.js"></script>
+</body>
+
+</html>

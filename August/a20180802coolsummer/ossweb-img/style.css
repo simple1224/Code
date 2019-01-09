@@ -1,0 +1,213 @@
+* {margin:0; padding:0;list-style:none;font-family:'Microsoft Yahei';}
+body,html,.ost_box,#actTitleWrap,.container,#footer_ied,.white-footer,.warp{min-width:1400px!important;width:100%!important;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1402?'1400px':'')!important;}
+/* set layout */
+.wrap{
+    width: 100%;
+    position: relative;
+}
+.wrap .bg{
+    min-width: 1000px;
+}
+.wrap .content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrap .content .main{
+    width: 1229px;
+    margin: 0 auto;
+}
+/* set bg */
+.bg .bg1{
+    width: 100%;
+    height: 363px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180802coolsummer/bg1.jpg) no-repeat top center;
+}
+.bg .bg2{
+    width: 100%;
+    height: 444px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180802coolsummer/bg2.jpg) no-repeat top center;
+}
+.bg .bg3{
+    width: 100%;
+    height: 1983px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180802coolsummer/bg3.jpg) no-repeat top center;
+}
+/* content begin */
+.content .logo{
+    width: 199px;
+    height: 138px;
+    margin-top: 18px;
+    margin-left: -59px;
+}
+.content .logo a{
+    display: block;
+    width: 199px;
+    height: 138px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180802coolsummer/logo.png) no-repeat;
+}
+.content .login{
+    height: 21px;
+    text-align: center;
+    margin-top: 426px;
+    position: relative;
+    top: 23px;
+}
+/* usual */
+.title{
+    width: 100%;
+    font-size: 43px;
+    font-weight: bold;
+    color: #0d889c;
+    text-align: center
+}
+/* part1 */
+.content .part1{
+    width: 100%;
+    height: 726px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180802coolsummer/part1.png) no-repeat;
+}
+.part1 .title1{
+    padding-top: 127px;
+    padding-left: 5px;
+}
+.part1 .p1{
+    font-size: 30.01px;
+    color: #0885bb;
+    text-align: center;
+    line-height: 71px;
+    height: 147px;
+    margin-top: 17px;
+}
+input{
+    display: block;
+    width: 234px;
+    outline: none;
+    border: 0px;
+    font-size: 48.01px;
+    color: #0d889c;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(0,0,0,.0);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+    /* WebKit browsers */ 
+   color: #0d889c; 
+   } 
+   input:-moz-placeholder, textarea:-moz-placeholder { 
+   /* Mozilla Firefox 4 to 18 */ 
+   color: #0d889c; 
+   } 
+   input::-moz-placeholder, textarea::-moz-placeholder { 
+    /* Mozilla Firefox 19+ */ 
+   color: #0d889c; 
+   } 
+   input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+    /* Internet Explorer 10+ */ 
+   color: #0d889c; 
+   }   
+
+.part1 .p2{
+    height: 120px;
+    line-height: 47px;
+    color: #388de5;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 37px;
+}
+.part1 a{
+    display: block;
+    width: 264px;
+    height: 87px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180802coolsummer/btn1.png) no-repeat;
+    margin: 0 auto;
+}
+/* part2*/
+.content .part2{
+    width: 1338px;
+    height: 1290px;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180802coolsummer/part2.png) no-repeat;
+    position: relative;
+    top: -36px;
+    left: -45px;
+}
+.part2 .title2{
+    padding-top: 145px;
+    padding-right: 25px;
+}
+.part2 .cj{
+    width:1067px;
+    height: 832px;
+    position: relative;
+    top: 91px;
+    left: 155px;
+}
+.part2 .p3{
+    font-size: 30.01px;
+    color: #398be2;
+    position: absolute;
+    left: 476px;
+    top: 232px;
+    
+}
+.part2 .num{
+    position: absolute;
+    font-size: 36.02px;
+    color: #0d889c;
+    position: absolute;
+    top: 768px;
+    left: 490px;
+}
+/* part3 */
+.content .part3{
+    width: 100%;
+    height: 222px;
+    text-align: center;
+    position: relative;
+    top: -54px;
+}
+.part3 .title3{
+    font-size: 30px;
+    color: #0f1620;
+    line-height: 61px;
+}
+.part3 .rule{
+    font-size: 14px;
+    color: #0f1620;
+    line-height: 36px;
+}
+/* content end */
+
+/*footer*/
+#footer_ieg{
+    width: 100%;
+    height: 189px;
+    background:url(bg4.jpg) no-repeat top center;
+}
+.wrap_ieg{
+    padding-top: 54px;
+    padding-bottom: 54px;
+    text-align: center;
+    line-height: 27px;
+    background: #111a1f;
+    opacity: .8;
+}
+.wrap_ieg p a{
+    text-decoration: none;
+    color: #ddd;
+    font-size: 12px;
+}
+.wrap_ieg p{
+    color: #ddd;
+    font-size: 12px;
+}

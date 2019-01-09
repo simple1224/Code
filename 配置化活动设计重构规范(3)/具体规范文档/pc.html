@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Tencent-CP"/>
+    <meta name="Copyright" content="Tencent"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <title>心悦俱乐部官网后台配置说明</title>
+    <!-- 私有样式开始 -->
+    <link rel="stylesheet" type="text/css" href="css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.min.css">
+    <!-- 私有样式结束 -->
+</head>
+
+<body>
+
+<div class="navWrap">
+    <h1 class="logo" data-version="v1.0">配置化活动设计重构规范</h1>
+    <span class="logoTips">后台配置规范</span>
+    <ul class="nav">
+        <li>
+            <a href="index.html" class="navLink">H5</a>
+            <ul class="navSecond">
+                <li>
+                    <a href="index.html#one" class="navLink">顶部 banner </a>
+                </li>
+                <li>
+                    <a href="index.html#two" class="navLink">顶部 banner 按钮</a>
+                </li>
+                <li>
+                    <a href="index.html#three" class="navLink">全局背景</a>
+                </li>
+                <li>
+                    <a href="index.html#four" class="navLink">新手礼包</a>
+                </li>
+                <li>
+                    <a href="index.html#five" class="navLink">回归礼包</a>
+                </li>
+                <li>
+                    <a href="index.html#six" class="navLink">特权礼包</a>
+                </li>
+                <li>
+                    <a href="index.html#seven" class="navLink">充值礼包</a>
+                </li>
+                <li>
+                    <a href="index.html#eight" class="navLink">抽奖模块</a>
+                </li>
+
+                <li>
+                    <a href="index.html#night" class="navLink">图片轮播模块</a>
+                </li>
+
+                <li>
+                    <a href="index.html#ten" class="navLink">活动规则</a>
+                </li>
+            </ul>
+
+        </li>
+        <li>
+            <a href="pc.html" class="navLink">PC</a>
+            <ul class="navSecond">
+                <li>
+                    <a href="pc.html#one" class="navLink">顶部 banner </a>
+                </li>
+                <li>
+                    <a href="pc.html#two" class="navLink">顶部 banner 按钮</a>
+                </li>
+                <li>
+                    <a href="pc.html#three" class="navLink">礼包模块背景</a>
+                </li>
+                <li>
+                    <a href="pc.html#four" class="navLink">新手礼包</a>
+                </li>
+                <li>
+                    <a href="pc.html#five" class="navLink">回归礼包</a>
+                </li>
+                <li>
+                    <a href="pc.html#six" class="navLink">特权礼包</a>
+                </li>
+                <li>
+                    <a href="pc.html#seven" class="navLink">充值礼包</a>
+                </li>
+                <li>
+                    <a href="pc.html#eight" class="navLink">抽奖模块</a>
+                </li>
+                <li>
+                    <a href="pc.html#nine" class="navLink">图片轮播模块背景</a>
+                </li>
+                <li>
+                    <a href="pc.html#ten" class="navLink">图片轮播模块</a>
+                </li>
+                <li>
+                    <a href="pc.html#eleven" class="navLink">活动规则</a>
+                </li>
+                <li>
+                    <a href="pc.html#twelve" class="navLink">二维码弹层</a>
+                </li>
+                <li>
+                    <a href="pc.html#thirteen" class="navLink">背景整合</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="mainWrap">
+
+    <div class="mainWidth">
+
+        <h5 class="pageTitle">概述</h5>
+        <p class="descriptText">本文主要介绍配置化活动设计重构规范（v1.0）具体事项，凡涉及到图片更新事项，请参考以下规范标准。</p>
+
+        <div class="descript">
+            <h5 class="pageTitle">图片优化规范</h5>
+            <ol class="nums">
+                <li>图片必须压缩，一般 80% 品质即可，保证文字清晰；</li>
+                <li>图片必须使用 渐进式图片 ：使用Photoshop的“存储为web所用格式”时候，勾选“连续”；</li>
+                <li>图片必须使用<a href="http://tgideas.qq.com/doc/frontend/tool/imagecompress.html" target="_blank"
+                             class="webLink">压缩工具</a>压缩后上传；
+                </li>
+                <li>图片体积不要超过 300 k；</li>
+            </ol>
+        </div>
+
+        <div class="descript">
+            <h5 class="pageTitle">注意事项</h5>
+            <ol class="nums">
+                <li class="webRebuild">字体加粗蓝色部分为重构需要注意事项，仅供参考。</li>
+                <li class="webRebuild">雪碧图根据功能需要，自行生成。目前基本上全站的按钮宽高都一致。
+                </li>
+				<li class="webRebuild">不允许删除样式名。</li>
+            </ol>
+        </div>
+
+        <div class="descript" id="one">
+            <h3 class="pageTitle">顶部 banner </h3>
+            <img class="descriptImg" src="ossweb-img/pc-home-1.jpg">
+            <ol class="nums">
+                <li>图片尺寸大小 1920 * 796 px；</li>
+                <li>图片格式 jpg；</li>
+            </ol>
+        </div>
+
+        <div class="descript" id="two">
+            <h3 class="pageTitle">顶部 banner 按钮</h3>
+            <img class="descriptImg" src="ossweb-img/pc-home-2.jpg">
+            <ol class="nums">
+                <li>顶部 banner 按钮大小为 262px * 82px 。</li>
+                <li>图片格式 png 雪碧图。</li>
+                <li>距离顶部 595px ，水平居中，整体 banner 效果如下：</li>
+            </ol>
+            <img class="descriptImg" src="ossweb-img/pc-home-3.jpg">
+        </div>
+        <div class="descript" id="three">
+            <h3 class="pageTitle">礼包模块背景</h3>
+            <img class="descriptImg" src="ossweb-img/pc-home-4.jpg">
+            <ol class="nums">
+                <li>背景图片宽高为 1920px * 800px 。</li>
+                <li>内容背景宽高为 942px * 436px ，水平居中。</li>
+                <li>内容背景距离顶部 215px 。</li>
+                <li>图片格式 jpg 。</li>
+                <li>效果如下：</li>
+            </ol>
+            <img class="descriptImg" src="ossweb-img/pc-home-41.jpg">
+            <ol class="nums">
+                <li class="webRebuild">所有模块需要整合成一张背景图最后输出。重构可以在<span class="code">#app</span>上对样式进行修改。<a href="pc.html#thirteen" class="webLink" >了解更多</a> </li>
+            </ol>
+        </div>
+
+        <div class="descript" id="four">
+            <h3 class="pageTitle">新手礼包</h3>
+            <img class="descriptImg" src="ossweb-img/pc-home-5.jpg">
+            <ol class="nums">
+                <li>标题宽高为 311px * 47px，图片格式为 png 雪碧图，距离顶部 81px 。</li>
+                <li>轮播内容宽高为 785px * 233px，图片格式为 png。</li>
+                <li>轮播内容距离顶部 215px 。</li>
+                <li>轮播左右箭头宽高为 56px * 56px 图片格式为 png 雪碧图。</li>
+                <li>按钮宽高为 262px * 82px ，图片格式为 png 雪碧图。</li>
+                <li>按钮距离顶部 639px。</li>
+                <li class="webRebuild">左右图片背景类名：<span class="code">#wrap .swiper-button-prev</span>,<span class="code">.#wrap .swiper-button-next</span></li>
+                <li class="webRebuild">左右滚动是在 .swiper-container 添加 相对应的 id 进行区分 。</li>
+                <li><pre><code> function swiperOne() {
+    var swiper = new Swiper('#swiper-container1', {
+        nextButton: '<span class="code">#swiper-1 .swiper-button-next</span>',
+        prevButton: '<span class="code">#swiper-1  .swiper-button-prev</span>',
+        loop: true
+    });
+}</code></pre>
+                </li>
+                <li>效果图如下:</li>
+            </ol>
+            <img class="descriptImg" src="ossweb-img/pc-home-51.jpg">
+        </div>
+
+        <div class="descript" id="five">
+            <h3 class="pageTitle">回归礼包</h3>
+            <img class="descriptImg" src="ossweb-img/pc-home-5.jpg">
+            <ol class="nums">
+                <li>标题宽高为 311px * 47px，图片格式为 png 雪碧图，距离顶部 81px 。</li>
+                <li>轮播内容宽高为 785px * 233px，图片格式为 png。</li>
+                <li>轮播内容距离顶部 215px 。</li>
+                <li>轮播左右箭头宽高为 56px * 56px 图片格式为 png 雪碧图。</li>
+                <li>按钮宽高为 262px * 82px ，图片格式为 png 雪碧图。</li>
+                <li>按钮距离顶部 639px。</li>
+                <li class="webRebuild">左右图片背景类名：<span class="code">#wrap .swiper-button-prev</span>,<span class="code">.#wrap .swiper-button-next</span></li>
+                <li class="webRebuild">左右滚动是在 .swiper-container 添加 相对应的 id 进行区分 。</li>
+                <li><pre><code> function swiperOne() {
+    var swiper = new Swiper('#swiper-container1', {
+        nextButton: '<span class="code">#swiper-1 .swiper-button-next</span>',
+        prevButton: '<span class="code">#swiper-1  .swiper-button-prev</span>',
+        loop: true
+    });
+}</code></pre>
+                </li>
+                <li>效果图如下:</li>
+            </ol>
+            <img class="descriptImg" src="ossweb-img/pc-home-6.jpg">
+        </div>
+
+        <div class="descript" id="six">
+            <h3 class="pageTitle">特权礼包</h3>
+            <img class="descriptImg" src="ossweb-img/pc-home-5.jpg">
+            <ol class="nums">
+                <li>标题宽高为 311px * 47px，图片格式为 png 雪碧图，距离顶部 81px 。</li>
+                <li>轮播内容宽高为 785px * 233px，图片格式为 png。</li>
+                <li>轮播内容距离顶部 215px 。</li>
+                <li>轮播左右箭头宽高为 56px * 56px 图片格式为 png 雪碧图。</li>
+                <li>按钮宽高为 262px * 82px ，图片格式为 png 雪碧图。</li>
+                <li>按钮距离顶部 639px。</li>
+                <li class="webRebuild">左右图片背景类名：<span class="code">#wrap .swiper-button-prev</span>,<span class="code">.#wrap .swiper-button-next</span></li>
+                <li class="webRebuild">左右滚动是在 .swiper-container 添加 相对应的 id 进行区分 。</li>
+                <li><pre><code> function swiperOne() {
+    var swiper = new Swiper('#swiper-container1', {
+        nextButton: '<span class="code">#swiper-1 .swiper-button-next</span>',
+        prevButton: '<span class="code">#swiper-1  .swiper-button-prev</span>',
+        loop: true
+    });
+}</code></pre>
+                </li>
+                <li>效果图如下:</li>
+            </ol>
+            <img class="descriptImg" src="ossweb-img/pc-home-7.jpg">
+        </div>
+
+        <div class="descript" id="seven">
+            <h3 class="pageTitle">充值礼包</h3>
+            <img class="descriptImg" src="ossweb-img/pc-home-5.jpg">
+            <ol class="nums">
+                <li>标题宽高为 311px * 47px，图片格式为 png 雪碧图，距离顶部 81px 。</li>
+                <li>轮播内容宽高为 785px * 233px，图片格式为 png。</li>
+                <li>轮播内容距离顶部 215px 。</li>
+                <li>轮播左右箭头宽高为 56px * 56px 图片格式为 png 雪碧图。</li>
+                <li>按钮宽高为 262px * 82px ，图片格式为 png 雪碧图。</li>
+                <li>按钮距离顶部 639px。</li>
+                <li class="webRebuild">左右图片背景类名：<span class="code">#wrap .swiper-button-prev</span>,<span class="code">.#wrap .swiper-button-next</span></li>
+                <li class="webRebuild">左右滚动是在 .swiper-container 添加 相对应的 id 进行区分 。</li>
+                <li><pre><code> function swiperOne() {
+    var swiper = new Swiper('#swiper-container1', {
+        nextButton: '<span class="code">#swiper-1 .swiper-button-next</span>',
+        prevButton: '<span class="code">#swiper-1  .swiper-button-prev</span>',
+        loop: true
+    });
+}</code></pre>
+                </li>
+                <li>效果图如下:</li>
+            </ol>
+            <img class="descriptImg" src="ossweb-img/pc-home-8.jpg">
+        </div>
+
+        <div class="descript" id="eight">
+            <h3 class="pageTitle">抽奖模块</h3>
+            <img class="descriptImg" src="ossweb-img/pc-home-9.jpg">
+            <ol class="nums">
+                <li>标题宽高为 311px * 47px，图片格式为 png 雪碧图，距离顶部 81px 。</li>
+                <li>抽奖图片宽高为 831px * 549px ，图片格式为 png 。</li>
+                <li>抽奖图片距离顶部 207px。</li>
+                <li>按钮宽高为 262px * 82px 。</li>
+            </ol>
+        </div>
+
+        <div class="descript" id="nine">
+            <h3 class="pageTitle">图片轮播模块背景</h3>
+            <img class="descriptImg" src="ossweb-img/pc-home-11.jpg">
+            <ol class="nums">
+                <li>背景图片宽高 1920px * 937px 。</li>
+                <li>轮播背景宽高为 946px * 567px 。</li>
+                <li>轮播背景距离顶部 188。</li>
+                <li>图片格式为 jpg 。</li>
+                <li>效果如下：</li>
+            </ol>
+            <img class="descriptImg" src="ossweb-img/pc-home-111.jpg">
+            <ol class="nums">
+                <li class="webRebuild">所有模块需要整合成一张背景图最后输出。重构可以在<span class="code">#app</span>上对样式进行修改。<a href="pc.html#thirteen" class="webLink" >了解更多</a> </li>
+            </ol>
+        </div>
+
+        <div class="descript" id="ten">
+            <h3 class="pageTitle">图片轮播模块</h3>
+            <img class="descriptImg" src="ossweb-img/pc-home-10.jpg">
+            <ol class="nums">
+                <li>标题宽高为 311px * 47px，图片格式为 png 雪碧图，距离顶部 81px 。</li>
+                <li>轮播内容图片宽高为 726px * 373px ，图片格式为 jpg 或者 png 。</li>
+                <li>轮播图片距离顶部 282px。</li>
+            </ol>
+        </div>
+
+        <div class="descript" id="eleven">
+            <h3 class="pageTitle">活动规则</h3>
+            <img class="descriptImg" src="ossweb-img/pc-home-12.jpg">
+            <ol class="nums">
+                <li>背景图片宽高 1920px * 800px 。</li>
+                <li class="webRebuild">重构可以修改规则颜色或者字体大小，对应类名:<span class="code">.rules</span></li>
+                <li class="webRebuild">所有模块需要整合成一张背景图最后输出。重构可以在<span class="code">#app</span>上对样式进行修改。<a href="pc.html#thirteen" class="webLink" >了解更多</a> </li>
+                <li>效果如下:</li>
+            </ol>
+            <img class="descriptImg" src="ossweb-img/pc-home-121.jpg">
+
+        </div>
+
+        <div class="descript" id="twelve">
+            <h3 class="pageTitle">二维码弹层</h3>
+            <img class="descriptImg" src="ossweb-img/pc-home-13.jpg">
+            <ol class="nums">
+                <li>弹层背景图片宽高 399px * 341px 。</li>
+                <li>弹层关闭按钮快高 60px * 60px 。</li>
+            </ol>
+        </div>
+
+        <div class="descript" id="thirteen">
+            <h3 class="pageTitle">背景整合</h3>
+            <img class="descriptImg" src="ossweb-img/pc-home-14.jpg">
+            <ol class="nums">
+                <li class="webRebuild">所有模块需要整合成一张背景图最后输出。重构可以在<span class="code">#app</span>上对样式进行修改。</li>
+            </ol>
+        </div>
+
+        <div class="descript">
+            <p>以上规范如有问题或建议，请及时联系 v_aqqhuang(黄泉强) / v_qchaochen(陈钦潮)。</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+
+</body>
+</html>

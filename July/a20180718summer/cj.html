@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="ossweb-img/style.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <ul class="list">
+        <li class="item1 active"><div class="mask"></div></li>
+        <li class="item2"><div class="mask"></div></li>
+        <li class="item3"><div class="mask"></div></li>
+        <li class="item4"><div class="mask"></div></li>
+        <li class="item5"><div class="mask"></div></li>
+        <li class="item6"><div class="mask"></div></li>
+        <li class="item7"><div class="mask"></div></li>
+        <li class="item8"><div class="mask"></div></li>
+    </ul>
+    <!-- cj -->
+    <div class="cj"  style="position: relative">
+        <div class="lottery" id="lotterycontent">
+            <img src="ossweb-img/price.png" alt="奖品" width="780" height="432">
+        </div>
+    </div>
+    <!-- tab -->
+	<div class="dia" id="dia" style="display:none">
+		<div class="dia-con">
+            <div class="title1"></div>
+            <p>活动期间，您可以在活动页面查看炫彩皮肤宝箱，并自选替换其中的换肤卡道具，确认后锁定。<br> <span> 换肤卡为唯一道具，请不要选择游戏内已拥有</span></p>
+            <ul class="list2">
+                <li class="item1 left">
+                    <img src="ossweb-img/pic1.png">
+                    <div class="mask active"></div>
+                </li>
+                <li class="item2">
+                    <img src="ossweb-img/pic2.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item3">
+                    <img src="ossweb-img/pic3.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item4 left">
+                    <img src="ossweb-img/pic4.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item5">
+                    <img src="ossweb-img/pic5.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item6">
+                    <img src="ossweb-img/pic6.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item7 left">
+                    <img src="ossweb-img/pic7.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item8">
+                    <img src="ossweb-img/pic8.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item9">
+                    <img src="ossweb-img/pic9.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item10 left">
+                    <img src="ossweb-img/pic10.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item11">
+                    <img src="ossweb-img/pic11.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item12">
+                    <img src="ossweb-img/pic12.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item13 left">
+                    <img src="ossweb-img/pic13.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item14">
+                    <img src="ossweb-img/pic14.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item15">
+                    <img src="ossweb-img/pic15.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item16 left">
+                    <img src="ossweb-img/pic16.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item17">
+                    <img src="ossweb-img/pic17.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item18">
+                    <img src="ossweb-img/pic18.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item19 left">
+                    <img src="ossweb-img/pic19.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item20">
+                    <img src="ossweb-img/pic20.png">
+                    <div class="mask"></div>
+                </li>
+                <li class="item21">
+                    <img src="ossweb-img/pic21.png">
+                    <div class="mask"></div>
+                </li>
+            </ul>
+            <div class="right"><img src="ossweb-img/bg3.png" alt=""></div>
+            <a class="confirm"></a>
+        </div>
+		<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+	</div>
+	
+</body>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+
+<!-- tab -->
+<script src="http://ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+	<script>
+		function showDia(){
+			showDialog.show({
+				id:"dia", //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+				bgcolor:"#e3e3e3",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+				opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+			});
+		}
+    </script>
+    
+    <script>
+        $('.list li').click(function(){
+            // console.log($(this).index());
+                showDia();
+                current = $(this).index();
+                // console.log(current);
+        })
+        
+        $('.list2 li').click(function(){
+        //    $('.list li')[current].replaceWith($(this));
+        //    $(this).replaceAll('.list li');
+        //  $('.list li').eq(current).replaceWith($(this));
+             t = $(this).clone();
+             console.log($(this).children('div').parent().siblings().children('div') )
+            //  $(this).siblings().addClass('active');
+            $(this).children('div').addClass('active').parent().siblings().children('div').removeClass('active')
+            //  $(this).eq($(this).index()).addClass('active').siblings().removeClass('active');
+        //   console.log( $('.list li').eq(current)).replaceWith($(this))
+            
+        })
+        $('.confirm').click(function(){
+            $('.list li').eq(current).replaceWith(t);
+        })
+    </script>
+
+<!-- cj -->
+<script src="http://game.gtimg.cn/images/js/delottery/lottery.js"></script>
+<script>
+	//点击开始抽奖 通知js flash->js
+
+	//开始抽奖lottery->js
+	function callJsToStart() {
+		lottery.disable();
+		calllotteryToRoll(4);
+	}
+	//开发获得抽奖结果 通知lottery开始播放效果 js->lottery
+	function calllotteryToRoll(id) {
+		if (lottery) lottery.stopRoll(id);
+	}
+	//动画完成通知js lottery->js		
+	function callJsToComplete() {
+		alert('恭喜你获得大奖哟！！');
+	}
+
+	//初始化抽奖的 可以不知道内部
+	var lottery = new Lottery({
+		'lighturl': 'http://ossweb-img.qq.com/images/js/delottery/sel.png',//外部光圈png 不填写就用默认的效果
+		'starturl': 'http://ossweb-img.qq.com/images/js/delottery/blankstartbtn.png', //外部按钮png 不填写就用默认的按钮效果
+		'width': 780,//lottery 宽度
+		'height': 432,//lottery 高度
+		'total': 8,//抽奖产品的总数
+		'sbtnx': 270,// 开始抽奖按钮的位置x坐标
+		'sbtny': 180,// 开始抽奖按钮的位置y坐标
+		'sbtnw': 235,// 开始抽奖按钮的宽度
+		'sbtnh': 80,// 开始抽奖按钮的高度
+		'boxw': 248,// 奖品光效的宽度
+		'boxh': 136,//奖品光效的高度 
+		'position': "0_0,265_0,532_0,532_150,532_295,265_295,0_295,0_150",
+		//奖品光效的位置，对应奖品图片的布局，填入每个奖品的位置以及角度用逗号分割 x_y 例如19_20或者19_20_0 表示第一个奖品的位置 x坐标为19px y坐标为20px 角度为0。）
+		'contentId': 'lotterycontent',//嵌入lottery 的div层的 id 
+		'onClickRollEvent': callJsToStart,//对应上面接口
+		'onCompleteRollEvent': callJsToComplete //对应上面接口
+	});
+</script>
+
+</html>

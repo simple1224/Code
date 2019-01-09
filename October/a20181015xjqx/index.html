@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">    
+	<meta itemprop="name" content="《仙剑奇侠传四手游》-腾讯游戏-官方正版手游" />
+    <meta itemprop="description" content="《仙剑奇侠传四手游》是大宇授权，西山居研发的官方正版手游，梦回即墨，再聚仙缘！" />
+    <title>仙剑奇侠传四手游-腾讯游戏-官方正版手游</title>
+    <link rel="stylesheet" href=" ossweb-img/reset.css">
+    <link rel="stylesheet" href=" ossweb-img/style.css">
+</head>
+<body>
+<!-- //game.gtimg.cn/images/tgclub/act/a20181015xjqx -->
+
+<div class="wrap">
+    <div class="bg">
+        <div class="bg1"></div>
+    </div>
+    <div class="content">
+        <!-- logo设置 -->
+        <div class="logo">
+            <a class="logo1" href="//xj4.qq.com/" target="_blank" onclick="PTTSendClick('btn','click_btn','仙剑奇侠传');"></a>
+            <a class="logo2" href="//xinyue.qq.com/" target="_blank" onclick="PTTSendClick('btn','click_btn2','心悦俱乐部');"></a>
+        </div>
+        <!-- page -->
+        <div class="page">
+            <div class="page1 active"></div>
+            <div class="page2"></div>
+            <div class="page3"></div>
+            <div class="page4"></div>
+            <div class="page5"></div>
+        </div>
+        <!-- 签到 -->
+        <div class="check">
+            <a class="a1 spr" href="javascript:;" onclick="PTTSendClick('btn','bt1','我要签到');"></a>
+            <p>你已签到：<span>1</span>天</p>
+        </div>
+        <!-- part1 -->
+        <div class="part1">
+            <div class="title spr"></div>
+            <div class="lottery">
+                <div id="ltpanel" class="panel"></div>
+            </div>
+            <a class="a1 spr" href="javascript:;" onclick="PTTSendClick('btn','bt2','获奖记录');"></a>
+            <a class="a2 spr" href="javascript:;" onclick="PTTSendClick('btn','bt3','分享好友');"></a>
+        </div>
+        <!-- part2 -->
+        <div class="part2">
+            <div class="title spr"></div>
+            <div class="null"></div>
+            <a class="a1 spr" href="javascript:;" onclick="PTTSendClick('btn','bt3','查看更多');"></a>
+        </div>
+        <!-- part3 -->
+        <div class="part3">
+            <div class="title spr"></div>
+            <div class="rule">
+                <li><i class="spr">1</i>活动时间：<span>2018年10月19日-10月23日</span> 。</li>
+                <li><i class="spr">2</i>在活动累计签到3天即可获得抽奖资格.</li>
+                <li><i class="spr">3</i>道具奖励将于仙剑奇侠传四不删档开启后在心悦APP游戏区
+                    领取。</li>
+            </div>
+    </div>
+</div>
+    
+   <!-- 弹出层test1 Start-->
+   <!-- <a class="dia-btn" href="javascript:TGDialogS(test1);">点击显示弹层</a> -->
+   <div class="dialog" id="test1" style="display:none">
+       <div class="dia-con">
+          <p>这里是不删档页面</p>
+          <a class="a1" href="javascript:;" onclick="PTTSendClick('btn','bt9','知道啦');"></a>
+       </div>
+       <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+   </div>
+   <!-- 弹出层test1 End-->
+
+   <!-- 弹出层test2 Start-->
+   <!-- <a class="dia-btn" href="javascript:TGDialogS(test2);">点击显示弹层</a> -->
+   <div class="dialog" id="test2" style="display:none">
+       <div class="dia-con">
+           <p>很抱歉，你未获得斗破苍穹 心悦专属福利倒计时活动奖励</p>
+           <a class="a1" href="javascript:;" onclick="PTTSendClick('btn','bt9','领取');"></a>
+       </div>
+       <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+   </div>
+   <!-- 弹出层test2 End-->
+
+   <!-- 弹出层test3 Start-->
+   <a class="dia-btn" href="javascript:TGDialogS(test3);">点击显示弹层</a>
+   <div class="dialog" id="test3" style="display:none">
+       <div class="dia-con">
+            <div class="con">
+                   <span>服务器</span> <select name="" id="">
+                            <option value="">微信</option>
+                        </select><br>
+                    <span>角色</span> <select name="" id="">
+                            <option value="角色1">角色1</option>
+                        </select>
+            </div>
+           <a class="a1" href="javascript:;" onclick="PTTSendClick('btn','bt9','领取');"></a>
+       </div>
+       <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+   </div>
+   <!-- 弹出层test3 End-->
+</div>
+</body>
+<script> 
+    //屏幕适应 
+    (function (win, doc) {
+        if (!win.addEventListener) return;
+        var html = document.documentElement;
+        function setFont() {
+            var html = document.documentElement;
+            var k = 750;
+            html.style.fontSize = html.clientWidth / k * 100 + "px";
+        }
+        setFont();
+        setTimeout(function () {
+            setFont();
+        }, 300);
+        doc.addEventListener('DOMContentLoaded', setFont, false);
+        win.addEventListener('resize', setFont, false);
+        win.addEventListener('load', setFont, false);
+    })(window, document);
+</script>
+<!-- 抽奖 -->
+<script src="//game.gtimg.cn/images/js/zepto/zepto.min.js"></script>
+<script src="//game.gtimg.cn/images/js/loteryround/ossweb-img/loteryround.min.js"></script>
+<script>
+// 转盘初始化
+// 第一个参数是奖品的个数
+// 第二个是用来旋转的圆盘（指针不动）
+var panel=new PanelLotery({
+    length:6,
+    //duration:5000, //动画的时间，默认5秒，可不填
+    el:'#ltpanel'
+});
+
+$('.panel-btn').on('click', function(event) {
+    event.preventDefault();
+        if(panel.playing) return;
+        // 这里是演示随机转到奖品n
+        // 初始的指针右侧开始
+        // 顺时针方向开始算
+        // 第一个奖品是n=0
+        var n=Math.floor(Math.random()*8);
+        console.log(n);
+        panel.playto(n,function(){
+        alert(n);
+    });
+});
+</script>
+<!-- tab -->
+<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+<script>
+    function TGDialogS(e){
+        need("biz.dialog-min",function(Dialog){
+            Dialog.show({
+                id:e,
+                bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+            });
+        });
+    }
+    function closeDialog(){
+        need("biz.dialog-min",function(Dialog){
+            Dialog.hide();
+        });
+    }
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性 
+    siteType:"a20181015xjqx", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx 
+    pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN 
+    pageName:"首页", //必填项:页面中文名 
+    project:"", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;
+    osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+    stayTime:0, //选填项:是否需要统计停留时长boolean；默认是0
+};
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</html>

@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* 重置样式开始 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+input, textarea, select {
+  *font-size: 100%; }
+
+/* 重置样式结束 */
+body {
+  font-size: 12px;
+  font-family: 'Microsoft Yahei'; }
+
+a {
+  text-decoration: none; }
+
+.swiper-pagination-bullet:before {
+  display: block; }
+
+.slidePics, .swiper-pagination-bullet:before, .bannerTopMask, .bannerMask {
+  position: absolute; }
+
+.swiper-pagination-bullet, .bannerWrap .swiper-slide {
+  position: relative; }
+
+.swiper-pagination-bullet:before {
+  content: ''; }
+
+/* banner 滚动开始 */
+.slidePics {
+  left: 50%;
+  top: 86px;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  overflow: hidden;
+  width: 282px;
+  height: 498px;
+  border: 2px solid #000; }
+
+#banner .swiper-button-next,
+#banner .swiper-button-prev {
+  background: none;
+  height: 138px;
+  width: 43px;
+  background-size: auto; }
+
+#banner .swiper-button-next {
+  right: 28px;
+  background-image: url("../ossweb-img/sprites.png");
+  background-repeat: no-repeat;
+  background-position: -13px -267px; }
+
+#banner .swiper-button-prev {
+  left: 28px;
+  background-image: url("../ossweb-img/sprites.png");
+  background-repeat: no-repeat;
+  background-position: -70px -267px; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 120px; }
+
+.swiper-pagination-bullet {
+  width: 80px;
+  height: 2px;
+  background: #979695;
+  border-radius: 0;
+  opacity: 1; }
+  .swiper-pagination-bullet:before {
+    left: 0;
+    top: 0;
+    background: -webkit-linear-gradient(to right, #dcb87d, #a06f34);
+    background: -o-linear-gradient(to right, #dcb87d, #a06f34);
+    background: -webkit-gradient(linear, left top, right top, from(#dcb87d), to(#a06f34));
+    background: -webkit-linear-gradient(left, #dcb87d, #a06f34);
+    background: -o-linear-gradient(left, #dcb87d, #a06f34);
+    background: linear-gradient(to right, #dcb87d, #a06f34);
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    height: 100%;
+    width: 100%;
+    -webkit-transition: transform 0s linear 0s;
+    -o-transition: transform 0s linear 0s;
+    -webkit-transition: -webkit-transform 0s linear 0s;
+    transition: -webkit-transform 0s linear 0s;
+    transition: transform 0s linear 0s;
+    transition: transform 0s linear 0s, -webkit-transform 0s linear 0s;
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top; }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transition: transform 3s linear 0s;
+    -o-transition: transform 3s linear 0s;
+    -webkit-transition: -webkit-transform 3s linear 0s;
+    transition: -webkit-transform 3s linear 0s;
+    transition: transform 3s linear 0s;
+    transition: transform 3s linear 0s, -webkit-transform 3s linear 0s; }
+
+.bannerWrap {
+  /*  斜角结束 */ }
+  .bannerWrap .swiper-slide {
+    height: 750px;
+    /* 斜角开始 */
+    -webkit-clip-path: polygon(0px 0px, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0px 0px, 100% 0, 100% 100%, 0 100%);
+    -webkit-transition: all 0.15s linear 0s;
+    -o-transition: all 0.15s linear 0s;
+    transition: all 0.15s linear 0s; }
+  .bannerWrap .swiper-clipRight {
+    -webkit-clip-path: polygon(0px 0px, 95% 0, 92.5% 120%, 0 100%);
+    clip-path: polygon(0px 0px, 95% 0, 92.5% 120%, 0 100%); }
+  .bannerWrap .swiper-clipLeft {
+    -webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 7.5% 120%);
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 7.5% 120%); }
+  .bannerWrap .swiper-slide-active {
+    z-index: 1000;
+    -webkit-transition: all 0.15s linear 0s;
+    -o-transition: all 0.15s linear 0s;
+    transition: all 0.15s linear 0s; }
+  .bannerWrap .swiper-slide-next {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0); }
+  .bannerWrap .swiper-slide-prev {
+    -webkit-transform: translate3d(50%, 0, 0);
+    -ms-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0); }
+  .bannerWrap .swiper-slide-pic {
+    height: 100%;
+    width: 100%;
+    background-position: center; }
+
+.bannerTopMask {
+  height: 200px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(black, rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(black, rgba(0, 0, 0, 0));
+  background: linear-gradient(black, rgba(0, 0, 0, 0));
+  left: 0;
+  top: 0;
+  z-index: 2;
+  pointer-events: none; }
+
+.bannerMask {
+  width: 100%;
+  height: 600px;
+  bottom: -300px;
+  pointer-events: none;
+  left: 0;
+  z-index: 2;
+  background-image: url("../ossweb-img/fast-entry.png");
+  background-repeat: no-repeat; }
+
+/* banner 滚动结束 */

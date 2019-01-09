@@ -1,0 +1,427 @@
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form,header,section,article,footer{margin:0;}
+body,button,input,select,textarea{font:12px/1.5 tahoma,'\5FAE\8F6F\96C5\9ED1',sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em,b{font-style:normal}
+a{text-decoration:none;outline: none}
+a:hover{text-decoration:none;outline: none}
+img{border:0}
+*{
+  outline: none;
+}
+table{border-collapse:collapse;border-spacing:0}
+td,th,ul,ol{padding:0;list-style:none;}
+body{padding-top:42px}
+button,input,select,textarea{font-size:100%;outline:none}
+table{border-collapse:collapse;border-spacing:0}
+td,th,ul,ol{padding:0}
+body{font-family:'\5FAE\8F6F\96C5\9ED1',sans-serif!important;}
+
+$img:"./";
+//$img:"//game.gtimg.cn/images/mgc/cp/a20181111x5fest/";
+
+body,html,.ost_box,#actTitleWrap,.container,#footer_ied,.white-footer,.warp{min-width:1205px!important;width:100%!important;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1207?'1205px':'')!important;}
+
+@keyframes play {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes xuanzhuan {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes xuanzhuan1 {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+
+.warp{
+  width: 100%;
+  position: relative;
+  .bg{
+    width: 100%;
+    .bg1{
+      width: 100%;
+      height: 483px;
+      background: url($img +"bg1.jpg")no-repeat center;
+    }
+    .bg2{
+      width: 100%;
+      height: 541px;
+      background: url($img +"bg2.jpg")no-repeat center;
+    }
+    .bg3{
+      width: 100%;
+      height: 856px;
+      background: url($img +"bg3.jpg")no-repeat center;
+    }
+    .bg4{
+      width: 100%;
+      height: 867px;
+      background: url($img +"bg4.jpg")no-repeat center;
+    }
+  }
+  .butterfly_warp{
+    width: 100%;
+    height: 816px;
+    min-width: 1205px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 980px;
+    .butterfly{
+      width: 1205px;
+      height: 816px;
+      position: absolute;
+      left: 50%;
+      margin-left: -602.5px;
+      z-index: 10;
+      background: url($img +"butterfly.png")no-repeat center;
+      animation: play 4s linear infinite;
+    }
+  }
+  .container{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+}
+.main{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 395px;
+  .x5_logo{
+    width: 104px;
+    height: 61px;
+    display: block;
+    background: url($img +"x5.png")no-repeat center;
+    position: absolute;
+    top: 19px;
+    left: 110px;
+  }
+  .mgc_logo{
+    display: block;
+    width: 154px;
+    height: 45px;
+    background: url($img +"mgc.png")no-repeat center;
+    position: absolute;
+    top: 25px;
+    left: 225px;
+  }
+  .time{
+    width: 850px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    top: 115px;
+    left: 0;
+    color: #25efc7;
+    font-size: 18px;
+    text-shadow: 0 0 8px #005aff;
+    letter-spacing: 6px;
+  }
+  .login_warp{
+    width: 830px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    color: #25efc7;
+    font-size: 14px;
+    z-index: 9999;
+    position: absolute;
+    top: 369px;
+    left: 0;
+    a{
+      color: #25efc7;
+    }
+  }
+  .windmill_warp{
+    width: 359px;
+    height: 400px;
+    margin-left: 35px;
+    position: relative;
+    .windmill{
+      width: 221px;
+      height: 212px;
+      background: url($img +"windmill.png")no-repeat center;
+      position: absolute;
+      top: 70px;
+      left: 50%;
+      margin-left: -110.5px;
+      .list{
+        width: 103px;
+        height: 102px;
+        background: url($img +"btn1.png")no-repeat center;
+        text-align: center;
+        line-height: 102px;
+        color: #ffffff;
+        font-size: 18px;
+        display: block;
+        position: absolute;
+      }
+      .list1{
+        padding-top: 25px;
+        height: 77px;
+        line-height: 22px;
+        top: -84px;
+        left: 50%;
+        margin-left: -52px;
+      }
+      .list2{
+        top: 45px;
+        right: -84px;
+      }
+      .list3{
+        top: 200px;
+        left: 50%;
+        margin-left: -52px;
+      }
+      .list4{
+        top: 45px;
+        left: -84px;
+      }
+      .list1:hover,.list2:hover{
+        background: url($img +"btn3.png")no-repeat center;
+      }
+      .list3:hover,.list4:hover{
+        background: url($img +"btn2.png")no-repeat center;
+      }
+
+
+    }
+    .windmill.active{
+      animation: xuanzhuan 14s linear infinite;
+      .list{
+        animation: xuanzhuan1 14s linear infinite;
+
+      }
+    }
+
+
+  }
+
+}
+
+.fixed{
+  width: 229px;
+  height: 300px;
+  background: url($img +"fixed.png")no-repeat center;
+  position: fixed;
+  top: 50%;
+  margin-top: -187px;
+  right: 34px;
+  z-index: 9999;
+  padding-top: 74px;
+  .close{
+    position: absolute;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    background: url($img +"close.png")no-repeat center;
+    top: 15px;
+    right: -33px;
+  }
+  img{
+    display: block;
+    width: 136px;
+    height: 136px;
+    margin: 0 auto;
+  }
+  .down_btn{
+    display: block;
+    width: 200px;
+    height: 58px;
+    background: url($img +"down.png")no-repeat center;
+    margin: 64px auto 0;
+  }
+}
+
+
+#test1{
+  width: 837px;
+  height: 687px;
+  background: url($img +"test1.png")no-repeat center;
+  padding-top: 122px;
+  padding-left: 54px;
+  .dia-close{
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: url($img +"test_close.png")no-repeat center;
+    position: absolute;
+    top: 19px;
+    right: -54px;
+  }
+  .dia-con{
+    width: 800px;
+    height: 631px;
+  }
+  ul{
+    width: 100%;
+    height: 100%;
+    li{
+      width: 148px;
+      height: 188px;
+      float: left;
+      margin-right: 9px;
+      margin-bottom: 15px;
+      img{
+        display: block;
+        width: 148px;
+        height: 148px;
+      }
+      p{
+        width: 100%;
+        height: 34px;
+        margin-top: 5px;
+        text-align: center;
+        line-height: 17px;
+        color: #ebbdf3;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+#test2{
+  width: 891px;
+  height: 338px;
+  background: url($img +"test2.png")no-repeat center;
+  padding-top: 122px;
+  .dia-close{
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: url($img +"test_close.png")no-repeat center;
+    position: absolute;
+    top: 19px;
+    right: -54px;
+  }
+  .dia-con{
+    width: 315px;
+    height: 285px;
+    margin: 0 auto;
+  }
+  .center{
+    width: 148px;
+    height: 188px;
+    margin: 0 auto;
+    img{
+      display: block;
+      width: 148px;
+      height: 148px;
+    }
+    p{
+      width: 100%;
+      height: 32px;
+      text-align: center;
+      margin-top: 5px;
+      line-height: 16px;
+      color: #ebbdf3;
+      font-size: 14px;
+    }
+  }
+  .btn{
+    display: block;
+    width: 270px;
+    height: 73px;
+    background: url($img +"test_receive.png")no-repeat center;
+    margin: 25px auto 0;
+  }
+}
+
+
+#test3{
+  width: 891px;
+  height: 338px;
+  background: url($img +"test2.png")no-repeat center;
+  padding-top: 122px;
+  .dia-close{
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: url($img +"test_close.png")no-repeat center;
+    position: absolute;
+    top: 19px;
+    right: -54px;
+  }
+  .dia-con{
+    width: 775px;
+    height: 285px;
+    margin: 0 auto;
+  }
+  .center{
+    width: 775px;
+    height: 188px;
+    margin: 0 auto;
+    li{
+      width: 148px;
+      height: 188px;
+      float: left;
+      margin-right: 8px;
+      img{
+        display: block;
+        width: 148px;
+        height: 148px;
+      }
+      p{
+        width: 100%;
+        height: 32px;
+        text-align: center;
+        margin-top: 5px;
+        line-height: 16px;
+        color: #ebbdf3;
+        font-size: 14px;
+      }
+    }
+    .last{
+      margin-right: 0;
+    }
+  }
+  .btn{
+    display: block;
+    width: 270px;
+    height: 73px;
+    background: url($img +"test_receive.png")no-repeat center;
+    margin: 25px auto 0;
+  }
+}
+
+#afooter{
+  width: 100%;
+  height: 70px;
+  min-width: 1200px;
+  position: relative;
+  margin-top: -202px;
+  z-index: 999;
+  .wrap_ieg{
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 20px;
+    height: 53px;
+    text-align: center;
+    color: #98679b;
+    font-size: 12px;
+  }
+  a{
+    color: #98679b;
+  }
+}

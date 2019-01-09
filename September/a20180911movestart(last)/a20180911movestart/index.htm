@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html class="" lang="zh-cn">
+<head>
+    <meta charset="gbk" />
+    <meta name="robots" content="all" />
+    <meta name="author" content="Tencent-Tgideas" />
+    <meta name="Description" content="这一战玩儿点大的！">
+    <meta name="Keywords" content="逆战,僵尸病毒爆发原点,大福利,大世界猎场 Z博士归来,大庆典,6周年庆典">
+    <!-- 设计：cp  | 重构：miyatang | 创建：2017-5-9  -->
+    <title>逆战-宠物预售-逆战网站-腾讯游戏</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="comm/jquery.mCustomScrollbar.css">
+</head>
+<body>
+<!-- //game.gtimg.cn/images/actdaoju/act/a20180911movestart -->
+<div class="wrap">
+    <div class="bg">
+        <div class="bg-1"></div>
+        <div class="bg-2"></div>
+        <div class="bg-3"></div>
+        <div class="bg-4"></div>
+    </div>
+    <div class="audios">
+        <video class="audio" src="//www.bluelife.top/a20180914.mp4" autoplay="autoplay" loop="loop"></video>
+    </div>
+    <div class="wrap1">
+        <div class="container">
+            <div class="head pr">
+                <div class="bo-theme-ic"></div>
+                <a href="javascript:;"  title="立即查看" class="lia_ol"></a>
+                <p class="time">活动时间：9月20日-10月25日</p>
+                <div class="logo">
+                    <a href="//www.daoju.qq.com/mall/" target="_blank" onclick="PTTSendClick('btn','tool','道具城');"></a>
+                </div>
+                <div class="daohang">
+                    <a class="yindao taly_lt" href="//nz.qq.com/main.shtml" target="_blank" onclick="PTTSendClick('btn','home','逆战官网');">逆战官网</a>
+                    <a class="yindao taly_lg" href="//nz.qq.com/download.shtml" target="_blank" onclick="PTTSendClick('btn','down','游戏下载');">游戏下载</a>
+                    <a class="yindao  taly_lo" href="//nz.gamebbs.qq.com/forum.php" target="_blank" onclick="PTTSendClick('btn','forum','游戏论坛');">游戏论坛</a>
+                </div>
+
+                <!--登录前状态 Start-->
+                <div id="unlogin" class="login unlogin" style="display: block;">
+                    你好，请【<a id="dologin" href="javascript:void(0)" title="QQ登录">QQ登录</a>】
+                </div>
+                <!--登录前状态 End-->
+                <!--登录后状态 Start-->
+                <div id="logined" class="login unlogin" style="display: none;  ">
+                    欢迎您，<span id="login_qq_span"></span>
+                   <span id="spanNotBind_497153"><a href="javascript:;" class="bindArea">[绑定大区]</a></span>
+		<span id="spanBind_497153" style="display:none">
+			<span id="area_info_497153"></span>
+			<span id="role_info_497153"></span>
+			<a href="javascript:;" class="bindArea">[更改绑定]</a>
+		</span>
+                    【<a id="dologout" href="javascript:void(0)" title="注销">注销</a>】
+                </div>
+                <!--登录后状态 End-->
+            </div>
+            <div class="content">
+                <!--购买零件包 start-->
+                <div class="tant1">
+                    <div class="tant1-top"></div>
+                    <div class="haer-lsa">
+                        <div class="haer-if">
+                            <img class="haser-img" src="ossweb-img/replace.png" alt="道具">
+                            <p class="haser-text">内含复活币×1和组装零件×10</p>
+                        </div>
+                        <p class="ine-text">请输入想要购买的零件包</p>
+                        <input id="Num" type="text" class="lis-hu" placeholder="100" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}">
+                        <p class="ine-text list">10Q币/个</p>
+                        <a href="javascript:Hx.amsbuy();"  title="立即查看" class="lia-ol"></a>
+                    </div>
+                    <ul class="hea-if c">
+                        <li class="hea-er on"></li>
+                        <li class="hea-lf"></li>
+                        <li class="hea-rf"></li>
+                    </ul>
+                    <div class="hea-fd">
+                        <div class="fd-as">
+                            <p class="lisa-text">效果：当玩家血量低于20%时触发一个持续时长为5秒（暂定），血量为50的盾，若在持续时间内盾被击破则会把以玩家为圆心，将半径为64（可配）的范围内的小怪（对boss无效）击飞（即该范围内的小怪后退x米)</p>
+                        </div>
+                        <div class="fd-ad" style="display:none;">
+                            <p class="lisa-text">玩家按F触发主动技能播放特效1之后进入被附身状态,附身状态为特效2（10s，时长可配），在附身且非半灵形态下再次按F键，将能使附身灵体从身上脱出，并向准心方向疾驰n米（特效3），在落地时造成x伤害。</p>
+                        </div>
+                        <div class="fd-af" style="display:none;">
+                            <p class="lisa-text">在附身状态下死亡将激活半灵形态（此状态为特效4），半灵形态下主武器技能将得到刷新，玩家仍可进行输出。半灵形态将在10s（时长可配）后结束，10s中玩家需要积攒一个能量条，若玩家在规定时间内攒满能量条将会恢复正常形态（血槽满血）；若未积攒成功，则会死亡0。
+                            </p>
+                            <p class="lisa2-text"> 积攒方式：1、对boss（或小怪）造成伤害；2、在此状态下使用治疗；3、若受到攻击，则能量会扣减。</p>
+                        </div>
+                    </div>
+                </div>
+                <!--购买零件包 end-->
+
+                <!-- 免单返利任性送 begin -->
+                <div class="back">
+                    <div class="back-top"></div>
+                    <div class="back-intro">
+                        <p>活动期间，可以在下方点亮活动特权，并获得一个免单返利机会，价值等同于随机一轮开启福袋的碎片费用（1至9轮中随机获得）。当玩家成功开启任意一个道具箱达到对应特权次数后，即可直接领取对应数量的碎片作为免单返利。</p>
+                    </div>
+                    <div class="back-cont">
+                        <ul class="prize">
+                            <li class="item1">
+                                <img src="ossweb-img/a56.png" alt="免单返利特权">
+                                <a href="javascript:Hx.amsTeq();" onclick="PTTSendClick('btn','open-privilege','开启特权');"></a>
+                            </li>
+                            <li class="item2">
+                                <p class="p1">获得第 <span class="jf_1044_lun">0</span> 轮免单特权</p>
+                                <p class="p2">可获得零件： <span class="jf_1044_num">0</span> 个</p>
+                                <a href="javascript:Hx.amsTeqLq();" onclick="PTTSendClick('btn','receive','领取碎片');"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 免单返利任性送 end -->
+
+                <!-- 组装新型机器人 begin -->
+                <div class="robot">
+                    <div class="robot-top"></div>
+                    <div class="robot-con">
+                        <div class="content3">
+                            <ul class="content3_list1">
+                                <li class="li1 active">1号组装箱</li>
+                                <li class="li2">2号组装箱</li>
+                            </ul>
+                            <ul class="content3_list2">
+                                
+                                <li class="content3_list2_li li1 active" id="cj_1">
+                                	<p class="p1">当前道具箱开启次数为：<span class="hold_1">?</span>次，下次开启需要碎片：<span class="need_1">?</span>个，当前拥有零件：<span class="jf_1043">?</span>个</p>
+                                    <a href="javascript:TGDialogS('test1');" class="li_click"></a>
+                                    <ul class="list2_list1">
+                                        <!-- i为抽中 -->
+                                        <li class="li1">
+                                            <i style="display:block"></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li id="li_click_ie" class="li2 ugwe">
+                                            <i></i>
+                                            <img src="ossweb-img/question3.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li3">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li4">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li5">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li6">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li7">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li8">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li9">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li10">
+                                        </li>
+                                        <div class="add">
+                                            <a class="a1" href="javascript:Hx.lotteryReset(1);" onclick="PTTSendClick('btn','select','重新选择');"></a>
+                                            <a class="a2" href="javascript:Hx.lotterySave(1);" onclick="PTTSendClick('btn','lock','锁定道具盒');"></a>
+                                            <p>消耗20个零件</p>
+                                        </div>
+                                    </ul>
+                                    
+                                    <div class="lottery" id="lotterycontent1"></div>
+                                </li>
+                                <li class="content3_list2_li li2" id="cj_2">
+                                	<p class="p1">当前道具箱开启次数为：<span class="hold_2">?</span>次，下次开启需要碎片：<span class="need_2">?</span>个，当前拥有零件：<span class="jf_1043">?</span>个</p>
+                                    <a href="javascript:TGDialogS('test1');" class="li_click"></a>
+                                    <ul class="list2_list1">
+                                        <li class="li1">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li id="li_click_ie2" class="li2 ugwe">
+                                            <i></i>
+                                            <img src="ossweb-img/question3.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li3">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li4">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li5">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li6">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li7">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li8">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li9">
+                                            <i></i>
+                                            <img src="ossweb-img/question.png" alt="">
+                                            <div class="mask"></div>
+                                        </li>
+                                        <li class="li10">
+                                        </li>
+                                    </ul>
+                                    <div class="lottery" id="lotterycontent2"></div>
+                                    <div class="add">
+                                        <a class="a1" href="javascript:Hx.lotteryReset(2);" onclick="PTTSendClick('btn','select','重新选择');"></a>
+                                        <a class="a2" href="javascript:Hx.lotterySave(2);" onclick="PTTSendClick('btn','lock','锁定道具盒');"></a>
+                                        <p>消耗20个零件</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 组装新型机器人 end -->
+
+                <!-- 累计开启组装宝箱 开启全新皮肤换卡 begin -->
+                <div class="treasure">
+                    <div class="treasure-top"></div>
+                    <div class="treasure-con">
+                        <div class="content5">
+                            <p class="p2">累计开启宝箱次数：<span>&nbsp;&nbsp;</span>次</p>
+                            <p class="p3">下次开启换肤卡宝箱需要次数：<span>&nbsp;&nbsp;</span>次</p>
+                            <div class="cj">
+                                <ul class="content5_cj">
+                                    <li class="li1 active">
+                                        <!-- .add为选中 -->
+                                        <div class="add" style="display:block"></div>
+                                        <i></i>
+                                        <a href="javascript:TGDialogS('test3');">
+                                        	<img src="ossweb-img/question2.png" alt="道具">
+                                        	<div class="mask"></div>
+                                        </a>
+                                    </li>
+                                    <li class="li2">
+                                        <div class="add"></div>
+                                         <i></i>
+                                        <a href="javascript:TGDialogS('test3');">
+                                        	<img src="ossweb-img/question2.png" alt="道具">
+                                        	<div class="mask"></div>
+                                        </a>
+                                    </li>
+                                    <li class="li3">
+                                        <div class="add"></div>
+                                        <i></i>
+                                        <a href="javascript:TGDialogS('test3');">
+                                        	<img src="ossweb-img/question2.png" alt="道具">
+                                        	<div class="mask"></div>
+                                        </a>
+                                    </li>
+                                    <li class="li4">
+                                        <div class="add"></div>
+                                         <i></i>
+                                        <a href="javascript:TGDialogS('test3');">
+                                        	<img src="ossweb-img/question2.png" alt="道具">
+                                        	<div class="mask"></div>
+                                        </a>
+                                    </li>
+                                    <li class="li5">
+                                        <div class="add"></div>
+                                        <i></i>
+                                        <a href="javascript:TGDialogS('test3');">
+                                        	<img src="ossweb-img/question2.png" alt="道具">
+                                        	<div class="mask"></div>
+                                        </a>
+                                    </li>
+                                    <li class="li6">
+                                        <div class="add"></div>
+                                        <i></i>
+                                        <a href="javascript:TGDialogS('test3');">
+                                        	<img src="ossweb-img/question2.png" alt="道具">
+                                        	<div class="mask"></div>
+                                        </a>
+                                    </li>
+
+                                    <li class="li9">
+                                        <a class="a1" href="javascript:Hx.lockDj();" onclick="PTTSendClick('btn','receive2','立即兑换');"></a>
+                                        <a class="a2" href="javascript:;" onclick="PTTSendClick('btn','receive2','立即兑换');"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rule">
+                            <p>活动规则:</p>
+                            <p>活动时间：2018年9月20日 - 2018年10月25日；</p>
+                            <p>活动结束后，5个工作日内，玩家尚未消耗的碎片将直接转换为对应的NZ点并发放至游戏内仓库，10个零件=1000NZ点；</p>
+                            <p>在道具箱中选定强力道具后，其他8个道具将随机生成。随后玩家可选择【锁定奖池】开始抽奖，或【重新选择】消耗2个零件清空奖池重新定
+                                制道具箱内容，开启抽奖后无法重新选择。每个玩家最多定制2个道具箱并最多获得18个道具，每个道具箱有2次重置机会 ；</p>
+                            <p>每次开启将不会重复获得道具箱内已抽到的道具，每个道具箱开启9次100%获得全部9个展示的道具， [概率公示明细]；</p>
+                            <p>如玩家已拥有抽取到的相同道具或同类别永久道具，则可以选择返还碎片或领取道具，时限类道具及复活币不适用该规则，内已拥有奖池内唯
+                                一道具的用户，在获得时将直接返还消耗的碎片，不会重复发放，成功获得【动天使】道具后，将于活动结束后的5个工作日内发货到账；</p>
+                            <p>获得武器道具皮肤版的玩家可在游戏内将武器拆解为武器及皮肤枪芯，请注意：仓库内同时只能存在一个同样的皮肤枪芯；</p>
+                            <p>成功开启炫彩皮肤卡宝箱后，所有获得的换肤卡/购物券/加成卡将会直接到账。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 累计开启组装宝箱 开启全新皮肤换卡 end -->
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- 弹出层test1 道具盒自选道具弹窗 Start-->
+<div class="dialog" id="test1" style="display:none">
+    <div class="dia-con">
+        <p class="p1">您可以从下列道具中任选1个加入当前道具箱，确认后道具箱将为你生成其他8个道具，<br/>
+            您可以点击【重新选择】，来消耗2个道具箱碎片并重新获得选择强力道具的机会！</p>
+        <ul class="test1_list">
+            <li class="li1 active" data-type = "958971">
+                <img src="ossweb-img/img1.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li2" data-type = "958972">
+                <img src="ossweb-img/img2.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li3" data-type = "958973">
+                <img src="ossweb-img/img3.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li4" data-type = "958974">
+                <img src="ossweb-img/img4.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li5" data-type = "958975">
+                <img src="ossweb-img/img5.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li6" data-type = "958976">
+                <img src="ossweb-img/img6.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li7" data-type = "958977">
+                <img src="ossweb-img/img7.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li8" data-type = "958978">
+                <img src="ossweb-img/img8.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li9" data-type = "958980">
+                <img src="ossweb-img/img9.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li10" data-type = "958981">
+                <img src="ossweb-img/img10.png" alt="">
+                <div class="mask"></div>
+            </li>
+        </ul>
+        <a href="javascript:;" class="btn"  onclick="PTTSendClick('btn','test1_btn','确认选择');"></a>
+    </div>
+    <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">X</a>
+</div>
+<!-- 弹出层test1 End-->
+
+<!-- 弹出层test3  最下面部分抽奖选取道具弹窗  Start-->
+<div class="dialog" id="test3" style="display:none">
+    <div class="dia-con">
+        <ul class="test3_list">
+            <li class="li1 active">
+                <img src="ossweb-img/img11.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li2">
+                <img src="ossweb-img/img12.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li3">
+                <img src="ossweb-img/img13.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li4">
+                <img src="ossweb-img/img14.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li5">
+                <img src="ossweb-img/img15.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li6">
+                <img src="ossweb-img/img16.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li7">
+                <img src="ossweb-img/img17.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li8">
+                <img src="ossweb-img/img18.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li9">
+                <img src="ossweb-img/img19.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li10">
+                <img src="ossweb-img/img20.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li11">
+                <img src="ossweb-img/img21.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li12">
+                <img src="ossweb-img/img22.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li3">
+                <img src="ossweb-img/img23.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li4">
+                <img src="ossweb-img/img24.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li5">
+                <img src="ossweb-img/img25.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li6">
+                <img src="ossweb-img/img26.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li7">
+                <img src="ossweb-img/img27.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li8">
+                <img src="ossweb-img/img28.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li9">
+                <img src="ossweb-img/img29.png" alt="">
+                <div class="mask"></div>
+            </li>
+            <li class="li10">
+                <img src="ossweb-img/img30.png" alt="">
+                <div class="mask"></div>
+            </li>
+
+        </ul>
+        <a href="javascript:;" class="btn"  onclick="PTTSendClick('btn','test3_btn','确认选择');"></a>
+    </div>
+    <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">X</a>
+</div>
+<!-- 弹出层test3 End-->
+
+<!-- 弹出层test2 领取道具弹窗 Start-->
+<!-- <a class="dia-btn" href="javascript:TGDialogS('test2');" style="display:block;width:300px;height: 200px">点击显示弹层</a> -->
+<div class="dialog" id="test2" style="display:none">
+    <div class="dia-con">
+        <p class="p1">您已拥有该道具或同类道具，请选择 <br/>
+            继续领取或返还零件</p>
+        <a href="javascript:;" class="btn1"  onclick="PTTSendClick('btn','test2_btn1','确认选择');"></a>
+        <a href="javascript:;" class="btn2"  onclick="PTTSendClick('btn','test2_btn2','确认选择');"></a>
+    </div>
+    <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<!-- 弹出层test2 End-->
+
+<script src="//js01.daoju.qq.com/common/js/act/dj_header_v2.js"></script>	
+<script src="//ossweb-img.qq.com/images/js/milo/milo.js"></script>	
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="comm/jquery.mCustomScrollbar.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/foot.js"></script>
+<script src="//game.gtimg.cn/images/js/delottery/lottery.js"></script>
+<!--逆战通用底部-->
+<script src="//ossweb-img.qq.com/images/bangbang/js/tool/nzpcfooter.js"></script>
+<script src="//ossweb-img.qq.com/images/js/nz/nact.min.js"></script>
+<script src="index.js"></script>
+<script>
+    new actNav({
+        actChannel:"15217",//频道id(一般不需要变)
+        actPos:"18700",//LOGO广告位id(一般不需要变)
+        actPosNormal:"18702",//背景图广告位id(一般不需要变)
+        actPosHover:"18703",//聚焦状态图片广告位id(一般不需要变)
+        sUrl:"navInfoListnz",//对应脚本库名字
+        colorNormal:"#fff",//常规状态文字色值
+        colorHover:"#0c0c0c"//聚焦状态文字色值
+    });
+</script>
+<script>
+    createNzFooter("white");
+</script>
+
+<script>
+    $('.list_title li').hover(function () {
+        $(this).addClass('on')
+
+    }, function () {
+
+        $('.list_title li').removeClass('on')
+
+    });
+
+    $('.hea-if li').click(function () {
+        b = $(this).text();
+        var a = $('.hea-if li').index($(this));
+        $('.hea-if li').removeClass('on');
+        $(this).addClass('on')
+        $('.hea-fd>div:eq(' + a + ')').fadeIn().siblings().fadeOut();
+    });
+
+    $('.hese_nf li').click(function () {
+        b = $(this).text();
+        var c = $('.hese_nf li').index($(this));
+        $('.hese_nf li').removeClass('on');
+        $(this).addClass('on')
+        $('.ca_cfg>div:eq(' + c + ')').fadeIn().siblings().fadeOut();
+    });
+
+    // 选择道具箱
+    $('.content3 .content3_list1 li').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.content3 .content3_list2 .content3_list2_li ').eq($(this).index()).addClass('active').siblings().removeClass('active');
+        poolid = $(this).index() +1;
+    })
+    //选择强力道具
+    $('#test1 .test1_list li').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+    //ie
+    $('#li_click_ie,#li_click_ie2').click(function(){
+        TGDialogS('test1');
+    })
+     //确认强力道具
+    $('#test1 .btn').click(function(){
+        showDialog.hide();
+        var _img = $('#test1 .active').find('img').attr('src');
+        var _id  = $('#test1 .active').attr("data-type");
+        $('#cj_'+poolid).find('.list2_list1 .li2 img').attr('src',_img);
+        $('#cj_'+poolid).find('.a2').attr('href',"javascript:Hx.lotterySave("+poolid+","+_id+")");
+    })
+    
+//  $('.ner-kj').click(function(){
+//      var x=$(this).index();
+//      $(this).parent().addClass('active').siblings().removeClass('active');
+//      $(this).parent().addClass('change');
+//  })
+
+
+    function yd(y){
+        $("body,html").stop().animate({
+            scrollTop: y //让body的scrollTop等于pos的top，就实现了滚动
+        },1000);
+    }
+    $(".test3_list").mCustomScrollbar({
+        scrollInertia: 150
+    });
+
+</script>
+<script>
+    //开始抽奖lottery->js
+    function callJsToStart1() {
+        lottery1.disable();
+        Hx.amsCj(1);
+    }
+    //开发获得抽奖结果 通知lottery开始播放效果 js->lottery
+    function calllotteryToRoll1(id) {
+        if (lottery1) lottery1.stopRoll(id);
+    }
+    //动画完成通知js lottery->js
+    function callJsToComplete1() {
+        Hx.div_my_box();
+    }
+
+    //初始化抽奖的 可以不知道内部
+    var lottery1 = new Lottery({
+        'lighturl': 'ossweb-img/mask.png',//外部光圈png 不填写就用默认的效果
+        'starturl': '//ossweb-img.qq.com/images/js/delottery/blankstartbtn.png', //外部按钮png 不填写就用默认的按钮效果
+        'width': 907,//lottery 宽度
+        'height': 424,//lottery 高度
+        'total': 9,//抽奖产品的总数
+        'sbtnx': 230,// 开始抽奖按钮的位置x坐标
+        'sbtny': 146,// 开始抽奖按钮的位置y坐标
+        'sbtnw': 448,// 开始抽奖按钮的宽度
+        'sbtnh': 137,// 开始抽奖按钮的高度
+        'boxw': 223,// 奖品光效的宽度
+        'boxh': 136,//奖品光效的高度
+        'position': "0_0,345_0,683_0,683_144,683_288,457_288,229_288,0_288,0_144",
+        //奖品光效的位置，对应奖品图片的布局，填入每个奖品的位置以及角度用逗号分割 x_y 例如19_20或者19_20_0 表示第一个奖品的位置 x坐标为19px y坐标为20px 角度为0。）
+        'contentId': 'lotterycontent1',//嵌入lottery 的div层的 id
+        'onClickRollEvent': callJsToStart1,//对应上面接口
+        'onCompleteRollEvent': callJsToComplete1 //对应上面接口
+    });
+
+    //开始抽奖lottery->js
+    function callJsToStart2() {
+        lottery2.disable();
+        Hx.amsCj(2);
+    }
+    //开发获得抽奖结果 通知lottery开始播放效果 js->lottery
+    function calllotteryToRoll2(id) {
+        if (lottery2) lottery2.stopRoll(id);
+    }
+    //动画完成通知js lottery->js
+    function callJsToComplete2() {
+        Hx.div_my_box();
+    }
+
+    //初始化抽奖的 可以不知道内部
+    var lottery2 = new Lottery({
+        'lighturl': 'ossweb-img/mask.png',//外部光圈png 不填写就用默认的效果
+        'starturl': '//ossweb-img.qq.com/images/js/delottery/blankstartbtn.png', //外部按钮png 不填写就用默认的按钮效果
+        'width': 907,//lottery 宽度
+        'height': 424,//lottery 高度
+        'total': 9,//抽奖产品的总数
+        'sbtnx': 230,// 开始抽奖按钮的位置x坐标
+        'sbtny': 146,// 开始抽奖按钮的位置y坐标
+        'sbtnw': 448,// 开始抽奖按钮的宽度
+        'sbtnh': 137,// 开始抽奖按钮的高度
+        'boxw': 223,// 奖品光效的宽度
+        'boxh': 136,//奖品光效的高度
+        'position': "0_0,345_0,683_0,683_144,683_288,457_288,229_288,0_288,0_144",
+        //奖品光效的位置，对应奖品图片的布局，填入每个奖品的位置以及角度用逗号分割 x_y 例如19_20或者19_20_0 表示第一个奖品的位置 x坐标为19px y坐标为20px 角度为0。）
+        'contentId': 'lotterycontent2',//嵌入lottery 的div层的 id
+        'onClickRollEvent': callJsToStart2,//对应上面接口
+        'onCompleteRollEvent': callJsToComplete2 //对应上面接口
+    });
+
+</script>
+<script>
+    //      弹窗
+    function TGDialogS(e,fun){
+        showDialog.show({
+            id: e, //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+            bgcolor:"#000000",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+            opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+        });
+        if(fun){fun();}
+    }
+
+    function yanshi(type){
+        TGDialogS(type);
+        setTimeout(function(){
+            showDialog.hide();
+            TGDialogS('test3');
+        },2000);
+    }
+
+    function rolling (){
+        $("body,html").animate({
+            scrollTop:2865 //让body的scrollTop等于pos的top，就实现了滚动
+        },1000);
+    }
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType: "a20180911movestart", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "首页", //必填项:页面中文名
+        osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,364 @@
+	/*footer S*/
+    #footer_ieg{position: relative;width: 100%;height: 70px;margin-top: -181px;}
+    .wrap_ieg{font:12px verdana;text-align:center;}
+    .wrap_ieg p{line-height: 22px;}
+    .wrap_ieg,.wrap_ieg a{color:#828fa0;}
+    .wrap_ieg .e{font-size:10px;padding:3px 0;-webkit-text-size-adjust:none;}
+    /*footer E*/
+    /*top-nav S*/
+    .top-nav{width:100%;height: 49px;background: #000;position: absolute; top:42px;font-size: 12px;min-width: 1200px;z-index: 999;}
+    .top-logo{float: left;width: 128px;height: 45px;margin:4px 0 0 40px;background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/tlogo-bg.png) 0 0 no-repeat;text-indent: -9999px;}
+    .t-nav-left{float: left;padding: 10px 0 0 10px;}
+    .t-nav-left li { float: left;height: 25px;line-height: 25px;margin-right: 15px;color: #fff; position: relative;}
+    .t-nav-left li a{display: block;width: 73px;height: 25px;line-height: 25px;color: #fff;text-align: center;transition: all 0.3s linear;}
+    .t-nav-left li.t-nav-w a{width: 113px;color: #0da7c9;}
+    .t-nav-left li a:hover{color: #0da7c9;background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/item-bg.png) 0 0 no-repeat;text-decoration: none;}
+    .t-nav-left li.t-nav-w a:hover{color: #fff;background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/item-bg2.png) 0 0 no-repeat;text-decoration: none;}
+    .t-nav-left li.li-wxh span{color: #0da7c9;}
+    .t-nav-right{float: right;padding-right: 72px;}
+    .top-login-box{float: right;padding-right: 16px;height: 45px;line-height: 45px;color: #fff;}
+    .top-login-box a {color: #fff;}
+    .t-nav-login,.t-nav-login a{color: #fff !important;}
+    .t-nav-login span{color: #0da7c9;}
+    .t-nav-right ul{float: right;padding-top: 10px;}
+    .t-nav-right ul li{float: left;margin-left: 15px;}
+    .t-nav-fhgw,.t-nav-hdzx{display: block;color: #fff;width: 106px;height: 25px;transition: color 0.3s;text-indent: 40px; line-height: 25px;}
+    .t-nav-fhgw:hover,.t-nav-hdzx:hover{ color: #0da7c9;text-decoration: none; }
+    .t-nav-fhgw{background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/hdzx-bg.png) 0 0 no-repeat;}
+    .t-nav-hdzx{background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/fhgw-bg.png) 0 0 no-repeat;}
+    .fl{float: left;}
+    .fr{float: right;}
+    .box-ewm{width: 196px;left: 50%;margin-left: -98px;top: 57px;z-index: 999 !important;display: none;}
+    .box-ewm div{width: 90px;height: 108px;background: #0099bb;padding-top: 1px;}
+    .box-ewm div img{display: block;margin: 0 auto;}
+    .box-ewm div p{font-size: 12px;color: #fff;text-align: center;line-height: 18px;}
+    /*top-nav E*/
+* {margin:0; padding:0; list-style:none;font-family:'Microsoft Yahei'}
+body,html,.ost_box,#actTitleWrap,.container,#footer_ied,.white-footer,.warp{min-width:1250px!important;width:100%!important;}
+body{
+    padding-top:91px !important;
+}
+/*layout */
+.wrap{
+    width: 100%;
+    position: relative;
+    /* margin-top: -74px; */
+}
+.wrap .bg{
+    min-width: 1250px;
+}
+.wrap .content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrap .content .main{
+    width: 1250px;
+    margin: 0 auto;
+}
+/* set bg */
+.bg .bg1{
+    width: 100%;
+    height: 648px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/bg1.jpg) no-repeat top center;
+}
+.bg .bg2{
+    width: 100%;
+    height: 3782px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/bg2.jpg) no-repeat top center;
+}
+/* content begin */
+.main .button{
+    width: 667px;
+    height: 94px;
+    margin: 0 auto;
+    margin-top: 745px;
+    margin-left: 209px;
+}
+.main .button a{
+    display: inline-block;
+    width: 304px;
+    height: 76px;
+    margin-right: 54px;
+    margin-top: 8px;
+}
+.main .button .a2{
+    margin-right: 0;
+}
+.main .introduce{
+    width: 920px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 128px;
+}
+.main .introduce p{
+    font-size: 18px;
+    color: #ffd342;
+    text-align: center;
+    line-height: 30px;
+}
+/* usual */
+.rule{
+    font-size: 20px;
+    color: #ffc66e;
+    text-align: center;
+    padding-top: 214px;
+}
+/* part1 */
+.part1{
+    width: 1233px;
+    height: 779px;
+    text-align: center;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/box1.png);
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.part1 .p1{
+    font-size: 22px;
+    color: #630e02;
+    text-align: center;
+    margin-top: 23px;
+}
+.part1 .a1{
+    display: block;
+    width: 296px;
+    height: 68px;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/btn1.png) no-repeat;
+    margin-top: 20px;
+}
+.part1 .count{
+    width: 545px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.part1 .count p{
+    display: inline;
+    font-size: 24px;
+    color: #ffd342;
+}
+.part1 .count2{
+    margin-left: 125px;
+}
+.part1 .list{
+    width: 753px;
+    height: 224px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+.part1 .list li{
+    float: left;    
+    margin-right: 55px;
+    position: relative;
+}
+.part1 .list .item3{
+    margin-right: 0;
+}
+.part1 .list p{
+    display: block;
+    width: 160px;
+    height: 29px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 29px;
+    color: #971808;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/btn2.png) no-repeat;
+    position: absolute;
+    bottom: 59px;
+    left: 27px;
+    font-weight: bold;
+}
+/* part2 */
+.main .part2{
+   width: 1233px;
+   height: 696px;
+   margin: 0 auto;
+   background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/box2.png) no-repeat;
+   margin-top: 48px;
+}
+.part2 .a1{
+    display: block;
+    width: 296px;
+    height: 68px;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/btn1.png) no-repeat;
+    margin-top: 40px;
+}
+.part2 .list{
+    width: 533px;
+    height: 224px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.part2 .list li{
+    float: left;    
+    margin-right: 65px;
+    position: relative;
+}
+.part2 .list .item3{
+    margin-right: 0;
+}
+.part2 .list p{
+    display: block;
+    width: 160px;
+    height: 29px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 29px;
+    color: #971808;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/btn2.png) no-repeat;
+    position: absolute;
+    bottom: 59px;
+    left: 39px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* part3 */
+.main .part3{
+    width: 1232px;
+    height: 709px;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/box3.png) no-repeat;
+    margin-top: 57px;
+}
+.part3 img{
+    display: block;
+    width: 234px;
+    height: 234px;
+    margin: 45px auto 38px;
+}
+.part3 a{
+    display: block;
+    width: 214px;
+    height: 64px;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/btn4.png) no-repeat;
+}
+/* part4 */
+.main .part4{
+    width: 1232px;
+    height: 741px;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/box4.png) no-repeat;
+    margin-top: 52px;
+}
+.part4 .list{
+    width: 1044px;
+    height: 465px;
+    margin: 0 auto;
+    padding-top: 214px;
+}
+.part4 .list li{
+    float: left;
+    margin-right: 35px;
+}
+.part4 .list .item4{
+    margin-right: 0;
+}
+.part4 .list img{
+    width: 234px;
+    height: 249px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+}
+.part4 .list .p1{
+    font-size: 24px;
+    color: #ffd342;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.part4 .list .p2{
+    font-size: 18px;
+    color: #ffc66e;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.part4 .list .p3{
+    font-size: 18px;
+    line-height: 19px;
+    color: #ffc66e;
+    text-align: center;
+    margin-bottom: 14px;
+}
+.part4 .list .a1{
+    display: block;
+    width: 190px;
+    height: 55px;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/btn3.png) no-repeat;
+}
+/* tab */
+.dia-con{
+    width: 492px;
+    height: 262px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/tab.png) no-repeat;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+.dia-con .word{
+    width: 407px;
+    height: 54px;
+    margin: 0 auto;
+    padding-top: 102px;
+    line-height: 54px;
+}
+.dia-con .word p{
+    font-size: 22px;
+    color: #f8d8a4;
+    text-align: center;
+}
+.dia-close .text{
+    height: 117px;
+}
+.dia-close{
+    width: 37px;
+    height: 37px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/close.png) no-repeat;
+    position: absolute;
+    top: -34px;
+    right: -45px;
+    font-size: 30px;
+}
+#_overlay_{
+    background: rgba(0,0,0, .5) !important
+}
+#dia4 .dia-con{
+    width: 512px !important;
+    height: 292px !important;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180918national/tab2.png) no-repeat;
+}
+#dia4 .list{
+    width: 386px;
+    height: 65px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+#dia4 .list li{
+    height: 24px;
+    float: left;
+    font-size: 14px;
+    color: #ffe2b5;
+    text-align: center;
+    margin-right: 47px;
+}
+#dia4 .list .item{
+    margin-right: 0;
+}
+#dia4 .other{
+    width: 322px;
+    height: 160px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+#dia4 .other p{
+    font-size: 14px;
+    line-height: 23px;
+    color: #ffe2b5;
+    text-align: center;
+}

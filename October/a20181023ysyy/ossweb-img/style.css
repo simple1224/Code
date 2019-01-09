@@ -1,0 +1,310 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+a{text-decoration: none}
+
+* {margin:0; padding:0; list-style:none;font-family:'Microsoft Yahei'!important}
+body,html,.ost_box,#actTitleWrap,.container,#footer_ied,.white-footer,.warp{min-width:1044px!important;width:100%!important;}
+body{
+    background: #1e1f34 !important;
+    overflow-x:visible!important;  
+    padding-top: 42px !important;
+}
+/*layout */
+.wrap{
+    width: 100%;
+    position: relative;
+}
+.wrap .bg{
+    min-width: 1044px;
+}
+.wrap .content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrap .content .main{
+    width: 1044px;
+    margin: 0 auto;
+    position: relative;
+}
+/* set bg */
+.bg .bg1{
+    width: 100%;
+    height: 938px;
+    background: url(//ossweb-img.qq.com/images/tgclub/act/a20181023ysyy/bg1.jpg) no-repeat top center;
+}
+.bg .bg2{
+    width: 100%;
+    height: 4709px;
+    background: url(//ossweb-img.qq.com/images/tgclub/act/a20181023ysyy/bg2.jpg) no-repeat top center;
+}
+/* content begin */
+.content .main .logo1{
+    width: 404px;
+    height: 72px;
+    position: relative;
+    left: -61px;
+    top: 28px;
+}
+.logo1 .a1{
+    display: inline-block;
+    width: 175px;
+    height: 72px;
+    margin-right: 22px;
+}
+.logo1 .a2{
+    display: inline-block;
+    width: 199px;
+    height: 56px;
+    position: relative;
+    top: -10px;
+}
+/* usual */
+.title{
+    width: 904px;
+    height: 56px;
+    margin: 0 auto;
+    background: url(//ossweb-img.qq.com/images/tgclub/act/a20181023ysyy/spr1.png) no-repeat;
+    margin-bottom: 26px;
+}
+/* part1 */
+.main .part1{
+    width: 100%;
+    height: 950px;
+    text-align: center;
+    padding-top: 912px;
+    position: relative;
+}
+.part1 .title{
+    background-position: -5px -221px;
+    /* margin-top: 35px; */
+}
+.wm-explain{
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 54px;
+    color: #ac7c4e;
+    text-align: center;
+}
+.wm-nav{
+    width: 958px;
+    height: 87px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    left: 44px;
+}
+ /*tap选框头部的效�?*/
+ .wm-nav li {
+     width: 25%;
+     float: left;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+	height: 86px;
+	position: relative;
+    color: #ac7c4e;
+}
+/* .wm-nav .li1 span{
+    top: 11px;
+    left: 22px;
+} */
+/*tap选框头部选中时的效果*/
+.wm-nav li.active {
+    /* color: #f2f9ff; */
+    background: url(//ossweb-img.qq.com/images/tgclub/act/a20181023ysyy/spr1.png) no-repeat;
+    background-position: -5px -419px;
+}
+/*复选框中文字样�?*/
+.wm-nav li span {
+    position: absolute;
+    width: 90%;
+    left: 6%;
+    top: 48%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 29.89px;
+    line-height: 41px;
+}
+.wm-tabbox{
+    width: 958px;
+    height: 597px;
+    margin: 0 auto;
+    background: url(//ossweb-img.qq.com/images/tgclub/act/a20181023ysyy/spr1.png) no-repeat;
+    background-position: -5px -731px;
+}
+.wm-tabbox .wm-tabmain{
+    display: none;
+    position: relative;
+    top: 135px;
+}
+/* add置灰 */
+.wm-tabmain .geted{
+    background-position: 0px -707px !important;
+}
+.wm-tabbox .wm-tabmain.active{
+    display: block;
+}
+.wm-tabbox .wm-tabmain img{
+    width: 788px;
+    height: 256px;
+}
+.wm-tabbox .wm-tabmain a{
+    display: block;
+    width: 332px;
+    height: 98px;
+    background: url(//ossweb-img.qq.com/images/tgclub/act/a20181023ysyy/spr1.png) no-repeat;
+    background-position: -5px -515px;
+    margin: 0 auto;
+    margin-top: 53px;
+}
+/* part2 */
+.main .part2{
+    width: 100%;
+    height: 944px;
+    text-align: center;
+    position: relative;
+}
+.part2 .title{
+    background-position: -5px -287px;
+    margin-top: 35px;
+}
+.part2 .wm-explain{
+    color: #ac7c4e;
+}
+/* part3 */
+.main .part3{
+    width: 100%;
+    height: 1325px;
+    text-align: center;
+    position: relative;
+}
+.part3 .title{
+    background-position: -5px -353px;
+    margin-top: 35px;
+}
+.part3 .wm-explain{
+    color: #ac7c4e;
+    margin-bottom: 32px;
+}
+.lottery {position: relative;width: 927px;height: 929px;margin: 0 auto;margin-top: 28px;}
+.lottery .a1{
+    display: block;
+    width: 303px;
+    height: 303px;
+    position: absolute;
+    top: 313px;
+    left: 312px;
+}
+.part3 .num{
+    font-size: 28.89px;
+    color: #ac7c4e;
+    font-weight: bold;
+    text-align: center;
+}
+/* part4 */
+.main .part4{
+    width: 100%;
+    height: 1395px;
+    text-align: center;
+    position: relative;
+}
+.part4 .title{
+    background-position: -5px -155px;
+    margin-top: 35px;
+}
+.slide-box-wrap{ width: 1040px; position: relative; margin: 66px auto 0;}
+.slide-box-wrap .slide-box {width: 780px; height: 545px;  margin: 0 auto; overflow: hidden; }
+.slide-box-wrap .swiper-wrapper .swiper-slide { width: 396px; height: 545px; float: left;}
+.slide-box-wrap .prev,.slide-box-wrap .next{ width: 20px; height: 41px; position: absolute; top: 272px;}
+.slide-box-wrap .prev{background: url(//ossweb-img.qq.com/images/tgclub/act/a20181023ysyy/spr1.png) no-repeat;background-position: -5px -104px; left: 0;}
+.slide-box-wrap .next{background: url(//ossweb-img.qq.com/images/tgclub/act/a20181023ysyy/spr1.png) no-repeat;background-position: -5px -53px; right: 0;}
+.part4 .rule{
+    width: 100%;
+    height: 334px;
+    margin: 0 auto;
+    margin-top: 162px;
+}
+.rule .introduce{
+    font-size: 36px;
+    color: #ab6c2f;
+    text-align: left;
+    margin-bottom: 16px;
+}
+.rule i{
+    display: inline-block;
+    width: 37px;
+    height: 38px;
+    font-size: 20px;
+    line-height: 38px;
+    color: #fff;
+    background: url(//ossweb-img.qq.com/images/tgclub/act/a20181023ysyy/spr1.png) no-repeat;
+    background-position: -5px -5px;
+    font-style: normal;
+    text-align: center;
+    margin-right: 16px;
+    margin-bottom: 12px;
+}
+.rule .i2{
+    position: relative;
+    top: -30px;
+}
+.rule .i3{
+    position: relative;
+    top: -30px;
+}
+.rule p{
+    width: 989px;
+    display: inline-block;
+    font-size: 26.26px;
+    line-height: 31px;
+    color: #ac7c4e;
+    text-align: left;
+    margin-bottom: 12px;
+}
+/*footer*/
+#footer_ieg{
+    width: 100%;
+    height: 114px;
+    background: #e9d9aa;
+}
+.wrap_ieg{
+    padding-top: 50px;
+    padding-bottom: 22px;
+    text-align: center;
+    line-height: 27px;
+    background: #e9d9aa;
+}
+.wrap_ieg p a{
+    text-decoration: none;
+    color: #ac8c6d;
+    font-size: 12px;
+}
+.wrap_ieg p{
+    color: #ac8c6d;
+    font-size: 12px;
+}
+.dia-con{
+    width: 243px;
+    height: 216px;
+    background: url(//ossweb-img.qq.com/images/tgclub/act/a20181023ysyy/tab1.png) no-repeat;
+}
+.dia-close{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}

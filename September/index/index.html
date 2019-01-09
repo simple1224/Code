@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="gbk">
+	<meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+	<meta name="Description" content="《逆战》热血青春，永久绝版返场！" />
+	<meta name="Keywords" content="逆战,逆战官网,投票选永久,永久提前拿,我与好友有个约会,永久绝版返场" />
+	<title>夏日珍宝季 - 逆战官方网站 - 腾讯游戏</title>
+	<link rel="stylesheet" href="ossweb-img/index.css">
+	<link rel="stylesheet" href="ossweb-img/jquery.mCustomScrollbar.css">
+	<!-- 页面设计：cp | 页面制作：cp | 创建：2018-06-21 -->
+</head>
+<body>
+<div class="warp">
+	<div class="bg">
+		<div class="bg1"></div>
+		<div class="bg2"></div>
+		<div class="bg3"></div>
+		<div class="bg4"></div>
+	</div>
+	<div class="container">
+		<div class="main">
+			<a href="http://nz.qq.com/main.shtml" class="nz_logo" target="_blank" onclick="PTTSendClick('btn','nz_logo','逆战');"></a>
+			<a href="http://daoju.qq.com/nz/" class="djc_logo" target="_blank" onclick="PTTSendClick('btn','djc_logo','道聚城');"></a>
+			<ul class="list_top">
+				<li class="li1"><a href="http://nz.qq.com/main.shtml" target="_blank" onclick="PTTSendClick('btn','gw_btn','逆战官网');"></a></li>
+				<li class="li2"><a href="//down.qq.com/tgame/dltools/QQNZ_1.0.1.35_Full_VIP_signed.exe" target="_blank" onclick="PTTSendClick('btn','unload','游戏下载');"></a></li>
+				<li class="li3"><a href="//bbs.nz.qq.com/" target="_blank" onclick="PTTSendClick('btn','bbs_btn','游戏论坛');"></a></li>
+			</ul>
+			<div class="time"></div>
+			<div class="login">
+				<!--登录前状态 Start-->
+				<p id="unlogin">亲爱的用户，请 <a href="javascript:;" id="dologin">[登录]</a></p>
+				<!--登录前状态 End-->
+				<!--登录后状态 Start-->
+				<p id="logined" style="display:none">欢迎您，<span id='login_qq_span'></span>，<a href="javascript:;" id="dologout">[注销]</a></p>
+				<!--登录后状态 End-->
+			</div>
+			<div class="content1">
+				<div class="content1_top">
+					<p class="p1">请输入希望购买的珍宝礼盒数量</p>
+					<input type="text" placeholder="点此输入整数">
+					<p class="p2">10Q币/1个珍宝礼盒</p>
+					<p class="p3">*包含1个复活币+1个珍宝碎片</p>
+					<a href="javascript:;" class="buy_btn"  onclick="PTTSendClick('btn','buy_btn','立即购买');"></a>
+				</div>
+				<div class="content1_rule">
+					<p>说明：活动结束后，尚未使用的珍宝碎片将以1个碎片=1000NZ点的方式在5个工作日内直接发放至绑定大区的游戏内。</p>
+					<p>说明：活动结束后，累积购买超过50、100、200、300个碎片，将累积500、1000、2000、3000点至【全名消费季活动】的里程碑记录。</p>
+				</div>
+			</div>
+			<div class="content2">
+				<p class="p1">
+					活动期间，可以在下方点亮活动特权，并获得一个免单返利机会，价值等同于随机一轮开启福袋的碎片费用（1至9轮中随机获得）。当玩家成功开启任
+					意一个道具箱达到对应特权次数后，即可直接领取对应数量的碎片作为免单返利。
+				</p>
+				<div class="content2_center">
+					<div class="left"></div>
+					<div class="right">
+						<p>获得<span>X</span>轮免单返利</p>
+						<p>可获得碎片：<span>X</span>个</p>
+					</div>
+				</div>
+				<ul class="content2_btn">
+					<li class="li1"><a href="javascript:;" onclick="PTTSendClick('btn','open_tq','开启特权');"></a></li>
+					<li class="li2"><a href="javascript:;" onclick="PTTSendClick('btn','receive_sp','领取碎片');"></a></li>
+				</ul>
+				<div class="bottom">
+					<ul class="winning_list" id="winning_list">
+						<li><span class="span1">2223341XXXX</span>获得了<span class="span2">XXXXXXXXXXXXXX</span></li>
+						<li><span class="span1">2223341XXXX</span>获得了<span class="span2">XXXXXXXXXXXXXX</span></li>
+						<li><span class="span1">2223341XXXX</span>获得了<span class="span2">XXXXXXXXXXXXXX</span></li>
+						<li><span class="span1">2223341XXXX</span>获得了<span class="span2">XXXXXXXXXXXXXX</span></li>
+						<li><span class="span1">2223341XXXX</span>获得了<span class="span2">XXXXXXXXXXXXXX</span></li>
+						<li><span class="span1">2223341XXXX</span>获得了<span class="span2">XXXXXXXXXXXXXX</span></li>
+						<li><span class="span1">2223341XXXX</span>获得了<span class="span2">XXXXXXXXXXXXXX</span></li>
+						<li><span class="span1">2223341XXXX</span>获得了<span class="span2">XXXXXXXXXXXXXX</span></li>
+						<li><span class="span1">2223341XXXX</span>获得了<span class="span2">XXXXXXXXXXXXXX</span></li>
+						<li><span class="span1">2223341XXXX</span>获得了<span class="span2">XXXXXXXXXXXXXX</span></li>
+					</ul>
+				</div>
+			</div>
+				<div class="content3">
+					<ul class="content3_list1">
+						<li class="li1 active">1号道具盒</li>
+						<li class="li2">2号道具盒</li>
+						<li class="li3">3号道具盒</li>
+					</ul>
+					<p class="p1">当前道具箱开启次数为 <span>8</span> 次，下次开启需要碎片：<span>1111</span> 个，当前拥有碎片：<span>1111</span> 个</p>
+					<a href="javascript:yd(4200);" class="look_rule"></a>
+					<ul class="content3_list2">
+						<li class="content3_list2_li li1 active" id="cj_1">
+							<a href="javascript:TGDialogS('test1');" class="li_click"></a>
+							<ul class="list2_list1">
+								<li class="li1">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li2">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li3">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li4">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li5">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li6">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li7">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li8">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li9">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li10">
+								</li>
+							</ul>
+							<div class="lottery" id="lotterycontent1"></div>
+							<ul class="btn_list">
+								<li class="li9"><a href="javascript:;" onclick="PTTSendClick('btn','btn1','重新选择');"></a><p>*消耗2个道具箱碎片</p></li>
+								<li class="li10"><a href="javascript:;" onclick="PTTSendClick('btn','btn2','锁定道具盒');"></a></li>
+							</ul>
+						</li>
+						<li class="content3_list2_li li2" id="cj_2">
+							<a href="javascript:TGDialogS('test1');" class="li_click"></a>
+							<ul class="list2_list1">
+								<li class="li1">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li2">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li3">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li4">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li5">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li6">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li7">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li8">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li9">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li10">
+								</li>
+							</ul>
+							<div class="lottery" id="lotterycontent2"></div>
+							<ul class="btn_list">
+								<li class="li9"><a href="javascript:;" onclick="PTTSendClick('btn','btn1','重新选择');"></a><p>*消耗2个道具箱碎片</p></li>
+								<li class="li10"><a href="javascript:;" onclick="PTTSendClick('btn','btn2','锁定道具盒');"></a></li>
+							</ul>
+						</li>
+						<li class="content3_list2_li li3" id="cj_3">
+							<a href="javascript:TGDialogS('test1');" class="li_click"></a>
+							<ul class="list2_list1">
+								<li class="li1">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li2">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li3">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li4">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li5">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li6">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li7">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li8">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li9">
+									<img src="ossweb-img/question.png" alt="">
+									<div class="mask"></div>
+								</li>
+								<li class="li10">
+								</li>
+							</ul>
+							<div class="lottery" id="lotterycontent3"></div>
+							<ul class="btn_list">
+								<li class="li9"><a href="javascript:;" onclick="PTTSendClick('btn','btn1','重新选择');"></a><p>*消耗2个道具箱碎片</p></li>
+								<li class="li10"><a href="javascript:;" onclick="PTTSendClick('btn','btn2','锁定道具盒');"></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			<div class="content4">
+				<p class="p1">活动期间，开启盛夏珍宝，收集全部4个创世套装—魔炎换肤卡，即有资格为你的【饕餮宠物】或【地狱烈焰犬】<br/>
+					进行专属换装：拥有【饕餮宠物】或【地狱烈焰犬】可选择领取【创世霸王龙-复苏】或【创世霸王龙-夺宝】。</p>
+				<div class="content4_top">
+					<!--拥有active类名时  是点亮效果-->
+					<div class="img img1 active"></div>
+					<div class="img img2"></div>
+					<div class="img img3"></div>
+					<div class="img img4"></div>
+				</div>
+				<ul class="button">
+					<li class="li1">
+						<a href="javascript:;" onclick="TGDialogS('test5');PTTSendClick('btn','receive_content4_1','领取创世霸王龙-复苏');"></a>
+						<div class="hover">“描述文案描述文案描述文案
+    						描述文案描述文案描述文案
+   						 描述文案描述文案描述文案
+        						描述文案描述文案描述文案”</div>
+					</li>
+					<li class="li2">
+						<a href="javascript:;" onclick="TGDialogS('test6');PTTSendClick('btn','receive_content4_2','领取创世霸王龙-夺宝');"></a>
+						<div class="hover">“描述文案描述文案描述文案
+    						描述文案描述文案描述文案
+    						描述文案描述文案描述文案
+        						描述文案描述文案描述文案”</div>
+					</li>
+				</ul>
+				<ul class="content4_list">
+					<!--li拥有active类名的时候是已获得角标-->
+					<li class="li1 active"><i></i><img src="ossweb-img/content4_li_img1.png" alt=""></li>
+					<li class="li2"><i></i><img src="ossweb-img/content4_li_img2.png" alt=""></li>
+					<li class="li3"><i></i><img src="ossweb-img/content4_li_img3.png" alt=""></li>
+					<li class="li4"><i></i><img src="ossweb-img/content4_li_img4.png" alt=""></li>
+				</ul>
+			</div>
+			<div class="content5">
+				<p class="p1">
+					活动期间，您可以在活动页面查看盛夏珍宝，并自选替换其中的道具，确认后锁定。<br/>
+					累计开启道具盒达到对应次数，即可开启1次盛夏珍宝并获得一个其中的道具，最多可开启8次，获得下列所有内容，换肤卡、<br/>
+					<span>武器挂饰为唯一道具，请不要选择游戏内已拥有的内容</span>
+				</p>
+				<p class="p2">累计已开启道具箱次数：<span>XX</span></p>
+				<p class="p3">下次点亮礼物塔需要次数：<span>XX</span></p>
+				<div class="cj">
+					<a href="javascript:TGDialogS('test3');" class="a a1"></a>
+					<a href="javascript:TGDialogS('test3');" class="a a2"></a>
+					<a href="javascript:TGDialogS('test3');" class="a a3"></a>
+					<a href="javascript:TGDialogS('test3');" class="a a4"></a>
+					<a href="javascript:TGDialogS('test3');" class="a a5"></a>
+					<a href="javascript:TGDialogS('test3');" class="a a6"></a>
+					<a href="javascript:TGDialogS('test3');" class="a a7"></a>
+					<a href="javascript:TGDialogS('test3');" class="a a8"></a>
+					<ul class="content5_cj">
+						<li class="li1 active">
+							<i></i>
+							<img src="" alt="">
+							<div class="mask"></div>
+						</li>
+						<li class="li2">
+							<i></i>
+							<img src="" alt="">
+							<div class="mask"></div>
+						</li>
+						<li class="li3">
+							<i></i>
+							<img src="" alt="">
+							<div class="mask"></div>
+						</li>
+						<li class="li4">
+							<i></i>
+							<img src="" alt="">
+							<div class="mask"></div>
+						</li>
+						<li class="li5">
+							<i></i>
+							<img src="" alt="">
+							<div class="mask"></div>
+						</li>
+						<li class="li6">
+							<i></i>
+							<img src="" alt="">
+							<div class="mask"></div>
+						</li>
+						<li class="li7">
+							<i></i>
+							<img src="" alt="">
+							<div class="mask"></div>
+						</li>
+						<li class="li8">
+							<i></i>
+							<img src="" alt="">
+							<div class="mask"></div>
+						</li>
+						<li class="li9">
+						</li>
+					</ul>
+					<div class="lottery" id="lotterycontent">
+
+					</div>
+				</div>
+			</div>
+			<div class="content6">
+				<p class="p1"><i>1</i>锻造碎片购买及合成时间：2017年2月6日 -2月19日；</p>
+				<p class="p2"><i>2</i>锻造过程中如成功获得游戏内已拥有的永久神器或人物，将自动返还当前已消耗碎片，时间消耗类道具及复活币不适用该规则； </p>
+				<p class="p3"><i>3</i>活动结束后，5个工作日内，玩家尚未消耗的神器碎片将直接转换为对应的NZ点并发放至游戏内仓库，1神器碎片=1000NZ点； </p>
+				<p class="p4"><i>4</i>锻造成功所获得的武器或人物将直接发放至游戏内仓库；</p>
+				<p class="p5"><i>5</i>如果锻造成功后获得的道具与玩家已拥有的同类别永久道具重复，则玩家可以选择是否返还碎片或直接获得道具，包含的道具如下：SCAR-星云（SACR-星尘、SCAR-天王）、原子力量—新年（原子力量）、MSR-刑天（MSR-鹰王）、极寒冰神（极寒冰神-鎏金）</p>
+				<p class="p6"><i>6</i>情人节专属武器在PVE与PVP锻造中心均可以获得，</p>
+				<p class="p7"><i>7</i>在法律允许的范围内，腾讯公司拥有对本活动的解释权。</p>
+			</div>
+		</div>
+	</div>
+	<!-- 弹出层test1 道具盒自选道具弹窗 Start-->
+	<div class="dialog" id="test1" style="display:none">
+		<div class="dia-con">
+			<p class="p1">您可以从下列道具中任选一个加入当前道具箱，确认后道具箱将为你生成其他9个道具。您可以点击【重新选择】，来消耗1<br/>
+				个道具箱碎片并重新获得选择强力道具的机会！</p>
+			<ul class="test1_list">
+				<li class="li1 active">
+					<img src="ossweb-img/test1/img1.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li2">
+					<img src="ossweb-img/test1/img2.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li3">
+					<img src="ossweb-img/test1/img3.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li4">
+					<img src="ossweb-img/test1/img4.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li5">
+					<img src="ossweb-img/test1/img5.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li6">
+					<img src="ossweb-img/test1/img6.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li7">
+					<img src="ossweb-img/test1/img7.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li8">
+					<img src="ossweb-img/test1/img8.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li9">
+					<img src="ossweb-img/test1/img9.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li10">
+					<img src="ossweb-img/test1/img10.png" alt="">
+					<div class="mask"></div>
+				</li>
+			</ul>
+			<a href="javascript:;" class="btn"  onclick="PTTSendClick('btn','test1_btn','确认选择');"></a>
+		</div>
+		<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+	</div>
+	<!-- 弹出层test1 End-->
+	<!-- 弹出层test2 获得道具领取 Start-->
+	<div class="dialog" id="test2" style="display:none">
+		<div class="dia-con">
+			<p class="p1">恭喜你已经成功获得<span>XXXXXXXX永久</span>!</p>
+			<div class="center">
+				<img src="" alt="">
+			</div>
+			<a href="javascript:;" class="btn"  onclick="PTTSendClick('btn','receive','领取道具');"></a>
+		</div>
+		<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+	</div>
+	<!-- 弹出层test2 End-->
+	<!-- 弹出层test3  最下面部分抽奖选取道具弹窗  Start-->
+	<div class="dialog" id="test3" style="display:none">
+		<div class="dia-con">
+			<p class="p1">活动期间，您可以在活动页面查看炫彩皮肤宝箱，并自选替换其中的换肤卡道具，确认后锁定。
+				<span>换肤卡为唯一道具，请不要选择游戏内已拥有的换肤卡！</span></p>
+			<ul class="test3_list">
+				<li class="li1 active">
+					<img src="ossweb-img/test3/img1.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li2">
+					<img src="ossweb-img/test3/img2.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li3">
+					<img src="ossweb-img/test3/img3.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li4">
+					<img src="ossweb-img/test3/img4.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li5">
+					<img src="ossweb-img/test3/img5.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li6">
+					<img src="ossweb-img/test3/img6.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li7">
+					<img src="ossweb-img/test3/img7.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li8">
+					<img src="ossweb-img/test3/img8.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li9">
+					<img src="ossweb-img/test3/img9.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li10">
+					<img src="ossweb-img/test3/img10.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li11">
+					<img src="ossweb-img/test3/img11.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li12">
+					<img src="ossweb-img/test3/img12.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li13">
+					<img src="ossweb-img/test3/img13.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li14">
+					<img src="ossweb-img/test3/img14.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li15">
+					<img src="ossweb-img/test3/img15.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li16">
+					<img src="ossweb-img/test3/img16.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li17">
+					<img src="ossweb-img/test3/img17.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li18">
+					<img src="ossweb-img/test3/img18.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li19">
+					<img src="ossweb-img/test3/img19.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li20">
+					<img src="ossweb-img/test3/img20.png" alt="">
+					<div class="mask"></div>
+				</li>
+				<li class="li21">
+					<img src="ossweb-img/test3/img21.png" alt="">
+					<div class="mask"></div>
+				</li>
+
+			</ul>
+			<a href="javascript:;" class="btn"  onclick="PTTSendClick('btn','test3_btn','确认选择');"></a>
+		</div>
+		<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+	</div>
+	<!-- 弹出层test3 End-->
+	<!-- 弹出层test4 道具已拥有  Start-->
+	<div class="dialog" id="test4" style="display:none">
+		<div class="dia-con">
+			<p class="p1">恭喜你已经成功获得<span>XXXXXXXX永久</span>，但您游戏内已经拥有该道具或该道具的同类别内容，您可选择如下：</p>
+			<ul class="center">
+				<li class="li1">
+					<p class="p2">返还本次抽奖碎片<br/>
+						<span>X 个</span>
+						</p>
+					<a href="javascript:;" onclick="PTTSendClick('btn','recoed','返还碎片');" class="btn"></a>
+				</li>
+				<li class="li2">
+					<img src="" alt="">
+					<a href="javascript:;" onclick="PTTSendClick('btn','receive1','领取道具');" class="btn"></a>
+				</li>
+			</ul>
+		</div>
+		<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+	</div>
+	<!-- 弹出层test4 End-->
+
+	<!-- 弹出层test5 道具已拥有  Start-->
+	<div class="dialog" id="test5" style="display:none">
+		<div class="dia-con">
+			<p class="p1">请问是否确认获得<span>【创世霸王龙-复苏】</span>？领取后不可替换。</p>
+			<ul class="btn_list">
+				<li class="li1"><a href="javascript:showDialog.hide();"></a></li>
+				<li class="li2"><a href="javascript:showDialog.hide();"></a></li>
+			</ul>
+		</div>
+		<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+	</div>
+	<!-- 弹出层test5 End-->
+
+	<!-- 弹出层test6 道具已拥有  Start-->
+	<div class="dialog" id="test6" style="display:none">
+		<div class="dia-con">
+			<p class="p1">请问是否确认获得<span>【创世霸王龙-夺宝】</span>？领取后不可替换。</p>
+			<ul class="btn_list">
+				<li class="li1"><a href="javascript:showDialog.hide();"></a></li>
+				<li class="li2"><a href="javascript:showDialog.hide();"></a></li>
+			</ul>
+		</div>
+		<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+	</div>
+	<!-- 弹出层test6 End-->
+</div>
+<script src="//ossweb-img.qq.com/images/js/title.js"></script>
+<script src="//ossweb-img.qq.com/images/js/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/nz/nact.min.js"></script>
+<script src="ossweb-img/jquery.mCustomScrollbar.min.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+<script>
+	new actNav({
+		actChannel:"15217",//频道id(一般不需要变)
+		actPos:"18700",//LOGO广告位id(一般不需要变)
+		actPosNormal:"18702",//背景图广告位id(一般不需要变)
+		actPosHover:"18703",//聚焦状态图片广告位id(一般不需要变)
+		sUrl:"navInfoListnz",//对应脚本库名字
+		colorNormal:"#fff",//常规状态文字色值
+		colorHover:"#0c0c0c"//聚焦状态文字色值
+	});
+
+</script>
+<!--逆战通用底部-->
+<script src="http://ossweb-img.qq.com/images/bangbang/js/tool/nzpcfooter.js"></script>
+<script>
+	createNzFooter("white");
+</script>
+
+<script>
+	function yd(y){
+		$("body,html").stop().animate({
+			scrollTop: y //让body的scrollTop等于pos的top，就实现了滚动
+		},1000);
+	}
+	$(".test3_list").mCustomScrollbar({
+		scrollInertia: 150
+	});
+	$('#test1 .test1_list li').click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+	})
+	$('#test3 .test3_list li').click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+	})
+	$('.content3 .content3_list1 li').click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		console.log($(this).index())
+		$('.content3 .content3_list2 .content3_list2_li ').eq($(this).index()).addClass('active').siblings().removeClass('active');
+	})
+
+
+
+	$('.li_click').click(function(){
+		boxId = $(this).parent().attr('id');
+		TGDialogS('test1');
+	})
+	$('#test1 .btn').click(function(){
+		showDialog.hide();
+		var _img = $('#test1 .active').find('img').attr('src');
+		$('#'+boxId).find('.list2_list1 .li2 img').attr('src',_img);
+	})
+
+
+	//替换抽奖道具
+	$('.content5 .cj .a').click(function(){
+		cj_index=$(this).index();
+		TGDialogS('test3',function(){
+			setTimeout(function(){
+				$(".test3_list").mCustomScrollbar("update");
+			},100)
+
+		});
+	})
+	$('#test3 .btn').click(function(){
+		showDialog.hide();
+		var _cj_img = $('#test3 .active').find('img').attr('src');
+		$('.content5_cj li').eq(cj_index).find('img').attr('src',_cj_img);
+	})
+
+</script>
+<!--登录-->
+<script>
+	milo.addEvent(g("dologin"), "click", function() {
+		need("biz.login-min",function(LoginManager){
+			LoginManager.init({
+				needReloadPage:true
+			});
+			LoginManager.login();
+		});
+		return false;
+	});
+	milo.addEvent(g("dologout"), "click", function() {
+		need("biz.login-min",function(LoginManager){
+			LoginManager.logout();
+		});
+		return false;
+	});
+	milo.ready(function() {
+		need("biz.login-min",function(LoginManager){
+			LoginManager.checkLogin(function(){
+				g("login_qq_span").innerText= LoginManager.getUserUin();//获取QQ号
+			});
+		});
+	});
+</script>
+
+<script>
+	//		弹窗
+	function TGDialogS(e,fun){
+		showDialog.show({
+			id: e, //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+			bgcolor:"#000000",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+			opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+		});
+		if(fun){fun();}
+	}
+
+	function yanshi(type){
+		TGDialogS(type);
+		setTimeout(function(){
+			showDialog.hide();
+			TGDialogS('test3');
+		},2000);
+	}
+
+	function rolling (){
+		$("body,html").animate({
+			scrollTop:2865 //让body的scrollTop等于pos的top，就实现了滚动
+		},1000);
+	}
+</script>
+
+<script src="http://game.gtimg.cn/images/js/delottery/lottery.js"></script>
+<script>
+	//点击开始抽奖 通知js flash->js
+
+	//开始抽奖lottery->js
+	function callJsToStart() {
+		lottery.disable();
+		calllotteryToRoll(1);
+	}
+	//开发获得抽奖结果 通知lottery开始播放效果 js->lottery
+	function calllotteryToRoll(id) {
+		if (lottery) lottery.stopRoll(id);
+	}
+	//动画完成通知js lottery->js
+	function callJsToComplete() {
+		alert('恭喜你获得大奖哟！！');
+	}
+
+	//初始化抽奖的 可以不知道内部
+	var lottery = new Lottery({
+		'lighturl': 'ossweb-img/content5_cj_mask.png',//外部光圈png 不填写就用默认的效果
+		'starturl': 'http://ossweb-img.qq.com/images/js/delottery/blankstartbtn.png', //外部按钮png 不填写就用默认的按钮效果
+		'width': 781,//lottery 宽度
+		'height': 430,//lottery 高度
+		'total': 8,//抽奖产品的总数
+		'sbtnx': 272,// 开始抽奖按钮的位置x坐标
+		'sbtny': 181,// 开始抽奖按钮的位置y坐标
+		'sbtnw': 233,// 开始抽奖按钮的宽度
+		'sbtnh': 74,// 开始抽奖按钮的高度
+		'boxw': 250,// 奖品光效的宽度
+		'boxh': 137,//奖品光效的高度
+		'position': "0_0,265_0,532_0,532_146,532_292,265_292,0_292,0_146",
+		//奖品光效的位置，对应奖品图片的布局，填入每个奖品的位置以及角度用逗号分割 x_y 例如19_20或者19_20_0 表示第一个奖品的位置 x坐标为19px y坐标为20px 角度为0。）
+		'contentId': 'lotterycontent',//嵌入lottery 的div层的 id
+		'onClickRollEvent': callJsToStart,//对应上面接口
+		'onCompleteRollEvent': callJsToComplete //对应上面接口
+	});
+
+	//开始抽奖lottery->js
+	function callJsToStart1() {
+		lottery1.disable();
+		calllotteryToRoll1(0);
+	}
+	//开发获得抽奖结果 通知lottery开始播放效果 js->lottery
+	function calllotteryToRoll1(id) {
+		if (lottery1) lottery1.stopRoll(id);
+	}
+	//动画完成通知js lottery->js
+	function callJsToComplete1() {
+		alert('恭喜你获得大奖哟！！11111');
+	}
+
+	//初始化抽奖的 可以不知道内部
+	var lottery1 = new Lottery({
+		'lighturl': '//ossweb-img.qq.com/images/js/delottery/sel.png',//外部光圈png 不填写就用默认的效果
+		'starturl': 'http://ossweb-img.qq.com/images/js/delottery/blankstartbtn.png', //外部按钮png 不填写就用默认的按钮效果
+		'width': 907,//lottery 宽度
+		'height': 424,//lottery 高度
+		'total': 9,//抽奖产品的总数
+		'sbtnx': 233,// 开始抽奖按钮的位置x坐标
+		'sbtny': 146,// 开始抽奖按钮的位置y坐标
+		'sbtnw': 448,// 开始抽奖按钮的宽度
+		'sbtnh': 137,// 开始抽奖按钮的高度
+		'boxw': 210,// 奖品光效的宽度
+		'boxh': 112,//奖品光效的高度
+		'position': "0_0,336_0,672_0,672_120,672_241,439_241,222_241,0_241,0_120",
+		//奖品光效的位置，对应奖品图片的布局，填入每个奖品的位置以及角度用逗号分割 x_y 例如19_20或者19_20_0 表示第一个奖品的位置 x坐标为19px y坐标为20px 角度为0。）
+		'contentId': 'lotterycontent1',//嵌入lottery 的div层的 id
+		'onClickRollEvent': callJsToStart1,//对应上面接口
+		'onCompleteRollEvent': callJsToComplete1 //对应上面接口
+	});
+
+	//开始抽奖lottery->js
+	function callJsToStart2() {
+		lottery2.disable();
+		calllotteryToRoll2(0);
+	}
+	//开发获得抽奖结果 通知lottery开始播放效果 js->lottery
+	function calllotteryToRoll2(id) {
+		if (lottery2) lottery2.stopRoll(id);
+	}
+	//动画完成通知js lottery->js
+	function callJsToComplete2() {
+		alert('恭喜你获得大奖哟！！22222');
+	}
+
+	//初始化抽奖的 可以不知道内部
+	var lottery2 = new Lottery({
+		'lighturl': 'ossweb-img/content3_cj_mask.png',//外部光圈png 不填写就用默认的效果
+		'starturl': 'http://ossweb-img.qq.com/images/js/delottery/blankstartbtn.png', //外部按钮png 不填写就用默认的按钮效果
+		'width': 907,//lottery 宽度
+		'height': 424,//lottery 高度
+		'total': 9,//抽奖产品的总数
+		'sbtnx': 319,// 开始抽奖按钮的位置x坐标
+		'sbtny': 156,// 开始抽奖按钮的位置y坐标
+		'sbtnw': 233,// 开始抽奖按钮的宽度
+		'sbtnh': 77,// 开始抽奖按钮的高度
+		'boxw': 210,// 奖品光效的宽度
+		'boxh': 112,//奖品光效的高度
+		'position': "0_0,336_0,672_0,672_120,672_241,439_241,222_241,0_241,0_120",
+		//奖品光效的位置，对应奖品图片的布局，填入每个奖品的位置以及角度用逗号分割 x_y 例如19_20或者19_20_0 表示第一个奖品的位置 x坐标为19px y坐标为20px 角度为0。）
+		'contentId': 'lotterycontent2',//嵌入lottery 的div层的 id
+		'onClickRollEvent': callJsToStart2,//对应上面接口
+		'onCompleteRollEvent': callJsToComplete2 //对应上面接口
+	});
+
+	//开始抽奖lottery->js
+	function callJsToStart3() {
+		lottery3.disable();
+		calllotteryToRoll3(0);
+	}
+	//开发获得抽奖结果 通知lottery开始播放效果 js->lottery
+	function calllotteryToRoll3(id) {
+		if (lottery3) lottery3.stopRoll(id);
+	}
+	//动画完成通知js lottery->js
+	function callJsToComplete3() {
+		alert('恭喜你获得大奖哟！！3333');
+	}
+
+	//初始化抽奖的 可以不知道内部
+	var lottery3 = new Lottery({
+		'lighturl': 'ossweb-img/content3_cj_mask.png',//外部光圈png 不填写就用默认的效果
+		'starturl': 'http://ossweb-img.qq.com/images/js/delottery/blankstartbtn.png', //外部按钮png 不填写就用默认的按钮效果
+		'width': 883,//lottery 宽度
+		'height': 353,//lottery 高度
+		'total': 9,//抽奖产品的总数
+		'sbtnx': 319,// 开始抽奖按钮的位置x坐标
+		'sbtny': 156,// 开始抽奖按钮的位置y坐标
+		'sbtnw': 233,// 开始抽奖按钮的宽度
+		'sbtnh': 77,// 开始抽奖按钮的高度
+		'boxw': 210,// 奖品光效的宽度
+		'boxh': 112,//奖品光效的高度
+		'position': "0_0,336_0,672_0,672_120,672_241,439_241,222_241,0_241,0_120",
+		//奖品光效的位置，对应奖品图片的布局，填入每个奖品的位置以及角度用逗号分割 x_y 例如19_20或者19_20_0 表示第一个奖品的位置 x坐标为19px y坐标为20px 角度为0。）
+		'contentId': 'lotterycontent3',//嵌入lottery 的div层的 id
+		'onClickRollEvent': callJsToStart3,//对应上面接口
+		'onCompleteRollEvent': callJsToComplete3 //对应上面接口
+	});
+</script>
+<script src="http://ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+
+
+<script src="http://ossweb-img.qq.com/images/script/bootmanager.js"></script>
+<script>
+	$import('com.qq.basic.*');
+	ScrollMarqueeUP.init({
+		'contentId':'winning_list',
+		'scrollstep':1,
+		'scrollstoptime':20
+	});
+</script>
+
+<!--点击流-->
+<script>
+	//此段代码不能放到外链JS中，
+	var setSite={ //设置网站属性
+		siteType:"a20180621nz", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+		pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+		pageName:"首页", //必填项:页面中文名
+		osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+		ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+		stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+	}
+	if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+	</script>
+</body>
+</html>

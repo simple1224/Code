@@ -1,0 +1,504 @@
+* {margin:0; padding:0; list-style:none;font-family:'Microsoft Yahei'}
+body,html,.ost_box,#actTitleWrap,.container,#footer_ied,.white-footer,.warp{min-width:1200px!important;width:100%!important;}
+/*footer S*/
+#footer_ieg{position: relative;}
+.wrap_ieg{font:12px verdana;text-align:center;padding:50px 0;background: #000;}
+.wrap_ieg,.wrap_ieg a{color:#fff;height: 52px;}
+.wrap_ieg .e{font-size:10px;padding:3px 0;-webkit-text-size-adjust:none;}
+/*footer E*/
+/*top-nav S*/
+.top-nav{width:100%;height: 45px;background:#000;position: relative;font-size: 12px;min-width: 1200px;z-index: 999;top: -124px;}
+.top-logo{float: left;width: 128px;height: 45px;margin:4px 0 0 40px;background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/tlogo-bg.png) 0 0 no-repeat;text-indent: -9999px;}
+.t-nav-left{float: left;padding: 10px 0 0 10px;}
+.t-nav-left li { float: left;height: 25px;line-height: 25px;margin-right: 15px;color: #fff; position: relative;}
+.t-nav-left li a{display: block;width: 73px;height: 25px;line-height: 25px;color: #fff;text-align: center;transition: all 0.3s linear;}
+.t-nav-left li.t-nav-w a{width: 113px;color: #0da7c9;}
+.t-nav-left li a:hover{color: #0da7c9;background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/item-bg.png) 0 0 no-repeat;text-decoration: none;}
+.t-nav-left li.t-nav-w a:hover{color: #fff;background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/item-bg2.png) 0 0 no-repeat;text-decoration: none;}
+.t-nav-left li.li-wxh span{color: #0da7c9;}
+.t-nav-right{float: right;padding-right: 55px;}
+.top-login-box{float: right;padding-right: 17px;height: 45px;line-height: 45px;color: #fff;}
+.top-login-box a {color: #fff;}
+.t-nav-login,.t-nav-login a{color: #fff !important;}
+.t-nav-login span{color: #0da7c9;}
+.t-nav-right ul{float: right;padding-top: 10px;}
+.t-nav-right ul li{float: left;margin-left: 15px;}
+.t-nav-fhgw,.t-nav-hdzx{display: block;color: #fff;width: 106px;height: 25px;transition: color 0.3s;text-indent: 40px; line-height: 25px;}
+.t-nav-fhgw:hover,.t-nav-hdzx:hover{ color: #0da7c9;text-decoration: none; }
+.t-nav-fhgw{background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/hdzx-bg.png) 0 0 no-repeat;}
+.t-nav-hdzx{background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/fhgw-bg.png) 0 0 no-repeat;}
+.fl{float: left;}
+.fr{float: right;}
+.box-ewm{width: 196px;left: 50%;margin-left: -98px;top: 57px;z-index: 9999 !important;display: none;}
+.box-ewm div{width: 90px;height: 108px;background: #0099bb;padding-top: 1px;}
+.box-ewm div img{display: block;margin: 0 auto;}
+.box-ewm div p{font-size: 12px;color: #fff;text-align: center;line-height: 18px;}
+/*top-nav E*/
+/*bg*/
+.bg1 {width: 100%;height: 481px;background:url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/bg1-1.jpg) no-repeat top center;overflow: hidden;}
+.bg2 {width: 100%;height: 558px;background:url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/bg2.jpg) no-repeat top center;overflow: hidden;}
+.bg3 {width: 100%;height: 818px;background:url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/bg3.jpg) no-repeat top center;overflow: hidden;}
+.bg4 {width: 100%;height: 765px;background:url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/bg4.jpg) no-repeat top center;overflow: hidden;}
+
+a{text-decoration: none;}
+.a-home {width:192px; height:73px; background:url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/a-home.png); background-size:100 }
+.a-line {width:28px; height:73px; background:url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/a-line.png) left center no-repeat;}
+.act-nav{width: 100%;height: 73px;background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/a-bg.png) center top;text-align: center;font-size: 0;overflow: hidden;position: absolute; top: 45px;left: 0;z-index: 999;}
+.act-nav-main{width: 1700px;position: absolute; left: 50%; top: 0; margin-left: -850px;}
+.act-nav-main > div{display: inline-block;*display: inline;*zoom: 1;vertical-align: top;}
+.act-nav a{display: table-cell;vertical-align: middle;width: 140px;height: 73px;font-size: 18px;line-height: 73px;font-weight: 600;font-style: italic;color: #4a9acc;}
+.act-nav-item{width:140px;height: 73px;}
+.act-nav-items{width:234px;height: 73px;}
+.act-nav-items  a{width:234px;height: 73px;}
+.act-nav-item:hover a,
+.a-cur a{color: #4ee8ff;background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/a-home-s.png) center top;}
+.a-cur a{background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/a-home-s.png) center top; }
+.act-nav-v{letter-spacing: 7px;}
+/* act-nav E */
+
+/*layout */
+.wrap{
+    width: 100%;
+    position: relative;
+    /* padding-top: 110px; */
+}
+.wrap .bg{
+    min-width: 1000px;
+    padding-top: 124px;
+}
+.wrap .content{
+    width: 100%;
+    position: absolute;
+    top: 124px;
+    left: 0;
+}
+.wrap .content .main{
+    width: 1200px;
+    margin: 0 auto;
+}
+.main .button{
+    width: 521px;
+    height: 172px;
+    margin-top: 220px;
+    margin-left: 366px;
+    position: relative;
+}
+.button a{
+    display: inline-block;
+    width: 219px;
+    height: 108px;
+    position: absolute;
+}
+.button .a1{
+    top: 65px;
+}
+.button .a2{
+    top: 21px;
+    left: 298px;
+}
+.rule{
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    top: 1132px;
+    left: 550px;
+    line-height: 18px;
+}
+/* usual */
+.title{
+    width: 246px;
+    height: 60px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 auto;
+}
+li{
+    float: left;
+    position: relative;
+}
+.list1 .a1{
+    position: relative;
+    top: -31px;
+    left: 10px;
+    display: block;
+    width: 321px;
+    height: 60px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/btn1.png) no-repeat;
+}
+.list1 .a2{
+    position: relative;
+    top: -21px;
+    left: 10px;
+    display: block;
+    width: 320px;
+    height: 60px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/btn2.png) no-repeat;
+}
+.p1{
+    position: relative;
+    top:    -303px;
+    width: 332px;
+    height: 38px;
+    font-size: 24px;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+}
+.p2 span{
+    color: #fece66;
+}
+
+/* part1 */
+.part1{
+    width: 100%;
+    height: 1158px;
+    margin-top: 941px;
+    text-align: center;
+}
+.time{
+    width: 260px;
+    height: 63px;   
+    position: absolute;
+    top: 366px;
+    left: 1113px;
+    font-size: 25.23px;
+    color: #130001;
+    font-weight: bold;
+}
+.list{
+    width: 100%;
+    height: 965px;
+}
+.part1 .list1 img{
+    width: 330px;
+    height: 310px;
+    margin-bottom: -1px;
+}
+.list li{
+    width: 332px;
+    height: 451px;
+    margin-right: 102px;
+    margin-bottom: 61px;
+}
+.part1 .list1 .item3,.part1 .list1 .item6{
+    margin-right: 0;
+}
+.part1 .button2{
+    width: 526px;
+    height: 61px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.part1 .button2 .a3{
+    display: inline-block;
+    width: 220px;
+    height: 60px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/btn3.png) no-repeat;
+    margin-right: 60px;
+}
+.part1 .button2 .a4{
+    display: inline-block;
+    width: 241px;
+    height: 60px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/btn4.png) no-repeat;
+}
+.part1 .list1 .p2{
+    width: 320px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    top: -230px;
+    left: 5px;
+}
+.part1 .list1 .p3{
+    display: inline;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    top: -254px;
+    left: 62px;
+    line-height: 24px;
+}
+.part1 .list1 .left{
+    left: -90px;
+}
+
+/* tab */
+.dia{
+    position: relative;
+}
+.dia-con .word{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+.dia-close{
+    width: 50px;
+    height: 47px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#_overlay_{
+    background: rgba(0,0,0, .5) !important
+}
+
+.dia-con .last{
+    width: 1200px;
+    height: 84px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 16px;
+    color: #fff;
+}
+.dia-con .last a,.dia-con .last p{
+    display: inline-block;
+}
+.dia-con .last p{
+    letter-spacing: 20px;
+}
+.dia-con .last .pageprenone,.pagepre{
+    color: #fff;
+    margin: 30px 23px 0 23px;
+}
+.dia-con .last .pagenextnone,.pagenext{
+    color: #fff;
+    margin-left: 0px;
+}
+.dia-con .number a{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    text-align: center!important;
+    line-height: 18px;
+    letter-spacing:0;
+    margin-right: 5px;
+    color: #fff;
+}
+.dia-con a.active{
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/roll.png) no-repeat;
+    color: #954c4f
+}
+/* tab1 */
+#dia1 .dia-con{
+    width: 1200px;
+    height: 215px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/tab1.png) no-repeat;
+    margin: 0 auto;
+}
+#dia1 .word1{
+    padding-top: 107px;
+    line-height: 43px;
+}
+/* tab2 */
+#dia2 .dia-con{
+    width: 1200px;
+    height: 215px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/tab1.png) no-repeat;
+    margin: 0 auto;
+}
+#dia2 .word2{
+    padding-top: 112px;
+}
+/* tab3 */
+#dia3 .dia-con{
+    width: 1200px;
+    height: 758px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/tab3.png) no-repeat;
+    margin: 0 auto;
+}
+#dia3 .tab{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 86px;
+}
+#dia3 .tab-list{
+    width: 602px;
+    height: 502px;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+#dia3 .tab-list li{
+    display: block;
+    width: 602px;
+    height: 50px;
+    font-size: 24px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* tab4 */
+#dia4 .dia-con{
+    width: 1200px;
+    height: 811px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/tab4.png) no-repeat;
+    margin: 0 auto;
+}
+#dia4 .tab{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 86px;
+}
+#dia4 .tab-list2{
+    width: 600px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+#dia4 .tab-list2 li{
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+#dia4 .tab-list2  .special{
+    font-size: 24px;
+}
+
+/* tab5 */
+#dia5 .dia-con{
+    width: 1200px;
+    height: 275px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/tab5.png) no-repeat;
+    margin: 0 auto;
+}
+#dia5 .tab{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    
+}
+#dia5 .top{
+    position: relative;
+    height: 283px;
+    width: 100%;
+    margin: 0 auto;
+}
+#dia5 .tab1{
+    padding-top: 86px;
+}
+#dia5 .tab2{
+    padding-top: 71px;
+}
+#dia5 .most{
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+#dia5 .input{
+    display: inline-block;
+    width: 315px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff!important;
+    margin: 0 auto;
+    margin-top: 37px;
+    margin-left: 318px;
+    vertical-align: middle;
+}
+#dia5 .input input{
+    color: #ffffff!important;
+}
+
+#dia5 .confirm{
+    display: inline-block;
+    width: 145px;
+    height: 46px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/btn5.png) no-repeat;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+#dia5 select{
+    color: #ffffff!important;
+    width: 187px;
+    height: 37px;
+}
+
+#dia5 input, #dia5 select{
+    display: inline-block;
+    width: 185px;
+    height: 35px;
+    margin: 0 auto;
+    text-align: center;
+    background: #b45559;
+    border: #b2b1b1 1px solid;
+}
+#dia5 input::-webkit-outer-spin-button,
+#dia5 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#dia5 input[type="number"]{
+  -moz-appearance: textfield;
+}
+
+
+
+/* bottom */
+.bottom{
+    width: 100%;
+    margin: 0 auto;
+}
+#dia5 .tab-list3{
+   width: 550px;
+   height: 550px;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+#dia5 .tab-list3 li{
+    display: inline-block;
+    width: 33.33%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+#dia5 .tab-list3 .special{
+    font-size: 20px;
+    font-weight: bold;
+}
+#dia5 .btn {
+    width: 502px;
+    height: 61px;
+    margin: 0 auto;
+}
+#dia5 .btn .tab-a3{
+    display: inline-block;
+    width: 220px;
+    height: 60px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/btn6.png) no-repeat;
+    margin-right: 55px;
+}
+#dia5 .btn .tab-a4{
+    display: inline-block;
+    width: 222px;
+    height: 60px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/btn7.png) no-repeat;
+}
+.tab-list3 .box{
+    width: 18px;
+    height: 26px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/i1.png) no-repeat;
+    margin-left: 64px;
+    margin-top: 15px;
+}
+.tab-list3 li.select .box{
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180806talent/i2.png) no-repeat;
+}

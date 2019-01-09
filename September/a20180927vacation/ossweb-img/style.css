@@ -1,0 +1,295 @@
+* {margin:0; padding:0;list-style:none;font-family:'Microsoft Yahei';}
+body,html,.ost_box,#actTitleWrap,.container,#footer_ied,.white-footer,.warp{
+    min-width:1024px!important;width:100%!important;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1402?'1024px':'')!important;
+}
+/* set layout */
+.wrap{
+    width: 100%;
+    position: relative;
+}
+.wrap .bg{
+    min-width: 1024px;
+}
+.wrap .content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrap .content .main{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+/* set bg */
+.bg .bg1{
+    width: 100%;
+    height: 3925px;
+    background: url(//game.gtimg.cn/images/cfm/cp/a20180927vacation/bg2.jpg) no-repeat top center;
+}
+.href{
+    width: 277px;
+    height: 393px;
+    background: url(//game.gtimg.cn/images/cfm/cp/a20180927vacation/btn.png) no-repeat;
+    position: fixed;
+    top: 50%;
+    left: 58px;
+    margin-top: -149px;
+}
+.href a{
+    display: block;
+    width: 236px;
+    height: 58px;
+    margin: 0 auto;
+}
+.href .a1{
+    margin-top: 212px;
+    margin-bottom: 27px;
+}
+/* content begin */
+/* usual */
+.title{
+    width: 1000px;
+    height: 634px;
+    margin: 0 auto;
+    background: url(//game.gtimg.cn/images/cfm/cp/a20180927vacation/spr1.png) no-repeat;
+}
+.last{
+    margin-right: 0 !important;
+}
+/* part1 */
+.main .part1{
+  
+    width: 100%;
+    height: 1780px;
+    margin-top: 758px;
+}
+.part1 .title{
+    width: 820px;
+    height: 110px;
+    background-position: 0 0;
+}
+.part1 .part1_con .title{
+    height: 35px;
+    background-position: 0 -435px;
+    width: 709px;
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+.part1 .part1_con .list{
+    width: 852px;
+    height: 152px;
+    margin: 0 auto;
+}
+.part1 .part1_con .list li{
+    width: 220px;
+    height: 152px;
+    float: left;
+    /* position: relative; */
+    margin-right: 91px;
+}
+
+.part1 .part1_con .list img{
+    width: 220px;
+    height: 152px;
+}
+.part1 .part1_con .list .p1{
+    position: relative;
+    top: -153px;
+    text-align: center;
+    color: #ffeace;
+    font-size: 14.94px;
+    font-weight: bold;
+}
+.part1 .part1_con .list .p2{
+    position: relative;
+    top: -53px;
+    text-align: center;
+    color: #fefefe;
+    font-size: 16px;
+    font-weight: bold;
+}
+.part1 .part1_con2 .title{
+    height: 35px;
+    background-position: 0 -521px;
+    width: 1000px;
+    margin-top: 148px;
+    margin-bottom: -5px;
+}
+.part1 .part1_con2 img{
+    width: 849px;
+    height: 433px;
+    margin-left: 67px;
+}
+.part1 .part1_con3{
+    position: relative;
+}
+.part1_con3 .box{
+    position: absolute;
+    right: 254px;
+    top: 35px;
+}
+.part2 .box{
+    position: absolute;
+    right: 254px;
+    top: 104px;
+}
+.add{
+    position: absolute;
+    width: 200px;
+    color: #000000;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.part1 .part1_con3 .title{
+    height: 35px;
+    background-position: 31px -603px;
+    width: 1000px;
+    margin-top: 47px;
+    margin-bottom: 38px;
+}
+.part1 .part1_con3 .small{
+    width: 852px;
+    height: 519px;
+    margin: 0 auto;
+}
+.part1 .part1_con3 .active{
+    margin-top: 35px !important;
+}
+.part1 .part1_con3 li{
+    float: left;
+    margin-right: 20px;
+    margin-top: 67px;
+    cursor:pointer;
+}
+.part1 .part1_con3 .big li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 140px;
+    margin-left: 74px;
+    display: none;
+}
+/* part2 */
+.main .part2{
+    width: 100%;
+    height: 584px;
+    position: relative;
+}
+.part2 .title{
+    height: 126px;
+    background-position: 82px -141px;
+}
+.flash{
+    position: relative;
+}
+.flash .list4{
+    margin-left: 48px;
+    margin-top: 21px;
+    width: 857px;
+    overflow: hidden;
+    float: left;
+}
+.list4 li{
+    width: 137px;   
+    height: 337px;
+    /* display: none; */
+    float: left;
+    cursor:pointer;
+}
+.list4 img{
+    width: 137px;   
+    height: 337px;
+ 
+}
+.list4 .show{
+    display: block;
+}
+.clear{
+    clear: both;
+}
+.part2 .flash{
+    width: 1000px;
+    height: 387px;
+}
+
+.list4 .one.show{
+    background: url(//game.gtimg.cn/images/cfm/cp/a20180927vacation/img1.png) no-repeat;
+}
+.list4 .two.show{
+    background: url(//game.gtimg.cn/images/cfm/cp/a20180927vacation/img2.png) no-repeat;
+}
+.list4 .three.show{
+    background: url(//game.gtimg.cn/images/cfm/cp/a20180927vacation/img3.png) no-repeat;
+}
+.list4 .four.show{
+    background: url(//game.gtimg.cn/images/cfm/cp/a20180927vacation/img4.png) no-repeat;
+}
+.list4 .show{
+    width: 444px;
+    height: 337px;
+}
+.list4 .one{
+    background: url(//game.gtimg.cn/images/cfm/cp/a20180927vacation/img1-1.png) no-repeat;
+} 
+.list4 .two{
+    background: url(//game.gtimg.cn/images/cfm/cp/a20180927vacation/img2-1.png) no-repeat;
+}
+.list4 .three{
+    background: url(//game.gtimg.cn/images/cfm/cp/a20180927vacation/img3-1.png) no-repeat;
+}
+.list4 .four{
+    background: url(//game.gtimg.cn/images/cfm/cp/a20180927vacation/img4-1.png) no-repeat;
+}
+/* part3 */
+.main .part3{
+    width: 100%;
+    height: 640px;
+    position: relative;
+}
+.part3 .title{
+    height: 126px;
+    background-position: 80px -281px;
+    margin-bottom: 28px;
+}
+.part3 img{
+    display: block;
+    margin: 0 auto;
+    width: 852px;
+    height: 480px;
+}
+.part3 .a3{
+    display: block;
+    margin: 0 auto;
+    width: 852px;
+    height: 480px;
+    position: absolute;
+    top: 154px;
+    left: 74px;
+
+}
+/* content end */
+
+/*footer*/
+#footer_ieg{
+    width: 100%;
+    height: 178px;
+    background: #072a3a
+}
+.wrap_ieg{
+    padding-top: 50px;
+    padding-bottom: 22px;
+    text-align: center;
+    line-height: 27px;
+    background: #072a3a;
+}
+.wrap_ieg p a{
+    text-decoration: none;
+    color: #c6deea;
+    font-size: 12px;
+}
+.wrap_ieg p{
+    color: #c6deea;
+    font-size: 12px;
+}
+

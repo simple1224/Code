@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <div class="carousel1">
+        <div class="swiper-container" id="swiper1">
+            <div class="swiper-wrapper swiper-wrapper1">
+            <div class="swiper-slide">
+                <p class="text">羽翼·凌空</p>
+                <img class="img1" src="img/fly1.png" width="1188" height="664" alt="羽翼·凌空">
+            </div>
+            <div class="swiper-slide">
+                <p class="text">黑金·天使</p>
+                <img class="img2" src="img/fly2.png" width="1592" height="445" alt="黑金·天使">
+            </div>
+            <div class="swiper-slide">
+                <p class="text">骨翼·枯黄</p>
+                <img class="img3" src="img/fly3.png" width="1395" height="402" alt="骨翼·枯黄">
+            </div>
+            <div class="swiper-slide">
+                <p class="text">龙翼·蔽日</p>
+                <img class="img4" src="img/fly4.png" width="1646" height="525" alt="龙翼·蔽日">
+            </div>
+            <div class="swiper-slide">
+                <p class="text">涅槃·天翼</p>
+                <img class="img5" src="img/fly5.png" width="1879" height="529" alt="涅槃·天翼">
+            </div>
+            <div class="swiper-slide">
+                <p class="text">蜻蜓·星辉</p>
+                <img class="img6" src="img/fly6.png" width="1123" height="494" alt="蜻蜓·星辉">
+            </div>
+            </div>
+        </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination1"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next spr"></div>
+            <div class="swiper-button-prev spr"></div>
+        
+    </div>
+</body>
+<!-- Swiper JS -->
+<script src="swiper.min.js"></script>
+<script>
+  var swiper1 = new Swiper('#swiper1', {
+    spaceBetween: 300,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination1',
+      clickable: true,
+      renderBullet: function (index, className) {
+                return '<div class="' + className + ' swiper1_btn'+'_'+ index+'">'+'</div>';
+      },
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });   
+</script>
+</html>

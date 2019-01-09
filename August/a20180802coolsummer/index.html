@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk">
+    <meta name="robots" content="all">
+	<meta name="author" content="Tencent-CP">
+	<meta name="Copyright" content="Tencent">
+    <meta name="Description" content="《逆战》热血青春，永久绝版返场！" />
+    <meta name="Keywords" content="逆战,逆战官网,投票选永久,永久提前拿,我与好友有个约会,永久绝版返场" />
+    <title>酷爽一夏暑假大促-逆战官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="//game.gtimg.cn/images/nz/cp/a20180802coolsummer/reset.css">
+    <link rel="stylesheet" href="//game.gtimg.cn/images/nz/cp/a20180802coolsummer/style.css">
+</head>
+<body>
+<!-- 逆战 //game.gtimg.cn/images/nz/cp/a20180802coolsummer -->
+<div class="wrap">
+    <div class="bg">
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+        <div class="bg3"></div>
+    </div>
+    <div class="content">
+        <div class="main">
+            <div class="logo">
+                <a class="a1" href="http://nz.qq.com/" target="_blank" onclick="PTTSendClick('btn','nz_logo','逆战');"></a>
+            </div>
+            <!-- 登录 -->
+            <div class="login">
+                <p id="unlogin">亲爱的用户，请 <a href="javascript:;" id="dologin">[登录]</a></p>
+                <p id="logined" style="display:none">欢迎您，<span id='login_qq_span'></span>，<a href="javascript:;" id="dologout">[注销]</a></p>
+            </div>
+            <!-- part1 -->
+            <div class="part1">
+                <div class="title title1">购买酷碎片礼包</div>
+				<div class="p1">输入想要购买的礼包数量
+					<input type="number" placeholder="0">
+				</div>
+			
+                <div class="p2">
+                    <p>30Q币/1个酷爽碎片礼包</p>
+                    <p>每个礼包内含 自选碎片×3 复活币×10 一次开启酷爽礼盒机会</p>
+                </div>
+                <a href="javascript:;" onclick="PTTSendClick('btn','buy_btn','立即购买');"></a>
+            </div>
+            <!-- part2 -->
+            <div class="part2">
+                <div class="title title2">开启酷爽礼盒</div>
+                <span class="p3">每次开启消耗一次酷爽礼盒机会 </span>
+                <p class="num">剩余开启次数: <span>66666</span> 次</p>
+                <div class="cj">
+                    <div class="lottery" id="lotterycontent">
+                        <img class="price" src="//game.gtimg.cn/images/nz/cp/a20180802coolsummer/cj.png" alt="奖品" width="1067" height="832">
+                    </div>
+                </div>
+			</div>
+			<!-- part3 -->
+			<div class="part3">
+				<div class="title3">活动规则</div>
+				<div class="rule">
+					<p>1.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+					<p>2.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+					<p>3.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="//ossweb-img.qq.com/images/js/title.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+<!-- login -->
+<script src="//ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+<script>
+	milo.addEvent(g("dologin"), "click", function() {
+		need("biz.login-min",function(LoginManager){
+		LoginManager.init({
+				needReloadPage:true
+			});
+			LoginManager.login();
+		});
+		return false;
+	});
+	milo.addEvent(g("dologout"), "click", function() {
+		need("biz.login-min",function(LoginManager){
+			LoginManager.logout();
+		});
+		return false;
+	});
+	milo.ready(function() {
+		need("biz.login-min",function(LoginManager){
+			LoginManager.checkLogin(function(){
+				g("login_qq_span").innerText= LoginManager.getUserUin();//获取QQ号
+			});
+		});
+	});
+</script>
+<!-- 实现抽奖功能 -->
+<script src="//game.gtimg.cn/images/js/delottery/lottery.js"></script>
+<script>
+   	//点击开始抽奖 通知js flash->js
+
+	//开始抽奖lottery->js
+	function callJsToStart() {
+		lottery.disable();
+		calllotteryToRoll(11);
+	}
+	//开发获得抽奖结果 通知lottery开始播放效果 js->lottery
+	function calllotteryToRoll(id) {
+		if (lottery) lottery.stopRoll(id);
+	}
+	//动画完成通知js lottery->js		
+	function callJsToComplete() {
+        // $(this).css('background','red');
+		$('#lotterycontent_hover').css({
+			'background':'url(//game.gtimg.cn/images/nz/cp/a20180802coolsummer/selected.png) no-repeat'
+			});
+		alert('恭喜你获得大奖哟！！');
+	}
+  	//初始化抽奖的 可以不知道内部
+	var lottery = new Lottery({
+		'lighturl': '//game.gtimg.cn/images/nz/cp/a20180802coolsummer/selected.png',//外部光圈png 不填写就用默认的效果
+		'starturl': 'http://ossweb-img.qq.com/images/js/delottery/blankstartbtn.png', //外部按钮png 不填写就用默认的按钮效果
+		'width': 1067,//lottery 宽度
+		'height': 832,//lottery 高度
+		'total': 12,//抽奖产品的总数
+		'sbtnx': 335,// 开始抽奖按钮的位置x坐标
+		'sbtny': 275,// 开始抽奖按钮的位置y坐标
+		'sbtnw': 400,// 开始抽奖按钮的宽度
+		'sbtnh': 165,// 开始抽奖按钮的高度
+		'boxw': 265,// 奖品光效的宽度
+		'boxh': 184,//奖品光效的高度 
+		'position': "0_5,272_5,536_5,807_0,807_208,807_417,807_632,537_634,270_633,5_632,0_421,0_209",
+		//奖品光效的位置，对应奖品图片的布局，填入每个奖品的位置以及角度用逗号分割 x_y 例如19_20或者19_20_0 表示第一个奖品的位置 x坐标为19px y坐标为20px 角度为0。）
+		'contentId': 'lotterycontent',//嵌入lottery 的div层的 id 
+		'onClickRollEvent': callJsToStart,//对应上面接口
+		'onCompleteRollEvent': callJsToComplete //对应上面接口
+	});
+</script>
+
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性 
+    siteType:"a20180802coolsummer", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx 
+    pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN 
+    pageName:"首页", //必填项:页面中文名 
+    project:"", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;
+    osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+    stayTime:0, //选填项:是否需要统计停留时长boolean；默认是0
+};
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</html>

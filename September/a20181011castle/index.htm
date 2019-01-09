@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="gbk" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="Description" content="QQ炫舞梦工厂 | 10月梦幻宫廷系列 全新非卖系列套" />
+    <meta name="Keywords" content="QQ炫舞梦工厂 | 10月梦幻宫廷系列 全新非卖系列套" />
+    <title>梦幻宫廷系列 - QQ炫舞官方网站 - 腾讯游戏</title>
+    <link rel="stylesheet" href="ossweb-img/index.css">
+    <!-- 页面设计：cp | 页面制作：cp | 创建：2018-09-14 -->
+    <script>
+        (function(){
+            if (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)){
+                window.location = "http://mgc.qq.com/cp/a20181011castlem/index.htm";
+            }
+        }());
+    </script>
+</head>
+<body>
+    <div class="warp">
+        <div class="bg">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+            <div class="bg3"></div>
+            <div class="bg4"></div>
+        </div>
+        <div class="video">
+            <video class="bgVideo" autoplay="" loop="">
+                <source src="ossweb-img/video.mp4" id="video" type="video/mp4">
+            </video>
+        </div>
+        <div class="container">
+            <div class="main">
+                <a href="//x5.qq.com/main.shtml" title="QQ炫舞" class="x5_logo" target="_blank" onclick="PTTSendClick('btn','x5-logo','QQ炫舞');"></a>
+                <a href="//mgc.qq.com/" title="炫舞梦工厂" class="mgc_logo" target="_blank" onclick="PTTSendClick('btn','mgc-logo','炫舞梦工厂');"></a>
+                <p class="time"></p>
+                <!--登录模块-->
+                <div class="login">
+                    <!--登录前状态 Start-->
+                    <div id="unlogin" class="login" style="display: block;">
+                        你好，请【<a id="btn_qqlogin" href="javascript:void(0)" title="QQ登录">QQ登录</a>】
+                    </div>
+                    <!--登录前状态 End-->
+                    <!--登录后状态 Start-->
+                    <div id="logined" class="login" style="display: none;  ">
+                        欢迎您，<span id="login_qq_span"></span>
+                        <span id="ams_user_headimg"></span>　
+                        【<a id="btn_logout" href="javascript:void(0)" title="注销">注销</a>】
+                    </div>
+                    <!--登录后状态 End-->
+                </div>
+                <!--登录模块结束-->
+                <div class="people">
+                    <img src="ossweb-img/people/BG_00003.png" alt="">
+                </div>
+                <div class="cloud">
+                    <div class="cloud1"></div>
+                    <div class="cloud2"></div>
+                    <div class="cloud3"></div>
+                    <div class="cloud4"></div>
+                    <div class="cloud5"></div>
+                </div>
+                <a href="javascript:;" onclick="PTTSendClick('btn','circle1','转一圈');" class="circle1"></a>
+                <div class="stars">
+                    <div class="center"></div>
+                </div>
+                <a href="javascript:;" onclick="PTTSendClick('btn','circle5','转五圈');" class="circle5"></a>
+                <div class="stars_five">
+                    <div class="center"></div>
+                </div>
+                <div class="title"></div>
+                <a href="javascript:showDia('test1');" onclick="PTTSendClick('btn','peeping','偷窥奖池');" class="peeping"></a>
+                <p class="text">您有<span>X</span>只舞鞋&nbsp;&nbsp;&nbsp;您有<span>X</span>只水晶鞋</p>
+                <!--模块一-->
+                <div class="content1">
+                    <div class="c_con1">
+                        <ul class="list1">
+                            <li class="li1">
+                                <img src="ossweb-img/img1.png" alt="">
+                                <p>舞鞋×6支</p>
+                            </li>
+                            <li class="li2">
+                                <img src="ossweb-img/img2.png" alt="">
+                                <p>水晶鞋×1</p>
+                            </li>
+                        </ul>
+                        <a href="javascript:;" onclick="PTTSendClick('btn','receive1','领取');" class="receive1">领取</a>
+                    </div>
+                    <div class="c_con2">
+                        <ul class="list2">
+                            <li class="li1">
+                                <img src="ossweb-img/list2_li1.png" alt="">
+                                <p>舞鞋×6支</p>
+                            </li>
+                            <li class="li2">
+                                <img src="ossweb-img/list2_li2.png" alt="">
+                                <p>点券×2888</p>
+                            </li>
+                            <li class="li3">
+                                <img src="ossweb-img/list2_li3.png" alt="">
+                                <p>宠物币×188</p>
+                            </li>
+                            <li class="li4">
+                                <img src="ossweb-img/list2_li4.png" alt="">
+                                <p>近卫（3天）</p>
+                            </li>
+                        </ul>
+                        <a href="javascript:;" onclick="PTTSendClick('btn','receive2','领取');" class="receive2">领取</a>
+                    </div>
+                </div>
+                <!--模块二-->
+                <div class="content2">
+                    <ul class="list3">
+                        <li class="li1">
+                            <img src="ossweb-img/content2_li1.png" alt="">
+                            <p class="gift_name">8水晶鞋</p>
+                            <a href="javascript:;" class="buy_btn exchange" onclick="PTTSendClick('btn','buy1','购买');"></a>
+                            <p class="frequency"></p>
+                        </li>
+                        <li class="li2">
+                            <img src="ossweb-img/content2_li2.png" alt="">
+                            <p class="gift_name">24水晶鞋</p>
+                            <a href="javascript:;" class="buy_btn exchange" onclick="PTTSendClick('btn','buy2','购买');"></a>
+                            <p class="frequency"></p>
+                        </li>
+                        <li class="li3">
+                            <img src="ossweb-img/content2_li3.png" alt="">
+                            <p class="gift_name">8水晶鞋</p>
+                            <a href="javascript:;" class="buy_btn exchange" onclick="PTTSendClick('btn','bu3','购买');"></a>
+                            <p class="frequency"></p>
+                        </li>
+                        <li class="li4">
+                            <img src="ossweb-img/content2_li4.png" alt="">
+                            <p class="gift_name">10炫贝</p>
+                            <a href="javascript:;" class="buy_btn" onclick="PTTSendClick('btn','buy4','购买');"></a>
+                            <p class="frequency">限购1次</p>
+                        </li>
+                        <li class="li5">
+                            <img src="ossweb-img/content2_li5.png" alt="">
+                            <p class="gift_name">10炫贝</p>
+                            <a href="javascript:;" class="buy_btn" onclick="PTTSendClick('btn','buy5','购买');"></a>
+                            <p class="frequency">限购6次</p>
+                        </li>
+                    </ul>
+                    <div class="right">
+                        <img src="ossweb-img/right_img.png" alt="">
+                        <p class="gift_name">200炫贝</p>
+                        <a href="javascript:;" class="buy_btn" onclick="PTTSendClick('btn','buy1','购买');"></a>
+                        <p class="frequency">限购3次</p>
+                    </div>
+                </div>
+                <!--模块三-->
+                <div class="content3">
+                    <div class="rule">
+                        <p><i></i><span>1</span>单Q登录电脑梦工厂，进入直播间1次，可获得1只舞鞋；</p>
+                        <p><i></i><span>2</span>单Q登录手机梦工厂，进入直播间1次，可获得4只舞鞋；</p>
+                        <p><i></i><span>3</span>凑齐1双舞鞋可以踏进舞池转1次圈圈，会概率掉落奖品和水晶鞋；</p>
+                        <p><i></i><span>4</span>重复获得的物品不会进入幸运柜；</p>
+                        <p><i></i><span>5</span>水晶鞋可用来兑换梦幻宫廷系列套，兑换会消耗水晶鞋；</p>
+                        <p><i></i><span>6</span>观看梦工厂小视频1次，隔天可获得小视频礼包，单Q限领1次；</p>
+                        <p><i></i><span>7</span>流星小铺中的水晶礼盒，单Q限购买1次；</p>
+                        <p><i></i><span>8</span>活动时间为10月11日-11月11日，结束后将无法进行兑换/购买；</p>
+                        <p><i></i><span>9</span>腾讯公司保留在法律规定的范围内对上述规则进行解释的权利。</p>
+                    </div>
+                    <div class="award_winning">
+                        <ul class="list5" id="carouselContent">
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                            <li>恭喜 XXXXXXXXXXXXXXXXX 获得了 内什么礼包</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--侧边悬浮窗口-->
+    <div class="fixed">
+        <div class="close"></div>
+        <img src="ossweb-img/erweima.png" alt="">
+        <a href="javascript:PTTSendClick('btn','down_gift','下载礼包');" onclick="" class="down_btn"></a>
+    </div>
+    <!--侧边悬浮窗口结束-->
+    <!--奖励列表弹窗-->
+    <div class="dia" id="test1" style="display:none">
+        <div class="dia-con">
+            <ul>
+                <li class="li1">
+                    <img src="ossweb-img/test1_img1.png" alt="">
+                    <p>舞鞋×1支</p>
+                </li>
+                <li class="li2">
+                    <img src="ossweb-img/test1_img2.png" alt="">
+                    <p>水晶鞋×1</p>
+                </li>
+                <li class="li3">
+                    <img src="ossweb-img/test1_img3.png" alt="">
+                    <p>超级黄金卡片<br/>
+                        ×2</p>
+                </li>
+                <li class="li4">
+                    <img src="ossweb-img/test1_img4.png" alt="">
+                    <p>黄金叶×2</p>
+                </li>
+                <li class="li5">
+                    <img src="ossweb-img/test1_img5.png" alt="">
+                    <p>梦幻币×2000</p>
+                </li>
+                <li class="li6">
+                    <img src="ossweb-img/test1_img6.png" alt="">
+                    <p>给力币×2000</p>
+                </li>
+                <li class="li7">
+                    <img src="ossweb-img/test1_img7.png" alt="">
+                    <p>点券×100</p>
+                </li>
+                <li class="li8">
+                    <img src="ossweb-img/test1_img8.png" alt="">
+                    <p>舞鞋×4支</p>
+                </li>
+                <li class="li9">
+                    <img src="ossweb-img/test1_img9.png" alt="">
+                    <p>点券×300</p>
+                </li>
+                <li class="li10">
+                    <img src="ossweb-img/test1_img10.png" alt="">
+                    <p>水晶鞋×2</p>
+                </li>
+                <li class="li11">
+                    <img src="ossweb-img/test1_img11.png" alt="">
+                    <p>宠物币×100</p>
+                </li>
+                <li class="li12">
+                    <img src="ossweb-img/test1_img12.png" alt="">
+                    <p>黎夕旧梦/静谧柔情<br/>
+                        （永久）</p>
+                </li>
+                <li class="li13">
+                    <img src="ossweb-img/test1_img13.png" alt="">
+                    <p>天使蕾拉/蓝色阿拉蕾<br/>
+                        （永久）</p>
+                </li>
+                <li class="li14">
+                    <img src="ossweb-img/test1_img14.png" alt="">
+                    <p>冰心幻影<br/>
+                        （永久）</p>
+                </li>
+            </ul>
+        </div>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+    </div>
+    <!--奖励列表弹窗结束-->
+    <!--转一圈获得道具弹窗-->
+    <div class="dia" id="test2" style="display:none">
+        <div class="dia-con">
+            <div class="center">
+                <img src="ossweb-img/test1_img1.png" alt="">
+                <p>道具名道具名道具名<br/>
+                    道具名</p>
+            </div>
+            <a href="javascript:;" onclick="PTTSendClick('btn','receive_gift1','领取');" class="btn"></a>
+        </div>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+    </div>
+    <!--转一圈获得道具弹窗结束-->
+    <!--转五圈获得道具弹窗-->
+    <div class="dia" id="test3" style="display:none">
+        <div class="dia-con">
+            <ul class="center">
+                <li>
+                    <img src="ossweb-img/test1_img1.png" alt="">
+                    <p>道具名道具名道具名<br/>
+                        道具名</p>
+                </li>
+                <li>
+                    <img src="ossweb-img/test1_img1.png" alt="">
+                    <p>道具名道具名道具名<br/>
+                        道具名</p>
+                </li>
+                <li>
+                    <img src="ossweb-img/test1_img1.png" alt="">
+                    <p>道具名道具名道具名<br/>
+                        道具名</p>
+                </li>
+                <li>
+                    <img src="ossweb-img/test1_img1.png" alt="">
+                    <p>道具名道具名道具名<br/>
+                        道具名</p>
+                </li>
+                <li class="last">
+                    <img src="ossweb-img/test1_img1.png" alt="">
+                    <p>道具名道具名道具名<br/>
+                        道具名</p>
+                </li>
+            </ul>
+            <a href="javascript:;" onclick="PTTSendClick('btn','receive_gift1','领取');" class="btn"></a>
+        </div>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+    </div>
+    <!--转五圈获得道具弹窗结束-->
+
+</body>
+<script src="//ossweb-img.qq.com/images/js/title.js"></script>
+<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script>
+    milo.ready(function () {
+        need("biz.login",function(LoginManager){
+            //QQ登录
+            milo.addEvent(g('btn_qqlogin'),'click',function(e){
+                LoginManager.login();
+            });
+
+            //检查登录态
+            milo.addEvent(g("checkLogin"),"click",function(){
+                LoginManager.checkLogin(function(userInfo){
+                    g("loginInfobox").innerHTML="已登录:<br/>"+JSON.stringify(userInfo);
+                },function(){
+                    g("loginInfobox").innerHTML="未登录";
+                })
+            })
+
+            //注销
+            milo.addEvent(g("btn_logout"),"click",function(){
+                LoginManager.logout();
+            })
+
+            var chkLoginFunc=function(str){
+                LoginManager.checkLogin(function(){
+                    console.log("已登录: "+str);
+                },function(){
+                    console.log("未登录: "+str);
+                })
+            }
+            //执行验证登陆操作
+            LoginManager.checkLogin(function(userinfo){
+                //此处返回用户的基本信息
+                console.log("已登录：\n",userinfo);
+                //如果登陆类型是qq，使用LoginManager.getUserFace方法去获取头像
+                if (userinfo.logtype=="qq"){
+                    LoginManager.getUserFace(function(data){
+                        $("#ams_user_headimg").html("<img src=\""+data.userFace+"\"> ");
+                    });
+                }else if(userinfo.logtype=="wx"){
+                    //如果登陆类型是wx微信，就直接获取基本信息里的头像
+                    $("#ams_user_headimg").html("<img src=\""+userinfo.headimgurl+"/64\"> ");
+                }
+
+            },function(){
+                console.log("未登录");
+                //LoginManager.init();
+            });
+        });
+    });
+</script>
+<script>
+    // 序列帧
+    var sourceArr = [];
+    function loading(){
+        for (var i = 0; i <= 95; i++) {
+            if(i<9){
+                var arr  = "ossweb-img/people/BG_0000"+i+".png";
+            }else{
+                var arr  = "ossweb-img/people/BG_000"+i+".png";
+            }
+            sourceArr.push(arr);
+//			 console.log(sourceArr)
+        }
+        var imgLoader = function(imgs, callback) {
+            var len = imgs.length,
+                    i = 0;
+            while (imgs.length) {
+                loadImage(imgs.shift(), function(path) {
+                    callback(path, ++i, len);
+                });
+            }
+        }
+        var loadImage = function(path, callback) {
+            var img = new Image();
+            img.onload = function() {
+                img.onload = null;
+                callback(path);
+            }
+            img.src = path;
+        }
+        imgLoader(sourceArr, function(path, curNum, total) {
+            var percent = curNum / total;
+            if (percent == 1) {
+            }
+        });
+        imgLoader(sourceArr);
+    }
+    loading();
+    var play=false;
+    var _class='';
+    var fun  = {
+        _index:0,
+        showImg:function(){
+            clearTimeout(fun.timer);
+            if(!play)
+            return;
+            fun._index++;
+            if(fun._index >= 95){
+                play=false;
+                fun._index = 0;
+                $(".people img").attr("src","ossweb-img/people/BG_00003.png");
+                console.log(_class)
+                if(_class=="circle1"){
+                    console.log(".....111111111")
+                    $('.stars .center').removeClass('active');
+                    showDia('test2')
+                }else if(_class=="circle5"){
+                    console.log(".....555555555555")
+                    $('.stars_five .center').removeClass('active')
+                    $('.title').removeClass('active')
+                    showDia('test3')
+                }
+                return;
+            }
+            if(fun._index<10){
+                $(".people img").attr("src","ossweb-img/people/BG_0000"+fun._index+".png");
+            }else{
+                $(".people img").attr("src","ossweb-img/people/BG_000"+fun._index+".png");
+            }
+            fun.timer = setTimeout(fun.showImg,40);
+        },
+    }
+
+    //转一圈
+    $('.circle1').click(function(){
+        if(play)
+        return;
+        play=true;
+        _class="circle1";
+        fun.showImg();
+        $('.stars .center').addClass('active')
+    })
+    //转五圈
+    $('.circle5').click(function(){
+        if(play)
+        return;
+        play=true;
+        _class="circle5";
+        fun.showImg();
+        $('.stars_five .center').addClass('active')
+        $('.title').addClass('active')
+    })
+</script>
+<script>
+    //侧边浮窗隐藏
+    $('.fixed .close').click(function(){
+        $(this).parent().hide();
+    })
+
+</script>
+<script src="http://ossweb-img.qq.com/images/script/bootmanager.js"></script>
+<script>
+    $import('com.qq.basic.*');
+    ScrollMarqueeUP.init({
+        'contentId':'carouselContent',
+        'scrollstep':1,
+        'scrollstoptime':20
+    });
+</script>
+<script src="http://ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+<script>
+    function showDia(e){
+        showDialog.show({
+            id: e, //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+            bgcolor:"#000000",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+            opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+        });
+    }
+</script>
+
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite={ //设置网站属性
+        siteType:"a20181011castle", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName:"首页", //必填项:页面中文名
+        project:"other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;默认other;
+        osact:0 //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+    };
+    if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</html>

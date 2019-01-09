@@ -1,0 +1,53 @@
+.wrap {
+  --t: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: -webkit-calc(var(--k)*8em);
+  width: calc(var(--k)*8em);
+  background: #000;
+  -webkit-animation: switch-inv -webkit-calc(2*var(--t)) steps(1) infinite, switch-rot -webkit-calc(4*var(--t)) steps(4) infinite;
+          animation: switch-inv calc(2*var(--t)) steps(1) infinite, switch-rot calc(4*var(--t)) steps(4) infinite; }
+
+@-webkit-keyframes switch-inv {
+  50% {
+    -webkit-filter: invert(1);
+            filter: invert(1); } }
+
+@keyframes switch-inv {
+  50% {
+    -webkit-filter: invert(1);
+            filter: invert(1); } }
+
+@-webkit-keyframes switch-rot {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn); } }
+
+@keyframes switch-rot {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn); } }
+
+.item {
+  margin-left: -webkit-calc(var(--m, 1)*50%/var(--k));
+  margin-left: calc(var(--m, 1)*50%/var(--k));
+  padding: -webkit-calc(25%/var(--k));
+  padding: calc(25%/var(--k));
+  background: #fff;
+  -webkit-animation: rot var(--t) -webkit-calc(var(--i, 0)/var(--k)*0.5*var(--t)) infinite;
+          animation: rot var(--t) calc(var(--i, 0)/var(--k)*0.5*var(--t)) infinite; }
+
+@-webkit-keyframes rot {
+  50%,
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); } }
+
+@keyframes rot {
+  50%,
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); } }

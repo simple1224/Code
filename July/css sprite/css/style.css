@@ -1,0 +1,32 @@
+.one{
+    width: 1000px;
+    height: 300px;
+    background: powderblue;
+    margin: 0 auto;
+   
+}
+.two{
+    width: 1000px;
+    height: 400px;
+    background: papayawhip;
+    margin: 0 auto;
+}
+.two li{
+    list-style: none;
+    width: 131px;
+    height: 117px;
+    /* background-image: url(../img/css_sprites\ .png); */
+    /* background-repeat: no-repeat */
+}
+ li:nth-child(1){
+    background: url(../img/css_sprites\ .png) -0 -0;
+}
+li:nth-child(2){
+    background: url(../img/css_sprites\ .png) -0 -117px;  
+} 
+li:nth-child(3){
+    background: url(../img/css_sprites\ .png) -0 -234px;
+}                                                                                                                                                                                                                                                                                                                                      
+li:nth-child(4){
+    background: url(../img/css_sprites\ .png) -0 -352px;
+} 

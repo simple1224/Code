@@ -1,0 +1,208 @@
+* {margin:0; padding:0; list-style:none;font-family:'Microsoft Yahei'}
+body,html,.ost_box,#actTitleWrap,.container,#footer_ied,.white-footer,.warp{min-width:1200px!important;width:100%!important;}
+/*布局 */
+.wrap{
+    width: 100%;
+    position: relative;
+}
+.wrap .bg{
+    min-width: 1000px;
+}
+.wrap .content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrap .content .main{
+    width: 1000px;
+    margin: 0 auto;
+}
+.main .time{
+    width: 267px;
+    height: 41px;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    top: 608px;
+    left: 563px;
+}
+.main .button{
+    width: 575px;
+    height: 103px;
+    margin-top: 628px;
+    margin-left: 234px;
+}
+.button a{
+    display: inline-block;
+    width: 205px;
+    height: 64px;
+    margin-right: 62px;
+}
+/* part1 */
+.part1{
+    width: 100%;
+    height: 1290px;
+    margin-top: 90px;
+    text-align: center
+}
+.part1 .p1{
+    font-size: 14px;
+    color: #fff;
+    
+}
+.part1 .list1{
+    width: 100%;
+    height: 293px;
+    margin: 0 auto;
+    margin-left: 41px;
+    margin-top: 34px
+}
+.part1 .list1 li{
+    float: left;
+    width: 213px;
+    height: 293px;
+    margin-right: 21px;
+    position: relative;
+}
+.part1 .list1 .item4 {
+    margin-right: 0;
+}
+.part1 .list1 .p2{
+    font-size: 17.73px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 23px;
+}
+.part1 .list1 .p3{
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 18px;
+    line-height: 22px;
+}
+.part1 .list1 img{
+    width: 164px;
+    height: 108px;
+    margin-bottom: 16px;
+}
+.part1 .list1 .a1{
+    display: block;
+    width: 120px;
+    height: 34px;
+    background-image: url(//game.gtimg.cn/images/nfsol/cp/a20180723zdzx/btn-spr2.png);
+    background-position: 0 34px;
+    margin: 0 auto;
+}
+.part1 .list1 .a2{
+    display: block;
+    width: 120px;
+    height: 34px;
+    background-image: url(//game.gtimg.cn/images/nfsol/cp/a20180723zdzx/btn-spr2.png);
+    background-position: 0 116px;
+    position: absolute;
+    top: 237px;
+    left: 46px;
+}
+.part1 .list1 .active1{
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180723zdzx/box.png) no-repeat;
+}
+.part1 .list1 .active2{
+    background-position: 0 75px;
+}
+/* except */
+.part1 .except{
+    width: 100%;
+    height: 253px;
+    margin: 0 auto;
+    margin-top: 43px;
+}
+.part1 .except img{
+    width: 865px;
+    height: 253px;
+}
+/* part2 */
+.part2{
+    width: 100%;
+    height: 842px;
+    margin-top: 249px;
+}
+.part2 .list2{
+    height: 300px;
+    width: 1000px;
+    margin-left: -3px;
+}
+.part2 .list2 li{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18.56px;
+    color: #fff;
+    text-align: center;
+}
+.part2 .list2 .item1{
+    font-size: 26.81px;
+    color: #bb3627;
+    font-weight: bold;
+}
+.part2 .list2 span{
+    display: inline-block
+}
+
+.part2 .list2 .s1{
+    width: 335px;
+    height: 60px;
+}
+.part2 .list2 .s2{
+    width: 665px;
+    height: 60px;
+}
+/* list3 */
+.part2 .list3{
+    width: 100%;
+    height: 215px;
+    margin-top: 290px;
+}
+.part2 .list3 .item1{
+    margin-bottom: 33px;
+}
+.part2 .list3 p{
+    color: #a3a9b3;
+}
+.part2 .list3 .p1{
+    font-size: 22.99px;
+    font-weight: bold;
+    margin-bottom: 19px
+}
+.part2 .list3 .p2{
+    font-size: 21.35px
+}
+.part2 .list3 img{
+    width: 243px;
+    height: 141px;
+    position: relative;
+    left: 670px;
+    top: -178px;
+}
+/* tab */
+.dia-con{
+    width: 865px;
+    height: 253px;
+    background: url(//game.gtimg.cn/images/nfsol/cp/a20180723zdzx/tab.png) no-repeat;
+    font-size: 34.57px;
+    color: #ffecea;
+    text-align: center
+}
+.dia-con .word{
+    padding-top: 85px;
+    line-height: 43px;
+}
+.dia-close{
+    font-size: 70.33px;
+    color: #ffecea;
+    position: absolute;
+    top: -75px;
+    right: -38px;
+}
+#_overlay_{
+    background: rgba(0,0,0, .5) !important
+}

@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="author" content="Tencent-CP">
+		<meta name="Copyright" content="Tencent">
+		<meta name="Description" content="云裳羽衣" />
+		<meta name="Keywords" content="云裳羽衣今日公测 心悦专属豪华福利" />
+		<title>云裳羽衣今日公测-  心悦俱乐部 - 腾讯游戏</title>
+		<style>
+			/*公共基础*/
+			
+			body,
+			div,
+			dl,
+			dt,
+			dd,
+			ul,
+			ol,
+			li,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			pre,
+			code,
+			form,
+			fieldset,
+			legend,
+			input,
+			textarea,
+			p,
+			blockquote,
+			th,
+			td {
+				margin: 0;
+				padding: 0
+			}
+			
+			table {
+				border-collapse: collapse;
+				border-spacing: 0
+			}
+			
+			fieldset,
+			img {
+				border: 0
+			}
+			
+			address,
+			caption,
+			cite,
+			code,
+			dfn,
+			em,
+			strong,
+			th,
+			var {
+				font-style: normal;
+				font-weight: normal
+			}
+			
+			ol,
+			ul {
+				list-style: none
+			}
+			
+			caption,
+			th {
+				text-align: left
+			}
+			
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-size: 100%;
+				font-weight: normal
+			}
+			
+			q:before,
+			q:after {
+				content: ''
+			}
+			
+			abbr,
+			acronym {
+				border: 0;
+				font-variant: normal
+			}
+			
+			sup {
+				vertical-align: text-top
+			}
+			
+			sub {
+				vertical-align: text-bottom
+			}
+			
+			input,
+			textarea,
+			select {
+				font-family: inherit;
+				font-size: inherit;
+				font-weight: inherit
+			}
+			
+			input,
+			textarea,
+			select {
+				*font-size: 100%
+			}
+			
+			body {
+				font-size: 12px;
+				font-family: 'Microsoft Yahei';
+			}
+			
+			.fl {
+				float: left;
+			}
+			
+			.fr {
+				float: right;
+			}
+			
+			.tc {
+				text-align: center;
+			}
+			
+			.tl {
+				text-align: left;
+			}
+			
+			.tr {
+				text-align: right;
+			}
+			
+			li {
+				list-style: none;
+			}
+			
+			a {
+				text-decoration: none;
+				outline: none;
+			}
+			
+			img {
+				border: 0;
+			}
+			
+			.cb {
+				clear: both;
+			}
+			
+			.ov {
+				overflow: hidden;
+			}
+			
+			.pr {
+				position: relative;
+			}
+			
+			.dn {
+				display: none;
+			}
+			/*flex 弹性盒子*/
+			
+			.flex-row {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-orient: horizontal;
+				-webkit-flex-direction: row;
+				flex-direction: row;
+			}
+			
+			.flex-colum {
+				height: 100%;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-flex-flow: column;
+				flex-flow: column;
+			}
+			
+			.flex-row .item1,
+			.flex-colum .item1 {
+				-webkit-box-flex: 1;
+				-webkit-flex: 1;
+				flex: 1;
+			}
+			/*head*/
+			/*头图*/
+			
+			.head {
+				position: relative;
+				width: 100%;
+				height: 797px;
+				min-width: 1200px;
+				background: url(ossweb-img/bg1.jpg) center center no-repeat;
+				overflow: hidden;
+				margin-top: 40px;
+			}
+			
+			.w_1000 {
+				width: 1000px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			.btn {
+				width: 262px;
+				height: 82px;
+				text-indent: -999px;
+				margin: 0 auto;
+				cursor: pointer;
+				background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20180711zlby/zlby_spr.png) no-repeat;
+			}
+			
+			.download-btn {
+				background-position: -309px -426px;
+				position: absolute;
+				left: 50%;
+				top: 595px;
+				margin-left: -148px;
+			}
+			/*礼包*/
+			
+			.cont01 {
+				/*background: url(ossweb-img/cont01.jpg) center center no-repeat;*/
+			}
+			
+			.contentSet {
+				width: 100%;
+				height: 800px;
+				min-width: 1200px;
+			}
+			
+			.size {
+				text-align: center;
+				font-size: 16px;
+				color: #4c3024;
+				margin: 10px 0;
+				height: 55px;
+				display: table-cell;
+				vertical-align: middle;
+				width: 1000px;
+				padding: 0px 70px;
+			}
+			
+			.gift {
+				padding-top: 81px;
+				position: relative;
+			}
+			
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+				padding: 82px 0 0;
+			}
+			
+			.swiper-containerBox {
+				position: absolute;
+				top: 230px;
+				left: 50%;
+				margin-left: -400px;
+				width: 800px;
+				height: 436px;
+			}
+			
+			.swiper-containerBox img {
+				display: block;
+				width: 785px;
+				height: 243px;
+				margin: 0 auto;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+			}
+			
+			.gift-list {
+				text-align: center;
+				margin-top: 40px;
+			}
+			
+			.gift-list li {
+				width: 182px;
+				height: 166px;
+				background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20180711zlby/zlby_spr.png) no-repeat;
+				background-position: -476px -10px;
+				display: inline-block;
+				margin: 0 5px 0 10px;
+				vertical-align: middle;
+			}
+			
+			.gift-list li h4 {
+				font-size: 16px;
+				color: #471f11;
+				line-height: 18px;
+			}
+			
+			.icon-box {
+				height: 125px;
+				position: relative;
+			}
+			
+			.receive-btn {
+				background-position: -10px -541px;
+				position: absolute;
+				top: 639px;
+				left: 50%;
+				margin-left: -131px;
+				z-index: 11;
+			}
+			/*cont02*/
+			
+			.cont02 {
+				width: 100%;
+				height: 960px;
+				min-width: 1200px;
+				/*background: url(ossweb-img/bg02.jpg) center center no-repeat;*/
+				overflow: hidden;
+			}
+			
+			.cont02 .size {
+				margin-top: 190px;
+			}
+			
+			.cont01 .size {
+				margin-top: 10px;
+			}
+			
+			.lottery {
+				text-align: center;
+				margin-top: 10px;
+				position: absolute;
+				top: 207px;
+				left: 50%;
+				margin-left: -415px;
+			}
+			
+			.lottery-tc {
+				width: 274px;
+				height: 178px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -137px;
+				margin-top: -92px;
+				cursor: pointer;
+			}
+			
+			.invite-btn {
+				position: absolute;
+				top: 796px;
+				left: 50%;
+				margin-left: -131px;
+				z-index: 11;
+				background-position: -292px -541px;
+				margin-top: 40px;
+			}
+			/*cont03*/
+			
+			.cont03 {
+				/*background: url(ossweb-img/bg03.jpg) center center no-repeat;*/
+			}
+			/*cont04*/
+			
+			.cont04 {
+				width: 100%;
+				height: 937px;
+				min-width: 1200px;
+				/*background: url(ossweb-img/bg04.jpg) center center no-repeat;*/
+				overflow: hidden;
+			}
+			
+			#wrap .swiper-button-next,
+			#wrap .swiper-button-prev {
+				position: absolute;
+				top: 50%;
+				width: 56px;
+				height: 56px;
+				margin-top: -28px;
+				z-index: 10;
+				cursor: pointer;
+			}
+			
+			#wrap .swiper-button-next {
+				background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20180711zlby/zlby_spr.png) no-repeat;
+				background-position: -798px -483px;
+				right: -160px;
+				left: auto
+			}
+			
+			#wrap .swiper-button-prev {
+				background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20180711zlby/zlby_spr.png) no-repeat;
+				background-position: -798px -407px;
+				left: -160px;
+				right: auto
+			}
+			
+			.icon {
+				margin: 0 auto;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20180711zlby/zlby_spr.png) no-repeat;
+			}
+			
+			.icon1 {
+				width: 91px;
+				height: 77px;
+				background-position: -10px -763px;
+			}
+			
+			.icon2 {
+				width: 83px;
+				height: 67px;
+				background-position: -798px -240px;
+			}
+			
+			.icon3 {
+				width: 90px;
+				height: 100px;
+				background-position: -10px -644px;
+			}
+			
+			.icon4 {
+				width: 100px;
+				height: 87px;
+				background-position: -476px -311px;
+			}
+			
+			.icon5 {
+				width: 99px;
+				height: 93px;
+				background-position: -678px -364px;
+			}
+			
+			.icon6 {
+				width: 98px;
+				height: 74px;
+				background-position: -446px -643px;
+			}
+			
+			.icon7 {
+				width: 97px;
+				height: 97px;
+				background-position: -681px -133px;
+			}
+			
+			.icon8 {
+				width: 97px;
+				height: 97px;
+				background-position: -678px -247px;
+			}
+			
+			.icon9 {
+				width: 100px;
+				height: 100px;
+				background-position: -678px -10px;
+			}
+			
+			.icon10 {
+				width: 87px;
+				height: 92px;
+				background-position: -341px -645px;
+			}
+			
+			.icon11 {
+				width: 88px;
+				height: 99px;
+				background-position: -120px -643px;
+			}
+			
+			.icon12 {
+				width: 91px;
+				height: 93px;
+				background-position: -229px -643px;
+			}
+			
+			.icon13 {
+				width: 85px;
+				height: 97px;
+				background-position: -798px -15px;
+			}
+			
+			.icon14 {
+				width: 77px;
+				height: 92px;
+				background-position: -799px -127px;
+			}
+			
+			.icon15 {
+				width: 90px;
+				height: 71px;
+				background-position: -564px -644px;
+			}
+			
+			.icon16 {
+				width: 74px;
+				height: 60px;
+				background-position: -798px -327px;
+			}
+			
+			.icon17 {
+				width: 95px;
+				height: 96px;
+				background-position: -680px -481px;
+			}
+			
+			.moduleTitle {
+				height: 47px;
+				width: 311px;
+				margin: 0 auto 20px;
+				font-size: 38px;
+				text-align: center;
+				line-height: 47px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				color: #641B10;
+				font-weight: 600;
+				/*background: url(ossweb-img/module-title.png) no-repeat;*/
+			}
+			
+			.title2 {
+				background-position-y: -50px;
+			}
+			
+			.title3 {
+				background-position-y: -100px;
+			}
+			
+			.title4 {
+				background-position-y: -150px;
+			}
+			
+			.title5 {
+				background-position-y: -200px;
+			}
+			
+			.title6 {
+				background-position-y: -250px;
+			}
+			
+			.title7 {
+				background-position-y: -300px;
+			}
+			/*弹框*/
+			
+			.bullet-box1 {
+				width: 399px;
+				height: 341px;
+				background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20180711zlby/ewm-bg.png) no-repeat;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.rules {
+				font-size: 26px;
+				width: 800px;
+				margin: 100px auto 0;
+				padding-left: 30px;
+			}
+			
+			.rules li {
+				position: relative;
+				margin-bottom: 15px;
+			}
+			
+			.rules i {
+				position: absolute;
+				left: -30px;
+			}
+			
+			.dia-close {
+				display: block;
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				right: 0;
+				top: 5px;
+			}
+			
+			.ewm img {
+				width: 190px;
+				height: 190px;
+				margin-right: 70px;
+				border: 2px solid #b89a28;
+				border-radius: 5px;
+			}
+			
+			.ewm {
+				text-align: center;
+				margin-top: 110px;
+			}
+			
+			.bullet-box2 {
+				width: 399px;
+				height: 341px;
+				background: url(//ossweb-img.qq.com/images/chanpin/tgclub/public/a20180711zlby/ewm-bg1.png) no-repeat;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			#footer_ied {
+				text-align: center;
+			}
+			
+			.newVersion.swiper-containerBox img {
+				width: 726px;
+				height: 373px;
+			}
+			
+			.newVersion.swiper-containerBox .swiper-container {
+				padding-top: 50px;
+			}
+		</style>
+		<link rel="stylesheet" href="http://ossweb-img.qq.com/images/chanpin/tgclub/public/a20180711zlby/swiper.min.css" />
+		<link href="http://xinyue.qq.com/web201410/css/basic.css" rel="stylesheet" />
+	</head>
+
+	<body id="wrap">
+		<div id="app" style="visibility: hidden;">
+			<!--head-->
+			<div class="head">
+				<div class="w_1000">
+					<div class="logo-box">
+						<a href="https://3.qq.com/" target="_blank" class="logo"></a>
+						<a href="http://xinyue.qq.com/" target="_blank" class="xy-logo"></a>
+					</div>
+					<div class="btn download-btn" onClick="TGDialogS('bullet-box2')" onClick="TGDialogS('bullet-box')" ontouchend="PTTSendClick('btn','download-btn','立即下载');">
+					</div>
+				</div>
+			</div>
+			<div style="background: url(dist/ossweb-img/all.jpg) center center no-repeat;">
+				<div v-for="(gameItem , index) in activity_game">
+					<!--新手礼包开始-->
+					<div class="contentSet cont01" v-if="gameItem.play_id == play_id_group[0]">
+						<div class="w_1000">
+							<div class="gift">
+								<!--新手礼-->
+								<h4 class="moduleTitle">{{gameItem.dsl.play_title}}</h4>
+								<p class="size">{{gameItem.dsl.play_rule}}</p>
+								<!---->
+								<div class="swiper-containerBox" id="swiper-1">
+									<div class="swiper-container" id="swiper-container1">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide" v-for="(giftItem, _key) in gameItem.dsl.gift_list.entire_gift">
+												<img :src="giftItem.gift_img_url">
+											</div>
+										</div>
+										<!-- Add Arrows -->
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+
+								</div>
+
+							</div>
+							<div class="btn receive-btn" onClick="TGDialogS('bullet-box1')" @click="gotopartin(gameItem.dsl.erweima)" onClick="TGDialogS('bullet-box')" ontouchend="PTTSendClick('btn','receive-btn','立即领取');">立即领取
+							</div>
+						</div>
+					</div>
+					<!--新手礼包结束-->
+
+					<!--特权礼包开始-->
+					<div class="contentSet cont01" v-if="gameItem.play_id == play_id_group[1]">
+						<div class="w_1000">
+							<div class="gift">
+								<!--新手礼-->
+								<h4 class="moduleTitle title2">{{gameItem.dsl.play_title}}</h4>
+								<p class="size">{{gameItem.dsl.play_rule}}</p>
+								<!---->
+								<div class="swiper-containerBox" id="swiper-2">
+									<div class="swiper-container" id="swiper-container2">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide" v-for="(giftItem ,_key) in gameItem.dsl.gift_list">
+												<img :src="giftItem.gift_img_url">
+											</div>
+										</div>
+										<!-- Add Arrows -->
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+
+								</div>
+
+							</div>
+							<div class="btn receive-btn" onClick="TGDialogS('bullet-box1')" @click="gotopartin(gameItem.dsl.erweima)" onClick="TGDialogS('bullet-box')" ontouchend="PTTSendClick('btn','receive-btn','立即领取');">立即领取
+							</div>
+						</div>
+					</div>
+					<!--特权礼包结束-->
+
+					<!--充值礼包开始-->
+					<div class="contentSet cont01" v-if="gameItem.play_id == play_id_group[3]">
+						<div class="w_1000">
+							<div class="gift">
+								<!--新手礼-->
+								<h4 class="moduleTitle title3">{{gameItem.dsl.play_title}}</h4>
+								<p class="size">{{gameItem.dsl.play_rule}}</p>
+								<!---->
+								<div class="swiper-containerBox" id="swiper-3">
+									<div v-for="(giftItem, ii) in gameItem.dsl.gift_list">
+										<div class="swiper-container" id="swiper-container3" v-if="key_is_in_asked(ii , 7)">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide" v-for="(giftImgItem, ai) in giftItem">
+													<img :src="giftImgItem.gift_img_url">
+												</div>
+											</div>
+											<!-- Add Arrows -->
+										</div>
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+
+								</div>
+
+							</div>
+							<div class="btn receive-btn" onClick="TGDialogS('bullet-box1')" @click="gotopartin(gameItem.dsl.erweima)" onClick="TGDialogS('bullet-box')" ontouchend="PTTSendClick('btn','receive-btn','立即领取');">立即领取
+							</div>
+						</div>
+					</div>
+					<!--充值礼包结束-->
+
+					<!--回归礼包开始-->
+					<div class="contentSet cont01" v-if="gameItem.play_id == play_id_group[5]">
+						<div class="w_1000">
+							<div class="gift">
+								<!--新手礼-->
+								<h4 class="moduleTitle title4"></h4>
+								<p class="size">7月13日后成功注册并创建角色的玩家可领取，单账号限领取1次</p>
+								<!---->
+								<div class="swiper-containerBox" id="swiper-4">
+									<div class="swiper-container" id="swiper-container4">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img src="ossweb-img/v1.png">
+											</div>
+											<div class="swiper-slide">
+												<img src="ossweb-img/v2.png">
+											</div>
+											<div class="swiper-slide">
+												<img src="ossweb-img/v3.png">
+											</div>
+											<div class="swiper-slide">
+												<img src="ossweb-img/v4.png">
+											</div>
+											<div class="swiper-slide">
+												<img src="ossweb-img/v5.png">
+											</div>
+										</div>
+										<!-- Add Arrows -->
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+
+								</div>
+
+							</div>
+							<div class="btn receive-btn" onClick="TGDialogS('bullet-box1')" @click="gotopartin(gameItem.dsl.erweima)" onClick="TGDialogS('bullet-box')" ontouchend="PTTSendClick('btn','receive-btn','立即领取');">立即领取
+							</div>
+						</div>
+					</div>
+					<!--回归礼包结束-->
+
+					<!--抽奖模块开始-->
+					<div class="cont02" v-if="gameItem.play_id == play_id_group[2]">
+						<div class="w_1000">
+							<div class="gift">
+								<h4 class="moduleTitle title5">{{gameItem.dsl.play_title}}</h4>
+								<p class="size">{{gameItem.dsl.play_rule}}</p>
+								<div v-for="(giftItem, ii) in gameItem.dsl.gift_list">
+									<div class="lottery" v-if="key_is_in_asked(ii)">
+										<img :src="giftItem.gift_img_url">
+										<p class="lottery-tc" onClick="TGDialogS('bullet-box1')" @click="gotopartin(gameItem.dsl.erweima)" onClick="TGDialogS('bullet-box')" ontouchend="PTTSendClick('btn','lottery-tc','抽奖');"></p>
+									</div>
+								</div>
+								<div class="btn invite-btn" onClick="TGDialogS('bullet-box1')" @click="gotopartin(gameItem.dsl.erweima)" onClick="TGDialogS('bullet-box')" ontouchend="PTTSendClick('btn','invite-btn','邀请好友');">邀请好友
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--抽奖模块结束-->
+				</div>
+				<!--新本介绍开始-->
+				<div class="cont04" v-if="introduce.intro_banners">
+					<div class="w_1000" style="width: 1200px;">
+						<div class="gift">
+							<h4 class="moduleTitle title6">{{introduce.game_intro}}</h4>
+							<div class="swiper-containerBox newVersion" id="swiper-5">
+								<div class="swiper-container" id="swiper-container5">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide" v-for="(bannerItem ,i) in introduce.intro_banners[0].banner_img_url"><img :src="bannerItem"></div>
+									</div>
+									<!-- Add Arrows -->
+								</div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--新本介绍结束-->
+
+				<!--活动说明开始-->
+				<div class="contentSet cont03" v-if="rule.group_rules">
+					<div class="w_1000" style="width: 1200px;">
+						<div class="gift">
+							<h4 class="moduleTitle title7">{{rule.act_rule}}</h4>
+							<ul class="rules">
+								<li v-for="(ruleItem ,i) in rule.group_rules[0].rule_text">
+									<i>{{i+1}}、</i>
+									<p>{{ruleItem}}</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--活动说明结束-->
+			</div>
+			<!--参与活动-->
+			<div class="bullet-box1" id="bullet-box1" style="display: none;">
+				<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+				<div class="ewm">
+					<img id="goToActivity">
+				</div>
+			</div>
+			<!--参与活动-->
+
+			<!--立即下载-->
+			<div class="bullet-box2" id="bullet-box2" style="display: none;">
+				<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+				<div class="ewm">
+					<img id="download" :src="base_config.head_button[0].bg_url">
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="//xinyue.qq.com/vipmb/js/vue.js"></script>
+		<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.7.2.min.js"></script>
+		<script src="http://ossweb-img.qq.com/images/js/swiper/swiper-3.4.2.min.js"></script>
+		<script src="http://xinyue.qq.com/web201410/js/top_act.js" charset="gbk"></script>
+		<script src="http://ossweb-img.qq.com/images/tgclub/web2017/mtopbar/pub_bottom_bar.js" charset="gbk"></script>
+		<script src="//ossweb-img.qq.com/images/js/foot.js" charset="gbk"></script>
+		<script>
+			$(function() {
+				$(function() {
+					$(".tab-list li").click(function() {
+						$(".tab-list li").removeClass("active");
+						$(this).addClass("active");
+						var i = $(this).index();
+						$(".gift-box").hide();
+						$($(".gift-box")[i]).show();
+						if(i == 0) {
+							swiperOne();
+						} else {
+							swiperTwo();
+						}
+					})
+				})
+			})
+		</script>
+		<script>
+			function swiperOne() {
+				var swiper = new Swiper('#swiper-container1', {
+					nextButton: '#swiper-1 .swiper-button-next',
+					prevButton: '#swiper-1 .swiper-button-prev',
+					loop: true
+				});
+			}
+
+			function swiperTwo() {
+				var swiper2 = new Swiper('#swiper-container2', {
+					nextButton: '#swiper-2 .swiper-button-next',
+					prevButton: '#swiper-2 .swiper-button-prev',
+					loop: true
+				});
+			}
+
+			function swiperThree() {
+				var swiper3 = new Swiper('#swiper-container3', {
+					nextButton: '#swiper-3 .swiper-button-next',
+					prevButton: '#swiper-3 .swiper-button-prev',
+					loop: true
+				});
+			}
+
+			function swiperFour() {
+				var swiper4 = new Swiper('#swiper-container4', {
+					nextButton: '#swiper-4 .swiper-button-next',
+					prevButton: '#swiper-4 .swiper-button-prev',
+					loop: true,
+				});
+			}
+
+			function swiperFive() {
+				var swiper5 = new Swiper('#swiper-container5', {
+					pagination: '#swiper-5 .swiper-pagination',
+					nextButton: '#swiper-5 .swiper-button-next',
+					prevButton: '#swiper-5 .swiper-button-prev',
+					loop: true,
+					autoplay: 2000
+				});
+			}
+		</script>
+		<script src="http://ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+		<script>
+			function TGDialogS(e) {
+				need("biz.dialog-min", function(Dialog) {
+					Dialog.show({
+						id: e,
+						bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+						opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+					});
+				});
+			}
+
+			function closeDialog() {
+				need("biz.dialog-min", function(Dialog) {
+					Dialog.hide();
+				});
+			}
+		</script>
+		<script>
+			var vm = new Vue({
+				el: '#app',
+				data: {
+					act_id: 1,
+					channel_id: 3,
+					real_channel_id: null,
+					game_code: "",
+					game_id: 17,
+					//用户基础信息
+					user_info_msg: {
+						//用户等级
+						level: 1,
+						//每日抽奖次数
+						dailycj: 0
+					},
+					base_config: {
+						subtitle: "活动标题", //活动标题
+						head_button: [{
+							"instruction": "\u7acb\u5373\u6e38\u620f",
+							"bg_url": "http://ossweb-img.qq.com/images/chanpin/tgclub/public/a20180711zlby/ewm-zlby.jpg",
+							"jump_url": "https:\/\/666.qq.com\/d\/20180316.html"
+						}],
+						login: {
+							login_mode: 0, //1：微信和手Q；2：仅微信；3：仅手Q
+							user_info: {
+								show: 0, //ture：展示；false：不展示,
+								btn_title: ''
+							},
+							login_out: {
+								show: 0, //ture：展示；false：不展示,
+								btn_title: ''
+							},
+							bind_area: {
+								show: 0, //ture：展示；false：不展示,
+								btn_title: '【绑定大区】'
+							},
+							receive_record: {
+								show: 0, //ture：展示；false：不展示,
+								btn_title: '【获奖记录】'
+							}
+						}
+					},
+					//游戏介绍
+					introduce: {
+						game_intro: "游戏介绍", //游戏介绍的title
+						//intro_content: "2018年1月9日起创建的角色，可根据对应身份领取开年好礼",
+						intro_banners: [{
+							"group_oriented": 1,
+							"banner_img_url": ["http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/1.jpg", "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/2.jpg", "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/3.jpg", "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/4.jpg", "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/4.jpg"]
+						}]
+					},
+					//活动规则
+					rule: {
+						act_rule: "活动规则",
+						group_rules: [{
+							"group_oriented": 1,
+							"rule_text": ["\u840c\u65b0\u89c1\u9762\u793c\uff1a7\u670819\u65e5\u8d77\uff0c\u65b0\u6ce8\u518c\u7684\u7528\u6237\u53ef\u6839\u636e\u5bf9\u5e94\u5fc3\u60a6\u8eab\u4efd\u9886\u53d6\u4e00\u6b21\u840c\u65b0\u89c1\u9762\u793c\u3002", "\u5047\u671f\u7279\u6743\u793c\uff1a7\u670819-8\u670831\u65e5\u671f\u95f4\uff0c\u5f53\u65e5\u767b\u5f55\u6e38\u620f\u5373\u53ef\u6839\u636e\u5bf9\u5e94\u8eab\u4efd\u9886\u53d6\u4e00\u4efd\u590f\u5b63\u7279\u6743\u793c", "\u6bcf\u65e5\u62bd\u5956\u793c\uff1a\u6d3b\u52a8\u671f\u95f4\uff0c\u6bcf\u65e5\u767b\u5f55\u6e38\u620f\u5373\u53ef\u767b\u5f55\u9875\u9762\u53c2\u4e0e\u4e00\u6b21\u62bd\u5956\u3002"]
+						}]
+					},
+					activity_game: [{
+							"play_id": "1001",
+							"dsl": {
+								"play_title": "\u840c\u65b0\u89c1\u9762\u793c",
+								"play_rule": "7\u670819\u65e5\u8d77\uff0c\u65b0\u6ce8\u518c\u7684\u7528\u6237\u53ef\u6839\u636e\u5bf9\u5e94\u5fc3\u60a6\u8eab\u4efd\u9886\u53d6\u4e00\u6b21\u840c\u65b0\u89c1\u9762\u793c\u3002",
+								"erweima": "//ossweb-img.qq.com/images/chanpin/tgclub/public/a20180711zlby/ewm-xinyue.jpg",
+								"skip_url": "",
+								"receive_opt": {
+									"rec_status": 0,
+									"rec_notice": {
+										"able": "\u7acb\u5373\u9886\u53d6",
+										"unable": "\u5df2\u9886\u53d6"
+									},
+									"rec_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/spr.png",
+									"rec_type": 1
+								},
+								"condition": {
+									"designated_area": []
+								},
+								"gift": [{
+									"tab_title": "\u6e38\u620f\u5bb6G1-G3",
+									"gift_id": {
+										"all_gifts": "623205",
+										"designated_area_gifts": null
+									},
+									"vip_grade": [true, true, true, false, false, false, false],
+									"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img7.png",
+
+								}, {
+									"tab_title": "\u6e38\u620f\u5bb6G4",
+									"gift_id": {
+										"all_gifts": "623212",
+										"designated_area_gifts": null
+									},
+									"vip_grade": [false, false, false, true, false, false, false],
+									"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img8.png",
+
+								}, {
+									"tab_title": "\u5fc3\u60a6V1",
+									"gift_id": {
+										"all_gifts": "623234",
+										"designated_area_gifts": null
+									},
+									"vip_grade": [false, false, false, false, true, false, false],
+									"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img9.png",
+
+								}, {
+									"tab_title": "\u5fc3\u60a6V2",
+									"gift_id": {
+										"all_gifts": "623235",
+										"designated_area_gifts": null
+									},
+									"vip_grade": [false, false, false, false, false, true, false],
+									"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img10.png",
+
+								}, {
+									"tab_title": "\u5fc3\u60a6V3",
+									"gift_id": {
+										"all_gifts": "623236",
+										"designated_area_gifts": null
+									},
+									"vip_grade": [false, false, false, false, false, false, true],
+									"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img11.png",
+
+								}],
+								"gift_list": {
+									"entire_gift": {
+										"1,2,3": {
+											"tab_title": "\u6e38\u620f\u5bb6G1-G3",
+											"gift_group_id": "623205",
+											"gift_group_name": "",
+											"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img7.png",
+
+										},
+										"4,": {
+											"tab_title": "\u6e38\u620f\u5bb6G4",
+											"gift_group_id": "623212",
+											"gift_group_name": "",
+											"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img8.png",
+
+										},
+										"5,": {
+											"tab_title": "\u5fc3\u60a6V1",
+											"gift_group_id": "623234",
+											"gift_group_name": "",
+											"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img9.png",
+
+										},
+										"6,": {
+											"tab_title": "\u5fc3\u60a6V2",
+											"gift_group_id": "623235",
+											"gift_group_name": "",
+											"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img10.png",
+
+										},
+										"7,": {
+											"tab_title": "\u5fc3\u60a6V3",
+											"gift_group_id": "623236",
+											"gift_group_name": "",
+											"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img11.png",
+
+										}
+									},
+									"designated_gift": []
+								}
+							}
+						},
+						{
+							"play_id": "1002",
+							"dsl": {
+								"play_title": "\u5047\u671f\u7279\u6743\u793c",
+								"play_rule": "7\u670819-8\u670831\u65e5\u671f\u95f4\uff0c\u5f53\u65e5\u767b\u5f55\u6e38\u620f\u5373\u53ef\u6839\u636e\u5bf9\u5e94\u8eab\u4efd\u9886\u53d6\u4e00\u4efd\u590f\u5b63\u7279\u6743\u793c",
+								"erweima": "//ossweb-img.qq.com/images/chanpin/tgclub/public/a20180711zlby/ewm-xinyue.jpg",
+								"skip_url": "",
+								"receive_opt": {
+									"rec_status": 0,
+									"rec_notice": {
+										"able": "\u7acb\u5373\u9886\u53d6",
+										"unable": "\u5df2\u9886\u53d6"
+									},
+									"rec_type": 1
+								},
+								"gift_list": [{
+									"tab_title": "\u6e38\u620f\u5bb6G1-G3",
+									"gift_group_id": "622324",
+									"gift_group_name": "",
+									"vip_level": [1, 2, 3],
+									"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img2.png",
+
+								}, {
+									"tab_title": "\u6e38\u620f\u5bb6G4",
+									"gift_group_id": "622326",
+									"gift_group_name": "",
+									"vip_level": [4],
+									"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img3.png",
+
+								}, {
+									"tab_title": "\u5fc3\u60a6V1",
+									"gift_group_id": "622327",
+									"gift_group_name": "",
+									"vip_level": [5],
+									"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img4.png",
+
+								}, {
+									"tab_title": "\u5fc3\u60a6V2",
+									"gift_group_id": "622331",
+									"gift_group_name": "",
+									"vip_level": [6],
+									"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img5.png",
+
+								}, {
+									"tab_title": "\u5fc3\u60a6V3",
+									"gift_group_id": "622372",
+									"gift_group_name": "",
+									"vip_level": [7],
+									"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img6.png",
+
+								}]
+							}
+						},
+						{
+							"play_id": "1003",
+							"dsl": {
+								"play_title": "\u6bcf\u65e5\u62bd\u597d\u793c",
+								"play_rule": "\u6d3b\u52a8\u671f\u95f4\uff0c\u6bcf\u65e5\u767b\u5f55\u6e38\u620f\u5373\u53ef\u767b\u5f55\u9875\u9762\u53c2\u4e0e\u4e00\u6b21\u62bd\u5956\u3002",
+								"erweima": "//ossweb-img.qq.com/images/chanpin/tgclub/public/a20180711zlby/ewm-xinyue.jpg",
+								"skip_url": "",
+								"receive_opt": {
+									"rec_status": 0,
+									"rec_notice": {
+										"able": "",
+										"unable": ""
+									},
+									"rec_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img1.png",
+									"rec_type": 1
+								},
+								"condition": {
+									"game_login": 1,
+									"share": {
+										"cycle": {
+											"type": 1,
+											"num": 0
+										},
+										"share_notice": "",
+										"share_guide_url": ""
+									}
+								},
+								"gift_list": {
+									"1,2,3,4,5,6,7": {
+										"gift_group_id": "622315",
+										"gift_group_name": "",
+										"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/a20180716xczlmh5\/img1.png",
+										"gift_id_rank": ["895046", "622315", "894966", "895054", "895052", "895043", "895044", "895053"],
+										"gift_id_name": ["\u94bb\u77f3\u00d766", "\u6761\u7eb9\u70b8\u5f39\u00d71", "\u91d1\u5e01\u00d766", "\u5f00\u5c40\u52a03\u6b65\u00d71", "\u65f6\u88c5\u5e01\u00d76", "\u91d1\u5e01\u00d71666", "\u94bb\u77f3\u00d76", "\u5c0f\u7231\u5fc3\u74f6\u00d71"],
+
+									}
+								}
+							}
+						},
+						{
+							"play_id": "1004",
+							"dsl": {
+								"play_title": "\u5145\u503c\u793c\u5305",
+								"play_rule": "\u6d3b\u52a8\u671f\u95f4\uff0c\u6bcf\u5468\u5145\u503c\u8fbe\u5230\u6307\u5b9a\u91d1\u989d\uff0c\u5373\u53ef\u83b7\u5f97\u5145\u503c\u793c\u53051\u4efd\uff0c\u5355\u8d26\u53f7\u6bcf\u5468\u5404\u793c\u5305\u4ec5\u9650\u6700\u591a\u9886\u53d61\u6b21\u3002\n\u6ce8\uff1a\u5145\u503c\u91d1\u989d\u4ee5\u5b9e\u9645\u5145\u503c\u7684\u91d1\u989d\u4e3a\u51c6\uff0c\u6298\u6263\u91d1\u989d\u4e0d\u8ba1\u7b97\u5728\u5185\u3002",
+								"receive_opt": {
+									"rec_status": 0,
+									"rec_notice": {
+										"able": "\u7acb\u5373\u9886\u53d6",
+										"unable": "\u5df2\u9886\u53d6"
+									},
+									"rec_type": 1
+								},
+								"condition": {
+									"recharge_start_time": 1530460800,
+									"recharge_end_time": 1533052799,
+									"recharge_cycle": 2
+								},
+								"gift_list": {
+									"1,2,3,4,5,6,7": [{
+										"recharge_amount": 128,
+										"gift_title": "",
+										"gift_group_id": "619790",
+										"gift_group_name": "",
+										"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/zlby20180713h5\/img10.png",
+
+									}, {
+										"recharge_amount": 328,
+										"gift_title": "",
+										"gift_group_id": "619791",
+										"gift_group_name": "",
+										"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/zlby20180713h5\/img11.png",
+
+									}, {
+										"recharge_amount": 648,
+										"gift_title": "",
+										"gift_group_id": "619792",
+										"gift_group_name": "",
+										"gift_img_url": "http:\/\/ossweb-img.qq.com\/images\/chanpin\/tgclub\/public\/vipmb\/img\/zlby20180713h5\/img12.png",
+
+									}]
+								}
+							}
+						}
+
+					],
+					play_id_group: [
+						1001, //新手礼包
+						1002, //特权礼包
+						1003, //每日抽奖
+						1004, //充值礼包
+						1005, //新手专服礼包
+						1006, //回归礼包
+						1007, //每日签到
+						1008, //七天签到
+						1009 //专属兑换
+					],
+					api_url: {
+						get_gift: 'http://ams.xinyue.qq.com/act/achieve',
+						git_gift_status: 'http://ams.xinyue.qq.com/act/status',
+						readrole: "http://ams.xinyue.qq.com/act/readrole",
+						giftrecord: "http://ams.xinyue.qq.com/act/giftrecord",
+						selectrole: "http://ams.xinyue.qq.com/act/selectrole",
+					},
+				},
+				mounted: function() {
+					var dom = document.getElementById('app');
+					dom.style.visibility = 'visible';
+					swiperOne();
+					swiperTwo();
+					swiperThree();
+					swiperFour();
+					swiperFive();
+				},
+				methods: {
+					key_is_in_asked(Akey, level = null) {
+						if(!Akey) {
+							return false
+						}
+						if(!!level && !this.base_config.login.login_mode) {
+							if(Akey.indexOf(this.user_info_msg.level) > -1) {
+								return true;
+							}
+						}
+						if(Akey.indexOf(this.user_info_msg.level) > -1) {
+							return true;
+						}
+						return false;
+					},
+					gotopartin(erweimaSrc) {
+						if(!erweimaSrc) {
+							return
+						}
+						$('#goToActivity').attr('src', erweimaSrc);
+					}
+				},
+			});
+		</script>
+
+		<!--<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //此段代码不能放到外链JS中，
+    var setSite = { //设置网站属性
+        siteType: "a20180711zlby", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName: "首页", //必填项:页面中文名
+        osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+    }
+    if (typeof(pgvMain) == 'function') pgvMain();//千万不能忘记！
+</script>-->
+	</body>
+
+</html>
+<!--[if !IE]>|xGv00|4c9382c00e3cd4a6a9e9049868988c19<![endif]-->

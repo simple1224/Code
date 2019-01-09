@@ -1,0 +1,411 @@
+* {margin:0; padding:0; list-style:none;font-family:'Microsoft Yahei'}
+body,html,.ost_box,#actTitleWrap,.container,#footer_ied,.white-footer,.warp{min-width:1200px!important;width:100%!important;}
+/*布局 */
+.wrap{
+    width: 100%;
+    position: relative;
+}
+.wrap .bg{
+    min-width: 1000px;
+}
+.wrap .content{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrap .content .main{
+    width: 1000px;
+    margin: 0 auto;
+}
+/* set bg */
+.bg .bg1{
+    width: 100%;
+    height: 305px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/bg1.jpg) no-repeat top center;
+}
+.bg .bg2{
+    width: 100%;
+    height: 282px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/bg2.jpg) no-repeat top center;
+}
+.bg .bg3{
+    width: 100%;
+    height: 630px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/bg3.jpg) no-repeat top center;
+}
+.bg .bg4{
+    width: 100%;
+    height: 617px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/bg4.jpg) no-repeat top center;
+}
+.bg .bg5{
+    width: 100%;
+    height: 500px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/bg5.jpg) no-repeat top center;
+}
+/* content begin */
+.content .main .logo1{
+    width: 390px;
+    height: 34px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/logo2.png) no-repeat;
+    font-size: 14px;
+    line-height: 34px;
+    color: #fff;
+    margin-left: 610px;
+}
+.main .logo1 a{
+    margin-left: 58px;
+    text-decoration: none;
+    color: #fff;
+}
+.logo2{
+    width: 32%;
+    height: 153px;
+    position: relative;
+}
+.logo2 a{
+    display: block;
+    /* float: left; */
+    position: absolute;
+}
+.logo2 .a1{
+    width: 165px;
+    height: 88px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/logo1.png) no-repeat;
+    top: 0;
+    left: -105px;
+}
+.logo2 .a2{
+    width: 145px;
+    height: 93px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/wegame.png) no-repeat;
+    top: 0;
+    left: 59px;
+}
+.logo2 .a3{
+    width: 145px;
+    height: 93px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/llq.png) no-repeat;
+    top: 0;
+    left: 59px;
+}
+.logo2 .a4{
+    width: 145px;
+    height: 93px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/hy.png) no-repeat;
+    top: 0;
+    left: 59px;
+}
+/* login */
+.login{
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 503px;
+}
+/* part1 */
+.main .part1{
+    width: 100%;
+    height: 819px;
+    position: relative;
+    text-align: center; 
+    margin-top: 52px;
+}
+.part1 .title{
+    width: 240px;
+    height: 42px;
+    margin: 0 auto;
+}
+.part1 .scroll{
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+.part1 .scroll p{
+    color: #96072e;
+    font-size: 14px;
+    position: relative;
+    top: 13px;
+}
+.part1 .scroll .right,.part1 .scroll .left{
+    display: inline-block;
+}
+.part1 .scroll .left{
+    width: 225px;
+    height: 181px;
+    margin-right: 526px;
+    margin-top: 29px;
+}
+.part1 .scroll .right{
+    width: 218px;
+    height: 183px;
+}
+.part1 .scroll1{
+    width: 540px;
+    height: 70px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/scroll1.png) no-repeat;
+    position: absolute;
+    top: 84px;
+    left: 232px;
+}
+.part1 .scroll2{
+    width: 544px;
+    height: 73px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/scroll2.png) no-repeat;
+    position: absolute;
+    top: 84px;
+    left: 230px;
+}
+.part1 .bottom{
+    width: 580px;
+    height: 207px;
+    margin: 0 auto;
+    margin-left: 275px;
+    margin-top: -25px;
+}
+.part1 .bottom .a1{
+     display: inline-block;
+     width: 414px;
+     height: 104px;
+     background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/btn1.png) no-repeat;
+}
+.part1 .bottom span{
+    font-size: 16px;
+    color: #96072e;
+    margin-left: 24px;
+}
+.part1 .bottom .word{
+    height: 75px;
+    margin-top: 11px;
+    margin-right: 153px;
+}
+.part1 .bottom .p1{
+    font-size: 14px;
+    color: #847450;
+    text-align: center;
+}
+.part1 .list{
+    width: 100%;
+    height: 302px;
+    margin-top: -12px;
+}
+.part1 .list li{
+    float: left;
+}
+.part1 .list .p2{
+    font-size: 16px;
+    font-weight: bold;
+    color: #847450;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 13px;
+}
+.part1 .list .a2{
+    display: block;
+    width: 263px;
+    height: 67px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/btn2.png) no-repeat;
+}
+.part1 .list .item1{
+    position: relative;
+    top: 51px;
+    left: 117px;
+}
+.part1 .list .item1 img{
+    width: 249px;
+    height: 121px;
+}
+.part1 .list .item1 i{
+    width: 76px;
+    height: 76px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/pic3.png) no-repeat;
+    position: absolute;
+    top: -50px;
+    right: -16px;
+}
+.part1 .list .item2{
+    margin-left: 315px;
+    margin-top: 17px;
+}
+.part1 .list .item2 img{
+    width: 150px;
+    height: 111px;
+    margin-top: 2px;
+}
+.part1 .list .item2 span{
+    font-size: 14px;
+    color: #847450;
+    text-align: center;
+}
+.part1 .list .item2 .s1{
+    position: relative;
+    left: -38px;
+    margin-right: 18px;
+}
+.part1 .list .item2 .s3{
+    margin-right: 43px;
+}
+
+/* 进度�? */
+.scroll .show1{
+    width: 6.5%;
+}
+.scroll .show2{
+    width: 11.5%;
+}
+.scroll .show3{
+    width: 17.6%;
+}
+.scroll .show4{
+    width: 23.5%;
+}
+.scroll .show5{
+    width: 28.5%;
+}
+.scroll .show6{
+    width: 32.5%;
+}
+.scroll .show7{
+    width: 37.5%;
+}
+.scroll .show8{
+    width: 43.5%;
+}
+.scroll .show9{
+    width: 49.5%;
+}
+.scroll .show10{
+    width: 54.5%;
+}
+/* part2 */
+.main .part2{
+    width: 100%;
+    height: 435px;
+    position: relative;
+    text-align: center; 
+    margin-top: 35px;
+}
+.part2 .title{
+    width: 187px;
+    height: 57px;
+    margin: 0 auto;
+}
+.part2 .list2{
+    width: 100%;
+    height: 294px;
+    margin-top: 56px;
+}
+.part2 .list2 li{
+    float: left;
+}
+.part2 .list2 .item1 img{
+   width: 263px;
+   height: 89px;
+}
+.part2 .list2 .item2 img{
+   width: 257px;
+   height: 75px;
+ }
+ .part2 .list2 .item3 img{
+   width: 131px;
+   height: 49px;
+   position: relative;
+    top: -28px;
+ }
+ .part2 .list2 span{
+    font-size: 14px;
+    color: #847450;
+    text-align: center;
+}
+.part2 .list2 .p2{
+    font-size: 16px;
+    font-weight: bold;
+    color: #847450;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+.part2 .list2 .p3{
+    margin-top: 31px;
+    margin-bottom: 17px;
+}
+.part2 .list2 .a2{
+    display: block;
+    width: 263px;
+    height: 67px;
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/btn2.png) no-repeat;
+}
+.part2 .list2 .item1{
+    width: 263px;
+    height: 222px;
+    margin-left: 47px;
+    /* margin-top: 112px; */
+}
+.part2 .list2 .item2{
+    width: 263px;
+    height: 208px;
+    margin-top: 14px;
+    margin-left: 54px;
+}
+.part2 .list2 .item3{
+    width: 263px;
+    height: 182px;
+    margin-top: 40px;
+    margin-left: 62px;
+}
+/* part3 */
+.main .part3{
+    width: 100%;
+    height: 249px;
+    position: relative;
+    text-align: center; 
+    margin-top: 36px;
+}
+.part3 .title{
+    width: 158px;
+    height: 42px;
+    margin: 0 auto;
+    margin-left: 417px;
+}
+.part3 .word2{
+    color: #847450;
+    font-size: 14px;
+    height: 179px;
+    margin-top: 27px;
+    text-align: left;
+}
+.part3 .word2 p{
+    line-height: 22px;
+}
+/*footer*/
+#afooter{
+    background: url(//game.gtimg.cn/images/nz/cp/a20180720qxqq/footer.png) no-repeat;
+    width: 100%;
+    height: 237px;
+}
+#footer_ieg{
+    width: 100%;
+    height: 178px;
+    /* background: #02080a */
+}
+.wrap_ieg{
+    padding-top: 81px;
+    padding-bottom: 78px;
+    text-align: center;
+    /* background: #02080a; */
+}
+.wrap_ieg p a{
+    text-decoration: none;
+    color: #ffc1d1;
+    font-size: 12px;
+}
+.wrap_ieg p{
+    color: #ffc1d1;
+    font-size: 12px;
+    margin-bottom: 10px
+}
+body{
+    background: #f5e4c6;
+}

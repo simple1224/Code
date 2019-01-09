@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Tencent-CP"/>
+    <meta name="Copyright" content="Tencent"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <title>心悦俱乐部官网后台配置说明</title>
+    <!-- 私有样式开始 -->
+    <link rel="stylesheet" type="text/css" href="css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.min.css">
+    <!-- 私有样式结束 -->
+</head>
+
+<body>
+
+<div class="navWrap">
+    <h1 class="logo" data-version="v1.0">配置化活动设计重构规范</h1>
+    <span class="logoTips">后台配置规范</span>
+    <ul class="nav">
+        <li>
+            <a href="index.html" class="navLink">H5</a>
+            <ul class="navSecond">
+                <li>
+                    <a href="index.html#one" class="navLink">顶部 banner </a>
+                </li>
+                <li>
+                    <a href="index.html#two" class="navLink">顶部 banner 按钮</a>
+                </li>
+                <li>
+                    <a href="index.html#three" class="navLink">全局背景</a>
+                </li>
+                <li>
+                    <a href="index.html#four" class="navLink">新手礼包</a>
+                </li>
+                <li>
+                    <a href="index.html#five" class="navLink">回归礼包</a>
+                </li>
+                <li>
+                    <a href="index.html#six" class="navLink">特权礼包</a>
+                </li>
+                <li>
+                    <a href="index.html#seven" class="navLink">充值礼包</a>
+                </li>
+                <li>
+                    <a href="index.html#eight" class="navLink">抽奖模块</a>
+                </li>
+
+                <li>
+                    <a href="index.html#night" class="navLink">图片轮播模块</a>
+                </li>
+
+                <li>
+                    <a href="index.html#ten" class="navLink">活动规则</a>
+                </li>
+            </ul>
+
+        </li>
+        <li>
+            <a href="pc.html" class="navLink">PC</a>
+            <ul class="navSecond">
+                <li>
+                    <a href="pc.html#one" class="navLink">顶部 banner </a>
+                </li>
+                <li>
+                    <a href="pc.html#two" class="navLink">顶部 banner 按钮</a>
+                </li>
+                <li>
+                    <a href="pc.html#three" class="navLink">礼包模块背景</a>
+                </li>
+                <li>
+                    <a href="pc.html#four" class="navLink">新手礼包</a>
+                </li>
+                <li>
+                    <a href="pc.html#five" class="navLink">回归礼包</a>
+                </li>
+                <li>
+                    <a href="pc.html#six" class="navLink">特权礼包</a>
+                </li>
+                <li>
+                    <a href="pc.html#seven" class="navLink">充值礼包</a>
+                </li>
+                <li>
+                    <a href="pc.html#eight" class="navLink">抽奖模块</a>
+                </li>
+                <li>
+                    <a href="pc.html#nine" class="navLink">图片轮播模块背景</a>
+                </li>
+                <li>
+                    <a href="pc.html#ten" class="navLink">图片轮播模块</a>
+                </li>
+                <li>
+                    <a href="pc.html#eleven" class="navLink">活动规则</a>
+                </li>
+                <li>
+                    <a href="pc.html#twelve" class="navLink">二维码弹层</a>
+                </li>
+                <li>
+                    <a href="pc.html#thirteen" class="navLink">背景整合</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="mainWrap">
+
+    <div class="mainWidth">
+
+        <h5 class="pageTitle">概述</h5>
+        <p class="descriptText">本文主要介绍配置化活动设计重构规范（v1.0）具体事项，凡涉及到图片更新事项，请参考以下规范标准。</p>
+
+        <div class="descript">
+            <h5 class="pageTitle">图片优化规范</h5>
+            <ol class="nums">
+                <li>图片必须压缩，一般 80% 品质即可，保证文字清晰；</li>
+                <li>图片必须使用 渐进式图片 ：使用Photoshop的“存储为web所用格式”时候，勾选“连续”；</li>
+                <li>图片必须使用<a href="http://tgideas.qq.com/doc/frontend/tool/imagecompress.html" target="_blank"
+                             class="webLink">压缩工具</a>压缩后上传；
+                </li>
+                <li>图片体积不要超过 300 k；</li>
+            </ol>
+        </div>
+
+        <div class="descript">
+            <h5 class="pageTitle">注意事项</h5>
+            <ol class="nums">
+                <li class="webRebuild">字体加粗蓝色部分为重构需要注意事项，仅供参考。</li>
+                <li class="webRebuild">雪碧图根据功能需要，自行生成。目前最全的雪碧图按钮包含以下几个按钮：头图三按钮（即下载游戏、下载心悦APP、备用按钮 202*69），新手与特权的立即领取按钮与置灰按钮（238*71），充值豪礼包立即领取与置灰按钮（113*40）。</li>
+				<li class="webRebuild">不允许修改及删除样式名。</li>
+				<li class="webRebuild">理论上不支持添加background-image: url()属性。</li>
+			</ol>
+        </div>
+
+        <div class="descript" id="one">
+            <h3 class="pageTitle">顶部 banner </h3>
+            <img class="descriptImg" src="ossweb-img/home-1.jpg">
+            <ol class="nums">
+                <li>图片尺寸大小 750 * 880 px；</li>
+                <li>图片格式 jpg；</li>
+                <li>图片底部需留出 144px 的高度便于放置登录与活动信息文案。</li>
+            </ol>
+        </div>
+
+        <div class="descript" id="two">
+            <h3 class="pageTitle">顶部 banner 按钮</h3>
+            <img class="descriptImg" src="ossweb-img/home-2.jpg">
+            <ol class="nums">
+                <li>按钮背景是 202 * 69 px；</li>
+                <li>图片格式 png 雪碧图；</li>
+                <li>距离顶部 690px 。</li>
+                <li>最多可放置 3 个按钮。（只有一个或者两个按钮时候会整体居中。）</li>
+                <li class="webRebuild">重构需要再可配置样式包内设置按钮的 background-position （因为按钮整合成一张雪碧图），对应样式类名：
+                    <span class="code">.wm-spr.h-spr-btn1</span>,
+                    <span class="code">.wm-spr.h-spr-btn2</span>,
+                    <span class="code">.wm-spr.h-spr-btn3</span></li>
+            </ol>
+        </div>
+
+        <div class="descript" id="three">
+            <h3 class="pageTitle">全局背景</h3>
+            <img class="descriptImg" src="ossweb-img/home-3.jpg">
+            <ol class="nums">
+                <li>图片宽度为 750px，高度视情况而定，玩法模块数量多，背景高度需要相对应增高。（背景高了，图片的体积相对应增加，在设计上可以斟酌考虑体现的手法）；</li>
+                <li>图片格式 jpg；</li>
+                <li class="webRebuild">重构需要再可配置样式包内设置背景高度，使其正常显示。<br>
+                    样式类名：<span class="code">.wm-section</span></li>
+            </ol>
+        </div>
+
+        <div class="descript" id="four">
+            <h3 class="pageTitle">新手礼包</h3>
+            <img class="descriptImg" src="ossweb-img/home-4.jpg">
+            <ol class="nums">
+                <li>设计礼包图片尺寸为 730px * 373px 。</li>
+                <li>按钮背景尺寸为 238px * 71px 。</li>
+                <li>tab 最多支持五个选项，每个 tab 等比宽度。</li>
+                <li class="webRebuild">重构可以对相对应的地方修改颜色风格：<br>
+                    玩法标题：<span class="code">.wm-section .wm-title p</span><br>
+                    玩法说明：<span class="code">.wm-section .wm-explain</span><br>
+                    玩法tap选框：<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;未选中：<span class="code">.wm-section .wm-nav li</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;选中时：<span class="code">.wm-section .wm-nav li.current</span><br>
+                    玩法tap选框：<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;未选中：<span class="code">.wm-section .wm-nav li</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;选中时：<span class="code">.wm-section .wm-nav li.current</span><br>
+                    领取按钮：<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;默认：<span class="code">.wm-spr.np-spr-btn1</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;置灰：<span class="code">.wm-spr.np-spr-btn1.geted</span>
+                </li>
+            </ol>
+        </div>
+
+        <div class="descript" id="five">
+            <h3 class="pageTitle">回归礼包</h3>
+            <img class="descriptImg" src="ossweb-img/home-41.jpg">
+            <ol class="nums">
+                <li>设计礼包图片尺寸为 730px * 373px 。</li>
+                <li>按钮背景尺寸为 238px * 71px 。</li>
+                <li>tab 最多支持五个选项，每个 tab 等比宽度。</li>
+                <li class="webRebuild">重构可以对相对应的地方修改颜色风格：<br>
+                    玩法标题：<span class="code">.wm-section .wm-title p</span><br>
+                    玩法说明：<span class="code">.wm-section .wm-explain</span><br>
+                    玩法tap选框：<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;未选中：<span class="code">.wm-section .wm-nav li</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;选中时：<span class="code">.wm-section .wm-nav li.current</span><br>
+                    玩法tap选框：<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;未选中：<span class="code">.wm-section .wm-nav li</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;选中时：<span class="code">.wm-section .wm-nav li.current</span><br>
+                    领取按钮：<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;默认：<span class="code">.wm-spr.np-spr-btn1</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;置灰：<span class="code">.wm-spr.np-spr-btn1.geted</span>
+                </li>
+            </ol>
+        </div>
+
+        <div class="descript" id="six">
+            <h3 class="pageTitle">特权礼包</h3>
+            <img class="descriptImg" src="ossweb-img/home-42.jpg">
+            <ol class="nums">
+                <li>设计礼包图片尺寸为 730px * 373px 。</li>
+                <li>按钮背景尺寸为 238px * 71px 。</li>
+                <li>tab 最多支持五个选项，每个 tab 等比宽度。</li>
+                <li class="webRebuild">重构可以对相对应的地方修改颜色风格：<br>
+                    玩法标题：<span class="code">.wm-section .wm-title p</span><br>
+                    玩法说明：<span class="code">.wm-section .wm-explain</span><br>
+                    玩法tap选框：<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;未选中：<span class="code">.wm-section .wm-nav li</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;选中时：<span class="code">.wm-section .wm-nav li.current</span><br>
+                    玩法tap选框：<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;未选中：<span class="code">.wm-section .wm-nav li</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;选中时：<span class="code">.wm-section .wm-nav li.current</span><br>
+                    领取按钮：<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;默认：<span class="code">.wm-spr.np-spr-btn1</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;置灰：<span class="code">.wm-spr.np-spr-btn1.geted</span>
+                </li>
+            </ol>
+        </div>
+
+
+        <div class="descript" id="seven">
+            <h3 class="pageTitle">充值礼包</h3>
+            <img class="descriptImg" src="ossweb-img/home-7.jpg">
+            <ol class="nums">
+                <li>礼包图片尺寸为 426px * 196px 。</li>
+                <li>按钮大小尺寸为 113px * 40px 。</li>
+                <li>图片格式为 png 雪碧图。</li>
+                <li class="webRebuild">按钮样式类名：<br>
+                    <span class="code">.wm-section .wm-recharge .rec-spr-btn2</span><br>
+                    <span class="code">.wm-section .wm-recharge .rec-spr-btn2.geted</span>
+                </li>
+            </ol>
+        </div>
+
+        <div class="descript" id="eight">
+            <h3 class="pageTitle">抽奖模块</h3>
+            <img class="descriptImg" src="ossweb-img/home-5.jpg">
+            <ol class="nums">
+                <li>抽奖图片尺寸可以调整。</li>
+                <li>图片尺寸可以 jpg 或者 png（png 为宜）。</li>
+                <li>抽奖奖品选中效果可以调整。</li>
+                <li class="webRebuild">重构 dom 节点不可修改。</li>
+                <li class="webRebuild">重构可以调整转盘旋转效果，可以依次打横行走，也可以围绕行走。</li>
+                <li class="webRebuild">重构可调整 js 中 SWFOBJ 对象，来调整抽奖框按钮的大小。</li>
+                <li><pre><code>var lottery = new Lottery({
+    'lighturl': 'ossweb-img/loterry-light.png',//外部光圈png 不填写就用默认的效果
+    'starturl': '', //外部按钮png 不填写就用默认的按钮效果
+    'width': 718,//转盘宽度
+    'height': 557,//转盘高度
+    'total': 9,//抽奖的奖品总数
+    'sbtnx': 184,// 开始抽奖按钮的位置x坐标
+    'sbtny': 560,// 开始抽奖按钮的位置y坐标
+    'sbtnw': 320,// 开始抽奖按钮的宽度
+    'sbtnh': 122,// 开始抽奖按钮的高度
+    'boxw': 243,// 奖品光效的宽度
+    'boxh': 193,//奖品光效的高度
+    'position': "14_18_0,225_18_1,437_18_2,14_175_3,225_175_4,437_175_5,14_340_6,
+                 225_340_7,437_340_8",
+    //奖品光效的位置，对应奖品图片的布局，填入每个奖品的位置以及角度用逗号分割 x_y
+    例如19_20或者19_20_0 表示第一个奖品的位置 x坐标为19px y坐标为20px 角度为0。）
+    'contentId': 'lotterycontent',//嵌入lottery 的div层的 id
+    'onClickRollEvent': callJsToStart,//对应上面接口
+    'onCompleteRollEvent': callJsToComplete //对应上面接口
+});
+                    </code></pre>
+                </li>
+            </ol>
+        </div>
+
+
+        <div class="descript" id="night">
+            <h3 class="pageTitle">图片轮播模块</h3>
+            <img class="descriptImg" src="ossweb-img/home-6.jpg">
+            <ol class="nums">
+                <li>轮播图片大小无固定尺寸。但是所有图片尺寸大小必须一致。</li>
+            </ol>
+        </div>
+        <div class="descript" id="ten">
+            <h3 class="pageTitle">活动规则</h3>
+            <img class="descriptImg" src="ossweb-img/home-8.jpg">
+            <ol class="nums">
+                <li class="webRebuild">重构可修改框中的背景和边框，对应的类名：<span class="code">.wm-section .wm-rule</span>。</li>
+                <li class="webRebuild">重构修改规则中的字体大小、颜色，行间距，对应的类名：<span class="code">.wm-section .wm-rule li</span>。</li>
+            </ol>
+        </div>
+        <div class="descript">
+            <p>以上规范如有问题或建议，请及时联系 v_aqqhuang(黄泉强) / v_qchaochen(陈钦潮)。</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+
+</body>
+</html>

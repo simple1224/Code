@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="gbk" />
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-CP" />
+	<meta name="Description" content="《QQ炫舞》下载官方网站。最时尚浪漫的舞蹈游戏，260万人同时在线陪你一起舞动青春。QQ炫舞有着最丰富的模式和玩法，最浪漫的交友平台，最华丽精美的画面表现，最紧跟潮流的版本开发迭代节奏，持续不断的为千万炫舞玩家，提供着最优质的游戏体验！更有全新真人视频秀平台炫舞梦工厂助您实现明星梦！" />
+	<meta name="Keywords" content="QQ炫舞,炫舞,QQ炫舞官网,QQ炫舞官方下载,QQ炫舞下载,QQ炫舞官方网站,qq,音乐,舞蹈,跳舞,荣誉点,G币,浪漫,装扮,R点,荣誉,模式,4键,点亮,图标,节奏,腾讯,8键,网游,网络游戏,ACG,休闲,炫舞,徽章,高分,P点,连P,combo,vip 房间,任务,娱乐,个性,斗舞,竞技,紫钻," />
+	<!-- 设计：cp  | 重构：cp | 创建：2018/02/05 -->
+	<title>幸运兑换站之炫舞演唱会-炫舞梦工厂官方网站-腾讯游戏</title>
+	<style>
+		/* reset */
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+	table{border-collapse:collapse;border-spacing:0;}
+	address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+	ol,ul{list-style:none;}
+	h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+	q:before,q:after{content:'';}
+	fieldset,img,abbr,acronym{border:0;}
+	
+	/* footer */
+	#afooter{width:100%;z-index:1000;text-align:center; line-height:20px; background-position:top; color:#6c5091;background-color:#372350;padding:33px 0;}
+	#afooter a{ color:#6c5091;}
+	/* basic */
+	.c:before,.c:after{content:"";display:table;}
+	.c:after{clear:both;}
+	.c{zoom:1;}
+	body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';padding-top:42px;background: #372350;}
+	a {text-decoration:none;overflow:hidden;outline:none;}
+	a:hover {text-decoration:none;}
+	.wrap,#afooter{width: 100%;min-width: 1000px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?'1000px':'');}
+	.ct1_wrap1 {background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/ct1_rp4.jpg) no-repeat 50% 3316px;overflow:hidden;}
+	.ct1_wrap2 {background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/ct1_rp3.jpg) no-repeat 50% 1907px;overflow:hidden;}
+	.ct1_wrap3 {background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/ct1_rp2.jpg) no-repeat 50% 707px;overflow:hidden;}
+	.ct1_wrap4 {background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/ct1_rp1.jpg) no-repeat 50% 0px;overflow:hidden;}
+	.container {width:1000px;margin:0 auto;position: relative;}
+	.hide {display:block;width:0;height:0;overflow:hidden;}
+	.pr {position:relative;}
+	.pa {position:absolute;}
+	.db{display:block;text-indent:-999em;}
+	.fl{float: left;}
+	.fr{float: right;}
+	.sp{background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/sp.png) no-repeat;}
+	.sp1{background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/sp1.png) no-repeat;}
+	body img{display: block;}
+	.wrap a:hover{filter:brightness(115%);-webkit-filter:brightness(115%);-moz-filter:brightness(115%);text-decoration:none;}
+	.pop a:hover{filter:brightness(115%);-webkit-filter:brightness(115%);-moz-filter:brightness(115%);text-decoration:none;}
+	
+	/* head */
+	.head{background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/hd.jpg) no-repeat 50% 0;height:939px;}
+		.logo1{background-position:-197px -371px;width:118px;height:69px;left:0;top:40px;background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/logo1.png) no-repeat;}
+		.logo2{background-position:-349px -383px;width:154px;height:45px;left:150px;top:50px;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/logo2.png) no-repeat;}
+		.login{font-size:14px;color:#cbb1ff;text-align:center;line-height:20px;left:0;top:749px;width:100%;z-index: 999;}
+			.login a{color:#cbb1ff;}
+		.code{background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/code1.png) no-repeat;width:129px;height:184px;left:246px;top:581px;}
+	/* content */
+	.ct1_content1{background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/ct1_ct2.jpg) no-repeat 50% 1567px;}
+	.ct1_content2{background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/ct1_ct1.jpg) no-repeat 50% 0;}
+		.add{
+			position: absolute;
+			z-index: 999;
+			width: 1200px;
+			height: 569px;
+			top: 177px;
+		}
+		.add .gif1{
+			width: 376px;
+    		height: 387px;
+    		float: left;
+    		margin-left: -235px;
+    		position: absolute;
+    		top: -104px;
+    		left: 538px;
+		}
+		.add .gif2{
+			width: 605px;
+			height: 629px;
+			float: right;
+			margin-right: -126px;
+		}
+			.zd_box{text-align:center;}
+				.zd_box span,.zd_box strong{display:block;font-size:30px;color:#9fefff;font-weight:bold;}
+				.zd_box strong{font-size:24px;}
+				.zd_box em{font-size:14px;color:#ffffff !important;display:block;line-height:18px;}
+				.zd_box .zd_t{padding-top:22px;line-height:30px;padding-bottom:8px;color: #dfc5ff;}
+		.btn_box{width:970px;margin:0 auto;font-size:0;position: relative; top: -103px;}
+			.btn_box a{display:inline-block;vertical-align:middle;text-align:center;}
+			.btn_buy{width:232px;height:67px;	background-position: 0 -14px;margin-right:14px;font-size:14px;color:#000000;line-height:20px;}
+				.btn_buy span{font-size:18px;color:#a80cfe;font-weight:bold;line-height:23px;padding-top:23px;display:block;}
+			.btn_cz,.btn_hd{height:54px;font-size:18px;color:#ffffff;font-weight:bold;line-height:67px;}
+			.btn_cz{width:232px;height: 67px; background-position: 0 -14px;margin:0 14px 0 0px;}
+			.btn_hd{width:232px;height: 67px; background-position: 0 -14px;}
+		.dj_list{width:835px;margin:0 auto;height:728px;margin-top:-63px;}
+			.dj_list li{float:left;width:190px;height:163px;margin-right: 20px;margin-bottom: 25px; display:inline;position:relative;}
+			.dj_list li span{position:absolute;width:100%;left:0;bottom:15px;font-size:14px;color:#bc99d0;line-height:16px;text-align:center;}
+			.dj_icon1,.dj_icon2{width:76px;height:76px;left:0;top:0;}
+			.dj_icon1{background-position:-567px 0;}
+			.dj_icon2{background-position:-567px -86px;}
+		.cj_box{width:805px;margin:39px auto 80px;height:64px;}
+			.cj_box P{font-size: 16PX;color: #bc99d0;display: inline-block;	margin-left: 43px;margin-top: 29px;}
+			.cj_box dt{float:left;font-size:30px;color:#bc99d0;margin-right:58px;line-height:58px;margin-left: 54px;}
+			.cj_box dd{float:left;width:232px;height:67px;margin-right:30px;text-align:center;}
+				.cj_box dd a{display:block;width:232px;height:67px;background-position: 0 -14px;font-size:20px;color:#ffffff;font-weight:bold;line-height:67px;}
+		.tit1{width:775px;height:75px;background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/tit2.png) no-repeat;margin:0 auto 12px;}
+		.cz_box{padding-bottom: 29px;padding-top: 11px;}
+			.cz_box span{width:500px;text-align:right;padding-right:20px;font-size:18px;color:#bc99d0;line-height:41px;}
+			.btn_cz1{width:159px;height:47px;background-position: 0px -96px;font-size:18px;color:#ffffff;font-weight:bold;text-align:center;line-height:47px;}
+		.dh_box{width:880px;margin:0 auto;}
+			.xy_box1{width:573px;height: 308px;margin-bottom: 41px;}
+				/* .xy_list{border:1px solid #6c5c40;border-radius:10px;padding:40px 0 15px 0;text-align:center;margin-bottom:20px;} */
+				.xy_list{border-radius:10px;padding:5px 0 15px 0;text-align:center;margin-bottom:20px;}
+				.xy_list1{padding:5px 0 8px 0;padding-bottom: 15px;}
+					.xy_tit{font-size:22px;color:#c7a76c;width:275px;margin:0 auto 5px;height:77px;line-height:41px;background-position: -368px -71px;text-align: center;}
+					.xy_list .title1{background-position: 0px -231px;}
+					.xy_list .title2{background-position: 0 -378px;margin-top: -24px;margin-bottom: 13px;}
+					.xy_list .title3{background-position: 0px -310px;}
+					.xy_list .title4{background-position: 0 -458px; margin-bottom: 14px;}
+					.xy_list .list_1{margin-top: -7px;    padding-bottom: 8px;}
+					.xy_list .list_2{margin-top: -6px;padding-bottom: 2px;}
+					.star_box{height:13px;margin-bottom:20px;}
+						.star_box em{display:inline-block;width:11px;height:13px;background-position:-423px -105px;margin:0 3px;}
+					.dh_list{width:560px;margin:0 auto;padding-bottom:20px;}
+					.wdte{width: 266px;float: left;display: inline;}
+					.flri{float: right;}
+						.dh_list li{float:left;width:108px;height:114px;margin:0 2px;display:inline;position:relative;cursor:pointer;}
+						.dh_list li span{position:absolute;width:100%;left:0;bottom:5px;font-size:12px;color:#44316e;line-height:14px;}
+						.dh_list .te{width: 88px;height: 109px;margin:0 4px 5px;}
+						.dh_list .te span{bottom: 22px;}
+							.xz_icon{width:21px;height:21px;right:4px;top:4px;background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/point3.png) no-repeat;display:none;}
+							.get .xz_icon{display:block;}
+					.btn_dh{width:232px;height:67px;display:block;margin:10px auto;font-size:14px;color:#ffffff;line-height:18px;background-position: 0 -17px;}
+						.btn_dh span{display:block;font-size:22px;line-height:24px;padding-top:10px;font-weight: bold;}
+			.xy_box2{width:263px;height: 308px;}
+					.dh_list1{width:663px;}
+					.dh_list2{width: 290px;}
+					.dh_list2 li{margin: 0 auto;margin-bottom: 41px;}
+						.dh_list1 li{margin: 4px 0px 10px 16px;}
+			.xy_box3{width:884px;height: 306px;clear: both;margin-bottom: -17px;}
+			.xy_box4{width:884px;height: 306px;clear: both;}
+	
+		.hr_con{width:880px;margin:0 auto;margin-top: -30px;height:370px;}
+			.hj_box{width:450px;}
+				.hj_tit{text-align:center;width:158px;height:36px;background-position:0 -385px;font-size:24px;color:#000000;line-height:36px;margin:0 auto 10px;}
+				.hj_con{height:235px;overflow:hidden;position: relative}
+					.hj_list,.colee2{font-size:13.98px;color:#bc99d0;line-height:26px;text-align:center;list-style: none;    display: block;overflow: hidden;}
+						.hj_list li,.colee2 li{ height:26px;float: left;margin-left: 26px;}
+			.rule_box{width:430px;}
+				.rule_list li{float:left;width:100%;color:#bc99d0;font-size:14px;line-height:20px;margin-bottom:5px;}
+					.rule_list em{float:left;width:22px;height:23px;text-align:center;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/point.png) no-repeat;margin-right:6px;}
+					.rule_list span{float:left;width:400px;}
+		.tit2{width:772px;height:75px;background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/tit3.png) no-repeat;margin:20px auto 12px;}
+			.tit_icon{width:15px;height:15px;left:0;top:2px;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/point2.png) no-repeat;}
+		.code1{display:block;margin:-13px auto 10px;}
+		.code_box{font-size:14px;color:#c7a76c;line-height:24px;text-align:center;padding-bottom: 5px;}
+			.code_box span{font-weight:bold;font-size:18px;line-height:30px;}
+			
+			.rule_1{width: 275px;height: 67px;margin: 0 auto;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/rule_1.png)no-repeat;margin-bottom: 9px;}
+			.rule_2{width: 275px;height: 67px;margin: 0 auto;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/rule_2.png)no-repeat;margin-bottom: 9px;}
+	/* 弹窗 */
+	.pop{background:#84e9e1;border: 3px solid #3746b1; text-align:center;outline:none;}
+	.pop1{width:990px;height:535px;padding:80px 0 20px 0;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/tab1.png) no-repeat;}
+		.pop_tit{left:50%;top:15px;margin-left:-289px;width:595px;height:74px;line-height:42px;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/pop_tit1.png) no-repeat;}
+		/* .pop_tit1{left:50%;top:0;margin-left:-299px;width:598px;height:54px;line-height:54px;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/pop_tit5.png) no-repeat;} */
+		.pop_tit2{left:50%;top:18px;margin-left: -347px;width:731px;height:76px;line-height:45px;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/pop_tit3.png) no-repeat;}
+		/* .pop_tit3{left:50%;top:0;margin-left:-204px;width:445px;height:45px;line-height:45px;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/pop_tit3.png) no-repeat;} */
+		/* .pop_tit4{left:50%;top:0;margin-left:-317px;width:634px;height:58px;line-height:54px;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/pop_tit4.png) no-repeat;} */
+		.my_gift{width:910px;margin:0px auto 20px;}
+			.never {font-size: 14px;position: relative;color: #d0b7f1;top: 72px;}
+			.my_gift th{font-size:16px;color:#fff;padding-bottom:10px;}
+			.my_gift .w2{width:175px;}
+			.my_gift .w1{width:50px;}
+				.pop_check,.pop_checks{width:18px;height:18px;background-position: -140px -61px;display:block;margin:0 auto;cursor:pointer;}
+				.my_gift .checked{background-position:-114px -61px;}
+				.my_gift th span{display:block;width:133px;height:43px;margin:0 auto;line-height:42px;color:#d0b7f1;font-size: 18.43px;}
+					.btn_lq{display:inline-block;width:52px;height:22px;background-position:-114px 0;line-height:22px;color:#fff;font-size:14px;margin:0 3px;}
+					.btn_lqs{background-position:-114px -28px;color:#fff;}
+			.my_gift td{font-size:14px;color:#d0b7f1;height:30px;padding-top: 20px;}
+				.my_gift tfoot a{margin:0 188px !important; color: #d0b7f1 !important}
+				.my_gift tfoot a,.my_gift tfoot em{color:#d0b7f1;display:inline-block;margin:0 5px;vertical-align:middle;}
+				.my_gift tfoot .on{background:#c7a76c;border-radius:100%;width:22px;height:22px;line-height:22px;color: #FFFFFF;}
+		.btn_pl{display:block;margin:0 auto;width:188px;height:54px;background-position:0 -156px;color:#ffffff;line-height:54px;font-size:24px;}
+		.btn_pl:hover{background-position:-434px -192px;color:#FFFFFF;}
+	.pop2{width:670px;padding:50px 0 20px 0;}	
+		.db_list{width:600px;}
+	.pop3{width:721px;height:322px;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/tab3.png)}
+	.pop3 .all{width: 363px;height: 34px;margin: 0 auto;margin-bottom: 5px;}
+		.pop3 p{float: left;font-size: 14px;color: #474747;text-align: center;}
+		.pop_tips{font-size:14px;color:#424242;line-height:20px;padding-bottom:20px;}
+			.pop_tips span{font-weight:bold;color:#fc8668;}
+		.wj_list{width:350px;margin:0 auto;padding-bottom:20px;padding-top:108px;}
+		.wj_list1{width:370px;}
+			.wj_list li{float:left;width:100%;height:32px;margin-bottom:5px;line-height:32px;}
+				.wj_list span{float:left;font-size:14px;color:#9381ad;width:102px;text-align:left;}
+				.wj_list1 span{width:120px;}
+				.wj_list .txt_input{float:left;width:220px;height:30px;background:none;border:1.5px solid #ad9ec0;border-radius:20px;line-height:30px;color:#ad9ec0;font-size:14px;outline:none;padding:0 10px;}
+				.wj_list .txt_input option{background: #F7CEB3;}
+				.wj_list label{float:left;font-size:14px;color:#424242;margin-right:10px;padding-left:10px;}
+				.wj_list .rd_input{float:left;margin:10px 20px 0 0;}
+		.pop_btn{width:482px;margin:0 auto;padding-bottom:10px;}
+			.btn_qd{width:232px;height:67px;line-height:67px;color:#861a09;font-size:20px;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/sp1.png) no-repeat;background-position: 0 -14px;font-weight: bold;}
+			.btn_qx{width:232px;height:67px;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/sp1.png) no-repeat;background-position:0 -14px;line-height:67px;color:#861a09;font-size:20px;font-weight: bold;}
+		.pop_tit1{font-size:24px;color:#0a2104;font-weight:bold;line-height:28px;padding-bottom:20px;}
+			.pop_tit1 em{font-size:16px;}
+		.num_input{width:240px;height:30px;background:none;border:1px solid #c2f4f0;border-radius:20px;line-height:30px;color:#fff;font-size:16px;outline:none;display:block;float: right;}
+		.pop_close{width:58px;height:58px;position: absolute;top: 0;right: 0;}
+		.pop_close:hover{transform:scale(.9);}
+		.pop_tit4msg{width: 100%;font-size: 16px;color: #000;text-align: center;line-height: 18px;padding-bottom: 20px;}
+	/* 兑换置灰按钮 添加类名btn_dhs 不需删除原类名 */	
+	.btn_dhs{background-position: 0 -156px;}
+	.btn_dhs:hover{background-position: 0 -156px;}
+	/*tab*/
+	.tab{width: 667px;height: 50px;background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/tab2.png) no-repeat 50% 0;left: 50%;margin-left: -160px; top: 210px;}
+	.tab a{float: left;display:inline;width: 232px;height: 50px;font-size: 24px;color: #ffffff;line-height: 50px;text-align: center;padding-left: 15px;}
+	.tab .tab1{color: #ffffff;}
+	.tab .tab2{float: right;display: inline;width: 390px;height: 50px;padding: 0;padding-right: 30px;color: #945f2b;}
+	/*tab_ct*/
+	.ct2_wrap1 {background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/ct2_rp2.jpg) no-repeat 50% 868px;overflow:hidden;}
+	.ct2_wrap2 {background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/ct2_rp1.jpg) no-repeat 50% 0px;overflow:hidden;}
+	.head1{background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/hd1.jpg) no-repeat 50% 0;height:868px;}
+	.ct2_content1{background:url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/ct2_ct1.jpg) no-repeat 50% 0px;height:1535px;}
+	.code2{background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/code2.png) no-repeat;}
+	/* .zd_box1{background: url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/tk_bg1.png) no-repeat;} */
+	.ct2_wrap1 .btn_buy{color: #861a09;}
+	.ct2_wrap1 .btn_buy span{color: #8a180a;}
+	.ct2_wrap1 .btn_cz,.ct2_wrap1 .btn_hd{color: #861a09;}
+	.ct2_wrap1 .cj_box dd a{color: #861a09;}
+	.ct2_wrap1 .btn_cz1{color: #861a09;}
+	.ct2_wrap1 .xy_tit{color: #ffffff;}
+	.ct2_wrap1 .btn_dh{color: #861a09;}
+	.ct2_wrap1 .code_box{color: #bc99d0;}
+	/*兑换置灰按钮 添加类名btn_dhs 不需删除原类名*/
+	.ct2_wrap1 .btn_dhs{background-position:0 -203px;}
+	
+	.people {
+     	width: 1532px;
+     	height: 530px;
+		 /* margin: -216px 0 0 117px; */
+	  }
+    .people .i1 {
+        display: block;
+		width: 766px !important;
+     	height: 530px !important;
+		margin: -175px 0 0 117px;
+		}
+	.people .i2 {
+        display: block;
+		width: 371px !important;
+     	height: 416px !important;
+		margin: -445px 0 0 922px;
+		}
+	.people .i3 {
+        display: block;
+		width: 240px !important;
+     	height: 348px !important;
+		margin: -378px 0 0 -131px;
+		}
+	.clear{
+		margin-right: 0 !important;
+	}
+	.clear1{
+		margin-left: 104px !important;
+	}
+	.new{
+		height: 300px !important;
+		overflow: hidden !important;
+	}
+	.red{
+		color: #ff6868;
+		font-weight: bold;
+		font-style: normal;
+	}
+	</style>
+	<script>
+		(function(){
+        if (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)){
+          // window.location = "//x5.qq.com/cp/a20181017ychm/index.htm";
+        }
+    }());
+</script>
+</head>
+
+<body>
+	<!-- //game.gtimg.cn/images/x5/cp/a20181017ychxm -->
+	<!--切换内容-->
+	<div class="tab_ct">
+		<div class="wrap ct2_wrap1 wrap_ct" style="display: block;">
+			<div class="wrap ct2_wrap2">
+				<div class="container">
+					<div class="add">
+						<div class="people">
+							<img class="i1" src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/A/A_000000.png" alt="">
+							<img class="i2" src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/people2.png" alt="">
+							<img class="i3" src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/people.png" alt="">
+						</div>
+					</div>
+					<div class="head1 pr">
+						<h1 class="hide">巡回演唱会</h1>
+						<!-- <div class="code pa code2"></div> -->
+						<a class="logo1 db pa sp1" href="//x5.qq.com/" onclick="PTTSendClick('link','logoz1','QQ炫舞')" title="QQ炫舞" target="_blank">QQ炫舞</a>
+						<a class="logo2 db pa sp1" href="//mgc.qq.com/" onclick="PTTSendClick('link','logoz2','炫舞梦工厂')" title="炫舞梦工厂"
+						 target="_blank">炫舞梦工厂</a>
+
+					</div>
+					<div class="content ct2_content1">
+						<!-- <div class="zd_con c">
+							<div class="zd_box fl zd_box1">
+								<span class="zd_t">20:30整点在线</span>
+								<em>6888点券+20冰晶弹珠宝盒+500宠物币<br />关注TYinmusic微信公众号，摇一摇中<br />iPhone7</em>
+							</div>
+							<div class="zd_box fr zd_box1">
+								<em class="zd_t">2018年10月17日</em>
+								<strong>炫舞梦工厂100房间</strong>
+							</div>
+						</div> -->
+						<div class="btn_box c">
+							<a href="javascript:buytic(1086);" onclick="PTTSendClick('btn','buyz1','10Q币购买门票')" class="btn_buy sp1"><span>10Q币购买12个荧光棒</span></a>
+							<a href="javascript:buytic(1087);" onclick="PTTSendClick('btn','buyz2','20Q币购买门票')" class="btn_buy sp1"><span>20Q币购买25个荧光棒</span></a>
+							<a href="//pay.qq.com/ipay/index.shtml?n=60&c=qqacct_save&ch=qqcard,kj,bank&aid=pay.index.button.ljcz" target="_blank"
+							 onclick="PTTSendClick('btn','czz','充值Q币')" class="btn_cz sp1">充值Q币</a>
+							<a href="javascript:getInfo(2,1);" onclick="PTTSendClick('btn','hdz','管理我获得的物品')" class="btn_hd sp1">管理我获得的物品</a>
+						</div>
+						<ul class="dj_list c">
+							<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj1.png" width="190" height="163" alt="星宇心海（永久）" /><span>星宇心海（永久）</span></li>
+							<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj2.png" width="190" height="163" alt="黑发疏朗（永久）" /><span>黑发疏朗（永久）</span></li>
+							<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj3.png" width="190" height="163" alt="目如朗星（永久）" /><span>目如朗星（永久）</span></li>
+							<li class="clear"><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj4.png" width="190" height="163" alt="金叶紫玉（永久）" /><span>金叶紫玉（永久）</span></li>
+							<li class="clear1"><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj5.png" width="190" height="163" alt="篮霜宝石 （永久）" /><span>蓝霜宝石（永久）</span></li>
+							<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj6.png" width="190" height="163" alt="闲云落花名片相框（永久）" /><span>闲云落花名片相框（永久）</span></li>
+							<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj7.png" width="190" height="163" alt="闲云落花名片夹（永久）" /><span>闲云落花名片夹（永久）</span></li>
+							<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj8.png" width="190" height="163" alt="灰熊精灵（永久）" /><span>灰熊精灵（永久）</span></li>
+							<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj9.png" width="190" height="163" alt="语花悠扬（永久）" /><span>语花悠扬（永久）</span></li>
+							<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj10.png" width="190" height="163" alt="语花芬芳（永久）" /><span>语花芬芳（永久）</span></li>
+							<li class="clear"><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj11.png" width="190" height="163" alt="夜塑星光 （永久） " /><span>夜塑星光（永久）
+								</span></li>
+							<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj12.png" width="190" height="163" alt="梦幻水晶床（永久）" /><span>梦幻水晶床（永久）</span></li>
+							<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj13.png" width="190" height="163" alt="琴声悠扬 （永久）" /><span>琴声悠扬（永久）</span></li>
+							<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj14.png" width="190" height="163" alt="梅络淼缪 （永久）" /><span>梅络淼缪（永久）</span></li>
+							<li class="clear"><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dj15.png" width="190" height="163" alt="幻蓝沙漏 （永久）" /><span>幻蓝沙漏（永久）</span></li>
+						</ul>
+						<dl class="cj_box c">
+							<dt>荧光棒抽奖：</dt>
+							<dd><a href="javascript:getLottery()" onclick="PTTSendClick('btn','cjz1','抽1次')" class="sp1">我的第<span class="num1">XX</span>次抽奖</a></dd>
+							<p>本次抽奖所需： <span class="num2"></span></p>
+							<!-- <dd><a href="javascript:amsSubmit(158516,491640);" onclick="PTTSendClick('btn','cjz3','抽10次')" class="sp1">抽10次</a></dd> -->
+						</dl>
+						<!-- <h2 class="tit1 sp1 db">幸运兑换</h2>
+				<div class="cz_box c">
+					<span id="luckNum01" class="fl">我的幸运值：xxx</span>
+					<a href="javascript:reset01();" onclick="PTTSendClick('btn','resetz','充值')" class="btn_cz1 sp1 fl">重置</a>
+				</div> -->
+						<!-- <div class="dh_box c">
+					<div class="xy_box1 fl">
+						<div class="xy_list">
+							<h3 class="xy_tit sp1 title1"></h3>
+							<ul class="dh_list c" id="dh_list5" >
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh1.png" width="108" height="114" alt="鎏金星履 （永久）" /><span>鎏金星履  <br />（永久）</span><em class="xz_icon pa sp1"></em></li>
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh2.png" width="108" height="114" alt="鎏银星履 （永久）" /><span>鎏银星履 <br />(永久)</span><em class="xz_icon pa sp1"></em></li>
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh3.png" width="108" height="114" alt="朝气云锦" /><span>朝气云锦<br />（永久）</span><em class="xz_icon pa sp1"></em></li>
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh4.png" width="108" height="114" alt="墨染青丝" /><span>墨染青丝<br />（永久）</span><em class="xz_icon pa sp1"></em></li>
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh5.png" width="108" height="114" alt="高级魔法棒" /><span>高级魔法棒 <br/>×1</span><em class="xz_icon pa sp1"></em></li>
+							</ul>
+							<a href="javascript:exchangeLuck01(1,$('#dh_list5').find('li.get').index());" onclick="PTTSendClick('btn','dhz1','兑换1')" id="btn_dh01" class="btn_dh sp1 btn"><span>兑换</span>（20幸运值）</a>
+						</div>
+						
+					</div>
+					<div class="xy_box2 fr">
+						<div class="xy_list xy_list1">
+							<h3 class="xy_tit sp1 title3"></h3>
+							<ul class="dh_list dh_list1 c list_1" id="dh_list7" >
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh11.png" width="108" height="114" alt="高级金粉" /><span>高级金粉×1</span><em class="xz_icon pa sp1"></em></li>
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh12.png" width="108" height="114" alt="叶言之光" /><span>叶言之光<br />（永久）</span><em class="xz_icon pa sp1"></em></li>
+							</ul>
+							<a href="javascript:exchangeLuck01(2,$('#dh_list7').find('li.get').index());" onclick="PTTSendClick('btn','dhz3','兑换3')" class="btn_dh sp1"><span>兑换</span>（88幸运值）</a>
+						</div>
+					</div>
+					<div class="xy_box3">
+						<div class="xy_list">
+							<h3 class="xy_tit sp1 title2"></h3>
+							<ul class="dh_list c" id="dh_list6" >
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh6.png" width="108" height="114" alt="朝气彩绵" /><span>朝气彩绵<br />（永久）</span><em class="xz_icon pa sp1"></em></li>
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh7.png" width="108" height="114" alt="素锦阑珊" /><span>素锦阑珊<br/>（永久）</span><em class="xz_icon pa sp1"></em></li>
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh8.png" width="108" height="114" alt="金粉俊君/粉嫩俏皮" /><span>金粉俊君/粉嫩俏皮<br />(永久)</span><em class="xz_icon pa sp1"></em></li>
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh9.png" width="108" height="114" alt="碧波柔靡 " /><span>碧波柔靡 <br/>（永久）</span><em class="xz_icon pa sp1"></em></li>
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh10.png" width="108" height="114" alt="炫彩缤纷点券包" /><span>炫彩缤纷点券包 <br/>×1</span><em class="xz_icon pa sp1"></em></li>
+							</ul>
+							<a  href="javascript:exchangeLuck01(3,$('#dh_list6').find('li.get').index());" onclick="PTTSendClick('btn','dhz2','兑换2')" class="btn_dh sp1"><span>兑换</span>（288幸运值）</a>
+						</div>
+					</div>
+					<div class="xy_box4">
+							<div class="xy_list xy_list1">
+							<h3 class="xy_tit sp1 title4"></h3>
+							<ul class="dh_list dh_list1 c list_2" id="dh_list8" >
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh13.png" width="108" height="114" alt="松铃轻响" /><span>松铃轻响<br />(永久)</span><em class="xz_icon pa sp1"></em></li>
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh14.png" width="108" height="114" alt="潆泡纷飞" /><span>潆泡纷飞 <br />(永久)</span><em class="xz_icon pa sp1"></em></li>
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh15.png" width="108" height="114" alt="云中鹤来" /><span>云中鹤来<br />(永久)</span><em class="xz_icon pa sp1"></em></li>
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh16.png" width="108" height="114" alt="梦与幻想" /><span>梦与幻想<br />(永久)</span><em class="xz_icon pa sp1"></em></li>
+								<li><img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/pic1_dh17.png" width="108" height="114" alt="蓝蝶幽梦 （永久）" /><span>蓝蝶幽梦<br />(永久)</span><em class="xz_icon pa sp1"></em></li>
+							</ul>
+							<a href="javascript:exchangeLuck01(4,$('#dh_list8').find('li.get').index());" onclick="PTTSendClick('btn','dhz4','兑换4')" class="btn_dh sp1"><span>兑换</span>（800幸运值）</a>
+						</div>
+					</div>
+					<div></div>
+				</div> -->
+						<div class="hr_con c">
+							<div class="hj_box fl">
+								<!-- 获奖名单 -->
+								<h3 class="hj_tit rule_1"></h3>
+								<div class="hj_con colee" id="colee" style="overflow:hidden;">
+									<ul id="carouselContent" class="carouselContent hj_list colee1">
+										<!-- <li>2017-05-18 01:04:35</li><li>770448**</li><li>获得了飞行印章（1个）</li>
+										<li>2017-05-18 01:04:35</li><li>770448**</li><li>获得了飞行印章（1个）</li>
+										<li>2017-05-18 01:04:35</li><li>770448**</li><li>获得了飞行印章（1个）</li>
+										<li>2017-05-18 01:04:35</li><li>770448**</li><li>获得了飞行印章（1个）</li>
+										<li>2017-05-18 01:04:35</li><li>770448**</li><li>获得了飞行印章（1个）</li>
+										<li>2017-05-18 01:04:35</li><li>770448**</li><li>获得了飞行印章（1个）</li>
+										<li>2017-05-18 01:04:35</li><li>770448**</li><li>获得了飞行印章（1个）</li>
+										<li>2017-05-18 01:04:35</li><li>770448**</li><li>获得了飞行印章（1个）</li>
+										<li>2017-05-18 01:04:35</li><li>770448**</li><li>获得了飞行印章（1个）</li>
+										<li>2017-05-18 01:04:35</li><li>770448**</li><li>获得了飞行印章（1个）</li>
+										<li>2017-05-18 01:04:35</li><li>770448**</li><li>获得了飞行印章（1个）</li>
+										<li>2017-05-18 01:04:35</li><li>770448**</li><li>获得了飞行印章（1个）</li> -->
+									</ul>
+									<ul class="colee2" id="colee2"></ul>
+
+								</div>
+							</div>
+
+							<script type="text/html" id="broadcastTemplate_501980">
+								{for oneBroadcast in BroadcastList}
+							<li>${oneBroadcast.dtGetPackageTime} ${oneBroadcast.Uin} 获得了${oneBroadcast.sPackageName}</li>
+						{/for}
+					</script>
+
+
+							<div class="rule_box fr">
+								<!-- 活动说明 -->
+								<h3 class="hj_tit rule_2"></h3>
+								<ul class="rule_list c">
+									<li><em class="sp1">1</em><span>玩家在活动期间（2018年10月17日-11月30日）可购买荧光棒用于页面奖池抽奖，奖品兑换于2018年12月5日24点整截至；</span></li>
+									<li><em class="sp1">2</em><span><i class="red">本次抽奖采用剃重抽奖方式</i>，在页面抽中的道具将自动从奖池中剔除，即每次抽奖都会有不同的道具产出，抽完15次将自动重新开启新一轮；</span></li>
+									<li><em class="sp1">3</em><span>随着抽奖次数的增加，每次抽奖需要消耗的荧光棒数量会递增，抽完15次将从自动重新开始新一轮；</span></li>
+									<li><em class="sp1">4</em><span>本次购票页面消费可增加<i class="red">XVIP、皇冠、星舞积分</i>，所获得道具可进入幸运柜；</span></li>
+								</ul>
+							</div>
+						</div>
+						<img src="//game.gtimg.cn/images/x5/cp/a20181017ychxm/code2.jpg" width="200" height="200" alt="" class="code1" />
+						<div class="code_box">
+							<span>扫码下载手机版炫舞梦工厂</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--login-->
+	<div class="login pa">
+		<p id="unlogin">亲爱的用户，请<a id="dologin" href="javascript:;">[登录]</a></p>
+		<p id="logined" style="display:none;">欢迎您，<span id='login_qq_span'></span>，
+			<span id="spanNotBind_501868">
+				<a href="javascript:amsInit(162951, 501867);"> 绑定大区</a>
+			</span>
+			<span id="spanBind_501868" style="display:none">
+				<span id="area_info_501868"></span>
+				<span id="role_info_501868"></span>
+				<a href="javascript:amsInit(162951, 501867);">更改绑定</a>
+			</span>
+			<a href="javascript:amsSubmit(162951,502143);">[查询我的荧光棒]</a>
+			<a href="javascript:;" id="dologout">[注销]</a></p>
+	</div>
+
+	<!--tab切换-->
+	<!--<div class="tab c pa">
+	<a href="javascript:;" class="tab1" title="欧阳娜娜成人礼" >欧阳娜娜成人礼</a>
+	<a href="javascript:;" class="tab2" title="in-Music洛天依、言和2018生日会" >in-Music洛天依、言和2018生日会</a>
+</div>-->
+
+
+	<!-- 我获得的物品-->
+	<div class="pop pop1" id="showMyGiftContent_491634" style="display:none">
+		<h2 class="pop_tit sp pa"></h2>
+		<table class="my_gift">
+			<thead>
+				<tr>
+					<th><span>获得时间</span></th>
+					<th><span>发送大区</span></th>
+					<th><span>道具名称</span></th>
+				</tr>
+			</thead>
+			<tbody id="getGiftContent_491634">
+			</tbody>
+			<tfoot class="new">
+				<tr>
+					<td colspan="8" id="getGiftPageContent_491634"></td>
+				</tr>
+				<!-- <tr>
+					<td><span>获得时间</span></td>
+					<td><span>发送大区</span></td>
+					<td><span>道具名称</span></td>
+				</tr>
+				<tr>
+					<td><span>获得时间</span></td>
+					<td><span>发送大区</span></td>
+					<td><span>道具名称</span></td>
+				</tr>
+				<tr>
+					<td><span>获得时间</span></td>
+					<td><span>发送大区</span></td>
+					<td><span>道具名称</span></td>
+				</tr>
+				<tr>
+					<td><span>获得时间</span></td>
+					<td><span>发送大区</span></td>
+					<td><span>道具名称</span></td>
+				</tr>
+				<tr>
+					<td><span>获得时间</span></td>
+					<td><span>发送大区</span></td>
+					<td><span>道具名称</span></td>
+				</tr>
+				<tr>
+					<td><span>获得时间</span></td>
+					<td><span>发送大区</span></td>
+					<td><span>道具名称</span></td>
+				</tr>
+				<tr>
+					<td><span>获得时间</span></td>
+					<td><span>发送大区</span></td>
+					<td><span>道具名称</span></td>
+				</tr> -->
+			</tfoot>
+		</table>
+		<!-- '<a href="javascript:;">上一页</a><em></em><a href="javascript:getInfo(' + next + ');">下一页</a>' -->
+		<!-- <a href="javascript:;" onclick="PTTSendClick('btn','pl','批量领取')" class="btn_pl sp">批量领取</a> -->
+		<a class="pop_close pa" href="javascript:closeDialog()" title="关闭"></a>
+	</div>
+	<script type="text/html" id="getGiftTemplate_491634">
+		{for giftInfo in MyGiftListObject.res}
+		<tr>
+			<td>${giftInfo.dtGetPackageTime}</td>
+			<td>${giftInfo.sRoleArea}</td>
+			<td>${giftInfo.sPackageName}</td>
+		</tr>
+		{forelse}
+		<tr>
+			<td colspan="8" align="center">您尚未获得任何礼包</td>
+		</tr>
+		{/for}
+</script>
+
+	<!-- 玩家信息填写 -->
+	<div class="pop pop3" id="pop3" style="display:none;">
+		<h2 class="pop_tit1 sp pa db"></h2>
+		<p class="pop_tips" style="display:none"><span>个人信息填写：</span>为保证实物奖励能准确邮寄，下面所有项目务必详细填写！<br />未获得实物奖励请勿填写！</p>
+		<ul class="wj_list c">
+			<li>
+				<span>* 姓 名：</span>
+				<input type="text" class="txt_input" />
+			</li>
+			<li>
+				<span>* 性 别：</span>
+				<label for="man">男</label>
+				<input type="radio" name="sex" id="man" value="man" class="rd_input" />
+				<label for="women">女</label>
+				<input type="radio" name="sex" id="women" value="women" class="rd_input" />
+			</li>
+			<li>
+				<span>* 身份证号码：</span>
+				<input type="text" class="txt_input" />
+			</li>
+			<li>
+				<span>* 手机号码：</span>
+				<input type="text" class="txt_input" />
+			</li>
+			<li>
+				<span>* 省 份：</span>
+				<input type="text" class="txt_input" />
+			</li>
+			<li>
+				<span>* 城 市：</span>
+				<input type="text" class="txt_input" />
+			</li>
+			<li>
+				<span>* 详细地址：</span>
+				<input type="text" class="txt_input" />
+			</li>
+		</ul>
+		<a href="javascript:;" onclick="PTTSendClick('btn','tj','提交')" class="btn_pl sp">提交</a>
+		<a class="pop_close sp pa" href="javascript:showDialog.hide()" title="关闭"></a>
+	</div>
+
+
+	<!-- 梦工厂门票购买 -->
+	<div class="pop pop3" id="pop4" style="display:none;">
+		<h2 class="pop_tit2 pa db">梦工厂门票购买</h2>
+		<p class="pop_tips" style="display:none"><span>个人信息填写：</span>为保证实物奖励能准确邮寄，下面所有项目务必详细填写！<br />未获得实物奖励请勿填写！</p>
+		<ul class="wj_list c wj_list1">
+			<li>
+				<span>请输入购买数量：</span>
+				<input type="text" id="TicketNum" class="txt_input" />
+			</li>
+			<!--<li>
+				<span>请输入QQ号码</span>
+				<input type="text" id="TicketPresent" class="txt_input" />
+			</li>
+			<li>
+				<span>请选择大区：</span>
+				<select class="txt_input" id="userarea1">
+					<option>请选择</option>
+				</select>
+				&lt;!&ndash; <input type="text" class="txt_input" /> &ndash;&gt;
+			</li>-->
+		</ul>
+		<div class="pop_btn c">
+			<a href="javascript:buy();" onclick="PTTSendClick('btn','qd1','确定1')" class="btn_qd sp fl">确定</a>
+			<a href="javascript:showDialog.hide();" onclick="PTTSendClick('btn','qx1','取消1')" class="btn_qx sp fr">取消</a>
+		</div>
+		<a class="pop_close pa" href="javascript:showDialog.hide()" title="关闭"></a>
+	</div>
+
+
+	<!-- 梦工厂门票购买 -->
+	<!-- <div class="pop pop3" id="pop5" style="display:none;">
+	<h3 class="pop_tit3 sp pa db"></h3>
+	<input type="text" class="num_input" />
+	<div class="pop_btn c">
+		<a href="javascript:;" onclick="PTTSendClick('btn','qd2','确定2')" class="btn_qd sp fl">确定</a>
+		<a href="javascript:showDialog.hide();" onclick="PTTSendClick('btn','qx2','取消2')" class="btn_qx sp fr">取消</a>
+	</div>
+	<a class="pop_close sp pa" href="javascript:showDialog.hide()" title="关闭"></a>
+</div> -->
+	<!-- 请输入出售价格 -->
+	<div class="pop pop3" id="pop6" style="display:none;">
+		<h3 class="pop_tit4 sp pa db">请输入出售价格</h3>
+		<p class="pop_tit4msg">（单位：夺宝币）</p>
+		<input type="text" class="num_input" />
+		<div class="pop_btn c">
+			<a href="javascript:;" onclick="PTTSendClick('btn','qd3','确定3')" class="btn_qd sp fl">确定</a>
+			<a href="javascript:showDialog.hide();" onclick="PTTSendClick('btn','qx3','取消3')" class="btn_qx sp fr">取消</a>
+		</div>
+		<a class="pop_close sp pa" href="javascript:showDialog.hide()" title="关闭"></a>
+	</div>
+
+
+	<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="//ossweb-img.qq.com/images/js/milo/milo.js"></script>
+	<script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js?action=147724"></script>
+	<script type="text/javascript" src="//ossweb-img.qq.com/images/ams/atm/reporting.js?action=158516"></script>
+	<script src="//ossweb-img.qq.com/images/js/title.js"></script>
+	<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/x5act.js"></script>
+	<script src="//x5.qq.com/comm-htdocs/js/game_area/x5_server_select.js"></script>
+	<script src="//ossweb-img.qq.com/images/js/loadjs.js"></script>
+	<script type="text/javascript" src="//fusion.qq.com/fusion_loader?appid=1450000605&platform=website"></script>
+	<script src="//ossweb-img.qq.com/images/js/eas/eas.js" type="text/javascript"></script>
+	<script src="//ossweb-img.qq.com/images/js/milo/util/template.js"></script>
+	<script src="//x5.qq.com/cp/a20181017ych/LotteryRun.js"></script>
+	<script src="ticket01.js"></script>
+	<script src="index.js"></script>
+	<script>
+		   var speed=30;
+		   var colee2=document.getElementById("colee2");
+			var colee1=document.getElementById("carouselContent");
+			var colee=document.getElementById("colee");
+			colee2.innerHTML=colee1.innerHTML; //克隆colee1为colee2
+		function Marquee1(){
+			//当滚动至colee1与colee2交界时
+			if(colee2.offsetTop-colee.scrollTop<=0){
+				colee.scrollTop-=colee1.offsetHeight; //colee跳到最顶端
+			}else{
+				colee.scrollTop++
+			}
+		}
+		var MyMar1=setInterval(Marquee1,speed)//设置定时器
+		//鼠标移上时清除定时器达到滚动停止的目的
+		colee.onmouseover=function() {clearInterval(MyMar1)}
+		//鼠标移开时重设定时器
+		colee.onmouseout=function(){MyMar1=setInterval(Marquee1,speed)}
+	</script>
+	<script>
+		function loading() {
+			// 序列帧
+			var sourceArr = [];
+
+
+			function pushSourceArr(sourceArr, path, num) {
+				for (var i = 0; i <= num; i++) {
+					var len = 6 - (i + '').length;
+					var str = path;
+					for (var k = 0; k < len; k++)
+						str += '0';
+					sourceArr.push(str + i + '.png');
+				}
+				return sourceArr;
+			}
+
+			pushSourceArr(sourceArr, '//game.gtimg.cn/images/x5/cp/a20181017ychxm/A/A_', 189);
+
+
+			var imgLoader = function (imgs, callback) {
+				var len = imgs.length,
+					i = 0;
+				while (imgs.length) {
+					loadImage(imgs.shift(), function (path) {
+						callback(path, ++i, len);
+					});
+				}
+			}
+			var loadImage = function (path, callback) {
+				var img = new Image();
+				img.onload = function () {
+					img.onload = null;
+					callback(path);
+				}
+				img.src = path;
+			}
+			imgLoader(sourceArr, function (path, curNum, total) {
+				var percent = curNum / total;
+				if (percent == 1) {}
+			});
+			imgLoader(sourceArr);
+		}
+		loading();
+		var fun = {
+			_index: 0,
+			_index1: 0,
+			showImg: function () {
+				clearTimeout(fun.timer);
+				fun._index++;
+				if (fun._index >= 189) {
+					fun._index = 0;
+					// return;
+				}
+				if (fun._index < 10) {
+					$(".people .i1").attr("src", "//game.gtimg.cn/images/x5/cp/a20181017ychxm/A/A_00000" + fun._index + ".png");
+				} else if (fun._index >= 10 && fun._index < 100) {
+					$(".people .i1").attr("src", "//game.gtimg.cn/images/x5/cp/a20181017ychxm/A/A_0000" + fun._index + ".png");
+				} else {
+					$(".people .i1").attr("src", "//game.gtimg.cn/images/x5/cp/a20181017ychxm/A/A_000" + fun._index + ".png");
+				}
+				fun.timer = setTimeout(fun.showImg, 100);
+			},
+		}
+		fun.showImg();
+	</script>
+	<script>
+		//切换暂时影藏
+		//function Switching(tab,box){
+		//	$(tab).find('a').each(function(i){
+		//		
+		//		
+		//		$(this).click(function(){
+		//			if(i==0){
+		//			$(this).parent().css({"background":"url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/tab1.png) no-repeat 50% 0"})
+		//			$(tab).find('a').css({"color":"#ffffff"})
+		//		}
+		//		if(i==1){
+		//			$(this).parent().css({"background":"url(//game.gtimg.cn/images/x5/cp/a20181017ychxm/tab2.png) no-repeat 50% 0"})
+		//			$(tab).find('.tab1').css({"color":"#ffffff"})
+		//			$(tab).find('.tab2').css({"color":"#945f2b"})
+		//		}
+		//		$(box).eq(i).show().siblings().hide();
+		//		})
+		//	})
+		//};
+		//Switching('.tab','.wrap_ct');
+
+		//弹窗选中
+		$(".pop_check").unbind('click').click(function () {
+			if ($(this).hasClass("checked") == true) {
+				$(this).removeClass("checked");
+			} else {
+				$(this).addClass("checked");
+			}
+		})
+		$(".pop_checks").unbind('click').click(function () {
+			if ($(this).hasClass("checked") == true) {
+				$(this).removeClass("checked");
+				$(".pop_check").removeClass("checked")
+			} else {
+				$(this).addClass("checked");
+				$(".pop_check").addClass("checked");
+			}
+		})
+		//弹窗
+		function TGDialogS(e) {
+			need("biz.dialog", function (Dialog) {
+				Dialog.show({
+					id: e,
+					bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+					opacity: 50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+				});
+			});
+		}
+
+		function closeDialog() {
+			need("biz.dialog", function (Dialog) {
+				Dialog.hide();
+			});
+		}
+
+
+		//点击选中
+		$(".dh_list li").unbind('click').click(function () {
+			if ($(this).hasClass("get") == false) {
+				$(this).addClass("get");
+				$(this).siblings().removeClass("get");
+			}
+		})
+
+		//获奖列表
+		// $import('com.qq.basic.*');
+		// //下面代码仅仅为测试代码而已，正式的时候，不用提供。
+		// ScrollMarqueeUP.init({
+		// 	'contentId' : 'carouselContent', //容器ID
+		// 	'scrollstep' : 1, //每次移动的像素
+		// 	'scrollstoptime' : 20 //间断时间(毫秒)
+		// });
+		//检查是否已登录，已登录则获取QQ号显示已登录状态
+		milo.addEvent(g("dologin"), "click", function () {
+			need("biz.login", function (LoginManager) {
+				LoginManager.init({
+					needReloadPage: true
+				});
+				LoginManager.login();
+			});
+			return false;
+		});
+		milo.addEvent(g("dologout"), "click", function () {
+			need("biz.login", function (LoginManager) {
+				LoginManager.logout();
+			});
+			return false;
+		});
+		milo.ready(function () {
+			need("biz.login", function (LoginManager) {
+				LoginManager.checkLogin(function () {
+					g("login_qq_span").innerText = LoginManager.getUserUin(); //获取QQ号
+					Uid = LoginManager.getUserUin();
+					amsInit(162951, 501868);
+				});
+			});
+		});
+
+	</script>
+	<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+	<script>
+		//此段代码不能放到外链JS中，
+		var setSite = { //设置网站属性
+			siteType: "a20181017ychxm", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+			pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+			pageName: "首页", //必填项:页面中文名
+			osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+			ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+			stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+		}
+		if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+	</script>
+</body>
+
+</html>

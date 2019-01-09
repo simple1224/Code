@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+ <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+    <title>jQuery横向手风琴图片展示动画DEMO演示</title>  
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>  
+    <script type="text/javascript" src="js/jquery.min.js"></script>  
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            font-family:"微软雅黑";
+            font-size:12px;
+            text-decoration:none;list-style-type:none;}
+            img{border:0px;}  
+            /*开始*/  
+            .flash4{
+                width:1180px;
+                height:450px;
+                margin:0pxauto;
+                margin-bottom:20px;position:relative;}  
+                .flash4 ul li{
+                    width:106px;
+                    height:450px;
+                    border-left:1px solid #000;
+                    position:relative;
+                    overflow:hidden;
+                    float:left;
+                }  
+                .flash4 ul li .imgTop img{
+                    opacity:0.4;
+                }  
+                .flash4 ul li .imgTop img.tm{
+                    opacity:1;
+                }  
+                .flash4 ul li .imgCon{
+                    width:538px;height:405px;
+                }  
+                .flash4 ul li .imgCen{
+                    width:538px;
+                    height:50px;
+                    background:rgba(0,0,0,0.5);
+                    color:#fff;
+                    font-size:20px;
+                    line-height:50px;
+                    position:absolute;
+                    left:0px;
+                    bottom:45px;
+                    text-indent:20px;
+                    display:none;
+                }  
+                .flash4 ul li .imgBot{
+                    width:538px;
+                    height:45px;
+                    background:#222;
+                }  
+                .flash4 ul li .imgBot p.bt_1{
+                    width:80px;
+                    line-height:45px;
+                    font-size:16px;
+                    color:#fff;
+                    text-indent:20px;
+                    float:left;
+                }  
+                .flash4 ul li .imgBot p.bt_2{
+                    width:458px;
+                    height:45px;
+                    line-height:45px;
+                    float:left;
+                    display:none;
+                }  
+                .flash4 ul li .imgBot p.bt_2 span{
+                    font-size:14px;
+                    color:#fff;
+                    padding-right:30px;
+                    background:url(../images/part2_icon.png)no-repeat left center;
+                    padding-left:10px;
+                }  
+                .flash4 ul li.first{
+                    width:538px;
+                }  
+                .flash4 ul li.last{
+                    position:absolute;
+                    right:0px;
+                    bottom:0px;
+                }    
+    </style>
+</head>  
+<body>  
+    <!--手风琴效果-->  
+    <div class="flash4"> 
+          <ul>  
+              <li class="first"> 
+                   <div class="imgTop">
+                       <img src="ossweb-img/price1.png" width="538" height="405" alt=""class="tm"/>
+                    </div> 
+                    <div class="imgCen">给你15分钟做“对”的时尚人</div>
+                      <div class="imgBot">
+                          <a href="">
+                              <p class="bt_1">服饰</p>
+                              <p class="bt_2"><span>封面明星故事 </span>
+                                <span>2015春夏趋势</span>
+                                <span>我爱海淘</span></p>
+                            </a>
+                        </div> 
+                     </li> 
+                      <li>  
+                          <div class="imgTop">
+                              <img src="ossweb-img/logo1.png" width="538" height="405" alt=""/>
+                            </div>  
+                            <div class="imgCen">蒂芙尼为你吟唱一曲自然颂</div>  
+                            <div class="imgBot">
+                                <a href="">
+                                    <p class="bt_1">服饰</p>
+                                    <p class="bt_2">
+                                        <span>封面明星故事</span>
+                                        <span>2015春夏趋势</span>
+                                        <span>我爱海淘</span>
+                                    </p
+                                    ></a>
+                                </div> 
+                             </li>  
+                             <li> 
+                                 <div class="imgTop">
+                                     <img src="ossweb-img/logo2.png" width="538" height="405" alt=""/>
+                                </div>
+                                  <div class="imgCen">瑞丽·妆线上精品轻杂志</div> 
+                                   <div class="imgBot">
+                                       <a href="">
+                                           <p class="bt_1">服饰</p>
+                                           <p class="bt_2">
+                                               <span>封面明星故事</span>
+                                               <span>2015春夏趋势</span>
+                                               <span>我爱海淘</span>
+                                            </p>
+                                        </a>
+                                    </div>  
+                                </li>  
+                                <li>  
+                                    <div class="imgTop">
+                                        <img src="ossweb-img/logo3.png" alt="">
+                                    </div> 
+                                     <div class="imgCen">《ar》刘海造型女孩只需这样即刻焕然一新</div>
+                                       <div class="imgBot">
+                                           <a href="">
+                                               <p class="bt_1">服饰</p><p class="bt_2">
+                                                   <span>封面明星故事</span>
+                                                   <span>2015春夏趋势</span>
+                                                   <span>我爱海淘</span>
+                                                </p>
+                                            </a>
+                                        </div>  
+                                    </li> 
+                                     <li>  
+                                        <div class="imgTop">
+                                            <img src="images/ruili_img5.jpg" width="538" height="405" alt=""/>
+                                        </div>  
+                                        <div class="imgCen">电影×大明星见证传奇从戛纳诞生</div>
+                                        <div class="imgBot">
+                                            <a href="">
+                                                <p class="bt_1">服饰</p>
+                                                <p class="bt_2">
+                                                    <span>封面明星故事</span>
+                                                    <span>2015春夏趋势</span>
+                                                    <span>我爱海淘</span>
+                                                </p>
+                                            </a>
+                                        </div>  
+                                    </li>  
+                                    <li>  
+                                        <div class="imgTop">
+                                            <img src="images/ruili_img6.jpg" width="538" height="405" alt=""/>
+                                        </div>  
+                                        <div class="imgCen">重返20岁试用周</div>
+                                         <div class="imgBot">
+                                             <a href="">
+                                                 <p class="bt_1">服饰</p>
+                                                 <p class="bt_2">
+                                                     <span>封面明星故事</span>
+                                                     <span>2015春夏趋势</span>
+                                                     <span>我爱海淘</span>
+                                                    </p>
+                                                </a>
+                                            </div>
+                                          </li> 
+                                           <li class="last"> 
+                                                <div class="imgTop">
+                                                    <img src="images/ruili_img7.jpg" width="538" height="405" alt=""/>
+                                                </div> 
+                                                 <div class="imgCen">玩美女孩盖天天阳光女神进阶攻略</div> 
+                                                  <div class="imgBot">
+                                                      <a href="">
+                                                          <p class="bt_1">服饰</p>
+                                                          <p class="bt_2"><span>封面明星故事</span>
+                                                            <span>2015春夏趋势</span>
+                                                            <span>我爱海淘</span>
+                                                        </p>
+                                                    </a>
+                                                </div> 
+                    </li>  
+            </ul> 
+    </div> 
+        <!--手风琴结束--> 
+        <div style="text-align:center;clear:both;"> </div>                                          
+</body> 
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script> 
+<script>
+    //手风琴动画效果 
+     var index7 =0;
+     //定义变量，赋值为0；
+       $(".flash4 ul li").mouseenter(function(){
+             index7 = $(this).index();  $(this).stop().animate({  width:538  },500).siblings("li").stop().animate({  width:106  },500);  
+             $(".imgCen").eq(index7).css("display","block").siblings(".imgCen").css("display","none");  
+             $("p.bt_2").eq(index7).css("display","block").siblings("p.bt_2").css("display","none");  
+             $(".imgTop img").eq(index7).addClass("tm").siblings(".imgTop img").removeClass("tm");  
+             });  
+        $(".flash4 ul li").mouseleave(function(){  
+            $(this).eq(index7).stop().animate({  
+                width:538  },500);  
+                $(".imgCen").css("display","none");  
+                $("p.bt_2").css("display","none");  
+                });    
+</script>
+</html>    

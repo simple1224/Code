@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="gbk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小游戏</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row center-block">
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/1.gif" alt="">
+                <div class="mask"></div>
+            </div>
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/2.gif" alt="">
+            </div>
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/3.gif" alt="">
+            </div>
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/4.gif" alt="">
+            </div>
+        </div>
+        <div class="row center-block">
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/5.gif" alt="">
+            </div>
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/6.gif" alt="">
+            </div>
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/7.gif" alt="">
+            </div>
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/8.gif" alt="">
+            </div>
+        </div>
+        <div class="row center-block">
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/9.gif" alt="">
+            </div>
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/10.gif" alt="">
+            </div>
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/11.gif" alt="">
+            </div>
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/12.gif" alt="">
+            </div>
+        </div>
+        <div class="row center-block">
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/13.gif" alt="">
+            </div>
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/14.gif" alt="">
+            </div>
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/15.gif" alt="">
+            </div>
+            <div class="col-md-3 change">
+                <img class="before" src="img/jj.gif" alt="">
+                <img class="after" src="img/16.gif" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script>
+        $('.after').dblclick(function () {
+            // alert("hgdsgggsdjfgk")
+            // $(this).css('z-index', '10');
+            $(this).parent().removeClass('change');
+            $(this).prev().css('display', 'none');
+            $(this).next().css('display','block');
+            // $(this).next().css({'display':'block','background':'black','opacty':'.6'});
+            // $(this).next().css({'animation':'first 4s linear 2s'})
+            // $(this).css('-webkit-mask','-webkit-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,0.5)) ')
+            $(this).css('animation', 'first 4s');
+            // $(this).css('background','rgba(0, 0, 0, .4)')
+
+            // setTimeout(function(){   
+            //     $(this).next().css('animation', 'first 4s;linear')
+            // },2000)
+
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.col-md-3{
+    /* width: 250px; */
+    height: 200px;
+    border:1px solid red;
+    /* margin: 0; */
+    padding: 0 !important;
+}
+.row{
+    width: 800px;
+    height: 200px;
+}
+img {
+    position: absolute;
+    transition: all 1s;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: #000;
+    opacity: .6;
+}
+.change:hover img {
+    transform: rotateY(180deg); 
+}
+.col-md-3 img{
+    max-width: 100%;
+     max-height: 100%;
+}
+img.before {
+    z-index: 9;
+    backface-visibility: hidden;
+}
+.after{
+    min-width: 100%;
+    min-height: 100%;
+}
+@keyframes first{
+    0%{opacity: 0;}
+    25%{opacity: .2;}
+    75%{opacity: .4;}
+    100%{opacity: .6;}
+}
+
